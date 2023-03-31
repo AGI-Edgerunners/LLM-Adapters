@@ -15,6 +15,7 @@ import bitsandbytes as bnb
 sys.path.append(os.path.join(os.getcwd(), "peft/src"))
 from peft import (  # noqa: E402
     LoraConfig,
+    BottleneckConfig,
     get_peft_model,
     get_peft_model_state_dict,
     prepare_model_for_int8_training,
@@ -28,6 +29,7 @@ def train(
     base_model: str = "",  # the only required argument
     data_path: str = "yahma/alpaca-cleaned",
     output_dir: str = "./lora-alpaca",
+    adapter_name: str = "lora",
     # training hyperparams
     batch_size: int = 128,
     micro_batch_size: int = 4,
@@ -44,6 +46,10 @@ def train(
         "q_proj",
         "v_proj",
     ],
+    # bottleneck adapter hyperparams
+    bottleneck_size : int = 256,
+    non_linearity: str = "tanh",
+    adapter_dropout: float = 0.0,
     # llm hyperparams
     train_on_inputs: bool = True,  # if False, masks out inputs in loss
     group_by_length: bool = False,  # faster, but produces an odd training loss curve
@@ -55,7 +61,7 @@ def train(
     resume_from_checkpoint: str = None,  # either training checkpoint or final adapter
 ):
     print(
-        f"Training Alpaca-LoRA model with params:\n"
+        f"Finetuning model with params:\n"
         f"base_model: {base_model}\n"
         f"data_path: {data_path}\n"
         f"output_dir: {output_dir}\n"
@@ -108,7 +114,6 @@ def train(
         torch_dtype=torch.float16,
         device_map=device_map,
     )
-    print(model)
 
     tokenizer = LlamaTokenizer.from_pretrained(base_model)
 
@@ -155,18 +160,24 @@ def train(
         return tokenized_full_prompt
 
     model = prepare_model_for_int8_training(model, use_gradient_checkpointing=use_gradient_checkpointing)
-
-    config = LoraConfig(
-        r=lora_r,
-        lora_alpha=lora_alpha,
-        target_modules=lora_target_modules,
-        lora_dropout=lora_dropout,
-        bias="none",
-        task_type="CAUSAL_LM",
-    )
+    if adapter_name == "lora":
+        config = LoraConfig(
+            r=lora_r,
+            lora_alpha=lora_alpha,
+            target_modules=lora_target_modules,
+            lora_dropout=lora_dropout,
+            bias="none",
+            task_type="CAUSAL_LM",
+        )
+    elif adapter_name == "bottleneck":
+        config = BottleneckConfig(
+            bottleneck_size=bottleneck_size,
+            non_linearity=non_linearity,
+            adapter_dropout=adapter_dropout,
+            bias="none",
+            task_type="CAUSAL_LM",
+        )
     model = get_peft_model(model, config)
-    print(model)
-    assert 1==0
 
     if data_path.endswith(".json"):  # todo: support jsonl
         data = load_dataset("json", data_files=data_path)
