@@ -1,9 +1,11 @@
+import os
 import sys
 
 import fire
 import gradio as gr
 import torch
 import transformers
+sys.path.append(os.path.join(os.getcwd(), "peft/src"))
 from peft import PeftModel
 from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer
 

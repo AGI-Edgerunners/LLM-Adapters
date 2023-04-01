@@ -21,7 +21,7 @@ from peft import (  # noqa: E402
     prepare_model_for_int8_training,
     set_peft_model_state_dict,
 )
-from transformers import LlamaForCausalLM, LlamaTokenizer  # noqa: F402
+from transformers import AutoModelForCausalLM, AutoTokenizer, LlamaTokenizer  # noqa: F402
 
 
 def train(
@@ -50,6 +50,7 @@ def train(
     bottleneck_size : int = 256,
     non_linearity: str = "tanh",
     adapter_dropout: float = 0.0,
+    use_parallel_adapter: bool = False,
     # llm hyperparams
     train_on_inputs: bool = True,  # if False, masks out inputs in loss
     group_by_length: bool = False,  # faster, but produces an odd training loss curve
@@ -76,6 +77,10 @@ def train(
         f"lora_alpha: {lora_alpha}\n"
         f"lora_dropout: {lora_dropout}\n"
         f"lora_target_modules: {lora_target_modules}\n"
+        f"bottleneck_size: {bottleneck_size}\n"
+        f"non_linearity: {non_linearity}\n"
+        f"adapter_dropout: {adapter_dropout}\n"
+        f"use_parallel_adapter: {use_parallel_adapter}\n"
         f"train_on_inputs: {train_on_inputs}\n"
         f"group_by_length: {group_by_length}\n"
         f"wandb_project: {wandb_project}\n"
@@ -108,14 +113,18 @@ def train(
     if len(wandb_log_model) > 0:
         os.environ["WANDB_LOG_MODEL"] = wandb_log_model
 
-    model = LlamaForCausalLM.from_pretrained(
+    model = AutoModelForCausalLM.from_pretrained(
         base_model,
         load_in_8bit=True,
         torch_dtype=torch.float16,
         device_map=device_map,
     )
 
-    tokenizer = LlamaTokenizer.from_pretrained(base_model)
+    if model.config.model_type == "llama":
+        # Due to the 
+        tokenizer = LlamaTokenizer.from_pretrained(base_model)
+    else:
+        tokenizer = AutoTokenizer.from_pretrained(base_model)
 
     tokenizer.pad_token_id = (
         0  # unk. we want this to be different from the eos token
@@ -174,6 +183,7 @@ def train(
             bottleneck_size=bottleneck_size,
             non_linearity=non_linearity,
             adapter_dropout=adapter_dropout,
+            use_parallel_adapter=use_parallel_adapter,
             bias="none",
             task_type="CAUSAL_LM",
         )

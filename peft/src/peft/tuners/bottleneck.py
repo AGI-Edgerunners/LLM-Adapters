@@ -13,6 +13,12 @@ import torch.nn.functional as F
 from ..utils import PeftConfig, PeftType, transpose
 from transformers.activations import ACT2FN
 
+
+TRANSFORMERS_MODELS_TO_ADAPTER_TYPE_MAPPING = {
+    "llama": {"gate_proj": "mh_adapter", "up_proj":"mh_adapter", "down_proj":"output_adapter"},
+    "gptj": {"fc_in":"mh_adapter", "fc_out":"output_adapter"},
+}
+
 def is_bnb_available():
     return importlib.util.find_spec("bitsandbytes") is not None
 
@@ -30,6 +36,7 @@ class BottleneckConfig(PeftConfig):
         non_linearity (`str`): The non-linearity to apply to the bottleneck.
         dropout (`float`, optional): The dropout probability of the bottleneck. Default to 0.0
         bias ('str'): Bias type for Bottleneck. Can be 'none', 'all' or 'adapter_only'. Default to 'none'.
+        use_parallel_adapter (:obj:`bool`, optional): Whether to use parallel adapter. Defaults to False.
         scaling (:obj:`float` or :obj:`str`, optional):
             Scaling factor to use for scaled addition of adapter outputs as done by He et al. (2021). Can be either a
             constant factor (float) or the string "learned", in which case the scaling factor is learned. Defaults to
@@ -50,6 +57,7 @@ class BottleneckConfig(PeftConfig):
             "For example, ['q', 'v'] or '.*decoder.*(SelfAttention|EncDecAttention).*(q|v)$' "
         },
     )
+    use_parallel_adapter: bool = field(default=False, metadata={"help": "Whether to use parallel adapter"})
     scaling: Union[float, str] = 1.0
     bias: str = field(default="none", metadata={"help": "Bias type for Bottleneck. Can be 'none', 'all' or 'adapter_only'"})
     init_weights: str = field(default="bert", metadata={"help": "Initialization method for the weights of the adapter modules."})
@@ -128,13 +136,11 @@ class BottleneckModel(torch.nn.Module):
                     is_target_modules_in_base_model = True
                 parent, target, target_name = self._get_submodules(key)
                 # determine the type of adapter to be used, this will effect the forward pass
-                if self.model.config.model_type == "llama":
-                    if target_name == "gate_proj" or target_name == "up_proj":
-                        adapter_type = "mh_adapter"
-                        kwargs.update({"adapter_type": adapter_type})
-                    elif target_name == "down_proj":
-                        adapter_type = "output_adapter"
-                        kwargs.update({"adapter_type": adapter_type})
+                if self.peft_config.use_parallel_adapter:
+                    adapter_type = "parallel_adapter"
+                else:
+                    adapter_type = TRANSFORMERS_MODELS_TO_ADAPTER_TYPE_MAPPING[self.model.config.model_type][target_name]
+                kwargs.update({"adapter_type": adapter_type})
                     
                 bias = target.bias is not None
                 if loaded_in_8bit and isinstance(target, bnb.nn.Linear8bitLt):
@@ -150,11 +156,15 @@ class BottleneckModel(torch.nn.Module):
                         new_module = Linear8bitLt(target.in_features, target.in_features, bias=bias, **kwargs)
                     elif adapter_type == "output_adapter":
                         new_module = Linear8bitLt(target.out_features, target.out_features, bias=bias, **kwargs)
+                    elif adapter_type == "parallel_adapter":
+                        new_module = Linear8bitLt(target.in_features, target.out_features, bias=bias, **kwargs)
                 elif isinstance(target, torch.nn.Linear):
                     if adapter_type == "mh_adapter":
                         new_module = Linear(target.in_features, target.in_features, bias=bias, **kwargs)
                     elif adapter_type == "output_adapter":
                         new_module = Linear(target.out_features, target.out_features, bias=bias, **kwargs)
+                    elif adapter_type == "parallel_adapter":
+                        new_module = Linear(target.in_features, target.out_features, bias=bias, **kwargs)
                 self._replace_module(parent, target_name, new_module, target)
         if not is_target_modules_in_base_model:
             raise ValueError(
@@ -352,6 +362,13 @@ class Linear(nn.Linear, AdapterLayer):
                 output = self.adapter_up(self.act_fn(self.adapter_down(self.adapter_dropout(x)))) * self.adapter_scaling
 
                 result = output + residual
+            elif self.adapter_type == "parallel_adapter":
+                # for parallel_adapter, x will pass the linear layer first and the adapter layer parallelly. 
+                # The output of the adapter layer will be added to the output of the linear layer
+                result = F.linear(x, self.weight, bias=self.bias)
+                output = self.adapter_up(self.act_fn(self.adapter_down(self.adapter_dropout(x)))) * self.adapter_scaling
+
+                result = result + output
             return result
 
 
@@ -460,6 +477,18 @@ if is_bnb_available():
                         residual = result_pre_forward
                         output = self.adapter_up(self.act_fn(self.adapter_down(self.adapter_dropout(result_pre_forward)))) * self.adapter_scaling
                         result = output + residual
+                elif self.adapter_type == "parallel_adapter":
+                    if not torch.is_autocast_enabled():
+                        expected_dtype = result_pre_forward.dtype
+
+                        if x.dtype != torch.float32:
+                            x = x.float()
+                        
+                        output = self.adapter_up(self.act_fn(self.adapter_down(self.adapter_dropout(x)))).to(expected_dtype) * self.adapter_scaling
+                        result = result_pre_forward + output
+                    else:
+                        output = self.adapter_up(self.act_fn(self.adapter_down(self.adapter_dropout(x)))) * self.adapter_scaling
+                        result = result_pre_forward + output
 
                 return result
                         
