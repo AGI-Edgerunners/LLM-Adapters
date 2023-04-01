@@ -51,6 +51,7 @@ def train(
     non_linearity: str = "tanh",
     adapter_dropout: float = 0.0,
     use_parallel_adapter: bool = False,
+    target_modules: List[str] = None,
     # llm hyperparams
     train_on_inputs: bool = True,  # if False, masks out inputs in loss
     group_by_length: bool = False,  # faster, but produces an odd training loss curve
@@ -184,6 +185,7 @@ def train(
             non_linearity=non_linearity,
             adapter_dropout=adapter_dropout,
             use_parallel_adapter=use_parallel_adapter,
+            target_modules=target_modules,
             bias="none",
             task_type="CAUSAL_LM",
         )
