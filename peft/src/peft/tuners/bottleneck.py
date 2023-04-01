@@ -15,8 +15,9 @@ from transformers.activations import ACT2FN
 
 
 TRANSFORMERS_MODELS_TO_ADAPTER_TYPE_MAPPING = {
-    "llama": {"gate_proj": "mh_adapter", "up_proj":"mh_adapter", "down_proj":"output_adapter"},
+    "bloom": {"dense_h_to_4h": "mh_adapter", "dense_4h_to_h": "output_adapter"},
     "gptj": {"fc_in":"mh_adapter", "fc_out":"output_adapter"},
+    "llama": {"gate_proj": "mh_adapter", "up_proj":"mh_adapter", "down_proj":"output_adapter"},
 }
 
 def is_bnb_available():

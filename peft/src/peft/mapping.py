@@ -60,14 +60,15 @@ TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING = {
 }
 
 TRANSFORMERS_MODELS_TO_BOTTLENECK_TARGET_MODULES_MAPPING = {
-    "llama": ["gate_proj", "up_proj", "down_proj"],
+    "bloom": ["dense_h_to_4h", "dense_4h_to_h"],
     "gptj": ["fc_in", "fc_out"],
-    
+    "llama": ["gate_proj", "up_proj", "down_proj"],
 }
 
 TRANSFORMERS_MODELS_TO_PARALLEL_TARGET_MODULES_MAPPING = {
-    "llama": ["v_proj", "down_proj"],
+    "bloom": ["query_key_value"],
     "gptj": ["v_proj", "fc_out"],
+    "llama": ["v_proj", "down_proj"],
 }
 
 
