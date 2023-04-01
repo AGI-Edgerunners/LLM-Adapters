@@ -63,12 +63,14 @@ TRANSFORMERS_MODELS_TO_BOTTLENECK_TARGET_MODULES_MAPPING = {
     "bloom": ["dense_h_to_4h", "dense_4h_to_h"],
     "gptj": ["fc_in", "fc_out"],
     "llama": ["gate_proj", "up_proj", "down_proj"],
+    "opt": ["fc1", "fc2"],
 }
 
 TRANSFORMERS_MODELS_TO_PARALLEL_TARGET_MODULES_MAPPING = {
     "bloom": ["query_key_value"],
     "gptj": ["v_proj", "fc_out"],
     "llama": ["v_proj", "down_proj"],
+    "opt": ["v_proj", "fc2"],
 }
 
 

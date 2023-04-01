@@ -18,6 +18,7 @@ TRANSFORMERS_MODELS_TO_ADAPTER_TYPE_MAPPING = {
     "bloom": {"dense_h_to_4h": "mh_adapter", "dense_4h_to_h": "output_adapter"},
     "gptj": {"fc_in":"mh_adapter", "fc_out":"output_adapter"},
     "llama": {"gate_proj": "mh_adapter", "up_proj":"mh_adapter", "down_proj":"output_adapter"},
+    "opt": {"fc1":"mh_adapter", "fc2":"output_adapter"},
 }
 
 def is_bnb_available():
@@ -455,6 +456,9 @@ if is_bnb_available():
                 if self.adapter_type == "mh_adapter":
                     if not torch.is_autocast_enabled():
                         expected_dtype = x.dtype
+
+                        if x.dtype != torch.float32:
+                            x = x.float()
                         
                         residual = x
                         output = self.adapter_up(self.act_fn(self.adapter_down(self.adapter_dropout(x)))).to(expected_dtype) * self.adapter_scaling
@@ -470,6 +474,9 @@ if is_bnb_available():
                 elif self.adapter_type == "output_adapter":
                     if not torch.is_autocast_enabled():
                         expected_dtype = result_pre_forward.dtype
+
+                        if result_pre_forward.dtype != torch.float32:
+                            result_pre_forward = result_pre_forward.float()
 
                         residual = result_pre_forward
                         output = self.adapter_up(self.act_fn(self.adapter_down(self.adapter_dropout(result_pre_forward)))).to(expected_dtype) * self.adapter_scaling
