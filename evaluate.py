@@ -88,14 +88,19 @@ def main(
     miss = 0.001
     for idx, data in enumerate(dataset):
         instruction = data.get('instruction')
-        label = data.get('answer')[-1]
-        if isinstance(label, str):
-            label = float(label)
 
         outputs = evaluate(instruction)
-        predict = extract_answer_number(args, outputs)
-        if abs(label - predict) <= miss:
-            correct += 1
+        label = data.get('answer')[-1]
+        if args.dataset.lower() in ['aqua']:
+            predict = extract_answer_letter(args, outputs)
+            if label == predict:
+                correct += 1
+        else:
+            if isinstance(label, str):
+                label = float(label)
+            predict = extract_answer_number(args, outputs)
+            if abs(label - predict) <= miss:
+                correct += 1
         print(f'\rtest:{idx + 1}/{total} | accuracy {correct}  {correct / total}', end='')
     print('\n')
     print('test finished')
@@ -247,9 +252,9 @@ def extract_answer_number(args, sentence: str) -> float:
             pred_answer = float('inf')
     return pred_answer
 
-def extract_answer_letter(args, sentence):
-    pass
 
+def extract_answer_letter(args, sentence: str) -> str:
+    pass
 
 
 if __name__ == "__main__":
