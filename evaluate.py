@@ -1,3 +1,4 @@
+import copy
 import json
 import os
 import re
@@ -86,22 +87,33 @@ def main(
     total = len(dataset)
     correct = 0
     miss = 0.001
+    output_data = []
     for idx, data in enumerate(dataset):
         instruction = data.get('instruction')
 
         outputs = evaluate(instruction)
-        label = data.get('answer')[-1]
+        label = data.get('answer')
+        flag = False
         if args.dataset.lower() in ['aqua']:
             predict = extract_answer_letter(args, outputs)
             if label == predict:
                 correct += 1
+                flag = True
         else:
             if isinstance(label, str):
                 label = float(label)
             predict = extract_answer_number(args, outputs)
             if abs(label - predict) <= miss:
                 correct += 1
-        print(f'\rtest:{idx + 1}/{total} | accuracy {correct}  {correct / total}', end='')
+                flag = True
+        new_data = copy.deepcopy(data)
+        new_data['output_pred'] = outputs
+        new_data['pred'] = predict
+        new_data['flag'] = flag
+        output_data.append(new_data)
+        print(f'\rtest:{idx + 1}/{total} | accuracy {correct}  {correct / idx+1}', end='')
+    with open(f'experiment/{args.model}-{args.adpter}-{args.dataset}') as f:
+        json.dump(output_data, f, indent=4)
     print('\n')
     print('test finished')
 
@@ -140,7 +152,7 @@ def load_data(args) -> list:
     file_path = f'dataset/{args.dataset}/test.json'
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"can not find dataset file : {file_path}")
-    json_data = json.load(open(file_path, 'r', encoding='utf-8'))
+    json_data = json.load(open(file_path, 'r'))
     return json_data
 
 
