@@ -111,6 +111,8 @@ def main(
         new_data['pred'] = predict
         new_data['flag'] = flag
         output_data.append(new_data)
+        print(total)
+        print(idx)
         print(f'\rtest:{idx + 1}/{total} | accuracy {correct}  {correct / idx+1}', end='')
     with open(f'experiment/{args.model}-{args.adpter}-{args.dataset}') as f:
         json.dump(output_data, f, indent=4)
