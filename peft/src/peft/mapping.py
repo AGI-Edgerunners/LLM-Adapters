@@ -69,9 +69,9 @@ TRANSFORMERS_MODELS_TO_BOTTLENECK_TARGET_MODULES_MAPPING = {
 
 TRANSFORMERS_MODELS_TO_PARALLEL_TARGET_MODULES_MAPPING = {
     "bloom": ["query_key_value"],
-    "gptj": ["v_proj", "fc_out"],
-    "llama": ["v_proj", "down_proj"],
-    "opt": ["v_proj", "fc2"],
+    "gptj": ["q_proj", "v_proj", "k_proj"],
+    "llama": ["q_proj", "v_proj", "k_proj"],
+    "opt": ["q_proj", "v_proj", "k_proj"],
 }
 
 
