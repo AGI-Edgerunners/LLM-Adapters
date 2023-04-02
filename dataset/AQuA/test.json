@@ -1,219 +1,19 @@
 [
     {
-        "instruction": "If the probability that Stock A will increase in value during the next month is 0.56, and the probability that Stock B will increase in value during the next month is 0.74. What is the greatest value for the probability that neither of these two events will occur? Answer Choices: (A) 0.22 (B) 0.26 (C) 0.37 (D) 0.46 (E) 0.63",
+        "instruction": "A father wants to divide Rs. 5100 between his two sons, Mohan and Sohan who are 23 and 24 at present. He divides the amount in such a way that if their shares are invested at compound interest at 4% p.a. they will receive equal amount on attaining the age of 26 years. Find Mohan's share. Answer Choices: (A) 2400 (B) 2500 (C) 2600 (D) 2700 (E) None of these",
         "input": "",
         "answer": [
             "B"
         ],
-        "output": "The probability that neither of these two events will occur is 1 - (0.56 + 0.74) = 0.22.The answer is (A)."
+        "output": "Let Mohan's share be x. Then Sohan's share will be 5100 - x. The amount that Mohan will receive at the age of 26 will be x(1.04)^3 and the amount that Sohan will receive at the age of 26 will be (5100 - x)(1.04)^3. Since they should receive equal amount, we can set up the equation x(1.04)^3 = (5100 - x)(1.04)^3. Solving this equation, we get x = 2500. So Mohan's share is 2500.The answer is (B)."
     },
     {
-        "instruction": "A man spends 70% of his income. If his income increases by 20%, then what will be his new expenditure? Answer Choices: (A) 58.3% (B) 62.5% (C) 63.5% (D) 64.5% (E) 65.5%",
-        "input": "",
-        "answer": [
-            "A"
-        ],
-        "output": "The man's original expenditure was 70% of his income. If his income increases by 20%, then his new expenditure will be 70% of the new income, which is 70% of 1.2 times the original income. This is equal to 0.84 x 1.2 = 1.008. So the new expenditure is 100.8%.The answer is (E)."
-    },
-    {
-        "instruction": "The price of a product is reduced by 30% . By what percentage should it be increased to make it 100% Answer Choices: (A) 41.86% (B) 42.86% (C) 43.86% (D) 44.86% (E) 45.86%",
-        "input": "",
-        "answer": [
-            "B"
-        ],
-        "output": "If the price is reduced by 30%, then it is now 70% of the original price. To make it 100%, it needs to be increased by (100 - 70) = 30%. So the increase is 30%.The answer is (C)."
-    },
-    {
-        "instruction": "An organization decided to raise Rs. 6 lakh by collecting equal contribution from each of its employees. If each of them had contributed Rs. 60 extra, the contribution would have been Rs. 6.24 lakh. How many employees are there in that organization? Answer Choices: (A) 300 (B) 200 (C) 400 (D) 100 (E) 500",
-        "input": "",
-        "answer": [
-            "C"
-        ],
-        "output": "The total amount collected would have been 6.24 lakh. So 6.24 lakh / 60 = 10400. So there are 10400 employees in the organization.The answer is (E)."
-    },
-    {
-        "instruction": "At a certain factory, 10 percent of the staplers produced on Monday were defective and 2 percent of the non-defective staplers were rejected by mistake. If 72 of the non-defective staplers were rejected, what was the number of staplers produced that day? Answer Choices: (A) 4,000 (B) 4,200 (C) 4,500 (D) 4,800 (E) 5,000",
-        "input": "",
-        "answer": [
-            "A"
-        ],
-        "output": "The total number of staplers produced on Monday was 10% of the total number of staplers + 2% of the total number of non-defective staplers + 72 non-defective staplers. This simplifies to 0.1x + 0.02(x-72) + 72 = x. Solving for x, we get x = 4,800.The answer is (D)."
-    },
-    {
-        "instruction": "A car finishes a journey in 20 hours at the speed of 60 km/hr. If the same distance is to be covered in 10 hours, how much speed does the car gain? Answer Choices: (A) 80 kmph (B) 50 kmph (C) 120 kmph (D) 70 kmph (E) 80 kmph",
-        "input": "",
-        "answer": [
-            "C"
-        ],
-        "output": "The car needs to cover the same distance in half the time, so it needs to double its speed. The new speed would be 120 km/hr.The answer is (C)."
-    },
-    {
-        "instruction": "Two numbers are said to be relatively prime if they share no common positive factors other than 1. Set S contains the set of integers from 1 to 1,000, inclusive. What is the probability that a number chosen from S is relatively prime to 1,000? Answer Choices: (A) 5/7 (B) 3/5 (C) 4/7 (D) 2/5 (E) 2/7",
+        "instruction": "8 man work for 6 days to complete a work. How many men are required to complete same work in 1/2 day. Answer Choices: (A) 93 men (B) 94 men (C) 95 men (D) 96 men (E) 97 men",
         "input": "",
         "answer": [
             "D"
         ],
-        "output": "The probability that a number chosen from S is relatively prime to 1,000 is equal to the number of relatively prime numbers in S divided by the total number of numbers in S. There are 496 relatively prime numbers in S, so the probability is 496/1000 = 2/5.The answer is (D)."
-    },
-    {
-        "instruction": "The difference between the squares of two numbers is 256000 and the sum of the numbers is 1000. The numbers are Answer Choices: (A) 600, 400 (B) 628, 372 (C) 640, 360 (D) None of these (E) Cannot be determined",
-        "input": "",
-        "answer": [
-            "B"
-        ],
-        "output": "Let the two numbers be x and y. Then x2 - y2 = 256000 and x + y = 1000. Solving these equations, we get x = 640 and y = 360.The answer is (C)."
-    },
-    {
-        "instruction": "What will be the cost of gardening 1-metre \u2013 broad boundary around a rectangular plot having perimeter of 340 metres at the rate of 10 per square metre? Answer Choices: (A) 3400 (B) 1700 (C) 3440 (D) Cannot be determined (E) None of these",
-        "input": "",
-        "answer": [
-            "C"
-        ],
-        "output": "The area of the boundary is 340 metres * 1 metre = 340 square metres. So the cost of gardening the boundary would be 340 * 10 = 3400.The answer is (A)."
-    },
-    {
-        "instruction": "A student instead of finding the value of 7/8 of a number, found the value of 7/18 of the number. If his answer differed from the actual one by 770, find the that number. Answer Choices: (A) 1584 (B) 2520 (C) 1728 (D) 1656 (E) None",
-        "input": "",
-        "answer": [
-            "A"
-        ],
-        "output": "The actual value of 7/8 of the number is 7/8 of the difference, i.e. 770. So the number is 770/7*8 = 2520.The answer is (B)."
-    },
-    {
-        "instruction": "A certain phone manufacturer ships its products in crates. A crate consists of p pallets, and each pallet holds 1250 phones. If the manufacturer ships 4 crates, how many phones are shipped? Answer Choices: (A) 1000p (B) 1500p (C) 2000p (D) 2500p (E) 30000",
-        "input": "",
-        "answer": [
-            "D"
-        ],
-        "output": "A crate consists of p pallets, and each pallet holds 1250 phones. So 4 crates would contain 4p pallets, and each pallet holds 1250 phones. So the total number of phones shipped would be 4p * 1250 = 5000p.The answer is (D)."
-    },
-    {
-        "instruction": "Joe's age, Joe's sister's age and Joe\u2019s fathers age sums up to 100. When Joe is as old as his father, Joe's sister will be twice as old as now. When Joe is as old as his father then his father is twice as old as when his sister was as old as her father. Find the age of Joe's father? Answer Choices: (A) 45 (B) 48 (C) 50 (D) 55 (E) 58",
-        "input": "",
-        "answer": [
-            "C"
-        ],
-        "output": "Let Joe's age be x, his sister's age be y and his father's age be z. So x + y + z = 100. When Joe is as old as his father, his sister will be twice as old as now, so y = 2x. When Joe is as old as his father, his father is twice as old as when his sister was as old as her father, so z = 2y. So x + 2x + 2(2x) = 100. This simplifies to 5x = 100. So x = 20. So y = 40 and z = 40. The answer is (B)."
-    },
-    {
-        "instruction": "In an exam, a candidate secured 504 marks of the maximum mark of M. If the maximum mark M is converted into 800 marks, he would have secured 420 marks. What is the value of M? Answer Choices: (A) 278 (B) 2890 (C) 270 (D) 2702 (E) 960",
-        "input": "",
-        "answer": [
-            "E"
-        ],
-        "output": "The candidate secured 504 marks out of M. So, 504/M = 420/800. This simplifies to M = 2702.The answer is (D)."
-    },
-    {
-        "instruction": "A club consists of members whose ages are in A.P. The common difference being 3 months. If the youngest member of the club is just 7 years old and the sum of the ages of all the members is 250, then number of members in the club are : Answer Choices: (A) 18 (B) 20 (C) 25 (D) 26 (E) 27",
-        "input": "",
-        "answer": [
-            "C"
-        ],
-        "output": "The sum of an arithmetic progression is given by S = n/2 (2a + (n-1)d), where n is the number of terms, a is the first term and d is the common difference. In this case, n = 250/7.5 = 33.3. So the number of members in the club is 33.The answer is (D)."
-    },
-    {
-        "instruction": "What is the greatest number of identical bouquets that can be made out of 28 white and 98 red tulips if no flowers are to be left out? (Two bouquets are identical whenever the number of red tulips in the two bouquets is equal and the number of white tulips in the two bouquets is equal.) Answer Choices: (A) 4 (B) 7 (C) 10 (D) 14 (E) 21",
-        "input": "",
-        "answer": [
-            "D"
-        ],
-        "output": "The greatest number of identical bouquets that can be made out of 28 white and 98 red tulips is 14. This is because 28/2 = 14 and 98/7 = 14.The answer is (D)."
-    },
-    {
-        "instruction": "R, S, T, and U are points on a line, and U is the midpoint of line segment ST. If the lengths of line segments RS, RT, and ST are 5, 17, and 22, respectively. What is the length of line segment RU? Answer Choices: (A) 6 (B) 7 (C) 8 (D) 9 (E) 10",
-        "input": "",
-        "answer": [
-            "A"
-        ],
-        "output": "Since U is the midpoint of line segment ST, the length of line segment ST must be twice the length of line segment RU. So the length of line segment RU is 11/2 = 5.5.The answer is (A)."
-    },
-    {
-        "instruction": "The cross-section of a canal is shaped like a trapezium. If the canal is 10 m wide at the top and 6 m wide at the bottom and the area of cross-section is 640 square meters, the depth of cannel is? Answer Choices: (A) 26 (B) 28 (C) 21 (D) 80 (E) 23",
-        "input": "",
-        "answer": [
-            "D"
-        ],
-        "output": "The area of a trapezium is given by A = (a + b)h/2, where a and b are the lengths of the parallel sides and h is the height. So, (10 + 6)h/2 = 640. This simplifies to 16h = 1280. So h = 80.The answer is (D)."
-    },
-    {
-        "instruction": "Let A and B be independent events with P (A) = 0.2 and P(B) = 0.8. Find P(A/B)? Answer Choices: (A) 0.2 (B) 0.4 (C) 0.6 (D) 1.2 (E) 1.5",
-        "input": "",
-        "answer": [
-            "A"
-        ],
-        "output": "Since A and B are independent events, P(A/B) = P(A) = 0.2.The answer is (A)."
-    },
-    {
-        "instruction": "The sum of the 5 consecutive two digit odd numbers when divided by 10 becomes a perfect square, which of the following can be one of these 5 numbers? Answer Choices: (A) 47 (B) 91 (C) 41 (D) 67 (E) 44",
-        "input": "",
-        "answer": [
-            "C"
-        ],
-        "output": "The sum of 5 consecutive two digit odd numbers is 5(n + n + 2 + n + 4 + n + 6) = 5(3n + 12). This must be divisible by 10, so 3n + 12 must be divisible by 10. The only possible value of n is 41, so the 5 numbers are 41, 43, 45, 47, and 49.The answer is (C)."
-    },
-    {
-        "instruction": "A computer routine was developed to generate two numbers (x,y) the first being a random number between 0 and 100 inclusive, and the second being less than or equal to the square root of the first. Each of the following pair satisfies the routine except Answer Choices: (A)  (99,10)  (B)  (85,9)  (C)  (50,7)  (D)  (1,1)  (E)  (1,0) ",
-        "input": "",
-        "answer": [
-            "A"
-        ],
-        "output": "The second number must be less than or equal to the square root of the first. In the case of (99,10), the square root of 99 is 9.9, which is greater than 10. So (99,10) does not satisfy the routine.The answer is (A)."
-    },
-    {
-        "instruction": "30 is subtracted from a number, it is reduced to its one third. What is the value of 50% of that number? Answer Choices: (A) 22.5 (B) 84 (C) 21 (D) 24 (E) 25",
-        "input": "",
-        "answer": [
-            "A"
-        ],
-        "output": "If 30 is subtracted from a number, it is reduced to its one third. So the original number is 3 times the reduced number. 50% of the original number would be (3/2) times the reduced number. So the answer is (3/2) x (30 - reduced number) = (3/2) x 30 = 45.The answer is (B)."
-    },
-    {
-        "instruction": "At the of his one-year investment, Charles received $54,080, including interest and principal from a certain investment. If the investment paid an annual interest of 8 percent compounded semi-annually, which of the following is the amount of money that Charles originally invested? Answer Choices: (A) $45,000 (B) $50,000 (C) $54,000 (D) $59,000 (E) $62,000",
-        "input": "",
-        "answer": [
-            "B"
-        ],
-        "output": "The amount of money that Charles originally invested is the principal amount. The total amount of money received at the end of the year is the principal plus the interest. So the principal amount is equal to the total amount minus the interest. The interest is 8% of the principal, so the interest is 8% of the total amount. So the principal amount is equal to the total amount minus 8% of the total amount. So the principal amount is equal to 54,080 - (8% of 54,080) = 54,080 - 4,326.4 = 49,753.6.The answer is (B)."
-    },
-    {
-        "instruction": "Shweta rides at the rate of 10 km per hour but stops for 10 minutes to take rest at the end of every 15 km. How many hours will she take to cover 100 km Answer Choices: (A) 9 hours. (B) 10 hours. (C) 11 hours. (D) 12 hours. (E) 13 hours.",
-        "input": "",
-        "answer": [
-            "C"
-        ],
-        "output": "She will take 10 minutes to rest after every 15 km. So she will take 10 minutes for 6 times in 100 km. So the total time taken will be 6*10/60 + 100/10 = 11 hours.The answer is (C)."
-    },
-    {
-        "instruction": "In a class, 8% of total students are interested in Football. 4/5 of total students are interested in Cricket. 10% of total students are interested in Basketball and remaining 20 students are not interested in any games. How many students are there in the class? Answer Choices: (A) 850 (B) 800 (C) 900 (D) 950 (E) 1000",
-        "input": "",
-        "answer": [
-            "E"
-        ],
-        "output": "Let the total number of students in the class be x. Then, 8% of x = 0.08x students are interested in Football. 4/5 of x = 0.8x students are interested in Cricket. 10% of x = 0.1x students are interested in Basketball. 20 students are not interested in any games. So, 0.08x + 0.8x + 0.1x + 20 = x. Solving this equation, we get x = 1000. The answer is (E)."
-    },
-    {
-        "instruction": "When I was 2 years old, my brother was half my age. Now I am 60 years old, how old is my brother? Answer Choices: (A) A) 59 (B) B) 69 (C) C) 79 (D) D) 89 (E) E) 99",
-        "input": "",
-        "answer": [
-            "A"
-        ],
-        "output": "When the person was 2 years old, their brother was half their age, so their brother was 1 year old. Now that the person is 60 years old, their brother is 60 - 1 = 59 years old.The answer is (A)."
-    },
-    {
-        "instruction": "The average wages of a worker during a fortnight comprising of 15 consecutive working days was $90 per day. During the first 7 days, his average wage was $87 per day and the average wage during the last 7 days was $92 per day. What was his wage on the 8th day? Answer Choices: (A) $83 (B) $92 (C) $90 (D) $97 (E) $104",
-        "input": "",
-        "answer": [
-            "D"
-        ],
-        "output": "The average wage for the entire fortnight was $90 per day. This means that the total wages for the fortnight must have been $90 * 15 = $1350. The total wages for the first 7 days was $87 * 7 = $609. The total wages for the last 7 days was $92 * 7 = $644. So the wage on the 8th day must have been $1350 - $609 - $644 = $97.The answer is (D)."
-    },
-    {
-        "instruction": "If 6 yrs are subtracted from the present age of Ajay and the remainder is divided by 18, then the present age of Rahul is obtained. If Rahul is 2 yrs younger to Denis whose age is 5 yrs, then what is Ajay's present age? Answer Choices: (A) 40 (B) 60 (C) 70 (D) 80 (E) 90",
-        "input": "",
-        "answer": [
-            "B"
-        ],
-        "output": "Let Ajay's present age be x. Then x - 6 = 18y, where y is the age of Rahul. Since Rahul is 2 yrs younger than Denis, y = 5 - 2 = 3. So x - 6 = 54. Therefore, x = 60.The answer is (B)."
+        "output": "8 men working for 6 days is equivalent to 48 man-days of work. To complete the same work in 1/2 day, 48 man-days of work needs to be done in 1/2 day. This means that 96 men are required to complete the same work in 1/2 day.The answer is (D)."
     },
     {
         "instruction": "In a class 1/16 of the students study math, 1/10 of the students study bio, 1/8 of the students study english. The total number of students is a 4 digit number. Find the diffrence between maximum number of students and minimum number of students. Answer Choices: (A) 8880 (B) 8870 (C) 8890 (D) 7890 (E) 6780",
@@ -224,132 +24,108 @@
         "output": "The maximum number of students would be when all the fractions are rounded up to the nearest whole number. So 1/16 = 6, 1/10 = 10, 1/8 = 12. So the maximum number of students would be 6 + 10 + 12 = 28. The minimum number of students would be when all the fractions are rounded down to the nearest whole number. So 1/16 = 5, 1/10 = 9, 1/8 = 11. So the minimum number of students would be 5 + 9 + 11 = 25. The difference between the maximum and minimum number of students would be 28 - 25 = 3.The answer is (D)."
     },
     {
-        "instruction": "Professors borrowed Rs. 5000 from the university at simple interest. After 3 years, the university got Rs. 300 on interest. What was the rate of interest per annum? Answer Choices: (A) 2% (B) 8% (C) 5% (D) 10% (E) None of these",
+        "instruction": "For bringing each copper coin from the bottom of a river, a coin-diver gets 20 cents, and for each brass coin she gets 25 cents. If after one dive, she got $3.40. What is the minimum number of copper coins that she brought? Answer Choices: (A) 4 (B) 3 (C) 2 (D) 1 (E) 0",
         "input": "",
         "answer": [
-            "A"
+            "C"
         ],
-        "output": "The interest earned by the university is Rs. 300. The principal amount borrowed was Rs. 5000. So the rate of interest per annum would be 300/5000 * 100 = 6%.The answer is (C)."
+        "output": "The diver got $3.40 for the coins she brought. If she got 20 cents for each copper coin, then she must have brought at least 17 copper coins. The answer is (A)."
     },
     {
-        "instruction": "Boomtown urban planners expect the city\u2019s population to increase by 10% per year over the next two years. If that projection were to come true, the population two years from now would be exactly double the population of one year ago. Which of the following is closest to the percent population increase in Boomtown over the last year? Answer Choices: (A) 20% (B) 40% (C) 50% (D) 65% (E) 75%",
-        "input": "",
-        "answer": [
-            "D"
-        ],
-        "output": "If the population is expected to increase by 10% per year over the next two years, then the population one year from now would be 110% of the current population, and the population two years from now would be 121% of the current population. The percent population increase in Boomtown over the last year would be 11%.The answer is (A)."
-    },
-    {
-        "instruction": "A company produces 420 units of a particular computer component every month, at a production cost to the company of $110 per component, and sells all of the components by the end of each month. What is the minimum selling price per component that will guarantee that the yearly profit (revenue from sales minus production costs) will be at least $626,400 ? Answer Choices: (A) 226 (B) 230 (C) 240 (D) 260 (E) 280",
-        "input": "",
-        "answer": [
-            "B"
-        ],
-        "output": "The company produces 420 units of the component every month, so it produces 420 * 12 = 5040 units in a year. The production cost per component is $110, so the total production cost for the year is 5040 * 110 = $554,400. The company needs to make a profit of at least $626,400 - $554,400 = $72,000. So the minimum selling price per component that will guarantee the yearly profit of $626,400 is $72,000 / 5040 = $14.25. The answer is (A)."
-    },
-    {
-        "instruction": "Alex and Jacob works at a toy shop that make toys. Alex takes 7 hours to make a toy, and Jacob takes 9 hours to make a toy. During a month, both of them makes 35 toys in total. If both of them have worked for almost similar number of hours how many toys have been prepared by Jacob? Answer Choices: (A) 15 (B) 16 (C) 17 (D) 18 (E) 19",
-        "input": "",
-        "answer": [
-            "A"
-        ],
-        "output": "Alex takes 7 hours to make a toy and Jacob takes 9 hours to make a toy. So, Alex can make 5 toys in the same time as Jacob can make 4 toys. So, Alex would have made 35/5 = 7 toys and Jacob would have made 35/4 = 8.75 toys. Since it is not possible to make a fraction of a toy, Jacob would have made 8 toys.The answer is (D)."
-    },
-    {
-        "instruction": "Of the 200 students in a school, at least 45% attended the prom night and at least 35% took part in the debating session. What is the maximum number of students who could have neither attended the prom night nor the debating session? Answer Choices: (A) 27 (B) 81 (C) 90 (D) 99 (E) 110",
+        "instruction": "900 + 5 \u00d7 12 = ? Answer Choices: (A) 820 (B) 202 (C) 420 (D) 209 (E) 960",
         "input": "",
         "answer": [
             "E"
         ],
-        "output": "The maximum number of students who could have neither attended the prom night nor the debating session is the difference between the total number of students (200) and the sum of the students who attended the prom night (45%) and the students who took part in the debating session (35%). So 200 - (45% + 35%) = 200 - 80% = 20%. So the maximum number of students who could have neither attended the prom night nor the debating session is 20% of 200 = 40.The answer is (A)."
+        "output": "900 + 5 \u00d7 12 = 900 + 60 = 960.The answer is (E)."
     },
     {
-        "instruction": "The telephone bill of a certain establishment is party fixed and partly varies as the number of calls consumed. When in a certain month 540 calls made the bill is Rs.1800. In another month 620 calls are consumed then the bill becomes Rs.2040. In another month 500 units are consumed due to more\nholidays. The bill for that month would be : Answer Choices: (A) Rs.1560 (B) Rs.1680 (C) Rs.1840 (D) Rs.1950 (E) Rs.1690",
+        "instruction": "If the probability that Stock A will increase in value during the next month is 0.56, and the probability that Stock B will increase in value during the next month is 0.74. What is the greatest value for the probability that neither of these two events will occur? Answer Choices: (A) 0.22 (B) 0.26 (C) 0.37 (D) 0.46 (E) 0.63",
         "input": "",
         "answer": [
             "B"
         ],
-        "output": "The bill is partly fixed and partly varies as the number of calls consumed. So the bill for 500 calls would be Rs.1800 - (540 - 500) * (2040 - 1800) / (620 - 540) = Rs.1690.The answer is (E)."
+        "output": "The probability that neither of these two events will occur is 1 - (0.56 + 0.74) = 0.22.The answer is (A)."
     },
     {
-        "instruction": "Anna has 4 books. If she decide to arrange the 4 books in every possible combination and moved just one book every minute, how long would it taken by her ? Answer Choices: (A) 22 minutes (B) 30 minutes (C) 15 minutes (D) 24 minutes (E) 35 minutes",
+        "instruction": "The bus fare of one adult is Rs. 140 from Ranchi to Patna and bus fare of a child is half the fare of one adult between the same places. What is the total bus fare of 4 adults and 3 children between same places? Answer Choices: (A) Rs. 666 (B) Rs. 670 (C) Rs. 700 (D) Rs. 570 (E) Rs. 770",
+        "input": "",
+        "answer": [
+            "E"
+        ],
+        "output": "The total bus fare of 4 adults and 3 children would be 4*140 + 3*(140/2) = 560 + 210 = 770.The answer is (E)."
+    },
+    {
+        "instruction": "The manufacturer of tyres is offering a 20% discount on the price of its tubeless tyres. Some retailers are offering additional discounts. If a retailer offers an additional 20% discount, then what is the total discount available at that retailer? Answer Choices: (A) 10% (B) 25% (C) 28% (D) 30% (E) 36%",
+        "input": "",
+        "answer": [
+            "E"
+        ],
+        "output": "The manufacturer's discount is 20%. The retailer's additional discount is 20%. So the total discount is 20% + 20% = 40%.The answer is (E)."
+    },
+    {
+        "instruction": "Suppose you want to arrange your English, Hindi, Mathematics, History, Geography and Science books on a shelf. In how many ways can you do it ? Answer Choices: (A) 520 (B) 720 (C) 920 (D) None (E) Cannot be determined",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "The number of ways to arrange 6 books on a shelf is 6! = 6 x 5 x 4 x 3 x 2 x 1 = 720.The answer is (B)."
+    },
+    {
+        "instruction": "At the of his one-year investment, Charles received $54,080, including interest and principal from a certain investment. If the investment paid an annual interest of 8 percent compounded semi-annually, which of the following is the amount of money that Charles originally invested? Answer Choices: (A) $45,000 (B) $50,000 (C) $54,000 (D) $59,000 (E) $62,000",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "The amount of money that Charles originally invested is the principal amount. The total amount of money received at the end of the year is the principal plus the interest. So the principal amount is equal to the total amount minus the interest. The interest is 8% of the principal, so the interest is 8% of the total amount. So the principal amount is equal to the total amount minus 8% of the total amount. So the principal amount is equal to 54,080 - (8% of 54,080) = 54,080 - 4,326.4 = 49,753.6.The answer is (B)."
+    },
+    {
+        "instruction": "A point on the edge of a fan blade that is rotating in a plane 10 centimeters from the center of the fan. What is the distance traveled, in centimeters, by this point after 30 seconds when the fan runs at the rate of 300 revolutions per minutes? Answer Choices: (A) 750pi (B) 1500pi (C) 1875pi (D) 3000pi (E) 7500pi",
         "input": "",
         "answer": [
             "D"
         ],
-        "output": "There are 4! = 4 x 3 x 2 x 1 = 24 possible combinations. So it would take Anna 24 minutes to arrange the books in every possible combination.The answer is (D)."
+        "output": "The distance traveled by the point in 30 seconds is equal to the circumference of the circle (2\u03c0r) multiplied by the number of revolutions (300/60). So the distance traveled is 2\u03c0r * 300/60 = 1500\u03c0.The answer is (B)."
     },
     {
-        "instruction": "A starts a business with Rs.40,000. After 2 months, B joined him with Rs.60,000. C joined them after some more time with Rs.120,000. At the end of the year, out of a total profit of Rs.375,000, C gets Rs.150,000 as his share. How many months after B joined the business, did C join? Answer Choices: (A) 2 months (B) 4 months (C) 23 months (D) 24 months (E) 84 months",
+        "instruction": "You can purchase one soda and two energy bars for 150 cents, or two sodas and three energy bars for 300\ncents. If the costs of the items do not change, compute the cost in cents of six sodas and seven bars. Answer Choices: (A) 500 (B) 600 (C) 750 (D) 800 (E) 900",
         "input": "",
         "answer": [
-            "B"
+            "E"
         ],
-        "output": "The total capital at the end of the year was Rs.220,000 (40,000 + 60,000 + 120,000). So C's share of the profit would be 150,000/220,000 = 68.18%. Since B joined 2 months after A, C must have joined 24 months after A, or 22 months after B.The answer is (D)."
+        "output": "The cost of one soda and two energy bars is 150 cents. So the cost of two sodas and three energy bars is 300 cents. Therefore, the cost of six sodas and seven energy bars would be 6 x 150 + 7 x 150 = 900 cents.The answer is (E)."
     },
     {
-        "instruction": "On dividing 2272 and 875 by a 3-digit number N, we get the same remainder. The sum of the digits of N is: Answer Choices: (A) 10 (B) 11 (C) 12 (D) 13 (E) 14",
-        "input": "",
-        "answer": [
-            "A"
-        ],
-        "output": "Since the remainder is the same for both divisions, the 3-digit number N must be a factor of both 2272 and 875. The only 3-digit number that is a factor of both is 45. The sum of the digits of 45 is 4 + 5 = 9.The answer is (A)."
-    },
-    {
-        "instruction": "Two ants are moving from their farms towards each other. Ant A is moving at a speed of 9 cm per hour and ant B is moving at a speed of 6 cm per hour. If the farms are 75 cm away from each other, what will be the distance (in cm) that ant A travels until meeting ant B? Answer Choices: (A) 45 (B) 48 (C) 51 (D) 54 (E) 57",
+        "instruction": "If one third of 3/4 of a number is 21. Then, find the number? Answer Choices: (A) 84 (B) 66 (C) 28 (D) 19 (E) 11",
         "input": "",
         "answer": [
             "A"
         ],
-        "output": "The distance that ant A travels until meeting ant B is the difference between the total distance and the distance traveled by ant B. So the distance traveled by ant A is 75 cm - (6 cm/hr * 1 hr) = 69 cm.The answer is (D)."
+        "output": "Let the number be x. Then, 3/4 of x = (3/4)x = (4/4)x = 4x. So one third of 4x = (1/3)(4x) = 4x/3 = 21. Solving for x, we get x = 21(3/4) = 63.The answer is (B)."
     },
     {
-        "instruction": "20 marbles were pulled out of a bag of only white marbles, painted black, and then put back in. Then, another 20 marbles were pulled out, of which 1 was black, after which they were all returned to the bag. If the percentage of black marbles pulled out the second time represents their percentage in the bag, how many marbles in total Q does the bag currently hold? Answer Choices: (A) 40 (B) 200 (C) 380 (D) 400 (E) 3200",
+        "instruction": "In a chocolate store, all chocolates are either vanilla or cocoa flavored only. 10% of the chocolates are cocoa flavored, 90% of the rest are squashed. What percentage of the chocolates are both vanilla flavored and not squashed? Answer Choices: (A) 1% (B) 2% (C) 5% (D) 9% (E) 10%",
         "input": "",
         "answer": [
             "D"
         ],
-        "output": "Since 1 out of 20 marbles was black, the total number of marbles in the bag must be 400.The answer is (D)."
+        "output": "10% of the chocolates are cocoa flavored, so 90% of the chocolates are vanilla flavored. 90% of the vanilla flavored chocolates are squashed, so 10% of the vanilla flavored chocolates are not squashed. Therefore, 10% of the chocolates are both vanilla flavored and not squashed.The answer is (E)."
     },
     {
-        "instruction": "Decipher the following multiplication table:\nM A D\nB E\n-------------\nM A D\nR A E\n-------------\nA M I D Answer Choices: (A) 9 2 0 0 (B) 9 2 0 9 (C) 9 2 0 1 (D) 9 2 0 7 (E) 9 2 2 2",
+        "instruction": "An astronaut weighing 211 pounds on Earth would weigh 182 pounds on Venus. The weight of the astronaut on Venus would be approximately what percent of the astronaut\u2019s weight on Earth? Answer Choices: (A) 50% (B) 60% (C) 70% (D) 86% (E) 90%",
         "input": "",
         "answer": [
             "D"
         ],
-        "output": "The answer is 9 x 2 = 18, 0 x 0 = 0, 0 x 9 = 0, and 1 x 2 = 2. So the answer is (E)."
+        "output": "The astronaut's weight on Venus is 182 pounds, which is 86% of the astronaut's weight on Earth (211 pounds).The answer is (D)."
     },
     {
-        "instruction": "5 horses are in a race. Mr.Jain selects two of horses at random and bets on them. The probability that he selected the winning horse is Answer Choices: (A) 1/5 (B) 2/5 (C) 3/5 (D) 4/5 (E) 6/5",
+        "instruction": "Two numbers are said to be relatively prime if they share no common positive factors other than 1. Set S contains the set of integers from 1 to 1,000, inclusive. What is the probability that a number chosen from S is relatively prime to 1,000? Answer Choices: (A) 5/7 (B) 3/5 (C) 4/7 (D) 2/5 (E) 2/7",
         "input": "",
         "answer": [
-            "B"
+            "D"
         ],
-        "output": "Since Mr.Jain selected two horses at random, the probability that he selected the winning horse is 2/5.The answer is (B)."
-    },
-    {
-        "instruction": "Julie\u2019s yard is rectangular. One side of the yard is 100 feet wide. The total area of the yard is 3,000 square feet. What is the length of the other side of the yard? Answer Choices: (A) 30 feet (B) 20 feet (C) 10 feet (D) 50 feet (E) 60 feet",
-        "input": "",
-        "answer": [
-            "A"
-        ],
-        "output": "The area of a rectangle is equal to the length multiplied by the width. So 3,000 = 100 x L, where L is the length of the other side of the yard. Solving for L, we get L = 30 feet.The answer is (A)."
-    },
-    {
-        "instruction": "In a railway station, there are two trains going. One in the harbor line and one in the main line, each having a frequency of 10 minutes. The main line service starts at 5 o'clock and the harbor line starts at 5.02 A.M. A man goes to the station every day to catch the first train that comes. What is the probability of the man catching the first train? Answer Choices: (A) 0.9 (B) 0.8 (C) 0.6 (D) 0.65 (E) 1.5",
-        "input": "",
-        "answer": [
-            "B"
-        ],
-        "output": "The probability of the man catching the first train is 0.5 since both trains have the same frequency of 10 minutes.The answer is (A)."
-    },
-    {
-        "instruction": "Suppose you can travel from a place M to a place N by 3 buses, from place N to place O by 4 buses, from place O to place P by 1 buses and from place P to place Q by 3 buses. In how many ways can you travel from M to Q ? Answer Choices: (A) 24 (B) 36 (C) 72 (D) 84 (E) None",
-        "input": "",
-        "answer": [
-            "B"
-        ],
-        "output": "The total number of ways to travel from M to Q is 3 x 4 x 1 x 3 = 36.The answer is (B)."
+        "output": "The probability that a number chosen from S is relatively prime to 1,000 is equal to the number of relatively prime numbers in S divided by the total number of numbers in S. There are 496 relatively prime numbers in S, so the probability is 496/1000 = 2/5.The answer is (D)."
     },
     {
         "instruction": "There are ten lime soda bottles on a table in a restaurant. They are to be served among two different groups of customers consisting of 5 members each. How many ways are there to create these 2 groups? Answer Choices: (A) 90 (B) 105 (C) 126 (D) 252 (E) 525",
@@ -360,51 +136,275 @@
         "output": "The number of ways to create two groups of 5 members each from 10 bottles is 10C5 * 5C5 = 252.The answer is (D)."
     },
     {
-        "instruction": "The monthly salary S of a shop assistant is the sum of a fixed salary of $500 plus 5% of all monthly sales. What should the monthly sales be so that her monthly salary reaches $1500? Answer Choices: (A) $50000 (B) $40000 (C) $30000 (D) $20000 (E) None of these",
-        "input": "",
-        "answer": [
-            "D"
-        ],
-        "output": "The shop assistant's salary is the sum of a fixed salary of $500 plus 5% of all monthly sales. So, the monthly sales should be $10000 in order for her salary to reach $1500.The answer is (D)."
-    },
-    {
-        "instruction": "Christopher and Jonathan were having bets. They decide that a coin will be flipped twenty times and each time it turns heads, Christopher will give $2 to Jonathan and each time it turns out to be Tails, Jonathan will give 3$ to Christopher. After flipping for twenty times none of the both won or lost any amount.\nHow many times did the coin landed on Heads ? Answer Choices: (A) 10 (B) 23 (C) 16 (D) 18 (E) 12",
+        "instruction": "At what price should the Karan mark a sewing machine that costs him Rs. 1200/- so that even after offering a 20% discount, he makes 20% profit? Answer Choices: (A) 1,879 (B) 1,875 (C) 1,876 (D) 1,872 (E) 1,800",
         "input": "",
         "answer": [
             "E"
         ],
-        "output": "Since neither Christopher nor Jonathan won or lost any money, the number of heads and tails must have been equal. So the coin must have landed on heads 10 times.The answer is (A)."
+        "output": "The cost price of the sewing machine is Rs. 1200/-. To make a 20% profit, the selling price should be 1.2 x 1200 = Rs. 1440/-. To offer a 20% discount, the selling price should be 1.2 x 1440 = Rs. 1728/-.The answer is (D)."
     },
     {
-        "instruction": "Three friends Alan, Roger and Peter attempt to answer a question on an exam. Alan randomly guesses the answer, giving him a 1/5 probability of guessing correctly. Roger cheats by looking at the paper of the student in front of him, giving him a 2/3 probability of answering correctly. And Peter dutifully performs the calculations, then marks the answer, giving him a 5/6 probability of a correct answer. What is the probability that the question is answered correctly, but not via cheating? Answer Choices: (A) 1/18 (B) 1/9 (C) 23/90 (D) 5/18 (E) 13/45",
+        "instruction": "A shopkeeper employed a servant at a monthly salary of 1500. In addition to it, he agreed to pay him a commission of 15% on the monthly sale. How much sale in Rupees should the servant do if he wants his monthly income as 6000? Answer Choices: (A) 30000 (B) 415000 (C) 31500 (D) 50000 (E) None of these",
         "input": "",
         "answer": [
             "A"
         ],
-        "output": "The probability that the question is answered correctly, but not via cheating is the probability of Alan guessing correctly (1/5) plus the probability of Peter guessing correctly (5/6) minus the probability of both Alan and Peter guessing correctly (1/5 * 5/6). This simplifies to (1/5 + 5/6 - 1/30) = 13/45.The answer is (E)."
+        "output": "The servant's monthly income is 6000. So, 1500 + 0.15x = 6000. This simplifies to 0.15x = 4500. So x = 30000.The answer is (A)."
     },
     {
-        "instruction": "[5 + ? \u00d7 19 - 15 - 7]/[13 \u00d7 13 - 156] = 6 Answer Choices: (A) 4 (B) 4.5 (C) 5 (D) 5.5 (E) 6.5",
+        "instruction": "Consider there is an staircase elevator and you are coming down. If you walk 20 steps and stop, then you reach bottom in 10 minutes. If you walk 10 steps and stop, you reach to the ground in 20 minutes. What is the speed of the elevator? Answer Choices: (A) 1 step/minute (B) 2 step/minute (C) 3 step/minute (D) 4 step/minute (E) None of the above",
+        "input": "",
+        "answer": [
+            "A"
+        ],
+        "output": "The speed of the elevator can be calculated by dividing the total number of steps by the total time taken. In this case, the total number of steps is 30 and the total time taken is 10 minutes. So the speed of the elevator is 3 steps/minute.The answer is (C)."
+    },
+    {
+        "instruction": "Exactly 2/5th of the children in a certain class are girls. If there are 100 boys in the class, how many girls are in the class? Answer Choices: (A) 50 (B) 100 (C) 150 (D) 200 (E) 70",
         "input": "",
         "answer": [
             "C"
         ],
-        "output": "[5 + x \u00d7 19 - 15 - 7]/[13 \u00d7 13 - 156] = 6"
+        "output": "Since 2/5th of the children in the class are girls, then the total number of children in the class is 5/2 times the number of boys, which is 100. So the total number of children in the class is 500/2 = 250. Since there are 100 boys, then there must be 250 - 100 = 150 girls.The answer is (C)."
     },
     {
-        "instruction": "A starts travel towards south 3km, then travel 5 km towards east, and again travels 3 km to north, and finally travels 2km towards west. In the end how far from is A from home? Answer Choices: (A) 3km (B) 2km (C) 4km (D) 5km (E) 6km",
+        "instruction": "The greatest common factor of two positive integers is 11. The least common multiple of these two integers is 7700. If one of the integers is 350, what is the other? Answer Choices: (A) 242 (B) 308 (C) 352 (D) 412 (E) 456",
         "input": "",
         "answer": [
             "A"
         ],
-        "output": "The total distance traveled by A is 3 + 5 + 3 + 2 = 13 km. Since A started from home, the distance from home is 13 km.The answer is (D)."
+        "output": "The greatest common factor of two positive integers is 11, so the two integers must have 11 as a factor. The least common multiple of these two integers is 7700, so the two integers must have 7700 as a multiple. Since one of the integers is 350, the other must be 7700/350 = 22 x 11 = 242.The answer is (A)."
     },
     {
-        "instruction": "x men working x hours per day can do x units of a work in x days. How much work can be completed by y men working y hours per day in y days? Answer Choices: (A) x2/y2 units (B) y3/x2 units (C) x3/y2 units (D) y2/x2 units (E) None of these",
+        "instruction": "Alice wants to put up fencing around three sides of her rectangular yard and leave one side of 10 meters unfenced. If the yard has an area of 240 square meters, how many meters of fencing does she need? Answer Choices: (A) 58 (B) 62 (C) 66 (D) 70 (E) 74",
+        "input": "",
+        "answer": [
+            "A"
+        ],
+        "output": "The length of the yard is equal to the perimeter divided by 4, so the length of the yard is 60 meters. The perimeter of the yard is 60 + 10 + 60 + 10 = 140 meters. Alice needs 140 meters of fencing.The answer is (B)."
+    },
+    {
+        "instruction": "A man borrows Rs.360 If he pays it back in 12 monthly installments of Rs.31.50, what is his interest rate? Answer Choices: (A) 1.5% (B) 4.5% (C) 10% (D) 5% (E) 12%",
+        "input": "",
+        "answer": [
+            "D"
+        ],
+        "output": "The interest rate can be calculated using the formula: Interest rate = (Total Interest Paid / Principal Amount) * 100. In this case, the total interest paid is 12 * 31.50 - 360 = Rs.54. So the interest rate is (54 / 360) * 100 = 15%.The answer is (A)."
+    },
+    {
+        "instruction": "Five dozen toys are packed in a box and 98 boxes are kept in a tempo. How many tempos can lift 29400 toys in one round ? Answer Choices: (A) 4 (B) 5 (C) 7 (D) 6 (E) 8",
         "input": "",
         "answer": [
             "B"
         ],
-        "output": "The amount of work that can be completed by y men working y hours per day in y days is y2/x2 units.The answer is (D)."
+        "output": "There are 5 dozen toys in each box, so 5 x 12 = 60 toys in each box. There are 98 boxes in each tempo, so 98 x 60 = 5880 toys in each tempo. So 29400 / 5880 = 5 tempos.The answer is (B)."
+    },
+    {
+        "instruction": "A cow is tethered in the middle of a field with a 14 feet long rope. If the cow grazes 10 sq.ft. per day, then approximately what time will be taken by the cow to graze the whole field? Answer Choices: (A) 51 days (B) 61 days (C) 71 days (D) 81 days (E) 91 days",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "The area of the field can be calculated by using the formula A = \u03c0r2, where r is the radius of the field. The radius of the field is 7 feet (half of the rope length). So the area of the field is A = \u03c0(7)2 = 153.94 sq.ft. The cow will take 153.94/10 = 15.394 days to graze the whole field.The answer is (D)."
+    },
+    {
+        "instruction": "Points A, B, C, D lie in this order on the circumference of a circle. Minor arc AC is 160\u00b0, and minor arc BD is 150\u00b0. If B bisects minor arc AC, then what is the measure of minor arc AD? Answer Choices: (A) 80\u00b0 (B) 130\u00b0 (C) 140\u00b0 (D) 160\u00b0 (E) 220\u00b0",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "Since B bisects minor arc AC, the measure of minor arc AC is 160\u00b0/2 = 80\u00b0. Since minor arc BD is 150\u00b0, the measure of minor arc AD would be 160\u00b0 - 150\u00b0 = 10\u00b0.The answer is (A)."
+    },
+    {
+        "instruction": "The difference between simple interest and C.I. at the same rate for Rs.5000 for 2 years in Rs.72. The rate of interest is? Answer Choices: (A) 10% (B) 12% (C) 6% (D) 8% (E) 4%",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "The difference between simple interest and C.I. is 72. So, S.I. = 72 + C.I. = 5000 * (r/100) * 2. Solving for r, we get r = 12%.The answer is (B)."
+    },
+    {
+        "instruction": "Assistants are needed to prepare for preparation. Each helper can make either 2 large cakes or 35 small cakes/hr. The kitchen is available for 3 hours and 20 large cakes & 700 small cakes are needed. How many helpers are required? Answer Choices: (A) 8 (B) 10 (C) 12 (D) 15 (E) 19",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "Each helper can make 2 large cakes or 35 small cakes/hr. So in 3 hours, 8 helpers can make 16 large cakes and 280 small cakes. 10 helpers can make 20 large cakes and 350 small cakes. 12 helpers can make 24 large cakes and 420 small cakes. 15 helpers can make 30 large cakes and 525 small cakes. 19 helpers can make 38 large cakes and 665 small cakes. Since 20 large cakes and 700 small cakes are needed, 19 helpers are required.The answer is (E)."
+    },
+    {
+        "instruction": "By himself, Jack can clean a yacht in 12 hours. On a particular day, he happens to finish two-thirds of the work. The remaining portion of the work is done by Jill, whose rate of cleaning is just 5% of what Jack can do. How long does it take Jill to finish the remaining work? Answer Choices: (A) 4 (B) 8 (C) 22 (D) 50 (E) 20",
+        "input": "",
+        "answer": [
+            "E"
+        ],
+        "output": "Jack can clean a yacht in 12 hours, so his rate of cleaning is 1/12. Jill's rate of cleaning is 5% of Jack's rate, so her rate is 1/12 * 5% = 1/240. The remaining portion of the work is two-thirds of the total work, so it would take Jill two-thirds of 1/240 = 1/160 hours to finish the remaining work. This is equivalent to 20 hours.The answer is (E)."
+    },
+    {
+        "instruction": "In how many ways can a teacher in a kindergarten school arrange a group of 3 children (Susan, Tim and Zen) on 3 identical chairs in a straight line so that Susan is on the left of Tim? Answer Choices: (A) 7 (B) 3 (C) 2 (D) 1 (E) 6",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "There are 3 possible arrangements: Susan-Tim-Zen, Tim-Susan-Zen, and Zen-Susan-Tim. So there are 3 ways to arrange the 3 children on the 3 chairs.The answer is (B)."
+    },
+    {
+        "instruction": "A man spends Rs. 3500 per month and saves 12 1/2% of his income. His monthly income is ? Answer Choices: (A) Rs. 4400 (B) Rs. 4270 (C) Rs. 4000 (D) Rs. 3937.50 (E) None of these",
+        "input": "",
+        "answer": [
+            "C"
+        ],
+        "output": "The man's monthly income is the amount he spends plus the amount he saves. So 3500 + (3500 * 12.5%) = 3500 + 437.50 = 3937.50.The answer is (D)."
+    },
+    {
+        "instruction": "On a normal day Bill usually averages about 15 mph when riding his bicycle. On a windy day, his speed is reduced by 4 mph. How far can Bill travel on a windy day in 21 minutes? Round to the nearest hundredth. Answer Choices: (A) 2 miles (B) 2.25 miles (C) 3.25 miles (D) 3.85 miles (E) 2.85 miles",
+        "input": "",
+        "answer": [
+            "D"
+        ],
+        "output": "Bill's average speed on a windy day is 11 mph. So he can travel 11 mph * 21 minutes = 231/60 miles = 3.85 miles.The answer is (D)."
+    },
+    {
+        "instruction": "The difference between the squares of two numbers is 256000 and the sum of the numbers is 1000. The numbers are Answer Choices: (A) 600, 400 (B) 628, 372 (C) 640, 360 (D) None of these (E) Cannot be determined",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "Let the two numbers be x and y. Then x2 - y2 = 256000 and x + y = 1000. Solving these equations, we get x = 640 and y = 360.The answer is (C)."
+    },
+    {
+        "instruction": "A bag of cat food weighs 7 pounds and 4 ounces. How much does the bag weigh in ounces? Answer Choices: (A)  108 (B)  112 (C)  116 (D)  120 (E)  124",
+        "input": "",
+        "answer": [
+            "C"
+        ],
+        "output": "There are 16 ounces in a pound. So 7 pounds and 4 ounces would be equal to 7 x 16 + 4 = 116 ounces.The answer is (C)."
+    },
+    {
+        "instruction": "In a survey of students, each student selected from a list of 10 songs the 2 songs that the student liked best. If each song was selected 5 times, how many students were surveyed? Answer Choices: (A) 96 (B) 48 (C) 32 (D) 25 (E) 18",
+        "input": "",
+        "answer": [
+            "D"
+        ],
+        "output": "Since each song was selected 5 times, the total number of selections must be 10 x 5 = 50. Since each student selected 2 songs, the total number of students must be 50 / 2 = 25.The answer is (D)."
+    },
+    {
+        "instruction": "Jack buys 18 sharpeners (white and brown) for rs. 100. If he pays 1 rupee more for each white than brown sharpeners. How many of white and how many brown sharpeners did he buy? Answer Choices: (A) 10,8 (B) 9,8 (C) 7,8 (D) 5,6 (E) 11,12",
+        "input": "",
+        "answer": [
+            "A"
+        ],
+        "output": "Let x be the number of white sharpeners and y be the number of brown sharpeners. Then x + y = 18 and x + 1 = y. So x = y - 1. Also, x + y = 18 and x = 1 rupee more than y. So x + y = 18 and 2y = 19. So y = 9.5 and x = 8.5. Since we cannot buy half a sharpeners, Jack must have bought 9 white sharpeners and 8 brown sharpeners.The answer is (B)."
+    },
+    {
+        "instruction": "In a row of children Neha is 12th from left end and Radha is 6th from right end. When Radha is shifted to left by 2 places and Neha is shifted to right by 2 places there 6 children between Radha and Neha. How many children are there in the row? Answer Choices: (A) 23 (B) 27 (C) 26 (D) 28 (E) 29",
+        "input": "",
+        "answer": [
+            "D"
+        ],
+        "output": "Since there are 6 children between Radha and Neha after they are shifted, there must have been 8 children between them before they were shifted. So the total number of children in the row is 12 + 6 + 8 = 26.The answer is (C)."
+    },
+    {
+        "instruction": "Calculate the percentage gain of a merchant who purchased 90 kg of oranges for Rs. 450 and sold the whole lot at the rate of Rs. 7.50 per kg. Answer Choices: (A) 50 % (B) 60 % (C) 55 % (D) 70 % (E) 58%",
+        "input": "",
+        "answer": [
+            "A"
+        ],
+        "output": "The merchant purchased 90 kg of oranges for Rs. 450. He sold the whole lot at the rate of Rs. 7.50 per kg. So the total amount he received was 90 x 7.50 = Rs. 675. The percentage gain is (675 - 450) / 450 x 100 = 58%.The answer is (E)."
+    },
+    {
+        "instruction": "The original retail price of an appliance was 60 percent more than its wholesale cost. If the appliance was actually sold for 20 percent less than the original retail price, then it was sold for what percent more than its wholesale cost? Answer Choices: (A) 20% (B) 28% (C) 36% (D) 40% (E) 42%",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "The original retail price was 60% more than the wholesale cost. If the appliance was sold for 20% less than the original retail price, then it was sold for 80% of the original retail price. Since the original retail price was 60% more than the wholesale cost, then 80% of the original retail price would be 120% of the wholesale cost. The answer is (E)."
+    },
+    {
+        "instruction": "A flagstaff 17.5 metre high casts a shadow of length 40.25 metre. The height of building, which casts a shadow of length 28.75 metre under similar conditions will be : Answer Choices: (A) 12 metre (B) 12.5 metre (C) 13.5 metre (D) 14 metre (E) 15 metre",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "The ratio of the heights of the flagstaff and the building is equal to the ratio of the lengths of their shadows. So 17.5/40.25 = x/28.75. Solving for x, we get x = 12.5.The answer is (B)."
+    },
+    {
+        "instruction": "At its maximum speed, a space shuttle can travel 700m high in 40 seconds. It will also take 5 seconds to pass a point. What then is the length of the space shuttle? Answer Choices: (A) 50 m (B) 75 m (C) 100 m (D) 125 m (E) 150 m",
+        "input": "",
+        "answer": [
+            "C"
+        ],
+        "output": "The speed of the space shuttle is 700m/40s = 17.5 m/s. So in 5 seconds, it will travel 17.5 m * 5s = 87.5 m. The length of the space shuttle is 87.5 m.The answer is (B)."
+    },
+    {
+        "instruction": "The telephone bill of a certain establishment is party fixed and partly varies as the number of calls consumed. When in a certain month 540 calls made the bill is Rs.1800. In another month 620 calls are consumed then the bill becomes Rs.2040. In another month 500 units are consumed due to more\nholidays. The bill for that month would be : Answer Choices: (A) Rs.1560 (B) Rs.1680 (C) Rs.1840 (D) Rs.1950 (E) Rs.1690",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "The bill is partly fixed and partly varies as the number of calls consumed. So the bill for 500 calls would be Rs.1800 - (540 - 500) * (2040 - 1800) / (620 - 540) = Rs.1690.The answer is (E)."
+    },
+    {
+        "instruction": "A sales person gets a 10% commission on each sale he makes. How many sales of $250 each must he make in order to reach a salary of at least $1000? Answer Choices: (A) 15 (B) 24 (C) 25 (D) 40 (E) 52",
+        "input": "",
+        "answer": [
+            "D"
+        ],
+        "output": "The salesperson gets 10% commission on each sale, so for each sale of $250, he will get $25. To reach a salary of at least $1000, he must make 40 sales of $250 each.The answer is (D)."
+    },
+    {
+        "instruction": "The average (arithmetic mean) of the weight of 10 vehicles is 12.2 tons. The average weight of the group of vehicles increased by 2.6 tons after a new heavy duty truck was added to the group? What is the weight in tons of the heavy duty truck? Answer Choices: (A) 40.8 (B) 41.6 (C) 42.2 (D) 43.5 (E) 44.8",
+        "input": "",
+        "answer": [
+            "A"
+        ],
+        "output": "The average weight of the group of vehicles increased by 2.6 tons after a new heavy duty truck was added to the group. So the weight of the heavy duty truck must be 2.6 tons more than the average weight of the group of vehicles, which is 12.2 tons. So the weight of the heavy duty truck is 12.2 + 2.6 = 14.8 tons.The answer is (E)."
+    },
+    {
+        "instruction": "The sum of k consecutive integers is 51. If the least integer is -50, then k = Answer Choices: (A) 40 (B) 62 (C) 82 (D) 92 (E) 102",
+        "input": "",
+        "answer": [
+            "E"
+        ],
+        "output": "The sum of k consecutive integers is 51. This can be written as (-50) + (-49) + (-48) + ... + (k-1) + k = 51. This simplifies to -50 + k = 51, which means k = 101.The answer is (E)."
+    },
+    {
+        "instruction": "John would make the 3-letter codes with diffenrent 5 vowels and 20 consonants with the condition that the middle letter must be vowel and the first letter and the third letter must be different from each other and are both consonant. How many different codes can be made? Answer Choices: (A) 1,980 (B) 2,020 (C) 2,100 (D) 2,200 (E) 1,900",
+        "input": "",
+        "answer": [
+            "E"
+        ],
+        "output": "There are 5 vowels and 20 consonants. The middle letter must be a vowel and the first and third letters must be different from each other and both must be consonants. So there are 20 choices for the first letter and 19 choices for the third letter. There are 5 choices for the middle letter. So the total number of codes that can be made is 20 x 19 x 5 = 1,900.The answer is (E)."
+    },
+    {
+        "instruction": "A club consists of members whose ages are in A.P. The common difference being 3 months. If the youngest member of the club is just 7 years old and the sum of the ages of all the members is 250, then number of members in the club are : Answer Choices: (A) 18 (B) 20 (C) 25 (D) 26 (E) 27",
+        "input": "",
+        "answer": [
+            "C"
+        ],
+        "output": "The sum of an arithmetic progression is given by S = n/2 (2a + (n-1)d), where n is the number of terms, a is the first term and d is the common difference. In this case, n = 250/7.5 = 33.3. So the number of members in the club is 33.The answer is (D)."
+    },
+    {
+        "instruction": "When folded into two equal halves a rectangular sheet had a perimeter of 48cm for each part folded along one set of sides and the same is 66cm when folded along the other set of sides. Find the area of the sheet. Answer Choices: (A) 1584 (B) 1120 (C) 792 (D) 1320 (E) 1200",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "Let the length and width of the sheet be l and w respectively. Then, 2l + 2w = 48 and 2l + 2w = 66. Solving these equations, we get l = 24 and w = 12. So the area of the sheet is 24 * 12 = 288.The answer is (C)."
+    },
+    {
+        "instruction": "A bag contains 11 candy bars: three cost 50 cents each, four cost $1 each and four cost $2\neach. How many ways can 3 candy bars be selected from the 11 candy bars so that the total cost is more than $4? Answer Choices: (A) 8 (B) 28 (C) 46 (D) 66 (E) 70",
+        "input": "",
+        "answer": [
+            "C"
+        ],
+        "output": "There are 3 ways to select 3 candy bars that cost 50 cents each, 6 ways to select 3 candy bars that cost $1 each, and 4 ways to select 3 candy bars that cost $2 each. So there are 3 + 6 + 4 = 13 ways to select 3 candy bars that cost more than $4.The answer is (A)."
+    },
+    {
+        "instruction": "The height of a room to its semi-perimeter is 2:5. It costs Rs.260 to paper the walls of the room with paper 50cm wide at Rs.2 per meter allowing an area of 15 sq.m for doors and windows. The height of the room is: Answer Choices: (A) 2.6m (B) 3.9m (C) 4m (D) 4.2m (E) 4.4m",
+        "input": "",
+        "answer": [
+            "C"
+        ],
+        "output": "The semi-perimeter of the room is equal to the sum of the length and width of the room divided by 2. So the length and width of the room can be calculated as 2/5 * 2 = 4m and 5/5 * 2 = 4m. The height of the room is 4m.The answer is (C)."
     }
 ]

@@ -1,891 +1,35 @@
 [
     {
-        "instruction": " Nancy and her mom were picking carrots from their garden. Nancy picked 38 and her mother picked 47. If only 71 of the carrots were good, how many bad carrots did they have? ",
-        "input": "",
-        "answer": [
-            14.0
-        ],
-        "output": "Nancy picked 38 carrots and her mother picked 47. That means in total they picked 38 + 47 = 85 carrots. Only 71 of them were good, so the bad ones must have been 85 - 71 = 14. The answer is 14."
-    },
-    {
-        "instruction": " Bianca was organizing her book case making sure each of the shelves had exactly 8 books on it. If she had 5 shelves of mystery books and 4 shelves of picture books, how many books did she have total? ",
-        "input": "",
-        "answer": [
-            72.0
-        ],
-        "output": "She had 5 shelves of mystery books and 4 shelves of picture books. Each shelf had 8 books. That means she had 5 * 8 = 40 mystery books and 4 * 8 = 32 picture books. In total she had 40 + 32 = 72 books. The answer is 72."
-    },
-    {
-        "instruction": " Henry was helping the cafeteria workers pick up lunch trays, but he could only carry 9 trays at a time. If he had to pick up 29 trays from one table and 52 trays from another, how many trips will he make? ",
+        "instruction": " Katie uploaded 30 pictures from her phone and 51 from her camera to facebook. If she sorted the pics into 9 different albums with the same amount of pics in each album, how many pictures were in each of the albums? ",
         "input": "",
         "answer": [
             9.0
         ],
-        "output": "Henry can carry 9 trays at a time. He has to pick up 29 trays from one table and 52 trays from another. This means he has to make 29/9 = 3 trips for the first table and 52/9 = 6 trips for the second table. In total he has to make 3 + 6 = 9 trips. The answer is 9."
+        "output": "Katie uploaded 30 pictures from her phone and 51 from her camera. In total she uploaded 30 + 51 = 81 pictures. She sorted them into 9 albums with the same amount of pictures in each album. That means each album has 81 / 9 = 9 pictures. The answer is 9."
     },
     {
-        "instruction": " At lunch a waiter had 7 customers and 4 of them didn't leave a tip. If he got $9 each from the ones who did tip, how much money did he earn? ",
+        "instruction": " A store had 50 oranges in a bin. If they threw away 40 of the old ones and put 24 new ones in the bin how many would be in the bin? ",
         "input": "",
         "answer": [
-            27.0
+            34.0
         ],
-        "output": "There were 7 customers. 4 of them didn't leave a tip, so the waiter got $9 from the other 3 customers. That means he earned 3 * $9 = $27. The answer is $27."
+        "output": "The store had 50 oranges in the bin. They threw away 40 of the old ones, so now there are 50 - 40 = 10 oranges left. Then they put 24 new ones in the bin, so now there are 10 + 24 = 34 oranges in the bin. The answer is 34."
     },
     {
-        "instruction": " A teacher had 7 worksheets to grade. If she graded 2, but then another 46 were turned in, how many worksheets would she have to grade? ",
-        "input": "",
-        "answer": [
-            51.0
-        ],
-        "output": "The teacher had 7 worksheets to grade. She graded 2, so now she has 7 - 2 = 5 worksheets left. Then 46 more were turned in, so in total she has 5 + 46 = 51 worksheets to grade. The answer is 51."
-    },
-    {
-        "instruction": " Nancy had 101 homework problems. She finished 47 of them but still had 6 pages of problems to do. If each page has the same number of problems on it, how many problems are on each page? ",
-        "input": "",
-        "answer": [
-            9.0
-        ],
-        "output": "Nancy had 101 problems in total. She finished 47 of them, so she still has 101 - 47 = 54 problems left. She has 6 pages of problems, so each page must have 54 / 6 = 9 problems. The answer is 9."
-    },
-    {
-        "instruction": " Zoe baked 5 brownies, but needed 11 total for her party. If she used 7 cups of flour on each one, how much cups of flour does she still need? ",
-        "input": "",
-        "answer": [
-            42.0
-        ],
-        "output": "She has 5 brownies already. She needs 11 total. That means she needs 11 - 5 = 6 more brownies. Each brownie needs 7 cups of flour, so she needs 6 * 7 = 42 cups of flour. The answer is 42."
-    },
-    {
-        "instruction": " A toy store had 6 giant stuffed bears in stock when they got another shipment with 18 bears in it. The put the bears onto shelves with 6 on each shelf. How many shelves did they use? ",
-        "input": "",
-        "answer": [
-            4.0
-        ],
-        "output": "There were 6 bears in stock before the shipment. After the shipment, there were 6 + 18 = 24 bears. Each shelf can hold 6 bears, so the number of shelves they used must be 24 / 6 = 4. The answer is 4."
-    },
-    {
-        "instruction": " There were 39 girls and 4 boys trying out for the schools basketball team. If only 26 of them got called back, how many students didn't make the cut? ",
-        "input": "",
-        "answer": [
-            17.0
-        ],
-        "output": "There were 39 girls and 4 boys, so in total there were 39 + 4 = 43 students trying out. 26 of them got called back, so the remaining students didn't make the cut. The number of students who didn't make the cut must be 43 - 26 = 17. The answer is 17."
-    },
-    {
-        "instruction": " John earned 8 dollars for each lawn he mowed. If he had 15 lawns to mow, but forgot to mow 7 of them, how much money did he actually earn? ",
-        "input": "",
-        "answer": [
-            64.0
-        ],
-        "output": "He earned 8 dollars for each lawn he mowed. He had 15 lawns to mow, but he forgot to mow 7 of them. That means he mowed 8 of them. So he earned 8 * 8 = 64 dollars. The answer is 64."
-    },
-    {
-        "instruction": " Will invited 9 friends to a birthday party, but 4 couldn't come. If he wanted to buy enough cupcakes so each person could have exactly 8, how many should he buy? ",
-        "input": "",
-        "answer": [
-            40.0
-        ],
-        "output": "Will invited 9 friends, but 4 couldn't come. That means he has 9 - 4 = 5 friends coming to the party. He wants to buy enough cupcakes so each person can have 8. That means he needs to buy 5 * 8 = 40 cupcakes. The answer is 40."
-    },
-    {
-        "instruction": " For Halloween Emily received 54 pieces of candy. She ate 33 pieces then placed the rest into piles with 7 in each pile. How many piles could she make? ",
-        "input": "",
-        "answer": [
-            3.0
-        ],
-        "output": "Emily had 54 pieces of candy. She ate 33 pieces, so she has 54 - 33 = 21 pieces left. She wants to make piles with 7 pieces in each pile. That means she can make 21 / 7 = 3 piles. The answer is 3."
-    },
-    {
-        "instruction": " A painter needed to paint 12 rooms in a building. Each room takes 7 hours to paint. If he already painted 5 rooms, how much longer will he take to paint the rest? ",
-        "input": "",
-        "answer": [
-            49.0
-        ],
-        "output": "He needs to paint 12 rooms. He has already painted 5 rooms. That means he still needs to paint 12 - 5 = 7 rooms. Each room takes 7 hours to paint. So, he will take 7 * 7 = 49 hours to paint the rest. The answer is 49 hours."
-    },
-    {
-        "instruction": " Will had 59 pieces of clothing to wash. He put 32 of them in one load, but decided to split the rest into 9 equal loads. How many pieces of clothing could go in each of the small loads? ",
-        "input": "",
-        "answer": [
-            3.0
-        ],
-        "output": "Will had 59 pieces of clothing. He put 32 in one load, so he has 59 - 32 = 27 pieces left. He wants to split them into 9 equal loads. That means each load must have 27 / 9 = 3 pieces of clothing. The answer is 3."
-    },
-    {
-        "instruction": " While shopping for music online, Isabel bought 4 country albums and 5 pop albums. Each album came with a lyric sheet and had 8 songs. How many songs did Isabel buy total? ",
-        "input": "",
-        "answer": [
-            72.0
-        ],
-        "output": "Isabel bought 4 country albums and 5 pop albums. Each album has 8 songs. That means she bought 4 * 8 + 5 * 8 = 48 songs. The answer is 48."
-    },
-    {
-        "instruction": " A painter needed to paint 9 rooms in a building. Each room takes 8 hours to paint. If he already painted 5 rooms, how much longer will he take to paint the rest? ",
-        "input": "",
-        "answer": [
-            32.0
-        ],
-        "output": "He needs to paint 9 rooms. He has already painted 5 rooms. That means he still needs to paint 9 - 5 = 4 rooms. Each room takes 8 hours to paint. So, he will take 4 * 8 = 32 hours to paint the rest. The answer is 32 hours."
-    },
-    {
-        "instruction": " Sarah baked 38 cupcakes for her school's bake sale. If her brother, Todd, ate 14 of them how many packages could she make if she put 8 cupcake in each package? ",
-        "input": "",
-        "answer": [
-            3.0
-        ],
-        "output": "Sarah baked 38 cupcakes. Todd ate 14 of them, so now she has 38 - 14 = 24 cupcakes. She can make 8 cupcakes in each package, so she can make 24 / 8 = 3 packages. The answer is 3."
-    },
-    {
-        "instruction": " A pet store had 13 siamese cats and 5 house cats. During a sale they sold 10 cats. How many cats do they have left? ",
-        "input": "",
-        "answer": [
-            8.0
-        ],
-        "output": "The pet store had 13 siamese cats and 5 house cats. That means they had 13 + 5 = 18 cats in total. During the sale they sold 10 cats. So now they have 18 - 10 = 8 cats left. The answer is 8."
-    },
-    {
-        "instruction": " At the arcade Dave won 11 tickets. If he spent 5 tickets on a beanie and later won 10 more tickets, how many would he have? ",
-        "input": "",
-        "answer": [
-            16.0
-        ],
-        "output": "Dave won 11 tickets. He spent 5 tickets on a beanie, so now he has 11 - 5 = 6 tickets. Then he won 10 more tickets, so now he has 6 + 10 = 16 tickets. The answer is 16."
-    },
-    {
-        "instruction": " While shopping, Maria bought 35 green towels and 21 white towels. If she gave her mother 34 of them, how many towels did Maria end up with? ",
-        "input": "",
-        "answer": [
-            22.0
-        ],
-        "output": "Maria bought 35 green towels and 21 white towels. That means she had 35 + 21 = 56 towels in total. She gave her mother 34 of them, so she has 56 - 34 = 22 towels left. The answer is 22."
-    },
-    {
-        "instruction": " Vanessa and her mom were picking carrots from their garden. Vanessa picked 17 and her mother picked 14. If only 24 of the carrots were good, how many bad carrots did they have? ",
+        "instruction": " There are 64 students trying out for the school's trivia teams. If 36 of them didn't get picked for the team and the rest were put into 4 groups, how many students would be in each group? ",
         "input": "",
         "answer": [
             7.0
         ],
-        "output": "Vanessa picked 17 carrots and her mother picked 14. That means in total they picked 17 + 14 = 31 carrots. Only 24 of them were good, so the bad ones must have been 31 - 24 = 7 carrots. The answer is 7."
+        "output": "There are 64 students trying out for the team. 36 of them didn't get picked, so the rest were put into 4 groups. That means 64 - 36 = 28 students were put into the 4 groups. To find out how many students are in each group, we divide 28 by 4. 28 / 4 = 7. The answer is 7."
     },
     {
-        "instruction": " There were 5 friends playing a video game online when 2 more players joined the game. If each player had 8 lives, how many lives did they have total? ",
-        "input": "",
-        "answer": [
-            56.0
-        ],
-        "output": "There were 5 friends playing the game. 2 more players joined, so now there are 5 + 2 = 7 players. Each player has 8 lives, so in total they have 7 * 8 = 56 lives. The answer is 56."
-    },
-    {
-        "instruction": " Olivia uploaded 5 pictures from her phone and 35 from her camera to facebook. If she sorted the pics into 8 different albums with the same amount of pics in each album, how many pictures were in each of the albums? ",
-        "input": "",
-        "answer": [
-            5.0
-        ],
-        "output": "Olivia uploaded 5 pictures from her phone and 35 from her camera. In total she uploaded 5 + 35 = 40 pictures. She sorted them into 8 albums, so each album must have 40 / 8 = 5 pictures. The answer is 5."
-    },
-    {
-        "instruction": " A florist had 37 roses. If she sold 16 of them and then later picked 19 more, how many roses would she have? ",
-        "input": "",
-        "answer": [
-            40.0
-        ],
-        "output": "The florist had 37 roses. She sold 16 of them, so now she has 37 - 16 = 21 roses. Then she picked 19 more, so in total she has 21 + 19 = 40 roses. The answer is 40."
-    },
-    {
-        "instruction": " A chef needs to cook 13 potatoes. He has already cooked 5. If each potato takes 6 minutes to cook, how long will it take him to cook the rest? ",
-        "input": "",
-        "answer": [
-            48.0
-        ],
-        "output": "He has already cooked 5 potatoes. He needs to cook 13 potatoes in total. That means he needs to cook 13 - 5 = 8 potatoes. Each potato takes 6 minutes to cook. So it will take 8 * 6 = 48 minutes to cook the rest. The answer is 48 minutes."
-    },
-    {
-        "instruction": " Isabel uploaded 2 pictures from her phone and 4 from her camera to facebook. If she sorted the pics into 3 different albums with the same amount of pics in each album, how many pictures were in each of the albums? ",
+        "instruction": " Amy had 4 music files and 21 video files on her flash drive. If she deleted 23 of the files, how many files were still on her flash drive? ",
         "input": "",
         "answer": [
             2.0
         ],
-        "output": "Isabel uploaded 2 pictures from her phone and 4 from her camera. In total she uploaded 2 + 4 = 6 pictures. She sorted them into 3 albums with the same amount of pictures in each album. That means each album has 6 / 3 = 2 pictures. The answer is 2."
-    },
-    {
-        "instruction": " For the school bake sale Carol made 30 cupcakes. If she sold 9 of them and then made 28 more, how many cupcakes would she have? ",
-        "input": "",
-        "answer": [
-            49.0
-        ],
-        "output": "Carol made 30 cupcakes. She sold 9 of them, so now she has 30 - 9 = 21 cupcakes. Then she made 28 more, so now she has 21 + 28 = 49 cupcakes. The answer is 49."
-    },
-    {
-        "instruction": " While playing at the arcade, Ned won 26 tickets playing 'whack a mole' and 19 tickets playing 'skee ball'. If he was trying to buy candy that cost 9 tickets a piece, how many could he buy? ",
-        "input": "",
-        "answer": [
-            5.0
-        ],
-        "output": "Ned won 26 tickets playing 'whack a mole' and 19 tickets playing 'skee ball'. That means he has 26 + 19 = 45 tickets in total. He wants to buy candy that costs 9 tickets a piece. He can buy 45 / 9 = 5 pieces of candy. The answer is 5."
-    },
-    {
-        "instruction": " Robin's class is going on a field trip to the zoo. If each van can hold 8 people and there are 22 students and 2 adults going, how many vans will they need? ",
-        "input": "",
-        "answer": [
-            3.0
-        ],
-        "output": "There are 22 students and 2 adults, so in total there are 22 + 2 = 24 people. Each van can hold 8 people, so they will need 24 / 8 = 3 vans. The answer is 3."
-    },
-    {
-        "instruction": " In fourth grade there were 4 students at the start of the year. During the year 3 students left and 42 new students came to school. How many students were in fourth grade at the end? ",
-        "input": "",
-        "answer": [
-            43.0
-        ],
-        "output": "At the start of the year there were 4 students. During the year 3 students left, so now there are 4 - 3 = 1 student. 42 new students came, so in total there are 1 + 42 = 43 students. The answer is 43."
-    },
-    {
-        "instruction": " Zoe bought two coloring books. One had 44 pictures and the other had 44. After one week she had already colored 20 of the pictures. How many pictures does she still have to color? ",
-        "input": "",
-        "answer": [
-            68.0
-        ],
-        "output": "Zoe bought two coloring books. Each had 44 pictures. She has already colored 20 of them. That means she still has 44 + 44 - 20 = 68 pictures to color. The answer is 68."
-    },
-    {
-        "instruction": " A trivia team had 14 members total, but during a game 7 members didn't show up. If each member that did show up scored 5 points, how many points were scored total? ",
-        "input": "",
-        "answer": [
-            35.0
-        ],
-        "output": "There were 14 members in total, but 7 didn't show up. That means 7 members did show up. Each of them scored 5 points. So the total points scored must be 7 * 5 = 35 points. The answer is 35."
-    },
-    {
-        "instruction": " In fourth grade there were 40 students at the start of the year. During the year 14 students left and 26 new students came to school. How many students were in fourth grade at the end? ",
-        "input": "",
-        "answer": [
-            52.0
-        ],
-        "output": "At the start of the year there were 40 students. 14 students left, so now there are 40 - 14 = 26 students. 26 new students came, so now there are 26 + 26 = 52 students. The answer is 52."
-    },
-    {
-        "instruction": " Megan had 40 homework problems. She finished 26 of them but still had 2 pages of problems to do. If each page has the same number of problems on it, how many problems are on each page? ",
-        "input": "",
-        "answer": [
-            7.0
-        ],
-        "output": "Megan had 40 problems in total. She finished 26 of them, so she still has 40 - 26 = 14 problems left. She has 2 pages of problems, so each page must have 14 / 2 = 7 problems. The answer is 7."
-    },
-    {
-        "instruction": " Ned was trying to expand his game collection. He bought 50 games from a friend and bought 27 more at a garage sale. If 74 of the games didn't work, how many good games did he end up with? ",
-        "input": "",
-        "answer": [
-            3.0
-        ],
-        "output": "Ned bought 50 games from a friend and 27 more at a garage sale. That means he had 50 + 27 = 77 games in total. 74 of them didn't work, so he has 77 - 74 = 3 good games. The answer is 3."
-    },
-    {
-        "instruction": " Adam bought 2 boxes of chocolate candy and 5 boxes of caramel candy. If each box has 4 pieces inside it, how much candy did he have total? ",
-        "input": "",
-        "answer": [
-            28.0
-        ],
-        "output": "Adam bought 2 boxes of chocolate candy and 5 boxes of caramel candy. Each box has 4 pieces inside it. That means he has 2 * 4 = 8 pieces of chocolate candy and 5 * 4 = 20 pieces of caramel candy. In total he has 8 + 20 = 28 pieces of candy. The answer is 28."
-    },
-    {
-        "instruction": " A pet store has 8 bird cages. If each cage has 2 parrots and 7 parakeets in it, how many birds does the pet store have total? ",
-        "input": "",
-        "answer": [
-            72.0
-        ],
-        "output": "There are 8 cages. Each cage has 2 parrots and 7 parakeets. That means there are 8 * (2 + 7) = 8 * 9 = 72 birds in total. The answer is 72."
-    },
-    {
-        "instruction": " Paige was unboxing some of her old winter clothes. She found 6 boxes of clothing and inside each box there were 5 scarves and 5 mittens. How many pieces of winter clothing did Paige have total? ",
-        "input": "",
-        "answer": [
-            60.0
-        ],
-        "output": "Paige had 6 boxes of clothing. Inside each box there were 5 scarves and 5 mittens. That means in total she had 6 * (5 + 5) = 60 pieces of winter clothing. The answer is 60."
-    },
-    {
-        "instruction": " Wendy uploaded 22 pictures from her phone and 2 from her camera to facebook. If she sorted the pics into 4 different albums with the same amount of pics in each album, how many pictures were in each of the albums? ",
-        "input": "",
-        "answer": [
-            6.0
-        ],
-        "output": "Wendy uploaded 22 + 2 = 24 pictures. She sorted them into 4 albums with the same amount of pictures in each album. That means each album has 24 / 4 = 6 pictures. The answer is 6."
-    },
-    {
-        "instruction": " For Halloween Sarah received 66 pieces of candy from neighbors and 15 pieces from her older sister. If she only ate 9 pieces a day, how long would the candy last her? ",
-        "input": "",
-        "answer": [
-            9.0
-        ],
-        "output": "Sarah received 66 + 15 = 81 pieces of candy. She ate 9 pieces a day. That means she can eat 81 / 9 = 9 days. The answer is 9 days."
-    },
-    {
-        "instruction": " Robin uploaded 31 pictures from her phone and 5 from her camera to facebook. If she sorted the pics into 9 different albums with the same amount of pics in each album, how many pictures were in each of the albums? ",
-        "input": "",
-        "answer": [
-            4.0
-        ],
-        "output": "Robin uploaded 31 + 5 = 36 pictures. She sorted them into 9 albums, so each album must have 36 / 9 = 4 pictures. The answer is 4."
-    },
-    {
-        "instruction": " A chef needs to cook 12 potatoes. He has already cooked 6. If each potato takes 6 minutes to cook, how long will it take him to cook the rest? ",
-        "input": "",
-        "answer": [
-            36.0
-        ],
-        "output": "He has already cooked 6 potatoes. He needs to cook 12 potatoes in total. That means he needs to cook 12 - 6 = 6 more potatoes. Each potato takes 6 minutes to cook. So it will take him 6 * 6 = 36 minutes to cook the rest. The answer is 36 minutes."
-    },
-    {
-        "instruction": " A pet shelter had 8 puppies when another 19 were brought in. If 3 puppies a day are adopted, how long would it take for all of them to be adopted? ",
-        "input": "",
-        "answer": [
-            9.0
-        ],
-        "output": "There are 8 + 19 = 27 puppies in total. If 3 puppies are adopted each day, then it will take 27 / 3 = 9 days for all of them to be adopted. The answer is 9 days."
-    },
-    {
-        "instruction": " Paige and her friends were recycling paper for their class. For every 4 pounds they recycled they earned one point. If Paige recycled 14 pounds and her friends recycled 2 pounds, how many points did they earn? ",
-        "input": "",
-        "answer": [
-            4.0
-        ],
-        "output": "Paige recycled 14 pounds and her friends recycled 2 pounds. That means in total they recycled 14 + 2 = 16 pounds. For every 4 pounds they recycled they earned one point. So, they earned 16 / 4 = 4 points. The answer is 4."
-    },
-    {
-        "instruction": " A trivia team had 11 members total, but during a game 6 members didn't show up. If each member that did show up scored 9 points, how many points were scored total? ",
-        "input": "",
-        "answer": [
-            45.0
-        ],
-        "output": "There were 11 members in total, but 6 didn't show up. That means there were 11 - 6 = 5 members that did show up. Each of them scored 9 points, so in total they scored 5 * 9 = 45 points. The answer is 45."
-    },
-    {
-        "instruction": " Paul made 68 dollars mowing lawns and 13 dollars weed eating. If he only spent 9 dollar a week, how long would the money last him? ",
-        "input": "",
-        "answer": [
-            9.0
-        ],
-        "output": "Paul made 68 + 13 = 81 dollars. He spends 9 dollars a week. This means he can last 81 / 9 = 9 weeks. The answer is 9 weeks."
-    },
-    {
-        "instruction": " Katie baked 18 cupcakes for her school's bake sale. If her brother, Todd, ate 8 of them how many packages could she make if she put 2 cupcake in each package? ",
-        "input": "",
-        "answer": [
-            5.0
-        ],
-        "output": "Katie baked 18 cupcakes. Todd ate 8 of them, so now she has 18 - 8 = 10 cupcakes. She can make 10 / 2 = 5 packages with 2 cupcakes in each. The answer is 5."
-    },
-    {
-        "instruction": " Oliver had 33 dollars in January. By March he had spent 4 dollars. If he got another 32 dollars from his mom, how much money would he have? ",
-        "input": "",
-        "answer": [
-            61.0
-        ],
-        "output": "Oliver had 33 dollars in January. By March he had spent 4 dollars, so he had 33 - 4 = 29 dollars. Then he got 32 dollars from his mom, so now he has 29 + 32 = 61 dollars. The answer is 61."
-    },
-    {
-        "instruction": " Katie had 7 pages of math homework and 3 pages of reading homework. If each page had 9 problems on it, how many problems did she have to complete total? ",
-        "input": "",
-        "answer": [
-            90.0
-        ],
-        "output": "Katie had 7 pages of math homework and 3 pages of reading homework. Each page had 9 problems. That means she had 7 * 9 = 63 math problems and 3 * 9 = 27 reading problems. In total she had 63 + 27 = 90 problems. The answer is 90."
-    },
-    {
-        "instruction": " Chloe was playing a trivia game. In the first round she scored 40 points and in the second round she scored 50 points. In the last round she lost 4 points. How many points did she have at the end of the game? ",
-        "input": "",
-        "answer": [
-            86.0
-        ],
-        "output": "In the first round she scored 40 points. In the second round she scored 50 points. That means she had 40 + 50 = 90 points. In the last round she lost 4 points, so now she has 90 - 4 = 86 points. The answer is 86."
-    },
-    {
-        "instruction": " A waiter had 47 customers to wait on. If 41 customers left and he got another 20 customers, how many customers would he have? ",
-        "input": "",
-        "answer": [
-            26.0
-        ],
-        "output": "He had 47 customers to wait on. 41 customers left, so now he has 47 - 41 = 6 customers. Then he got 20 more customers, so in total he has 6 + 20 = 26 customers. The answer is 26."
-    },
-    {
-        "instruction": " A painter needed to paint 11 rooms in a building. Each room takes 7 hours to paint. If he already painted 2 rooms, how much longer will he take to paint the rest? ",
-        "input": "",
-        "answer": [
-            63.0
-        ],
-        "output": "He needs to paint 11 rooms. He has already painted 2 rooms. That means he still needs to paint 11 - 2 = 9 rooms. Each room takes 7 hours to paint. So, he will take 9 * 7 = 63 hours to paint the rest. The answer is 63 hours."
-    },
-    {
-        "instruction": " For the school bake sale Carol made 19 cupcakes. If she sold 6 of them and then made 27 more, how many cupcakes would she have? ",
-        "input": "",
-        "answer": [
-            40.0
-        ],
-        "output": "Carol made 19 cupcakes. She sold 6 of them, so now she has 19 - 6 = 13 cupcakes. Then she made 27 more, so in total she has 13 + 27 = 40 cupcakes. The answer is 40."
-    },
-    {
-        "instruction": " For a birthday party Tom bought 4 regular sodas and 52 diet sodas. If his fridge would only hold 7 on each shelf, how many shelves would he fill up? ",
-        "input": "",
-        "answer": [
-            8.0
-        ],
-        "output": "Tom bought 4 regular sodas and 52 diet sodas. That means he has 4 + 52 = 56 sodas in total. Each shelf can hold 7 sodas, so he needs 56 / 7 = 8 shelves to fit all the sodas. The answer is 8."
-    },
-    {
-        "instruction": " Wendy's old washing machine could only wash 8 pieces of clothing at a time. If she had to wash 39 shirts and 33 sweaters how many loads would she have to do? ",
-        "input": "",
-        "answer": [
-            9.0
-        ],
-        "output": "Wendy has to wash 39 shirts and 33 sweaters. Her washing machine can only wash 8 pieces of clothing at a time. That means she has to do 39/8 + 33/8 = 6.375 loads. Since she can't do a partial load, she will have to do 7 loads. The answer is 7."
-    },
-    {
-        "instruction": " Will was organizing his baseball cards in a binder with 3 on each page. If he had 8 new cards and 10 old cards to put in the binder, how many pages would he use? ",
-        "input": "",
-        "answer": [
-            6.0
-        ],
-        "output": "He has 8 new cards and 10 old cards. That means he has 8 + 10 = 18 cards in total. He can fit 3 cards on each page, so he needs 18 / 3 = 6 pages. The answer is 6."
-    },
-    {
-        "instruction": " Nancy uploaded 41 pictures to Facebook. She put 37 pics into one album and put the rest into 2 different albums. How many pictures were in each album? ",
-        "input": "",
-        "answer": [
-            2.0
-        ],
-        "output": "Nancy uploaded 41 pictures. She put 37 into one album, so the other two albums must have 41 - 37 = 4 pictures each. The answer is 4."
-    },
-    {
-        "instruction": " A pet shelter had 17 puppies when another 55 were brought in. If 8 puppies a day are adopted, how long would it take for all of them to be adopted? ",
-        "input": "",
-        "answer": [
-            9.0
-        ],
-        "output": "There were 17 puppies initially and 55 more were brought in. That means there are 17 + 55 = 72 puppies in total. 8 puppies are adopted each day. So, it will take 72 / 8 = 9 days for all of them to be adopted. The answer is 9 days."
-    },
-    {
-        "instruction": " Emily had 7 coloring books. If she gave away 2 of them, but then bought 14 more, how many would she have total? ",
-        "input": "",
-        "answer": [
-            19.0
-        ],
-        "output": "Emily had 7 coloring books. She gave away 2 of them, so now she has 7 - 2 = 5 coloring books. She bought 14 more, so in total she has 5 + 14 = 19 coloring books. The answer is 19."
-    },
-    {
-        "instruction": " In a video game, each enemy defeated gives you 3 points. If a level has 6 enemies total and you destroy all but 2 of them, how many points would you earn? ",
-        "input": "",
-        "answer": [
-            12.0
-        ],
-        "output": "You destroyed 6 enemies, but 2 of them remain. That means you destroyed 6 - 2 = 4 enemies. Each enemy gives you 3 points, so you earned 4 * 3 = 12 points. The answer is 12."
-    },
-    {
-        "instruction": " The schools debate team had 11 boys and 45 girls on it. If they were split into groups of 7 how many groups could they make? ",
-        "input": "",
-        "answer": [
-            8.0
-        ],
-        "output": "The debate team has 11 boys and 45 girls. That means there are 11 + 45 = 56 members in total. If they are split into groups of 7, then the number of groups must be 56 / 7 = 8. The answer is 8."
-    },
-    {
-        "instruction": " A toy store had 17 giant stuffed bears in stock when they got another shipment with 10 bears in it. The put the bears onto shelves with 9 on each shelf. How many shelves did they use? ",
-        "input": "",
-        "answer": [
-            3.0
-        ],
-        "output": "The store had 17 bears in stock and got 10 more. That means they have 17 + 10 = 27 bears. Each shelf can hold 9 bears, so they need 27 / 9 = 3 shelves. The answer is 3."
-    },
-    {
-        "instruction": " Megan's class is going on a field trip to the zoo. If each van can hold 5 people and there are 25 students and 5 adults going, how many vans will they need? ",
-        "input": "",
-        "answer": [
-            6.0
-        ],
-        "output": "There are 25 students and 5 adults, so in total there are 25 + 5 = 30 people. Each van can hold 5 people, so they will need 30 / 5 = 6 vans. The answer is 6."
-    },
-    {
-        "instruction": " The school cafeteria had 38 apples. If they used 20 to make lunch for the students and then bought 28 more, how many apples would they have? ",
-        "input": "",
-        "answer": [
-            46.0
-        ],
-        "output": "The school cafeteria had 38 apples. They used 20 to make lunch, so now they have 38 - 20 = 18 apples. They bought 28 more, so in total they have 18 + 28 = 46 apples. The answer is 46."
-    },
-    {
-        "instruction": " Oliver had 35 dollars. For his birthday he got 50 more dollars but spent 84 on a new game. How much money does he have now? ",
-        "input": "",
-        "answer": [
-            1.0
-        ],
-        "output": "Oliver had 35 dollars. He got 50 more dollars for his birthday, so now he has 35 + 50 = 85 dollars. He spent 84 dollars on a new game, so now he has 85 - 84 = 1 dollar. The answer is 1."
-    },
-    {
-        "instruction": " Megan baked 68 cupcakes for her school's bake sale. If her brother, Todd, ate 32 of them how many packages could she make if she put 6 cupcake in each package? ",
-        "input": "",
-        "answer": [
-            6.0
-        ],
-        "output": "Megan baked 68 cupcakes. Todd ate 32 of them, so now she has 68 - 32 = 36 cupcakes. She can make 6 cupcakes in each package, so she can make 36 / 6 = 6 packages. The answer is 6."
-    },
-    {
-        "instruction": " Dave had to wash 9 short sleeve shirts and 27 long sleeve shirts before school. If he had only washed 20 of them by the time school started, how many did he not wash? ",
-        "input": "",
-        "answer": [
-            16.0
-        ],
-        "output": "Dave had to wash 9 short sleeve shirts and 27 long sleeve shirts. He only washed 20 of them. That means he did not wash 9 + 27 - 20 = 16 shirts. The answer is 16."
-    },
-    {
-        "instruction": " Zoe was unboxing some of her old winter clothes. She found 8 boxes of clothing and inside each box there were 4 scarves and 6 mittens. How many pieces of winter clothing did Zoe have total? ",
-        "input": "",
-        "answer": [
-            80.0
-        ],
-        "output": "Zoe had 8 boxes of clothing. Inside each box there were 4 scarves and 6 mittens. That means in total she had 8 * (4 + 6) = 8 * 10 = 80 pieces of winter clothing. The answer is 80."
-    },
-    {
-        "instruction": " A pet store had 64 puppies. In one day they sold 28 of them and put the rest into cages with 4 in each cage. How many cages did they use? ",
-        "input": "",
-        "answer": [
-            9.0
-        ],
-        "output": "The pet store had 64 puppies. They sold 28 of them, so now they have 64 - 28 = 36 puppies. Each cage has 4 puppies, so they need 36 / 4 = 9 cages. The answer is 9."
-    },
-    {
-        "instruction": " Emily was playing a video game and had 42 lives. In a hard part of the game she lost 25 lives. If she got 24 more lives in the next level, how many lives would she have? ",
-        "input": "",
-        "answer": [
-            41.0
-        ],
-        "output": "Emily had 42 lives. She lost 25 lives, so now she has 42 - 25 = 17 lives. She got 24 more lives, so in total she has 17 + 24 = 41 lives. The answer is 41."
-    },
-    {
-        "instruction": " A pet store had 18 puppies. In one day they sold 3 of them and put the rest into cages with 5 in each cage. How many cages did they use? ",
-        "input": "",
-        "answer": [
-            3.0
-        ],
-        "output": "The pet store had 18 puppies. They sold 3 of them, so now they have 18 - 3 = 15 puppies. They put 5 puppies in each cage, so they must have used 15 / 5 = 3 cages. The answer is 3."
-    },
-    {
-        "instruction": " Roger had 68 dollars. If he spent 47 bucks on a new game, how many 7 dollar toys could he buy with the money he had left? ",
-        "input": "",
-        "answer": [
-            3.0
-        ],
-        "output": "Roger had 68 dollars. He spent 47 dollars on a new game, so now he has 68 - 47 = 21 dollars. He can buy 21 / 7 = 3 toys with the money he has left. The answer is 3."
-    },
-    {
-        "instruction": " A florist had 50 roses. If she sold 15 of them and then later picked 21 more, how many roses would she have? ",
-        "input": "",
-        "answer": [
-            56.0
-        ],
-        "output": "The florist had 50 roses. She sold 15 of them, so now she has 50 - 15 = 35 roses. Then she picked 21 more, so in total she has 35 + 21 = 56 roses. The answer is 56."
-    },
-    {
-        "instruction": " While shopping for music online, Janet bought 6 country albums and 2 pop albums. Each album came with a lyric sheet and had 9 songs. How many songs did Janet buy total? ",
-        "input": "",
-        "answer": [
-            72.0
-        ],
-        "output": "Janet bought 6 country albums and 2 pop albums. Each album has 9 songs. That means she bought 6 * 9 + 2 * 9 = 72 + 18 = 90 songs. The answer is 90."
-    },
-    {
-        "instruction": " A pet store had 41 siamese cats and 28 house cats. During a sale they sold 15 cats. How many cats do they have left? ",
-        "input": "",
-        "answer": [
-            54.0
-        ],
-        "output": "The pet store had 41 siamese cats and 28 house cats. That means they had 41 + 28 = 69 cats in total. During the sale they sold 15 cats. So now they have 69 - 15 = 54 cats left. The answer is 54."
-    },
-    {
-        "instruction": " At a company picnic 23 managers and 7 employees decided to start a game of volleyball. If they split into 6 teams how many people would be on each team? ",
-        "input": "",
-        "answer": [
-            5.0
-        ],
-        "output": "There are 23 managers and 7 employees. In total there are 23 + 7 = 30 people. They split into 6 teams. Each team must have 30 / 6 = 5 people. The answer is 5."
-    },
-    {
-        "instruction": " Paul made 3 dollars mowing lawns and 3 dollars weed eating. If he only spent 3 dollar a week, how long would the money last him? ",
-        "input": "",
-        "answer": [
-            2.0
-        ],
-        "output": "Paul made 3 + 3 = 6 dollars a week. He spends 3 dollars a week. That means he can last for 6 / 3 = 2 weeks. The answer is 2 weeks."
-    },
-    {
-        "instruction": " Amy had 26 music files and 36 video files on her flash drive. If she deleted 48 of the files, how many files were still on her flash drive? ",
-        "input": "",
-        "answer": [
-            14.0
-        ],
-        "output": "She had 26 music files and 36 video files. That means she had 26 + 36 = 62 files in total. She deleted 48 files, so now she has 62 - 48 = 14 files. The answer is 14."
-    },
-    {
-        "instruction": " Gwen was organizing her book case making sure each of the shelves had exactly 4 books on it. If she had 5 shelves of mystery books and 3 shelves of picture books, how many books did she have total? ",
-        "input": "",
-        "answer": [
-            32.0
-        ],
-        "output": "Gwen had 5 shelves of mystery books and 3 shelves of picture books. Each shelf had 4 books. That means she had 5 * 4 = 20 mystery books and 3 * 4 = 12 picture books. In total she had 20 + 12 = 32 books. The answer is 32."
-    },
-    {
-        "instruction": " Wendy picked 45 flowers for her friend\u2019s wedding. She was making bouquets with 5 flowers in each one. If 35 of the flowers wilted before the wedding, how many bouquets could she still make? ",
-        "input": "",
-        "answer": [
-            2.0
-        ],
-        "output": "Wendy had 45 flowers. 35 wilted, so she has 45 - 35 = 10 flowers left. She can make 5 flowers in each bouquet, so she can make 10 / 5 = 2 bouquets. The answer is 2."
-    },
-    {
-        "instruction": " For Halloween Janet and her sister combined the candy they received. Janet had 34 pieces of candy while her sister had 33. If they ate 4 pieces the first night, how many pieces do they have left? ",
-        "input": "",
-        "answer": [
-            63.0
-        ],
-        "output": "Janet had 34 pieces and her sister had 33. That means they had 34 + 33 = 67 pieces of candy in total. They ate 4 pieces the first night, so now they have 67 - 4 = 63 pieces of candy left. The answer is 63."
-    },
-    {
-        "instruction": " Edward and his friend were buying trick decks from the magic shop for 9 dollars each. How much did they spend if Edward bought 4 decks and his friend bought 4 decks? ",
-        "input": "",
-        "answer": [
-            72.0
-        ],
-        "output": "Edward bought 4 decks and his friend bought 4 decks. That means they bought 4 + 4 = 8 decks. Each deck cost 9 dollars, so in total they spent 8 * 9 = 72 dollars. The answer is 72."
-    },
-    {
-        "instruction": " April's discount flowers was having a sale where each rose was 7 dollars. If April started with 9 roses and had 4 roses left, how much money did she earn? ",
-        "input": "",
-        "answer": [
-            35.0
-        ],
-        "output": "She started with 9 roses. She had 4 roses left, so she must have sold 9 - 4 = 5 roses. Each rose was 7 dollars, so she earned 5 * 7 = 35 dollars. The answer is 35 dollars."
-    },
-    {
-        "instruction": " For Halloween Emily received 5 pieces of candy from neighbors and 13 pieces from her older sister. If she only ate 9 pieces a day, how long would the candy last her? ",
-        "input": "",
-        "answer": [
-            2.0
-        ],
-        "output": "Emily received 5 pieces from neighbors and 13 pieces from her older sister. In total she has 5 + 13 = 18 pieces of candy. She eats 9 pieces a day. That means it will take 18 / 9 = 2 days for her to finish all the candy. The answer is 2 days."
-    },
-    {
-        "instruction": " A pet store had 13 puppies. In one day they sold 7 of them and put the rest into cages with 2 in each cage. How many cages did they use? ",
-        "input": "",
-        "answer": [
-            3.0
-        ],
-        "output": "The pet store had 13 puppies. They sold 7 of them, so now they have 13 - 7 = 6 puppies. Each cage has 2 puppies, so they need 6 / 2 = 3 cages. The answer is 3."
-    },
-    {
-        "instruction": " Zoe had 42 bottles of water in her fridge. If she drank 25 of them and then bought 30 more, how many bottles would she have? ",
-        "input": "",
-        "answer": [
-            47.0
-        ],
-        "output": "She had 42 bottles in the beginning. She drank 25 of them, so now she has 42 - 25 = 17 bottles. She bought 30 more, so in total she has 17 + 30 = 47 bottles. The answer is 47."
-    },
-    {
-        "instruction": " April's discount flowers was having a sale where each rose was 4 dollars. If April started with 13 roses and had 4 roses left, how much money did she earn? ",
-        "input": "",
-        "answer": [
-            36.0
-        ],
-        "output": "She started with 13 roses. She had 4 left, so she must have sold 13 - 4 = 9 roses. Each rose was 4 dollars, so she earned 9 * 4 = 36 dollars. The answer is 36 dollars."
-    },
-    {
-        "instruction": " Paige's team won their dodgeball game and scored 41 points total. If Paige scored 11 of the points and everyone else scored 6 points each, how many players were on her team? ",
-        "input": "",
-        "answer": [
-            5.0
-        ],
-        "output": "Paige scored 11 points and everyone else scored 6 points each. That means 11 + (6 * x) = 41, where x is the number of players on the team. We can solve this equation to get x = 5. So there were 5 players on Paige's team. The answer is 5."
-    },
-    {
-        "instruction": " The school cafeteria ordered 25 red apples and 17 green apples for students lunches. But, if only 10 students wanted fruit, how many extra did the cafeteria end up with? ",
-        "input": "",
-        "answer": [
-            32.0
-        ],
-        "output": "The cafeteria ordered 25 red apples and 17 green apples. That means they ordered a total of 25 + 17 = 42 apples. But only 10 students wanted fruit, so they ended up with 42 - 10 = 32 extra apples. The answer is 32."
-    },
-    {
-        "instruction": " Debby bought two coloring books. One had 16 pictures and the other had 40. After one week she had already colored 33 of the pictures. How many pictures does she still have to color? ",
-        "input": "",
-        "answer": [
-            23.0
-        ],
-        "output": "Debby bought two coloring books. One had 16 pictures and the other had 40. In total she had 16 + 40 = 56 pictures. After one week she had already colored 33 of them. So she still has 56 - 33 = 23 pictures to color. The answer is 23."
-    },
-    {
-        "instruction": " A teacher had 34 worksheets to grade. If she graded 7, but then another 36 were turned in, how many worksheets would she have to grade? ",
-        "input": "",
-        "answer": [
-            63.0
-        ],
-        "output": "The teacher had 34 worksheets to grade. She graded 7, so she has 34 - 7 = 27 worksheets left. Then 36 more were turned in, so in total she has 27 + 36 = 63 worksheets to grade. The answer is 63."
-    },
-    {
-        "instruction": " A painter needed to paint 12 rooms in a building. Each room takes 3 hours to paint. If he already painted 4 rooms, how much longer will he take to paint the rest? ",
-        "input": "",
-        "answer": [
-            24.0
-        ],
-        "output": "He needs to paint 12 rooms. He has already painted 4 rooms. That means he still needs to paint 12 - 4 = 8 rooms. Each room takes 3 hours to paint, so he will need 8 * 3 = 24 hours to paint the rest. The answer is 24 hours."
-    },
-    {
-        "instruction": " April's discount flowers was having a sale where each flower was 3 dollars. If Emily bought 2 roses and 2 daisies, how much did she spend? ",
-        "input": "",
-        "answer": [
-            12.0
-        ],
-        "output": "Emily bought 2 roses and 2 daisies. Each flower was 3 dollars. So she spent 2 * 3 + 2 * 3 = 6 + 6 = 12 dollars. The answer is 12."
-    },
-    {
-        "instruction": " Bianca's team won their dodgeball game and scored 75 points total. If Bianca scored 45 of the points and everyone else scored 6 points each, how many players were on her team? ",
-        "input": "",
-        "answer": [
-            5.0
-        ],
-        "output": "Bianca scored 45 points and everyone else scored 6 points each. That means the total number of points scored by everyone else must have been 6 * x, where x is the number of players on the team. We know that the total number of points scored by the team was 75. So, 6x + 45 = 75. Solving for x, we get x = 10. The answer is 10."
-    },
-    {
-        "instruction": " A pet store had 15 siamese cats and 49 house cats. During a sale they sold 19 cats. How many cats do they have left? ",
-        "input": "",
-        "answer": [
-            45.0
-        ],
-        "output": "The pet store had 15 siamese cats and 49 house cats. That means they had 15 + 49 = 64 cats in total. During the sale they sold 19 cats. So now they have 64 - 19 = 45 cats left. The answer is 45."
-    },
-    {
-        "instruction": " A book store had 41 books in the bargin bin. If they sold 33 books, but then put 2 more in the bin, how many books would be in the bin? ",
-        "input": "",
-        "answer": [
-            10.0
-        ],
-        "output": "The book store had 41 books in the bargain bin. They sold 33 books, so now there are 41 - 33 = 8 books. Then they put 2 more in the bin, so now there are 8 + 2 = 10 books. The answer is 10."
-    },
-    {
-        "instruction": " Sam was collecting cans for recycling. On Saturday he filled 3 bags up and on Sunday he filled 4 more bags. If each bag had 9 cans in it, how many cans did he pick up total? ",
-        "input": "",
-        "answer": [
-            63.0
-        ],
-        "output": "On Saturday he filled 3 bags, each with 9 cans. That means he picked up 3 * 9 = 27 cans. On Sunday he filled 4 more bags, each with 9 cans. That means he picked up 4 * 9 = 36 cans. In total he picked up 27 + 36 = 63 cans. The answer is 63."
-    },
-    {
-        "instruction": " Luke was organizing his baseball cards in a binder with 3 on each page. If he had 3 new cards and 9 old cards to put in the binder, how many pages would he use? ",
-        "input": "",
-        "answer": [
-            4.0
-        ],
-        "output": "He has 3 new cards and 9 old cards. That means he has 3 + 9 = 12 cards in total. He can fit 3 cards on each page, so he needs 12 / 3 = 4 pages. The answer is 4."
-    },
-    {
-        "instruction": " A book store had 4 books in the bargin bin. If they sold 3 books, but then put 10 more in the bin, how many books would be in the bin? ",
-        "input": "",
-        "answer": [
-            11.0
-        ],
-        "output": "The book store had 4 books in the bargain bin. They sold 3 books, so now there are 4 - 3 = 1 book left. Then they put 10 more books in the bin, so now there are 1 + 10 = 11 books in the bin. The answer is 11."
-    },
-    {
-        "instruction": " Chloe was playing a video game where she scores 9 points for each treasure she finds. If she found 6 treasures on the first level and 3 on the second, what would her score be? ",
-        "input": "",
-        "answer": [
-            81.0
-        ],
-        "output": "She scored 9 points for each treasure. On the first level she found 6 treasures, so she scored 6 * 9 = 54 points. On the second level she found 3 treasures, so she scored 3 * 9 = 27 points. In total she scored 54 + 27 = 81 points. The answer is 81."
-    },
-    {
-        "instruction": " Edward and his friend were buying trick decks from the magic shop for 6 dollars each. How much did they spend if Edward bought 3 decks and his friend bought 6 decks? ",
-        "input": "",
-        "answer": [
-            54.0
-        ],
-        "output": "Edward bought 3 decks and his friend bought 6 decks. That means they bought 3 + 6 = 9 decks. Each deck cost 6 dollars, so in total they spent 9 * 6 = 54 dollars. The answer is 54."
-    },
-    {
-        "instruction": " There school's baseball team had 12 new players and 44 returning players. If the coach put them into groups with 8 players in each group, how many groups would there be? ",
-        "input": "",
-        "answer": [
-            7.0
-        ],
-        "output": "There are 12 new players and 44 returning players. That means there are 12 + 44 = 56 players in total. If they are put into groups with 8 players in each group, there will be 56 / 8 = 7 groups. The answer is 7."
-    },
-    {
-        "instruction": " In fourth grade there were 10 students at the start of the year. During the year 4 students left and 42 new students came to school. How many students were in fourth grade at the end? ",
-        "input": "",
-        "answer": [
-            48.0
-        ],
-        "output": "At the start of the year there were 10 students. 4 students left, so now there are 10 - 4 = 6 students. 42 new students came, so in total there are 6 + 42 = 48 students. The answer is 48."
-    },
-    {
-        "instruction": " Carol was playing a trivia game. In the first round she scored 17 points and in the second round she scored 6 points. In the last round she lost 16 points. How many points did she have at the end of the game? ",
-        "input": "",
-        "answer": [
-            7.0
-        ],
-        "output": "Carol had 17 points in the first round. In the second round she scored 6 more points, so she had 17 + 6 = 23 points. In the last round she lost 16 points, so she has 23 - 16 = 7 points. The answer is 7."
-    },
-    {
-        "instruction": " Paul was collecting cans for recycling. On Saturday he filled 6 bags up and on Sunday he filled 3 more bags. If each bag had 8 cans in it, how many cans did he pick up total? ",
-        "input": "",
-        "answer": [
-            72.0
-        ],
-        "output": "On Saturday he filled 6 bags, each with 8 cans. That means he picked up 6 * 8 = 48 cans. On Sunday he filled 3 more bags, each with 8 cans. That means he picked up 3 * 8 = 24 cans. In total he picked up 48 + 24 = 72 cans. The answer is 72."
-    },
-    {
-        "instruction": " Janet picked 4 tulips and 11 roses to make flower bouquets. If she only used 11 of the flowers though, how many extra flowers did Janet pick? ",
-        "input": "",
-        "answer": [
-            4.0
-        ],
-        "output": "Janet picked 4 tulips and 11 roses. She only used 11 of the flowers, so she has 4 + 11 - 11 = 4 extra flowers. The answer is 4."
-    },
-    {
-        "instruction": " There were 2 friends playing a video game online when 2 more players joined the game. If each player had 6 lives, how many lives did they have total? ",
-        "input": "",
-        "answer": [
-            24.0
-        ],
-        "output": "There were 2 players in the beginning, so they had 2 * 6 = 12 lives. When 2 more players joined, they had 4 players in total. So they have 4 * 6 = 24 lives. The answer is 24."
-    },
-    {
-        "instruction": " April's discount flowers was having a sale where each flower was 3 dollars. If Zoe bought 8 roses and 2 daisies, how much did she spend? ",
-        "input": "",
-        "answer": [
-            30.0
-        ],
-        "output": "Zoe bought 8 roses and 2 daisies. Each flower was 3 dollars. So she spent 8 * 3 + 2 * 3 = 24 + 6 = 30 dollars. The answer is 30."
-    },
-    {
-        "instruction": " While playing a trivia game, Mike answered 3 questions correct in the first half and 5 questions correct in the second half. If each question was worth 3 points, what was his final score? ",
-        "input": "",
-        "answer": [
-            24.0
-        ],
-        "output": "Mike answered 3 questions correctly in the first half and 5 questions correctly in the second half. Each question was worth 3 points. So, his score in the first half was 3 * 3 = 9 points. His score in the second half was 5 * 3 = 15 points. His total score is 9 + 15 = 24 points. The answer is 24."
-    },
-    {
-        "instruction": " For Halloween Katie and her sister combined the candy they received. Katie had 10 pieces of candy while her sister had 6. If they ate 9 pieces the first night, how many pieces do they have left? ",
-        "input": "",
-        "answer": [
-            7.0
-        ],
-        "output": "Katie had 10 pieces of candy and her sister had 6. In total they had 10 + 6 = 16 pieces of candy. They ate 9 pieces the first night, so now they have 16 - 9 = 7 pieces of candy left. The answer is 7."
-    },
-    {
-        "instruction": " John had 5 action figures, but needed 7 total for a complete collection. If each one costs $5, how much money would he need to finish his collection? ",
-        "input": "",
-        "answer": [
-            10.0
-        ],
-        "output": "He has 5 action figures, but needs 7 total. That means he needs to buy 2 more. Each one costs $5, so he needs to buy 2 * $5 = $10. The answer is $10."
+        "output": "She had 4 music files and 21 video files. She deleted 23 files. That means she deleted 4 + 21 = 25 files. So, she still has 4 + 21 - 25 = 0 files. The answer is 0."
     },
     {
         "instruction": " At a restaurant each adult meal costs $2 and kids eat free. If a group of 15 people came in and 9 were kids, how much would it cost for the group to eat? ",
@@ -896,52 +40,268 @@
         "output": "There are 15 people in the group. 9 of them are kids, so they eat for free. That leaves 6 adults. Each adult meal costs $2, so the total cost for the group is 6 * $2 = $12. The answer is $12."
     },
     {
-        "instruction": " Haley was playing a video game and had 14 lives. In a hard part of the game she lost 4 lives. If she got 36 more lives in the next level, how many lives would she have? ",
-        "input": "",
-        "answer": [
-            46.0
-        ],
-        "output": "She had 14 lives. She lost 4 lives, so now she has 14 - 4 = 10 lives. She got 36 more lives, so in total she has 10 + 36 = 46 lives. The answer is 46."
-    },
-    {
-        "instruction": " There were 10 friends playing a video game online when 7 players quit. If each player left had 8 lives, how many lives did they have total? ",
-        "input": "",
-        "answer": [
-            24.0
-        ],
-        "output": "There were 10 players in the beginning. 7 players quit, so now there are 10 - 7 = 3 players left. Each player has 8 lives, so in total they have 3 * 8 = 24 lives. The answer is 24."
-    },
-    {
-        "instruction": " A company invited 45 people to a luncheon, but 35 of them didn't show up. If the tables they had held 2 people each, how many tables do they need? ",
+        "instruction": " Olivia uploaded 5 pictures from her phone and 35 from her camera to facebook. If she sorted the pics into 8 different albums with the same amount of pics in each album, how many pictures were in each of the albums? ",
         "input": "",
         "answer": [
             5.0
         ],
-        "output": "45 people were invited, but 35 didn't show up. That means 10 people attended the luncheon. Each table holds 2 people, so they need 10 / 2 = 5 tables. The answer is 5."
+        "output": "Olivia uploaded 5 pictures from her phone and 35 from her camera. In total she uploaded 5 + 35 = 40 pictures. She sorted them into 8 albums, so each album must have 40 / 8 = 5 pictures. The answer is 5."
     },
     {
-        "instruction": " Mike had 15 video games but 9 of them weren't working. If he wanted to sell the working games for $5 each, how much money could he earn? ",
+        "instruction": " Emily was planting vegetables in her garden. She started with 41 seeds and planted 29 of them in the big garden and in each of her small gardens put 4 seeds each. How many small gardens did Emily have? ",
+        "input": "",
+        "answer": [
+            3.0
+        ],
+        "output": "Emily planted 29 seeds in the big garden and 4 seeds in each of her small gardens. That means she had 29 - 4 = 25 seeds left. Since she put 4 seeds in each small garden, she must have had 25 / 4 = 6 small gardens. The answer is 6."
+    },
+    {
+        "instruction": " A worksheet had 4 problems on it. If a teacher had 16 worksheets to grade and had already graded 8 of them, how many more problems does she have to grade? ",
+        "input": "",
+        "answer": [
+            32.0
+        ],
+        "output": "The teacher has 16 worksheets to grade. Each worksheet has 4 problems. That means in total 16 * 4 = 64 problems. She has already graded 8 worksheets, so she has graded 8 * 4 = 32 problems. She still has 64 - 32 = 32 problems to grade. The answer is 32."
+    },
+    {
+        "instruction": " Emily was playing a trivia game. In the first round she scored 16 points and in the second round she scored 33 points. In the last round she lost 48 points. How many points did she have at the end of the game? ",
+        "input": "",
+        "answer": [
+            1.0
+        ],
+        "output": "Emily had 16 points in the first round and 33 points in the second round. That means she had 16 + 33 = 49 points before the last round. In the last round she lost 48 points, so now she has 49 - 48 = 1 point. The answer is 1."
+    },
+    {
+        "instruction": " For Halloween Emily received 54 pieces of candy. She ate 33 pieces then placed the rest into piles with 7 in each pile. How many piles could she make? ",
+        "input": "",
+        "answer": [
+            3.0
+        ],
+        "output": "Emily had 54 pieces of candy. She ate 33 pieces, so she has 54 - 33 = 21 pieces left. She wants to make piles with 7 pieces in each pile. That means she can make 21 / 7 = 3 piles. The answer is 3."
+    },
+    {
+        "instruction": " A worksheet had 3 problems on it. If a teacher had 15 worksheets to grade and had already graded 7 of them, how many more problems does she have to grade? ",
+        "input": "",
+        "answer": [
+            24.0
+        ],
+        "output": "The teacher has 15 worksheets to grade. Each worksheet has 3 problems. That means in total 15 * 3 = 45 problems. She has already graded 7 worksheets, so she has graded 7 * 3 = 21 problems. She still has 45 - 21 = 24 problems to grade. The answer is 24."
+    },
+    {
+        "instruction": " Sarah baked 38 cupcakes for her school's bake sale. If her brother, Todd, ate 14 of them how many packages could she make if she put 8 cupcake in each package? ",
+        "input": "",
+        "answer": [
+            3.0
+        ],
+        "output": "Sarah baked 38 cupcakes. Todd ate 14 of them, so now she has 38 - 14 = 24 cupcakes. She can make 8 cupcakes in each package, so she can make 24 / 8 = 3 packages. The answer is 3."
+    },
+    {
+        "instruction": " April's discount flowers was having a sale where each flower was 3 dollars. If Robin bought 5 roses and 4 daisies, how much did she spend? ",
+        "input": "",
+        "answer": [
+            27.0
+        ],
+        "output": "Robin bought 5 roses and 4 daisies. Each flower was 3 dollars. That means she spent 5 * $3 = $15 on the roses and 4 * $3 = $12 on the daisies. In total she spent $15 + $12 = $27. The answer is 27."
+    },
+    {
+        "instruction": " For Halloween Megan received 11 pieces of candy from neighbors and 5 pieces from her older sister. If she only ate 8 pieces a day, how long would the candy last her? ",
+        "input": "",
+        "answer": [
+            2.0
+        ],
+        "output": "Megan received 11 + 5 = 16 pieces of candy. She ate 8 pieces a day. That means she can eat 16 / 8 = 2 days worth of candy. The answer is 2 days."
+    },
+    {
+        "instruction": " Sam invited 9 friends to a birthday party, but 6 couldn't come. If he wanted to buy enough cupcakes so each person could have exactly 2, how many should he buy? ",
+        "input": "",
+        "answer": [
+            6.0
+        ],
+        "output": "Sam invited 9 friends, but 6 couldn't come. That means he has 9 - 6 = 3 friends coming to the party. He wants to buy enough cupcakes so each person can have 2. That means he needs 3 * 2 = 6 cupcakes. The answer is 6."
+    },
+    {
+        "instruction": " Bianca uploaded 33 pictures to Facebook. She put 27 pics into one album and put the rest into 3 different albums. How many pictures were in each album? ",
+        "input": "",
+        "answer": [
+            2.0
+        ],
+        "output": "Bianca uploaded 33 pictures. She put 27 into one album and the rest into 3 different albums. That means the 3 albums have 33 - 27 = 6 pictures each. The answer is 6."
+    },
+    {
+        "instruction": " Rachel bought two coloring books. One had 24 pictures and the other had 39. After one week she had already colored 4 of the pictures. How many pictures does she still have to color? ",
+        "input": "",
+        "answer": [
+            59.0
+        ],
+        "output": "Rachel bought two coloring books. One had 24 pictures and the other had 39. She has already colored 4 pictures. That means she still has 24 + 39 - 4 = 59 pictures to color. The answer is 59."
+    },
+    {
+        "instruction": " A waiter had 6 tables he was waiting on, with 3 women and 5 men at each table. How many customers total did the waiter have? ",
+        "input": "",
+        "answer": [
+            48.0
+        ],
+        "output": "The waiter had 6 tables. Each table had 3 women and 5 men. That means in total there were 6 * (3 + 5) = 48 customers. The answer is 48."
+    },
+    {
+        "instruction": " Paige's team won their dodgeball game and scored 41 points total. If Paige scored 11 of the points and everyone else scored 6 points each, how many players were on her team? ",
+        "input": "",
+        "answer": [
+            5.0
+        ],
+        "output": "Paige scored 11 points and everyone else scored 6 points each. That means 11 + (6 * x) = 41, where x is the number of players on the team. We can solve this equation to get x = 5. So there were 5 players on Paige's team. The answer is 5."
+    },
+    {
+        "instruction": " A toy store had 6 giant stuffed bears in stock when they got another shipment with 18 bears in it. The put the bears onto shelves with 6 on each shelf. How many shelves did they use? ",
+        "input": "",
+        "answer": [
+            4.0
+        ],
+        "output": "There were 6 bears in stock before the shipment. After the shipment, there were 6 + 18 = 24 bears. Each shelf can hold 6 bears, so the number of shelves they used must be 24 / 6 = 4. The answer is 4."
+    },
+    {
+        "instruction": " At the arcade, Jerry won 29 tickets playing 'whack a mole' and 17 tickets playing 'skee ball'. If he spent 12 of his tickets on a hat, how many tickets does Jerry have left? ",
+        "input": "",
+        "answer": [
+            34.0
+        ],
+        "output": "Jerry won 29 tickets playing 'whack a mole' and 17 tickets playing 'skee ball'. That means he had 29 + 17 = 46 tickets in total. He spent 12 tickets on a hat, so now he has 46 - 12 = 34 tickets left. The answer is 34."
+    },
+    {
+        "instruction": " Adam bought 13 boxes of chocolate candy and gave 7 to his little brother. If each box has 6 pieces inside it, how many pieces did Adam still have? ",
+        "input": "",
+        "answer": [
+            36.0
+        ],
+        "output": "Adam bought 13 boxes of chocolate candy. Each box has 6 pieces inside it. That means he bought 13 * 6 = 78 pieces. He gave 7 to his little brother, so he still has 78 - 7 = 71 pieces. The answer is 71."
+    },
+    {
+        "instruction": " At the schools book fair Sam bought 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy? ",
+        "input": "",
+        "answer": [
+            15.0
+        ],
+        "output": "Sam bought 13 adventure books and 17 mystery books. That means he bought 13 + 17 = 30 books in total. 15 of them were used, so he has 30 - 15 = 15 new books. The answer is 15."
+    },
+    {
+        "instruction": " While shopping, Maria bought 40 green towels and 44 white towels. If she gave her mother 65 of them, how many towels did Maria end up with? ",
+        "input": "",
+        "answer": [
+            19.0
+        ],
+        "output": "Maria bought 40 green towels and 44 white towels. That means she had 40 + 44 = 84 towels in total. She gave her mother 65 of them, so she has 84 - 65 = 19 towels left. The answer is 19."
+    },
+    {
+        "instruction": " At the arcade Dave won 25 tickets. If he spent 22 tickets on a beanie and later won 15 more tickets, how many would he have? ",
+        "input": "",
+        "answer": [
+            18.0
+        ],
+        "output": "Dave won 25 tickets. He spent 22 tickets on a beanie, so after that he has 25 - 22 = 3 tickets. Later he won 15 more tickets, so now he has 3 + 15 = 18 tickets. The answer is 18."
+    },
+    {
+        "instruction": " A waiter had 44 customers in his section. If 12 of them left and the rest of his tables had 8 people at each table, how many tables did he have? ",
+        "input": "",
+        "answer": [
+            4.0
+        ],
+        "output": "The waiter had 44 customers in his section. 12 of them left, so now he has 44 - 12 = 32 customers. Each table has 8 people, so the number of tables must be 32 / 8 = 4. The answer is 4."
+    },
+    {
+        "instruction": " A pet shelter had 2 puppies when another 34 were brought in. If 4 puppies a day are adopted, how long would it take for all of them to be adopted? ",
+        "input": "",
+        "answer": [
+            9.0
+        ],
+        "output": "The pet shelter had 2 puppies initially. 34 more were brought in, so in total there are 2 + 34 = 36 puppies. 4 puppies are adopted each day. That means it will take 36 / 4 = 9 days for all of them to be adopted. The answer is 9 days."
+    },
+    {
+        "instruction": " At a restaurant each adult meal costs $2 and kids eat free. If a group of 9 people came in and 2 were kids, how much would it cost for the group to eat? ",
+        "input": "",
+        "answer": [
+            14.0
+        ],
+        "output": "There are 9 people in the group. 2 of them are kids, so they eat for free. That means the total cost is for 7 adults. 7 adults * $2 = $14. The answer is $14."
+    },
+    {
+        "instruction": " In a video game, each enemy defeated gives you 7 points. If a level has 11 enemies total and you destroy all but 8 of them, how many points would you earn? ",
+        "input": "",
+        "answer": [
+            21.0
+        ],
+        "output": "There are 11 enemies in total. You destroyed all but 8 of them. That means you destroyed 11 - 8 = 3 enemies. Each enemy gives you 7 points, so you earned 3 * 7 = 21 points. The answer is 21."
+    },
+    {
+        "instruction": " A new building needed 12 windows. The builder had already installed 6 of them. If it takes 4 hours to install each window, how long will it take him to install the rest? ",
+        "input": "",
+        "answer": [
+            24.0
+        ],
+        "output": "The builder has already installed 6 windows. He needs to install 12 windows in total. That means he needs to install 12 - 6 = 6 more windows. It takes 4 hours to install each window, so it will take him 6 * 4 = 24 hours to install the rest. The answer is 24 hours."
+    },
+    {
+        "instruction": " Will bought 7 boxes of chocolate candy and gave 3 to his little brother. If each box has 4 pieces inside it, how many pieces did Will still have? ",
+        "input": "",
+        "answer": [
+            16.0
+        ],
+        "output": "Will bought 7 boxes of chocolate candy. Each box has 4 pieces inside it. That means he bought 7 * 4 = 28 pieces. He gave 3 to his little brother, so he still has 28 - 3 = 25 pieces. The answer is 25."
+    },
+    {
+        "instruction": " There were 11 friends playing a video game online when 5 players quit. If each player left had 5 lives, how many lives did they have total? ",
         "input": "",
         "answer": [
             30.0
         ],
-        "output": "Mike had 15 video games but 9 of them weren't working. That means he has 15 - 9 = 6 working games. He can sell each of them for $5. So he can earn 6 * $5 = $30. The answer is $30."
+        "output": "There were 11 players in the beginning. 5 players quit, so now there are 11 - 5 = 6 players. Each player had 5 lives, so in total they have 6 * 5 = 30 lives. The answer is 30."
     },
     {
-        "instruction": " Each chocolate bar in a box cost $6. If a box had 13 bars total and Zoe sold all but 6 bars, how much money would she have made? ",
+        "instruction": " Gwen and her friends were recycling paper for their class. For every 3 pounds they recycled they earned one point. If Gwen recycled 5 pounds and her friends recycled 13 pounds, how many points did they earn? ",
+        "input": "",
+        "answer": [
+            6.0
+        ],
+        "output": "Gwen recycled 5 pounds and her friends recycled 13 pounds. That means in total they recycled 5 + 13 = 18 pounds. For every 3 pounds they recycled they earned one point. So, they earned 18 / 3 = 6 points. The answer is 6."
+    },
+    {
+        "instruction": " A waiter had 9 tables he was waiting on, with 7 women and 3 men at each table. How many customers total did the waiter have? ",
+        "input": "",
+        "answer": [
+            90.0
+        ],
+        "output": "The waiter had 9 tables. Each table had 7 women and 3 men. That means the total number of customers was 9 * (7 + 3) = 9 * 10 = 90. The answer is 90."
+    },
+    {
+        "instruction": " A store had 40 oranges in a bin. If they threw away 25 of the old ones and put 21 new ones in the bin how many would be in the bin? ",
+        "input": "",
+        "answer": [
+            36.0
+        ],
+        "output": "The store had 40 oranges in the bin. They threw away 25 of the old ones, so now there are 40 - 25 = 15 oranges. Then they put 21 new ones in the bin, so in total there are 15 + 21 = 36 oranges. The answer is 36."
+    },
+    {
+        "instruction": " A waiter had 9 tables he was waiting on, with 2 women and 6 men at each table. How many customers total did the waiter have? ",
+        "input": "",
+        "answer": [
+            72.0
+        ],
+        "output": "The waiter had 9 tables. Each table had 2 women and 6 men. That means there were 9 * (2 + 6) = 9 * 8 = 72 customers. The answer is 72."
+    },
+    {
+        "instruction": " Zoe baked 5 brownies, but needed 11 total for her party. If she used 7 cups of flour on each one, how much cups of flour does she still need? ",
         "input": "",
         "answer": [
             42.0
         ],
-        "output": "There were 13 bars in the box. Zoe sold all but 6 bars. That means she sold 13 - 6 = 7 bars. Each bar cost $6, so she made 7 * $6 = $42. The answer is $42."
+        "output": "She has 5 brownies already. She needs 11 total. That means she needs 11 - 5 = 6 more brownies. Each brownie needs 7 cups of flour, so she needs 6 * 7 = 42 cups of flour. The answer is 42."
     },
     {
-        "instruction": " Edward made 37 dollars mowing lawns over the summer. If he spent 21 dollars buying new mower blades, how many 2 dollar games could he buy with the money he had left? ",
+        "instruction": " Each chocolate bar in a box cost $3. If a box had 9 bars total and Wendy sold all but 3 bars, how much money would she have made? ",
         "input": "",
         "answer": [
-            8.0
+            18.0
         ],
-        "output": "Edward made 37 dollars mowing lawns. He spent 21 dollars on mower blades. That means he has 37 - 21 = 16 dollars left. He can buy 16 / 2 = 8 two dollar games. The answer is 8."
+        "output": "Wendy sold 9 - 3 = 6 bars. Each bar cost $3, so she made 6 * $3 = $18. The answer is $18."
     },
     {
         "instruction": " Haley and her friends were recycling paper for their class. For every 3 pounds they recycled they earned one point. If Haley recycled 11 pounds and her friends recycled 16 pounds, how many points did they earn? ",
@@ -952,11 +312,651 @@
         "output": "Haley recycled 11 pounds and her friends recycled 16 pounds. That means in total they recycled 11 + 16 = 27 pounds. For every 3 pounds they recycled they earned one point. So, they earned 27 / 3 = 9 points. The answer is 9."
     },
     {
-        "instruction": " In fourth grade there were 8 students at the start of the year. During the year 5 students left and 8 new students came to school. How many students were in fourth grade at the end? ",
+        "instruction": " A pet store had 15 siamese cats and 49 house cats. During a sale they sold 19 cats. How many cats do they have left? ",
+        "input": "",
+        "answer": [
+            45.0
+        ],
+        "output": "The pet store had 15 siamese cats and 49 house cats. That means they had 15 + 49 = 64 cats in total. During the sale they sold 19 cats. So now they have 64 - 19 = 45 cats left. The answer is 45."
+    },
+    {
+        "instruction": " Emily was playing a video game and had 42 lives. In a hard part of the game she lost 25 lives. If she got 24 more lives in the next level, how many lives would she have? ",
+        "input": "",
+        "answer": [
+            41.0
+        ],
+        "output": "Emily had 42 lives. She lost 25 lives, so now she has 42 - 25 = 17 lives. She got 24 more lives, so in total she has 17 + 24 = 41 lives. The answer is 41."
+    },
+    {
+        "instruction": " Wendy earned 5 points for each bag of cans she recycled. If she had 11 bags, but didn't recycle 2 of them, how many points would she have earned? ",
+        "input": "",
+        "answer": [
+            45.0
+        ],
+        "output": "She earned 5 points for each bag of cans she recycled. She had 11 bags, but didn't recycle 2 of them. That means she recycled 11 - 2 = 9 bags. She earned 5 points for each bag, so she earned 9 * 5 = 45 points. The answer is 45."
+    },
+    {
+        "instruction": " Cody bought 7 boxes of chocolate candy and 3 boxes of caramel candy. If each box has 8 pieces inside it, how much candy did he have total? ",
+        "input": "",
+        "answer": [
+            80.0
+        ],
+        "output": "Cody bought 7 boxes of chocolate candy and 3 boxes of caramel candy. Each box has 8 pieces inside it. That means he has 7 * 8 = 56 pieces of chocolate candy and 3 * 8 = 24 pieces of caramel candy. In total he has 56 + 24 = 80 pieces of candy. The answer is 80."
+    },
+    {
+        "instruction": " A worksheet had 7 problems on it. If a teacher had 17 worksheets to grade and had already graded 8 of them, how many more problems does she have to grade? ",
+        "input": "",
+        "answer": [
+            63.0
+        ],
+        "output": "The teacher has 17 worksheets to grade. Each worksheet has 7 problems. That means in total 17 * 7 = 119 problems. She has already graded 8 worksheets, so she has graded 8 * 7 = 56 problems. The remaining problems she has to grade is 119 - 56 = 63. The answer is 63."
+    },
+    {
+        "instruction": " A teacher had 34 worksheets to grade. If she graded 7, but then another 36 were turned in, how many worksheets would she have to grade? ",
+        "input": "",
+        "answer": [
+            63.0
+        ],
+        "output": "The teacher had 34 worksheets to grade. She graded 7, so she has 34 - 7 = 27 worksheets left. Then 36 more were turned in, so in total she has 27 + 36 = 63 worksheets to grade. The answer is 63."
+    },
+    {
+        "instruction": " Isabel was selling her necklaces at a garage sale. She sold 3 bead necklaces and 3 gem stone necklaces. If each necklace cost 6 dollars, how much money did she earn? ",
+        "input": "",
+        "answer": [
+            36.0
+        ],
+        "output": "She sold 3 bead necklaces and 3 gem stone necklaces. Each necklace cost 6 dollars. That means she earned 3 * 6 + 3 * 6 = 6 * 6 = 36 dollars. The answer is 36."
+    },
+    {
+        "instruction": " At a restaurant each adult meal costs $5 and kids eat free. If a group of 15 people came in and 8 were kids, how much would it cost for the group to eat? ",
+        "input": "",
+        "answer": [
+            35.0
+        ],
+        "output": "8 of the 15 people are kids, so they eat for free. That leaves 15 - 8 = 7 adults. Each adult meal costs $5, so the total cost for the group is 7 * $5 = $35. The answer is $35."
+    },
+    {
+        "instruction": " Frank had saved up 3 dollars. If he received another 37 dollars for his allowance, how many 8 dollar toys could he buy? ",
+        "input": "",
+        "answer": [
+            5.0
+        ],
+        "output": "Frank had 3 dollars saved up. He received 37 dollars for his allowance. That means he has 3 + 37 = 40 dollars. He can buy 40 / 8 = 5 toys. The answer is 5."
+    },
+    {
+        "instruction": " There were 8 friends playing a video game online when 3 players quit. If each player left had 3 lives, how many lives did they have total? ",
+        "input": "",
+        "answer": [
+            15.0
+        ],
+        "output": "There were 8 friends playing the game. 3 players quit, so now there are 8 - 3 = 5 players left. Each player has 3 lives, so in total they have 5 * 3 = 15 lives. The answer is 15."
+    },
+    {
+        "instruction": " For the school bake sale Katie made pastries. She baked 7 cupcakes and 5 cookies. After the sale she had 8 to take back home. How many pastries did she sell? ",
+        "input": "",
+        "answer": [
+            4.0
+        ],
+        "output": "She made 7 cupcakes and 5 cookies. That means she had 7 + 5 = 12 pastries in total. After the sale she had 8 left, so she must have sold 12 - 8 = 4 pastries. The answer is 4."
+    },
+    {
+        "instruction": " Tiffany baked 8 brownies, but needed 17 total for her party. If she used 8 cups of flour on each one, how much cups of flour does she still need? ",
+        "input": "",
+        "answer": [
+            72.0
+        ],
+        "output": "She needs 17 brownies in total. She has already baked 8. That means she needs 17 - 8 = 9 more brownies. Each brownie needs 8 cups of flour, so she needs 9 * 8 = 72 cups of flour. The answer is 72."
+    },
+    {
+        "instruction": " The school cafeteria had 14 apples. If they used 13 to make lunch for the students and then bought 49 more, how many apples would they have? ",
+        "input": "",
+        "answer": [
+            50.0
+        ],
+        "output": "The school cafeteria had 14 apples. They used 13 of them, so now they have 14 - 13 = 1 apple. They bought 49 more, so in total they have 1 + 49 = 50 apples. The answer is 50."
+    },
+    {
+        "instruction": " A pet store had 36 siamese cats and 18 house cats. During a sale they sold 26 cats. How many cats do they have left? ",
+        "input": "",
+        "answer": [
+            28.0
+        ],
+        "output": "The pet store had 36 siamese cats and 18 house cats. That means they had 36 + 18 = 54 cats in total. During the sale they sold 26 cats. So now they have 54 - 26 = 28 cats left. The answer is 28."
+    },
+    {
+        "instruction": " Emily had 7 coloring books. If she gave away 2 of them, but then bought 14 more, how many would she have total? ",
+        "input": "",
+        "answer": [
+            19.0
+        ],
+        "output": "Emily had 7 coloring books. She gave away 2 of them, so now she has 7 - 2 = 5 coloring books. She bought 14 more, so in total she has 5 + 14 = 19 coloring books. The answer is 19."
+    },
+    {
+        "instruction": " In fourth grade there were 35 students at the start of the year. During the year 10 students left and 10 new students came to school. How many students were in fourth grade at the end? ",
+        "input": "",
+        "answer": [
+            35.0
+        ],
+        "output": "At the start of the year there were 35 students. 10 students left, so now there are 35 - 10 = 25 students. 10 new students came, so now there are 25 + 10 = 35 students. The answer is 35."
+    },
+    {
+        "instruction": " While playing at the arcade, Edward won 3 tickets playing 'whack a mole' and 5 tickets playing 'skee ball'. If he was trying to buy candy that cost 4 tickets a piece, how many could he buy? ",
+        "input": "",
+        "answer": [
+            2.0
+        ],
+        "output": "Edward won 3 tickets playing 'whack a mole' and 5 tickets playing 'skee ball'. That means he has 3 + 5 = 8 tickets. He needs 4 tickets for each candy. So he can buy 8 / 4 = 2 candies. The answer is 2."
+    },
+    {
+        "instruction": " A painter needed to paint 10 rooms in a building. Each room takes 8 hours to paint. If he already painted 8 rooms, how much longer will he take to paint the rest? ",
+        "input": "",
+        "answer": [
+            16.0
+        ],
+        "output": "He has already painted 8 rooms. He needs to paint 10 rooms in total. That means he needs to paint 10 - 8 = 2 more rooms. Each room takes 8 hours to paint, so he will take 8 * 2 = 16 hours to paint the rest. The answer is 16 hours."
+    },
+    {
+        "instruction": " While playing at the arcade, Ned won 26 tickets playing 'whack a mole' and 19 tickets playing 'skee ball'. If he was trying to buy candy that cost 9 tickets a piece, how many could he buy? ",
+        "input": "",
+        "answer": [
+            5.0
+        ],
+        "output": "Ned won 26 tickets playing 'whack a mole' and 19 tickets playing 'skee ball'. That means he has 26 + 19 = 45 tickets in total. He wants to buy candy that costs 9 tickets a piece. He can buy 45 / 9 = 5 pieces of candy. The answer is 5."
+    },
+    {
+        "instruction": " A trivia team had 15 members total, but during a game 6 members didn't show up. If each member that did show up scored 3 points, how many points were scored total? ",
+        "input": "",
+        "answer": [
+            27.0
+        ],
+        "output": "There were 15 members in total. 6 members didn't show up, so there were 15 - 6 = 9 members that did show up. Each of them scored 3 points, so in total 9 * 3 = 27 points were scored. The answer is 27."
+    },
+    {
+        "instruction": " Luke made 9 dollars mowing lawns and 18 dollars weed eating. If he only spent 3 dollar a week, how long would the money last him? ",
+        "input": "",
+        "answer": [
+            9.0
+        ],
+        "output": "Luke made 9 + 18 = 27 dollars. He spends 3 dollars a week. That means he can last 27 / 3 = 9 weeks. The answer is 9 weeks."
+    },
+    {
+        "instruction": " Edward was selling his old games. He started out with 35 but sold 19 of them. He packed the rest up putting 8 games into each box. How many boxes did he have to use? ",
+        "input": "",
+        "answer": [
+            2.0
+        ],
+        "output": "Edward started with 35 games. He sold 19 of them, so he has 35 - 19 = 16 games left. He put 8 games into each box, so he must have used 16 / 8 = 2 boxes. The answer is 2."
+    },
+    {
+        "instruction": " Kaleb started his own lawn mowing business. In the spring he made 4 dollars mowing lawns and in the summer he made 50 dollars. If he had to spend 4 dollars buying supplies, how much money did he end up with? ",
+        "input": "",
+        "answer": [
+            50.0
+        ],
+        "output": "In the spring he made 4 dollars and in the summer he made 50 dollars. That means he made 4 + 50 = 54 dollars in total. He spent 4 dollars on supplies, so he ended up with 54 - 4 = 50 dollars. The answer is 50."
+    },
+    {
+        "instruction": " The cafeteria had 86 apples. For lunch they handed out 30 to students and decided to use the rest to make pies. If each pie takes 8 apples, how many pies could they make? ",
+        "input": "",
+        "answer": [
+            7.0
+        ],
+        "output": "The cafeteria had 86 apples. They handed out 30 to students, so now they have 86 - 30 = 56 apples. Each pie takes 8 apples, so they can make 56 / 8 = 7 pies. The answer is 7."
+    },
+    {
+        "instruction": " Kaleb was collecting cans for recycling. On Saturday he filled 4 bags up and on Sunday he filled 6 more bags. If each bag had 4 cans in it, how many cans did he pick up total? ",
+        "input": "",
+        "answer": [
+            40.0
+        ],
+        "output": "On Saturday he filled 4 bags, each with 4 cans. That means he picked up 4 * 4 = 16 cans. On Sunday he filled 6 more bags, each with 4 cans. That means he picked up 6 * 4 = 24 cans. In total he picked up 16 + 24 = 40 cans. The answer is 40."
+    },
+    {
+        "instruction": " Haley baked 20 cupcakes for her school's bake sale. If her brother, Todd, ate 11 of them how many packages could she make if she put 3 cupcake in each package? ",
+        "input": "",
+        "answer": [
+            3.0
+        ],
+        "output": "Haley baked 20 cupcakes. Todd ate 11 of them, so now she has 20 - 11 = 9 cupcakes left. She can make 3 cupcakes in each package, so she can make 9 / 3 = 3 packages. The answer is 3."
+    },
+    {
+        "instruction": " A teacher had 38 worksheets to grade. If she graded 4, but then another 15 were turned in, how many worksheets would she have to grade? ",
+        "input": "",
+        "answer": [
+            49.0
+        ],
+        "output": "The teacher had 38 worksheets to grade. She graded 4, so now she has 38 - 4 = 34 worksheets left. Then 15 more were turned in, so now she has 34 + 15 = 49 worksheets to grade. The answer is 49."
+    },
+    {
+        "instruction": " The cafeteria had 50 apples. For lunch they handed out 5 to students and decided to use the rest to make pies. If each pie takes 5 apples, how many pies could they make? ",
+        "input": "",
+        "answer": [
+            9.0
+        ],
+        "output": "The cafeteria had 50 apples. They handed out 5 to students, so now they have 50 - 5 = 45 apples. Each pie takes 5 apples, so they can make 45 / 5 = 9 pies. The answer is 9."
+    },
+    {
+        "instruction": " For homework Faye had 13 math problems and 2 spelling problems. If she can finish 3 problems in an hour how long will it take her to finish all the problems? ",
+        "input": "",
+        "answer": [
+            5.0
+        ],
+        "output": "Faye has 13 math problems and 2 spelling problems. That means she has 13 + 2 = 15 problems in total. She can finish 3 problems in an hour. So it will take her 15 / 3 = 5 hours to finish all the problems. The answer is 5 hours."
+    },
+    {
+        "instruction": " Faye had 34 coloring books. If she gave away 3 of them, but then bought 48 more, how many would she have total? ",
+        "input": "",
+        "answer": [
+            79.0
+        ],
+        "output": "Faye had 34 coloring books. She gave away 3 of them, so now she has 34 - 3 = 31 books. She bought 48 more, so in total she has 31 + 48 = 79 books. The answer is 79."
+    },
+    {
+        "instruction": " Sarah had 4 pages of math homework and 6 pages of reading homework. If each page had 4 problems on it, how many problems did she have to complete total? ",
+        "input": "",
+        "answer": [
+            40.0
+        ],
+        "output": "Sarah had 4 pages of math homework and 6 pages of reading homework. Each page had 4 problems, so in total she had 4 * 4 = 16 math problems and 6 * 4 = 24 reading problems. In total she had 16 + 24 = 40 problems. The answer is 40."
+    },
+    {
+        "instruction": " Wendy picked 45 flowers for her friend\u2019s wedding. She was making bouquets with 5 flowers in each one. If 35 of the flowers wilted before the wedding, how many bouquets could she still make? ",
+        "input": "",
+        "answer": [
+            2.0
+        ],
+        "output": "Wendy had 45 flowers. 35 wilted, so she has 45 - 35 = 10 flowers left. She can make 5 flowers in each bouquet, so she can make 10 / 5 = 2 bouquets. The answer is 2."
+    },
+    {
+        "instruction": " Frank had saved up 3 dollars. If he received another 37 dollars for his allowance, how many 8 dollar toys could he buy? ",
+        "input": "",
+        "answer": [
+            5.0
+        ],
+        "output": "Frank had 3 dollars saved up. He received 37 dollars for his allowance. That means he has 3 + 37 = 40 dollars. He can buy 40 / 8 = 5 toys. The answer is 5."
+    },
+    {
+        "instruction": " George had 30 dollars. For his birthday he got 16 more dollars but spent 38 on a new game. How much money does he have now? ",
+        "input": "",
+        "answer": [
+            8.0
+        ],
+        "output": "George had 30 dollars. He got 16 more dollars, so now he has 30 + 16 = 46 dollars. He spent 38 dollars on a new game, so now he has 46 - 38 = 8 dollars. The answer is 8."
+    },
+    {
+        "instruction": " Olivia uploaded 5 pictures from her phone and 35 from her camera to facebook. If she sorted the pics into 8 different albums with the same amount of pics in each album, how many pictures were in each of the albums? ",
+        "input": "",
+        "answer": [
+            5.0
+        ],
+        "output": "Olivia uploaded 5 pictures from her phone and 35 from her camera. In total she uploaded 5 + 35 = 40 pictures. She sorted them into 8 albums, so each album must have 40 / 8 = 5 pictures. The answer is 5."
+    },
+    {
+        "instruction": " Haley was playing a video game and had 14 lives. In a hard part of the game she lost 4 lives. If she got 36 more lives in the next level, how many lives would she have? ",
+        "input": "",
+        "answer": [
+            46.0
+        ],
+        "output": "She had 14 lives. She lost 4 lives, so now she has 14 - 4 = 10 lives. She got 36 more lives, so in total she has 10 + 36 = 46 lives. The answer is 46."
+    },
+    {
+        "instruction": " John had 5 action figures, but needed 7 total for a complete collection. If each one costs $5, how much money would he need to finish his collection? ",
+        "input": "",
+        "answer": [
+            10.0
+        ],
+        "output": "He has 5 action figures, but needs 7 total. That means he needs to buy 2 more. Each one costs $5, so he needs to buy 2 * $5 = $10. The answer is $10."
+    },
+    {
+        "instruction": " Sarah's old washing machine could only wash 5 pieces of clothing at a time. If she had to wash 43 shirts and 2 sweaters how many loads would she have to do? ",
+        "input": "",
+        "answer": [
+            9.0
+        ],
+        "output": "Sarah has 43 shirts and 2 sweaters. She can only wash 5 pieces of clothing at a time. That means she needs 43/5 = 8.6 loads for the shirts and 2/5 = 0.4 loads for the sweaters. In total she needs 8.6 + 0.4 = 9 loads. The answer is 9."
+    },
+    {
+        "instruction": " A pet store has 8 bird cages. If each cage has 2 parrots and 7 parakeets in it, how many birds does the pet store have total? ",
+        "input": "",
+        "answer": [
+            72.0
+        ],
+        "output": "There are 8 cages. Each cage has 2 parrots and 7 parakeets. That means there are 8 * (2 + 7) = 8 * 9 = 72 birds in total. The answer is 72."
+    },
+    {
+        "instruction": " The school cafeteria ordered 8 red apples and 43 green apples for students lunches. But, if only 42 students wanted fruit, how many extra did the cafeteria end up with? ",
+        "input": "",
+        "answer": [
+            9.0
+        ],
+        "output": "The cafeteria ordered 8 red apples and 43 green apples. That means they ordered 8 + 43 = 51 apples in total. But only 42 students wanted fruit. So they ended up with 51 - 42 = 9 extra apples. The answer is 9."
+    },
+    {
+        "instruction": " While playing a trivia game, Mike answered 3 questions correct in the first half and 5 questions correct in the second half. If each question was worth 3 points, what was his final score? ",
+        "input": "",
+        "answer": [
+            24.0
+        ],
+        "output": "Mike answered 3 questions correctly in the first half and 5 questions correctly in the second half. Each question was worth 3 points. So, his score in the first half was 3 * 3 = 9 points. His score in the second half was 5 * 3 = 15 points. His total score is 9 + 15 = 24 points. The answer is 24."
+    },
+    {
+        "instruction": " A pet store had 64 puppies. In one day they sold 28 of them and put the rest into cages with 4 in each cage. How many cages did they use? ",
+        "input": "",
+        "answer": [
+            9.0
+        ],
+        "output": "The pet store had 64 puppies. They sold 28 of them, so now they have 64 - 28 = 36 puppies. Each cage has 4 puppies, so they need 36 / 4 = 9 cages. The answer is 9."
+    },
+    {
+        "instruction": " Tom bought 12 boxes of chocolate candy and gave 7 to his little brother. If each box has 6 pieces inside it, how many pieces did Tom still have? ",
+        "input": "",
+        "answer": [
+            30.0
+        ],
+        "output": "Tom bought 12 boxes of chocolate candy. Each box has 6 pieces inside it. That means he bought 12 * 6 = 72 pieces. He gave 7 boxes to his brother, so he has 72 - 7 * 6 = 36 pieces. The answer is 36."
+    },
+    {
+        "instruction": " A pet store had 18 puppies. In one day they sold 3 of them and put the rest into cages with 5 in each cage. How many cages did they use? ",
+        "input": "",
+        "answer": [
+            3.0
+        ],
+        "output": "The pet store had 18 puppies. They sold 3 of them, so now they have 18 - 3 = 15 puppies. They put 5 puppies in each cage, so they must have used 15 / 5 = 3 cages. The answer is 3."
+    },
+    {
+        "instruction": " At the schools book fair Victor bought 32 adventure books and 37 mystery books. If 16 of the books were used, how many new books did he buy? ",
+        "input": "",
+        "answer": [
+            53.0
+        ],
+        "output": "Victor bought 32 adventure books and 37 mystery books. That means he bought 32 + 37 = 69 books in total. 16 of them were used, so he has 69 - 16 = 53 new books. The answer is 53."
+    },
+    {
+        "instruction": " Oliver had to wash 39 short sleeve shirts and 47 long sleeve shirts before school. If he had only washed 20 of them by the time school started, how many did he not wash? ",
+        "input": "",
+        "answer": [
+            66.0
+        ],
+        "output": "Oliver had to wash 39 short sleeve shirts and 47 long sleeve shirts. He only washed 20 of them. That means he did not wash 39 + 47 - 20 = 66 shirts. The answer is 66."
+    },
+    {
+        "instruction": " Wendy uploaded 22 pictures from her phone and 2 from her camera to facebook. If she sorted the pics into 4 different albums with the same amount of pics in each album, how many pictures were in each of the albums? ",
+        "input": "",
+        "answer": [
+            6.0
+        ],
+        "output": "Wendy uploaded 22 + 2 = 24 pictures. She sorted them into 4 albums with the same amount of pictures in each album. That means each album has 24 / 4 = 6 pictures. The answer is 6."
+    },
+    {
+        "instruction": " Debby's class is going on a field trip to the zoo. If each van can hold 9 people and there are 40 students and 14 adults going, how many vans will they need? ",
+        "input": "",
+        "answer": [
+            6.0
+        ],
+        "output": "There are 40 students and 14 adults, so in total there are 40 + 14 = 54 people. Each van can hold 9 people, so they will need 54 / 9 = 6 vans. The answer is 6."
+    },
+    {
+        "instruction": " Mike had 15 video games but 9 of them weren't working. If he wanted to sell the working games for $5 each, how much money could he earn? ",
+        "input": "",
+        "answer": [
+            30.0
+        ],
+        "output": "Mike had 15 video games but 9 of them weren't working. That means he has 15 - 9 = 6 working games. He can sell each of them for $5. So he can earn 6 * $5 = $30. The answer is $30."
+    },
+    {
+        "instruction": " Paul was collecting cans for recycling. On Saturday he filled 6 bags up and on Sunday he filled 3 more bags. If each bag had 8 cans in it, how many cans did he pick up total? ",
+        "input": "",
+        "answer": [
+            72.0
+        ],
+        "output": "On Saturday he filled 6 bags, each with 8 cans. That means he picked up 6 * 8 = 48 cans. On Sunday he filled 3 more bags, each with 8 cans. That means he picked up 3 * 8 = 24 cans. In total he picked up 48 + 24 = 72 cans. The answer is 72."
+    },
+    {
+        "instruction": " For Halloween Katie and her sister combined the candy they received. Katie had 10 pieces of candy while her sister had 6. If they ate 9 pieces the first night, how many pieces do they have left? ",
+        "input": "",
+        "answer": [
+            7.0
+        ],
+        "output": "Katie had 10 pieces of candy and her sister had 6. In total they had 10 + 6 = 16 pieces of candy. They ate 9 pieces the first night, so now they have 16 - 9 = 7 pieces of candy left. The answer is 7."
+    },
+    {
+        "instruction": " Luke was selling his old games. He started out with 57 but sold 39 of them. He packed the rest up putting 2 games into each box. How many boxes did he have to use? ",
+        "input": "",
+        "answer": [
+            9.0
+        ],
+        "output": "He started with 57 games and sold 39 of them. That means he has 57 - 39 = 18 games left. He put 2 games into each box, so he must have used 18 / 2 = 9 boxes. The answer is 9."
+    },
+    {
+        "instruction": " Tom had 57 dollars. If he spent 49 bucks on a new game, how many 4 dollar toys could he buy with the money he had left? ",
+        "input": "",
+        "answer": [
+            2.0
+        ],
+        "output": "Tom had 57 dollars. He spent 49 dollars on the game, so now he has 57 - 49 = 8 dollars. He can buy 8 / 4 = 2 toys with the money he has left. The answer is 2."
+    },
+    {
+        "instruction": " A magician was selling magic card decks for 9 dollars each. If he started with 12 decks and by the end of the day he had 7 left, how much money did he earn? ",
+        "input": "",
+        "answer": [
+            45.0
+        ],
+        "output": "He started with 12 decks. He sold 12 - 7 = 5 decks. Each deck was sold for $9. So he earned 5 * $9 = $45. The answer is $45."
+    },
+    {
+        "instruction": " The cafeteria had 47 apples. For lunch they handed out 27 to students and decided to use the rest to make pies. If each pie takes 4 apples, how many pies could they make? ",
+        "input": "",
+        "answer": [
+            5.0
+        ],
+        "output": "The cafeteria had 47 apples. They handed out 27 to students, so now they have 47 - 27 = 20 apples. Each pie takes 4 apples, so they can make 20 / 4 = 5 pies. The answer is 5."
+    },
+    {
+        "instruction": " Chloe picked 48 carrots from her garden. If she threw out 45 of them and then picked 42 more the next day, how many carrots would she have total? ",
+        "input": "",
+        "answer": [
+            45.0
+        ],
+        "output": "She picked 48 carrots from her garden. She threw out 45 of them, so now she has 48 - 45 = 3 carrots. The next day she picked 42 more, so in total she has 3 + 42 = 45 carrots. The answer is 45."
+    },
+    {
+        "instruction": " Luke had 47 pieces of clothing to wash. He put 17 of them in one load, but decided to split the rest into 5 equal loads. How many pieces of clothing could go in each of the small loads? ",
+        "input": "",
+        "answer": [
+            6.0
+        ],
+        "output": "Luke had 47 pieces of clothing. He put 17 in one load, so now he has 47 - 17 = 30 pieces left. He wants to split them into 5 equal loads. That means each load must have 30 / 5 = 6 pieces. The answer is 6."
+    },
+    {
+        "instruction": " A waiter had 47 customers to wait on. If 41 customers left and he got another 20 customers, how many customers would he have? ",
+        "input": "",
+        "answer": [
+            26.0
+        ],
+        "output": "He had 47 customers to wait on. 41 customers left, so now he has 47 - 41 = 6 customers. Then he got 20 more customers, so in total he has 6 + 20 = 26 customers. The answer is 26."
+    },
+    {
+        "instruction": " A magician was selling magic card decks for 7 dollars each. If he started with 16 decks and by the end of the day he had 8 left, how much money did he earn? ",
+        "input": "",
+        "answer": [
+            56.0
+        ],
+        "output": "He started with 16 decks. He sold 8 decks. That means he sold 16 - 8 = 8 decks. He sold each deck for $7, so he earned 8 * $7 = $56. The answer is $56."
+    },
+    {
+        "instruction": " Haley and her mom were picking carrots from their garden. Haley picked 39 and her mother picked 38. If only 64 of the carrots were good, how many bad carrots did they have? ",
+        "input": "",
+        "answer": [
+            13.0
+        ],
+        "output": "Haley and her mom picked 39 + 38 = 77 carrots in total. Only 64 of them were good. That means they had 77 - 64 = 13 bad carrots. The answer is 13."
+    },
+    {
+        "instruction": " Paige had 43 math problems and 12 science problems for homework. If she finished 44 of the problems at school, how many problems did she have to do for homework? ",
         "input": "",
         "answer": [
             11.0
         ],
-        "output": "At the start of the year there were 8 students. 5 students left, so now there are 8 - 5 = 3 students. 8 new students came, so now there are 3 + 8 = 11 students. The answer is 11."
+        "output": "She had 43 math problems and 12 science problems. She finished 44 of them. That means she still has 43 + 12 - 44 = 11 problems left. The answer is 11."
+    },
+    {
+        "instruction": " A store had 40 coloring books in stock. They ended up putting them on sale and getting rid of 20 of them. The put the ones they still had onto shelves with 4 on each shelf. How many shelves did they use? ",
+        "input": "",
+        "answer": [
+            5.0
+        ],
+        "output": "The store had 40 coloring books in stock. They got rid of 20 of them, so now they have 40 - 20 = 20 coloring books. Each shelf has 4 coloring books, so they need 20 / 4 = 5 shelves. The answer is 5."
+    },
+    {
+        "instruction": " For the school bake sale Katie made 26 cupcakes. If she sold 20 of them and then made 20 more, how many cupcakes would she have? ",
+        "input": "",
+        "answer": [
+            26.0
+        ],
+        "output": "Katie made 26 cupcakes. She sold 20 of them, so now she has 26 - 20 = 6 cupcakes. Then she made 20 more, so in total she has 6 + 20 = 26 cupcakes. The answer is 26."
+    },
+    {
+        "instruction": " The cafeteria had 75 apples. For lunch they handed out 19 to students and decided to use the rest to make pies. If each pie takes 8 apples, how many pies could they make? ",
+        "input": "",
+        "answer": [
+            7.0
+        ],
+        "output": "The cafeteria had 75 apples. 19 were handed out to students, so now they have 75 - 19 = 56 apples. Each pie takes 8 apples, so they can make 56 / 8 = 7 pies. The answer is 7."
+    },
+    {
+        "instruction": " A group of 3 friends went into a restaurant. The chef already had 8 chicken wings cooked but cooked 10 more for the group. If they each got the same amount how many would each person get? ",
+        "input": "",
+        "answer": [
+            6.0
+        ],
+        "output": "The chef had 8 chicken wings cooked already and cooked 10 more. That means in total there are 8 + 10 = 18 chicken wings. The group of 3 friends will share the wings equally. So each person will get 18 / 3 = 6 chicken wings. The answer is 6."
+    },
+    {
+        "instruction": " Ned was trying to expand his game collection. He bought 11 games from a friend and bought 22 more at a garage sale. If 19 of the games didn't work, how many good games did he end up with? ",
+        "input": "",
+        "answer": [
+            14.0
+        ],
+        "output": "Ned bought 11 games from a friend and 22 more at a garage sale. That means he had 11 + 22 = 33 games in total. 19 of them didn't work, so he has 33 - 19 = 14 good games. The answer is 14."
+    },
+    {
+        "instruction": " Billy was organizing his baseball cards in a binder with 5 on each page. If he had 3 new cards and 42 old cards to put in the binder, how many pages would he use? ",
+        "input": "",
+        "answer": [
+            9.0
+        ],
+        "output": "He has 42 old cards and 3 new cards. That means he has 42 + 3 = 45 cards in total. He can fit 5 cards on each page, so he needs 45 / 5 = 9 pages. The answer is 9."
+    },
+    {
+        "instruction": " There were 13 friends playing a video game online when 8 players quit. If each player left had 6 lives, how many lives did they have total? ",
+        "input": "",
+        "answer": [
+            30.0
+        ],
+        "output": "There were 13 players in the beginning. 8 players left, so now there are 13 - 8 = 5 players. Each player had 6 lives, so in total they have 5 * 6 = 30 lives. The answer is 30."
+    },
+    {
+        "instruction": " Paige had 11 songs on her mp3 player. If she deleted 9 old songs from it and then added 8 new songs, how many songs does she have on her mp3 player? ",
+        "input": "",
+        "answer": [
+            10.0
+        ],
+        "output": "She had 11 songs in the beginning. She deleted 9 old songs, so now she has 11 - 9 = 2 songs. Then she added 8 new songs, so in total she has 2 + 8 = 10 songs. The answer is 10."
+    },
+    {
+        "instruction": " There were 7 friends playing a video game online when 2 more players joined the game. If each player had 7 lives, how many lives did they have total? ",
+        "input": "",
+        "answer": [
+            63.0
+        ],
+        "output": "There were 7 friends playing the game. 2 more players joined, so now there are 7 + 2 = 9 players. Each player has 7 lives, so in total they have 9 * 7 = 63 lives. The answer is 63."
+    },
+    {
+        "instruction": " Maria was making baggies of cookies with 8 cookies in each bag. If she had 5 chocolate chip cookies and 19 oatmeal cookies, how many baggies could she make? ",
+        "input": "",
+        "answer": [
+            3.0
+        ],
+        "output": "Maria has 5 chocolate chip cookies and 19 oatmeal cookies. She wants to make 8 cookies in each bag. She can make 5 bags with 8 chocolate chip cookies each, and 19 bags with 8 oatmeal cookies each. In total, she can make 5 + 19 = 24 bags. The answer is 24."
+    },
+    {
+        "instruction": " Adam had 48 books. If he sold 19 of them and used the money he earned to buy 38 new books, how many books would Adam have? ",
+        "input": "",
+        "answer": [
+            67.0
+        ],
+        "output": "Adam had 48 books. He sold 19 of them, so now he has 48 - 19 = 29 books. He used the money he earned to buy 38 new books, so now he has 29 + 38 = 67 books. The answer is 67."
+    },
+    {
+        "instruction": " Luke was organizing his baseball cards in a binder with 3 on each page. If he had 3 new cards and 9 old cards to put in the binder, how many pages would he use? ",
+        "input": "",
+        "answer": [
+            4.0
+        ],
+        "output": "He has 3 new cards and 9 old cards. That means he has 3 + 9 = 12 cards in total. He can fit 3 cards on each page, so he needs 12 / 3 = 4 pages. The answer is 4."
+    },
+    {
+        "instruction": " Nancy uploaded 51 pictures to Facebook. She put 11 pics into one album and put the rest into 8 different albums. How many pictures were in each album? ",
+        "input": "",
+        "answer": [
+            5.0
+        ],
+        "output": "Nancy uploaded 51 pictures. 11 of them were put into one album, so the remaining pictures must have been 51 - 11 = 40. She put the remaining 40 pictures into 8 different albums. That means each album must have 40 / 8 = 5 pictures. The answer is 5."
+    },
+    {
+        "instruction": " A pet store had 102 puppies. In one day they sold 21 of them and put the rest into cages with 9 in each cage. How many cages did they use? ",
+        "input": "",
+        "answer": [
+            9.0
+        ],
+        "output": "The pet store had 102 puppies. They sold 21 of them, so now they have 102 - 21 = 81 puppies. They put 9 puppies in each cage, so they must have used 81 / 9 = 9 cages. The answer is 9."
+    },
+    {
+        "instruction": " At the fair Kaleb bought 6 tickets. After riding the ferris wheel he had 3 tickets left. If each ticket cost 9 dollars, how much money did Kaleb spend riding the ferris wheel? ",
+        "input": "",
+        "answer": [
+            27.0
+        ],
+        "output": "Kaleb had 6 tickets in the beginning. He had 3 tickets left after riding the ferris wheel. That means he used 6 - 3 = 3 tickets. Each ticket cost $9, so he spent 3 * $9 = $27. The answer is $27."
+    },
+    {
+        "instruction": " For the school bake sale Bianca made 14 cupcakes. If she sold 6 of them and then made 17 more, how many cupcakes would she have? ",
+        "input": "",
+        "answer": [
+            25.0
+        ],
+        "output": "Bianca made 14 cupcakes. She sold 6 of them, so now she has 14 - 6 = 8 cupcakes. Then she made 17 more, so in total she has 8 + 17 = 25 cupcakes. The answer is 25."
+    },
+    {
+        "instruction": " A store had 27 coloring books in stock. They ended up putting them on sale and getting rid of 6 of them. The put the ones they still had onto shelves with 7 on each shelf. How many shelves did they use? ",
+        "input": "",
+        "answer": [
+            3.0
+        ],
+        "output": "The store had 27 coloring books in stock. They got rid of 6, so now they have 27 - 6 = 21 coloring books. Each shelf has 7 books, so they need 21 / 7 = 3 shelves. The answer is 3."
+    },
+    {
+        "instruction": " Ned bought 14 boxes of chocolate candy and gave 7 to his little brother. If each box has 6 pieces inside it, how many pieces did Ned still have? ",
+        "input": "",
+        "answer": [
+            42.0
+        ],
+        "output": "Ned bought 14 boxes of chocolate candy. Each box has 6 pieces inside it. That means he had 14 * 6 = 84 pieces in total. He gave 7 boxes to his brother, so he still has 84 - (7 * 6) = 42 pieces. The answer is 42."
+    },
+    {
+        "instruction": " Ned had to wash 9 short sleeve shirts and 21 long sleeve shirts before school. If he had only washed 29 of them by the time school started, how many did he not wash? ",
+        "input": "",
+        "answer": [
+            1.0
+        ],
+        "output": "Ned had to wash 9 short sleeve shirts and 21 long sleeve shirts. He only washed 29 of them. That means he did not wash 9 + 21 - 29 = 1 shirt. The answer is 1."
+    },
+    {
+        "instruction": " At the fair there were 10 people in line for the bumper cars. If 2 of them got tired of waiting and left and 2 more got in line, how many people would be in line? ",
+        "input": "",
+        "answer": [
+            10.0
+        ],
+        "output": "There were 10 people in line for the bumper cars. 2 of them left, so now there are 10 - 2 = 8 people in line. Then 2 more got in line, so now there are 8 + 2 = 10 people in line. The answer is 10."
     }
 ]
