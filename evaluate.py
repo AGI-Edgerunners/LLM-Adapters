@@ -89,12 +89,14 @@ def main(
     for idx, data in enumerate(dataset):
         instruction = data.get('sQuestion')
         label = data.get('lSolutions')[-1]
+        if isinstance(label, str):
+            label = float(label)
 
         outputs = evaluate(instruction)
         predict = extract_answer_number(args, outputs)
-        if abs(label-predict) <= miss:
+        if abs(label - predict) <= miss:
             correct += 1
-        print(f'\rtest:{idx+1}/{total} | accuracy {correct}  {correct/total}',end='')
+        print(f'\rtest:{idx + 1}/{total} | accuracy {correct}  {correct / total}', end='')
     print('\n')
     print('test finished')
 
