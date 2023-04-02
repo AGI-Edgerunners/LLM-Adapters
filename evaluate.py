@@ -116,8 +116,8 @@ def main(
         print('prediction:', predict)
         print('label:', label)
         print('---------------')
-        print(f'\rtest:{idx + 1}/{total} | accuracy {correct}  {correct / (idx+1)}', end='')
-    with open(f'experiment/{args.model}-{args.adapter}-{args.dataset}') as f:
+        print(f'\rtest:{idx + 1}/{total} | accuracy {correct}  {correct / (idx + 1)}', end='')
+    with open(f'experiment/{args.model}-{args.adapter}-{args.dataset}.json', 'w+') as f:
         json.dump(output_data, f, indent=4)
     print('\n')
     print('test finished')
@@ -163,7 +163,8 @@ def load_data(args) -> list:
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset', choices=['AddSub', 'MultiArith', 'SingleEq', 'gsm8k','AQuA','SVAMP'], required=True)
+    parser.add_argument('--dataset', choices=['AddSub', 'MultiArith', 'SingleEq', 'gsm8k', 'AQuA', 'SVAMP'],
+                        required=True)
     parser.add_argument('--model', choices=['LLaMA-7B', 'BLOOM-7B', 'GPT-j-6B'], required=True)
     parser.add_argument('--adapter', choices=['LoRA', 'AdapterP', 'AdapterH', 'Parallel', 'Scaled_Parallel'],
                         required=True)
