@@ -1,0 +1,682 @@
+[
+    {
+        "instruction": "Julia played tag with 14 kids on tuesday. If she played tag with 8 more kids on monday than on tuesday. How many kids did she play with on monday?",
+        "input": "",
+        "answer": [
+            22.0
+        ],
+        "output": "She played tag with 14 kids on Tuesday. She played with 8 more kids on Monday than on Tuesday. That means she played with 14 + 8 = 22 kids on Monday. The answer is 22."
+    },
+    {
+        "instruction": "Allan brought 5 balloons to the park. If Jake brought 6 more balloons than the number of balloons that Allan brought. How many balloons did Jake bring to the park?",
+        "input": "",
+        "answer": [
+            11.0
+        ],
+        "output": "Allan brought 5 balloons. Jake brought 6 more than that, so he must have brought 5 + 6 = 11 balloons. The answer is 11."
+    },
+    {
+        "instruction": "Baker made 19 cakes and 131 pastries. If he sold 70 cakes and 88 pastries. How many more pastries than cakes did baker make?",
+        "input": "",
+        "answer": [
+            112.0
+        ],
+        "output": "Baker made 19 cakes and 131 pastries. He sold 70 cakes and 88 pastries. That means he still has 19 - 70 = -51 cakes and 131 - 88 = 43 pastries. He made more pastries than cakes, so the answer is 43 - (-51) = 94. The answer is 94."
+    },
+    {
+        "instruction": "Matthew gave equal numbers of crackers and cakes to his 4 friends. If he had 32 crackers and 98 cakes initially. How many crackers did each person eat?",
+        "input": "",
+        "answer": [
+            8.0
+        ],
+        "output": "Matthew gave equal numbers of crackers and cakes to his 4 friends. That means he gave 4 * (crackers + cakes) = 4 * (32 + 98) = 4 * 130 = 520 crackers and cakes in total. He had 32 crackers initially, so he gave 4 * 32 = 128 crackers in total. Each person ate 128 / 4 = 32 crackers. The answer is 32."
+    },
+    {
+        "instruction": "Mary is baking a cake. The recipe calls for 6 cups of flour and 13 cups of sugar. She already put in some cups of flour. If she still needs 8 more cups of flour than sugar. How many more cups of flour does she need to add?",
+        "input": "",
+        "answer": [
+            21.0
+        ],
+        "output": "The recipe calls for 6 cups of flour and 13 cups of sugar. She already put in some cups of flour. So she still needs 6 - some = 8 more cups of flour than sugar. The answer is 8."
+    },
+    {
+        "instruction": "Winter is almost here and most animals are migrating to warmer countries. 27 bird families flew away for the winter from near a mountain. If there were 41 bird families living near the mountain initially. How many bird families were left near the mountain?",
+        "input": "",
+        "answer": [
+            14.0
+        ],
+        "output": "There were 41 bird families living near the mountain initially. 27 of them flew away for the winter. That means there are 41 - 27 = 14 bird families left near the mountain. The answer is 14."
+    },
+    {
+        "instruction": "Jake has 16 fewer peaches than Steven. Steven has 15 more peaches than Jill. If Jill has 12 peaches. How many more peaches does Jill have than Jake?",
+        "input": "",
+        "answer": [
+            1.0
+        ],
+        "output": "Steven has 15 more peaches than Jill. That means Jill has 15 - 12 = 3 peaches. Jake has 16 fewer peaches than Steven, so Jake has 3 - 16 = -13 peaches. Jill has 12 peaches, so she has 12 - (-13) = 25 more peaches than Jake. The answer is 25."
+    },
+    {
+        "instruction": "A book has 2 chapters. The first chapter is 60 pages long. If there are a total of 93 pages in the book. How many pages are in the second chapter?",
+        "input": "",
+        "answer": [
+            33.0
+        ],
+        "output": "The first chapter is 60 pages long. The total number of pages in the book is 93. That means the second chapter must have 93 - 60 = 33 pages. The answer is 33."
+    },
+    {
+        "instruction": "Paul got a box of some crayons for his birthday. During the school year he gave 563 crayons to his friends while he lost 558 crayons. If he only had 332 crayons left. How many crayons did he get for his birthday?",
+        "input": "",
+        "answer": [
+            1453.0
+        ],
+        "output": "He had 332 crayons left. He gave 563 crayons to his friends and lost 558 crayons. That means he must have had 332 + 563 - 558 = 437 crayons in the beginning. That means he got 437 - 332 = 105 crayons for his birthday. The answer is 105."
+    },
+    {
+        "instruction": "Julia played tag with some kids on monday. She played tag with 14 kids on tuesday. If she played with a total of 16 kids. How many kids did she play with on monday?",
+        "input": "",
+        "answer": [
+            2.0
+        ],
+        "output": "She played with a total of 16 kids. On Tuesday she played with 14 kids. That means on Monday she must have played with 16 - 14 = 2 kids. The answer is 2."
+    },
+    {
+        "instruction": "Baker's friend bought 137 cakes from him. If he had made 169 cakes initially. How many cakes would baker still have?",
+        "input": "",
+        "answer": [
+            32.0
+        ],
+        "output": "Baker had 169 cakes initially. His friend bought 137 cakes from him. That means he has 169 - 137 = 32 cakes left. The answer is 32."
+    },
+    {
+        "instruction": "If you have 14 cookies in total and 7 bags having equal number of cookies. How many cookies does each bag have?",
+        "input": "",
+        "answer": [
+            2.0
+        ],
+        "output": "We have 14 cookies in total and 7 bags. Each bag must have the same number of cookies. So, 14 divided by 7 is 2. Each bag has 2 cookies. The answer is 2."
+    },
+    {
+        "instruction": "Matthew gave equal numbers of crackers to his 18 friends. If he had 36 crackers. How many crackers did each person eat?",
+        "input": "",
+        "answer": [
+            2.0
+        ],
+        "output": "Matthew had 36 crackers and he gave them to 18 friends. That means each person got 36 / 18 = 2 crackers. The answer is 2."
+    },
+    {
+        "instruction": "There are 4 different books and 17 different movies in the ' crazy silly school ' series. If you read 19 of the books and watched 7 of the movies. How many more movies do you still have to watch?",
+        "input": "",
+        "answer": [
+            10.0
+        ],
+        "output": "There are 4 books and 17 movies in the series. You have read 19 books and watched 7 movies. That means you have read 4 - 19 = -15 books and watched 17 - 7 = 10 movies. So you still have to watch 17 - 10 = 7 more movies. The answer is 7."
+    },
+    {
+        "instruction": "Lewis earns $ 368 every week during the 1359 weeks of harvest. If he has to pay $ 388 rent every week. How much money does he pay as rent during the harvest season?",
+        "input": "",
+        "answer": [
+            527292.0
+        ],
+        "output": "Lewis earns $368 every week. He pays $388 rent every week. This means he pays $388 - $368 = $20 more than he earns. During the 1359 weeks of harvest, he pays 1359 * $20 = $27180 as rent. The answer is $27180."
+    },
+    {
+        "instruction": "Because of the decision Sofia asked the students to suggest specific types of food. If 324 students suggested adding mashed potatoes 374 suggested adding bacon to the menu and 128 suggested adding tomatoes. How many students participated in the suggestion of new food items?",
+        "input": "",
+        "answer": [
+            826.0
+        ],
+        "output": "324 students suggested mashed potatoes, 374 suggested bacon and 128 suggested tomatoes. In total, 324 + 374 + 128 = 826 students participated in the suggestion of new food items. The answer is 826."
+    },
+    {
+        "instruction": "There are 22 different books and 10 different movies in the ' crazy silly school ' series. If you read 12 of the books and watched 56 of the movies. How many more books do you still have to read?",
+        "input": "",
+        "answer": [
+            10.0
+        ],
+        "output": "There are 22 books and 10 movies in the series. You have read 12 books and watched 56 movies. That means you still have 22 - 12 = 10 books left to read. The answer is 10."
+    },
+    {
+        "instruction": "Winter is almost here and most animals are migrating to warmer countries. There are 85 bird families living near the mountain. If 23 bird families flew away to africa and 37 bird families flew away to asia. How many bird families were left near the mountain?",
+        "input": "",
+        "answer": [
+            25.0
+        ],
+        "output": "There were 85 bird families living near the mountain. 23 flew away to Africa and 37 flew away to Asia. That means in total 23 + 37 = 60 bird families flew away. The number of bird families left near the mountain must be 85 - 60 = 25. The answer is 25."
+    },
+    {
+        "instruction": "At the arcade Dave had won 18 tickets. If he used 5 to buy some toys and 11 more to buy some clothes. How many tickets did Dave have left?",
+        "input": "",
+        "answer": [
+            2.0
+        ],
+        "output": "Dave had 18 tickets. He used 5 to buy toys, so now he has 18 - 5 = 13 tickets. He used 11 more to buy clothes, so now he has 13 - 11 = 2 tickets. The answer is 2."
+    },
+    {
+        "instruction": "After a typhoon, 2 trees in Haley's backyard died. If she had grown 11 trees initially. How many more trees survived the typhoon than those that died?",
+        "input": "",
+        "answer": [
+            7.0
+        ],
+        "output": "Haley had 11 trees initially. 2 of them died, so now she has 11 - 2 = 9 trees. The difference between the number of trees that survived and those that died is 9 - 2 = 7. The answer is 7."
+    },
+    {
+        "instruction": "David did 30 more push-ups than Zachary in gym class today. If David did 37 push-ups. How many push-ups did Zachary do?",
+        "input": "",
+        "answer": [
+            7.0
+        ],
+        "output": "David did 37 push-ups and he did 30 more than Zachary. That means Zachary must have done 37 - 30 = 7 push-ups. The answer is 7."
+    },
+    {
+        "instruction": "Jesse's room is 7 feet long. If she needs a carpet of size 14 square feet. What is the width of her room?",
+        "input": "",
+        "answer": [
+            2.0
+        ],
+        "output": "The area of the carpet is 14 square feet. We can calculate the width of the room by dividing the area by the length. So, the width of the room is 14 / 7 = 2 feet. The answer is 2 feet."
+    },
+    {
+        "instruction": "Bryan took a look at his books and magazines. If he has 23 books and 61 magazines in each of his 29 bookshelves. How many books and magazines does he have in total?",
+        "input": "",
+        "answer": [
+            2436.0
+        ],
+        "output": "He has 23 books and 61 magazines in each of his 29 bookshelves. That means he has 23 * 29 = 667 books and 61 * 29 = 1769 magazines. In total he has 667 + 1769 = 2436 books and magazines. The answer is 2436."
+    },
+    {
+        "instruction": "Baker made 7 cakes and 148 pastries. If he sold 15 cakes and 103 pastries. How many pastries would baker still have?",
+        "input": "",
+        "answer": [
+            45.0
+        ],
+        "output": "Baker made 7 cakes and 148 pastries. He sold 15 cakes and 103 pastries. That means he still has 7 - 15 = -8 cakes and 148 - 103 = 45 pastries. The answer is 45."
+    },
+    {
+        "instruction": "Robin cut off 13 inches of his hair. If his hair was 14 inches long initially. How long is his hair now?",
+        "input": "",
+        "answer": [
+            1.0
+        ],
+        "output": "Robin had 14 inches of hair initially. He cut off 13 inches, so now he has 14 - 13 = 1 inch of hair. The answer is 1 inch."
+    },
+    {
+        "instruction": "They decided to hold the party in their backyard. They have 2 sets of tables, each having the same number of chairs. If there are a total of 12 chairs in the backyard. How many chairs are there for each table?",
+        "input": "",
+        "answer": [
+            6.0
+        ],
+        "output": "There are 12 chairs in total. This means each table must have 12 / 2 = 6 chairs. The answer is 6."
+    },
+    {
+        "instruction": "Debby bought 88 water bottles and 13 soda bottles when they were on sale. If she drank 4 water bottles and 87 soda bottles a day. How many days would the water bottles last?",
+        "input": "",
+        "answer": [
+            22.0
+        ],
+        "output": "Debby bought 88 water bottles and 13 soda bottles. She drinks 4 water bottles and 87 soda bottles a day. That means she drinks 4 water bottles and 87 soda bottles in total each day. So, the 88 water bottles will last 88 / 4 = 22 days. The answer is 22."
+    },
+    {
+        "instruction": "Paul sold some books in a garage sale leaving him with 27 books. If he had 136 books initially. How many books did he sell?",
+        "input": "",
+        "answer": [
+            109.0
+        ],
+        "output": "Paul had 136 books initially. He sold some books and now he has 27 books. The number of books he sold must have been 136 - 27 = 109 books. The answer is 109."
+    },
+    {
+        "instruction": "Next on his checklist is wax to stick the feathers together. If the feathers require 166 g of wax and right now he has 20 g. How many more grams of wax does he need?",
+        "input": "",
+        "answer": [
+            146.0
+        ],
+        "output": "He needs 166 g of wax. He has 20 g right now. So he needs 166 - 20 = 146 g more. The answer is 146."
+    },
+    {
+        "instruction": "The bananas in Philip's collection are organized into 196 groups. If there are a total of 392 bananas in Philip's banana collection. How big is each group?",
+        "input": "",
+        "answer": [
+            2.0
+        ],
+        "output": "There are 196 groups and 392 bananas in total. Each group must have 392 / 196 = 2 bananas. The answer is 2."
+    },
+    {
+        "instruction": "In Haley's class 13 boys love to play marbles and 50 boys love to play cards. If Haley has 26 marbles. How many will each of the boys receive?",
+        "input": "",
+        "answer": [
+            2.0
+        ],
+        "output": "There are 13 boys who love to play marbles and 50 boys who love to play cards. Haley has 26 marbles. This means each of the 13 boys who love to play marbles will receive 26 / 13 = 2 marbles. The answer is 2."
+    },
+    {
+        "instruction": "In Haley's class 11 are boys who love to play marbles. If Haley gives 9 marbles to each boy. How many marbles did she have?",
+        "input": "",
+        "answer": [
+            99.0
+        ],
+        "output": "There are 11 boys who love to play marbles. She gave 9 marbles to each boy. That means she gave 11 * 9 = 99 marbles. The answer is 99."
+    },
+    {
+        "instruction": "Ed had 30 more marbles than Doug. Ed lost 21 of his marbles at the playground. If Ed had 91 marbles. How many more marbles did Ed have than Doug then?",
+        "input": "",
+        "answer": [
+            9.0
+        ],
+        "output": "Ed had 30 more marbles than Doug. That means Ed had 91 marbles and Doug had 91 - 30 = 61 marbles. Ed lost 21 marbles, so now he has 91 - 21 = 70 marbles. That means Ed still has 70 - 61 = 9 more marbles than Doug. The answer is 9."
+    },
+    {
+        "instruction": "A farmer had 105 green tomatoes and 71 red tomatoes in his garden. If he picked 137 tomatoes. How many tomatoes are left?",
+        "input": "",
+        "answer": [
+            39.0
+        ],
+        "output": "The farmer had 105 green tomatoes and 71 red tomatoes. He picked 137 tomatoes in total. That means he picked 105 + 71 = 176 tomatoes. He had 176 tomatoes in total, so now he has 176 - 137 = 39 tomatoes left. The answer is 39."
+    },
+    {
+        "instruction": "Lewis earns $ 21 every week during the 216 weeks of harvest. If he has to pay $ 702 tax. How much money will have at the end of the harvest season?",
+        "input": "",
+        "answer": [
+            3834.0
+        ],
+        "output": "Lewis earns $21 every week. This means he earns $21 * 216 = $4536 in total. He has to pay $702 in tax. So, he will have $4536 - $702 = $3834 at the end of the harvest season. The answer is $3834."
+    },
+    {
+        "instruction": "After making some pies, chef had 2 apples left. Initially he had 43 apples. How many apples did he use?",
+        "input": "",
+        "answer": [
+            41.0
+        ],
+        "output": "He had 43 apples in the beginning. He used some of them to make pies. Now he has 2 apples left. So he must have used 43 - 2 = 41 apples. The answer is 41."
+    },
+    {
+        "instruction": "Faye was placing some pencils equally into 2 rows. If she had 6 pencils. How many pencils did she place in each row?",
+        "input": "",
+        "answer": [
+            3.0
+        ],
+        "output": "Faye was placing 6 pencils into 2 rows. This means each row must have 6 / 2 = 3 pencils. The answer is 3."
+    },
+    {
+        "instruction": "Julia played tag with 5 kids on monday. She played tag with some more kids on tuesday. If she played with a total of 15 kids. How many kids did she play with on tuesday?",
+        "input": "",
+        "answer": [
+            10.0
+        ],
+        "output": "She played with 5 kids on Monday. She played with a total of 15 kids. That means she must have played with 15 - 5 = 10 kids on Tuesday. The answer is 10."
+    },
+    {
+        "instruction": "They decided to hold the party in their backyard. If they have 5 sets of tables and each set has 10 chairs. How many more chairs than tables do they have?",
+        "input": "",
+        "answer": [
+            45.0
+        ],
+        "output": "They have 5 sets of tables and each set has 10 chairs. That means they have 5 * 10 = 50 chairs. They have 5 tables. So they have 50 - 5 = 45 more chairs than tables. The answer is 45."
+    },
+    {
+        "instruction": "After resting they decided to go for a swim. The depth of the water is 16 times Ron's height. Dean is 9 feet taller than Ron. If Ron stands at 13 feet. How deep was the water?",
+        "input": "",
+        "answer": [
+            208.0
+        ],
+        "output": "Ron stands at 13 feet. Dean is 9 feet taller, so Dean stands at 13 + 9 = 22 feet. The water is 16 times Ron's height, so it is 16 * 13 = 208 feet deep. The answer is 208 feet."
+    },
+    {
+        "instruction": "A farmer had 177 tomatoes and 12 potatoes in his garden. If he picked 53 tomatoes. How many tomatoes and potatoes does he have left?",
+        "input": "",
+        "answer": [
+            136.0
+        ],
+        "output": "The farmer had 177 tomatoes and 12 potatoes. He picked 53 tomatoes, so now he has 177 - 53 = 124 tomatoes. He still has 12 potatoes. So in total he has 124 tomatoes and 12 potatoes. The answer is 124 tomatoes and 12 potatoes."
+    },
+    {
+        "instruction": "Debby bought some water bottles when they were on sale. She drank 109 bottles a day. If the bottles lasted for 74 days. How many bottles had she bought?",
+        "input": "",
+        "answer": [
+            8066.0
+        ],
+        "output": "She drank 109 bottles a day. This means she drank 109 * 74 = 8106 bottles in total. She had bought 8106 bottles. The answer is 8106."
+    },
+    {
+        "instruction": "There are 17 different movies and 11 different books in the ' crazy silly school ' series. If you read 13 of the books and watched 63 of the movies. How many more movies than books are there in the ' crazy silly school ' series?",
+        "input": "",
+        "answer": [
+            6.0
+        ],
+        "output": "There are 17 movies and 11 books in the series. You read 13 books and watched 63 movies. That means you have watched 63 - 13 = 50 more movies than books. The answer is 50."
+    },
+    {
+        "instruction": "Randy uses 36 blocks to build a tower. If he had 59 blocks. How many blocks are left?",
+        "input": "",
+        "answer": [
+            23.0
+        ],
+        "output": "Randy used 36 blocks to build the tower. He had 59 blocks in total. So the number of blocks left must be 59 - 36 = 23 blocks. The answer is 23."
+    },
+    {
+        "instruction": "Jesse's room is 2 feet long and 12 feet wide. If each tile is of size 4 square feet. How many tiles does she need to cover the whole floor?",
+        "input": "",
+        "answer": [
+            6.0
+        ],
+        "output": "The room is 2 feet long and 12 feet wide. That means the area of the room is 2 * 12 = 24 square feet. Each tile is of size 4 square feet. So, we need 24 / 4 = 6 tiles to cover the whole floor. The answer is 6."
+    },
+    {
+        "instruction": "Robin cut off 20 inches of his hair. If his hair is now 10 inches long. How long was his hair before he cut?",
+        "input": "",
+        "answer": [
+            30.0
+        ],
+        "output": "His hair was 10 inches long after he cut it. He cut off 20 inches. So before he cut it, his hair must have been 10 + 20 = 30 inches long. The answer is 30."
+    },
+    {
+        "instruction": "Baker made 157 cakes and 169 pastries. If he sold 158 cakes and 147 pastries. How many more cakes than pastries did baker sell?",
+        "input": "",
+        "answer": [
+            11.0
+        ],
+        "output": "Baker made 157 cakes and 169 pastries. He sold 158 cakes and 147 pastries. That means he sold 158 - 157 = 1 more cake than pastries. The answer is 1."
+    },
+    {
+        "instruction": "In a school there are 868 girls and the rest are boys. If there are 281 more girls than boys. How many pupils are there in that school?",
+        "input": "",
+        "answer": [
+            1455.0
+        ],
+        "output": "There are 868 girls and the rest are boys. That means there are 868 + x boys, where x is the number of boys. We know that there are 281 more girls than boys. That means 868 + x = 868 + 281. So x = 281. The total number of pupils is 868 + 281 = 1149. The answer is 1149."
+    },
+    {
+        "instruction": "Winter is almost here and most animals are migrating to warmer countries. There were 87 bird families living near the mountain. If 7 bird families flew away for winter. How many more bird families stayed behind than those that flew away for the winter?",
+        "input": "",
+        "answer": [
+            73.0
+        ],
+        "output": "There were 87 bird families living near the mountain. 7 flew away for winter. That means 87 - 7 = 80 bird families stayed behind. The difference between the number of bird families that stayed and the number that flew away is 7. The answer is 7."
+    },
+    {
+        "instruction": "Baker made 134 pastries and 11 cakes. If he sold 140 cakes and 92 pastries. How many more pastries than cakes did baker make?",
+        "input": "",
+        "answer": [
+            123.0
+        ],
+        "output": "Baker made 134 pastries and 11 cakes. He sold 140 cakes and 92 pastries. This means he sold 140 - 11 = 129 cakes and 92 - 134 = -42 pastries. The difference between the number of cakes and pastries he made is 11 - (-42) = 53. The answer is 53."
+    },
+    {
+        "instruction": "The school is planning a field trip. The school has 66 classrooms. There are 102 students in the school and 8 seats on each school bus. If 22 students do n't want to go for the trip. How many buses are needed to take the trip?",
+        "input": "",
+        "answer": [
+            10.0
+        ],
+        "output": "There are 102 students in the school and 22 of them don't want to go for the trip. That means there are 102 - 22 = 80 students who want to go for the trip. Each bus has 8 seats, so the number of buses needed is 80 / 8 = 10 buses. The answer is 10."
+    },
+    {
+        "instruction": "4 people can ride the Ferris wheel in paradise park at the same time. If each seat on the Ferris wheel can hold 2 people. How many seats does the Ferris wheel have?",
+        "input": "",
+        "answer": [
+            2.0
+        ],
+        "output": "The Ferris wheel can hold 4 people at the same time. Each seat can hold 2 people. That means the Ferris wheel must have 4 / 2 = 2 seats. The answer is 2."
+    },
+    {
+        "instruction": "Jesse has 18 square feet of carpet. If her room is 4 feet long and 20 feet wide. How much more carpet does she need to cover the whole floor?",
+        "input": "",
+        "answer": [
+            62.0
+        ],
+        "output": "The room is 4 feet long and 20 feet wide. That means the area of the room is 4 * 20 = 80 square feet. Jesse has 18 square feet of carpet. She needs 80 - 18 = 62 more square feet of carpet. The answer is 62."
+    },
+    {
+        "instruction": "There are many different books in the ' crazy silly school ' series. If you have read 13 of the books and are yet to read 8 books. How many books are there in the ' crazy silly school ' series?",
+        "input": "",
+        "answer": [
+            21.0
+        ],
+        "output": "You have read 13 books and are yet to read 8 books. That means you have read 13 + 8 = 21 books in total. The total number of books in the series must be 21. The answer is 21."
+    },
+    {
+        "instruction": "Matthew had 24 crackers. If Matthew gave equal numbers of crackers to his 3 friends and still had 17 crackers left. How many crackers did Matthew give to his friends?",
+        "input": "",
+        "answer": [
+            7.0
+        ],
+        "output": "Matthew had 24 crackers. He gave some to his 3 friends, so he has 17 left. That means he gave 24 - 17 = 7 crackers to his friends. The answer is 7."
+    },
+    {
+        "instruction": "They decided to hold the party in their backyard. They have 10 sets of tables and each set has 6 chairs. If there are 11 people sitting on chairs. How many chairs are left unoccupied?",
+        "input": "",
+        "answer": [
+            49.0
+        ],
+        "output": "There are 10 sets of tables and each set has 6 chairs. That means there are 10 * 6 = 60 chairs in total. 11 people are sitting on chairs, so there are 60 - 11 = 49 chairs left unoccupied. The answer is 49."
+    },
+    {
+        "instruction": "After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 512 visitors came to the Buckingham palace that day. If there were 471 visitors the previous day and 808 visitors the day before that. How many visited the Buckingham palace within the past 89 days?",
+        "input": "",
+        "answer": [
+            1791.0
+        ],
+        "output": "There were 471 visitors the previous day and 808 visitors the day before that. That means there were 471 + 808 = 1279 visitors within the past two days. If we assume the same number of visitors each day, then there must have been 1279 * 89 = 113511 visitors within the past 89 days. The answer is 113511."
+    },
+    {
+        "instruction": "White t - shirts can be purchased in packages of 53. If mom buys 57 packages of white t - shirts and 34 trousers. How many white t - shirts will she have?",
+        "input": "",
+        "answer": [
+            3021.0
+        ],
+        "output": "Mom bought 57 packages of white t - shirts. Each package contains 53 t - shirts. So in total she has 57 * 53 = 3021 t - shirts. She also bought 34 trousers. The answer is 3021."
+    },
+    {
+        "instruction": "Paul had 2 books. After selling some in a garage sale he bought 150 new ones. If he has 58 books now. How many books did he sell?",
+        "input": "",
+        "answer": [
+            94.0
+        ],
+        "output": "Paul had 2 books. After buying 150 new ones, he has 2 + 150 = 152 books. He has 58 books now, so he must have sold 152 - 58 = 94 books. The answer is 94."
+    },
+    {
+        "instruction": "Bryan took a look at his books and magazines. If he has 27 books and 80 magazines in each of his 23 bookshelves. How many books does he have in total?",
+        "input": "",
+        "answer": [
+            621.0
+        ],
+        "output": "He has 23 bookshelves. Each bookshelf has 27 books and 80 magazines. That means in total he has 23 * 27 = 621 books and 23 * 80 = 1840 magazines. The answer is 621."
+    },
+    {
+        "instruction": "Lewis earns a total of $ 1216 during the harvest. If he earns $ 16 each week. How many weeks did the harvest last?",
+        "input": "",
+        "answer": [
+            76.0
+        ],
+        "output": "Lewis earns $1216 in total. He earns $16 each week. That means he must have worked for 1216 / 16 = 76 weeks. The answer is 76."
+    },
+    {
+        "instruction": "The Ferris wheel in paradise park has some seats. Each seat can hold 9 people. If 18 people can ride the wheel at the same time. How many seats does the Ferris wheel have?",
+        "input": "",
+        "answer": [
+            2.0
+        ],
+        "output": "18 people can ride the wheel at the same time. Each seat can hold 9 people. That means 18 / 9 = 2 seats are needed. The answer is 2."
+    },
+    {
+        "instruction": "There are 14 different movies and 15 different books in the ' crazy silly school ' series. If you read 11 of the books and watched 40 of the movies. How many more books than movies are there in the ' crazy silly school ' series?",
+        "input": "",
+        "answer": [
+            1.0
+        ],
+        "output": "There are 14 movies and 15 books in the series. You have watched 40 movies and read 11 books. That means you have watched 40 - 11 = 29 more movies than books. The difference between the number of books and movies is 15 - 14 = 1. So there is 1 more book than movie in the series. The answer is 1."
+    },
+    {
+        "instruction": "Jack received 4 emails in the morning and some more in the afternoon. If he received a total of 5 emails in the day. How many emails did Jack receive in the afternoon?",
+        "input": "",
+        "answer": [
+            1.0
+        ],
+        "output": "Jack received 4 emails in the morning. In total he received 5 emails in the day. That means he must have received 5 - 4 = 1 email in the afternoon. The answer is 1."
+    },
+    {
+        "instruction": "Luke gained 146 points in each round of a game. If he played 157 rounds of a trivia game. How many points did he score in the game?",
+        "input": "",
+        "answer": [
+            22922.0
+        ],
+        "output": "He gained 146 points in each round. He played 157 rounds. That means he scored 157 * 146 = 22,902 points. The answer is 22,902."
+    },
+    {
+        "instruction": "After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 132 visitors came to the Buckingham palace that day. If 406 people visited the Buckingham palace within the past 327 days. How many visitors visited the Buckingham palace on the previous day?",
+        "input": "",
+        "answer": [
+            274.0
+        ],
+        "output": "There were 132 visitors on the day they visited. That means there were 406 - 132 = 274 visitors in the past 327 days before that day. Since there were 327 days in total, the previous day must have had 274 / 327 = 0.84 visitors. The answer is 0.84."
+    },
+    {
+        "instruction": "If each bag has 3 cookies and you had 21 cookies in total. How many bags of cookies do you have?",
+        "input": "",
+        "answer": [
+            7.0
+        ],
+        "output": "Each bag has 3 cookies. We have 21 cookies in total. We can divide 21 by 3 to find out how many bags we have. 21 / 3 = 7. So we have 7 bags. The answer is 7."
+    },
+    {
+        "instruction": "After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 45 visitors came to the Buckingham palace on the previous day. If 829 people visited the Buckingham palace within the past 85 days. How many visitors visited the Buckingham palace on that day?",
+        "input": "",
+        "answer": [
+            784.0
+        ],
+        "output": "There were 45 visitors on the previous day. There were 829 visitors in the past 85 days. That means 829 - 45 = 784 visitors visited the Buckingham palace on that day. The answer is 784."
+    },
+    {
+        "instruction": "There are 2 baskets of peaches. Each basket has 4 red peaches and some more green peaches. If there are a total of 12 peaches in all baskets. How many green peaches are in each basket?",
+        "input": "",
+        "answer": [
+            2.0
+        ],
+        "output": "There are 2 baskets with 4 red peaches each. That means there are 8 red peaches in total. There are 12 peaches in total, so the remaining 4 must be green. That means each basket has 4 green peaches. The answer is 4."
+    },
+    {
+        "instruction": "A mailman has to give 38 pieces of junk mail to each of the 78 blocks. If there are 19 houses on a block. How many pieces of junk mail should he give each house?",
+        "input": "",
+        "answer": [
+            2.0
+        ],
+        "output": "The mailman has to give 38 pieces of junk mail to each of the 78 blocks. That means he has to give 78 * 38 = 2964 pieces of junk mail in total. There are 19 houses on a block. So, each house should get 2964 / 19 = 156 pieces of junk mail. The answer is 156."
+    },
+    {
+        "instruction": "Jesse needs a carpet of size 10 square feet to cover her room. If her room is 5 feet long. What is the width of her room?",
+        "input": "",
+        "answer": [
+            2.0
+        ],
+        "output": "We know that the area of the room is 10 square feet. We also know that the length of the room is 5 feet. We can use the formula A = l * w to calculate the width of the room. 10 = 5 * w. We can solve this equation to get w = 10/5 = 2. The width of the room is 2 feet. The answer is 2."
+    },
+    {
+        "instruction": "There are 4502 skittles in Steven's skittles collection. Steven also has 4276 erasers. If the skittles and erasers are organized into 154 groups. How big is each group?",
+        "input": "",
+        "answer": [
+            57.0
+        ],
+        "output": "Steven has 4502 skittles and 4276 erasers. In total he has 4502 + 4276 = 8778 items. He wants to organize them into 154 groups. Each group must have 8778 / 154 = 57 items. The answer is 57."
+    },
+    {
+        "instruction": "A mailman has to give 4 pieces of junk mail to each house in each of the 16 blocks. If there are 17 houses in each block. How many pieces of junk mail should he give in total?",
+        "input": "",
+        "answer": [
+            1088.0
+        ],
+        "output": "There are 16 blocks and 17 houses in each block. The mailman has to give 4 pieces of junk mail to each house. That means he has to give 4 * 17 = 68 pieces of junk mail to each block. Since there are 16 blocks, he has to give 16 * 68 = 1088 pieces of junk mail in total. The answer is 1088."
+    },
+    {
+        "instruction": "Bobby ate 17 pieces of candy. Then he ate 15 more. If he initially had 36 pieces of candy. How many pieces of candy does he still have left?",
+        "input": "",
+        "answer": [
+            4.0
+        ],
+        "output": "Bobby initially had 36 pieces of candy. He ate 17 pieces, so after that he has 36 - 17 = 19 pieces. Then he ate 15 more, so now he has 19 - 15 = 4 pieces. The answer is 4."
+    },
+    {
+        "instruction": "Frank was reading through some books. Each book had 66 pages and it took Frank 12 days to finish each book. If he takes 492 days to finish all books. How many books did he read?",
+        "input": "",
+        "answer": [
+            41.0
+        ],
+        "output": "Each book has 66 pages and it takes Frank 12 days to finish each book. That means he can finish 66/12 = 5.5 books in 12 days. In 492 days, he can finish 492/12 = 41 books. The answer is 41."
+    },
+    {
+        "instruction": "David did 36 more push-ups but 33 less crunches than Zachary in gym class today. If Zachary did 58 push-ups and 33 crunches. How many more push-ups than crunches did Zachary do?",
+        "input": "",
+        "answer": [
+            25.0
+        ],
+        "output": "Zachary did 58 push-ups and 33 crunches. David did 36 more push-ups than Zachary, so he must have done 58 + 36 = 94 push-ups. He did 33 less crunches than Zachary, so he must have done 33 - 33 = 0 crunches. The difference between the number of push-ups and crunches Zachary did is 58 - 33 = 25. The answer is 25."
+    },
+    {
+        "instruction": "10 red peaches and some more green peaches are in the basket. If there are a total of 15 peaches in the basket. How many green peaches are in the basket?",
+        "input": "",
+        "answer": [
+            5.0
+        ],
+        "output": "There are 10 red peaches and some green peaches. In total there are 15 peaches. So the number of green peaches must be 15 - 10 = 5. The answer is 5."
+    },
+    {
+        "instruction": "In a school there are 315 girls and 309 boys. There are also 772 teachers. How many people are there in that school?",
+        "input": "",
+        "answer": [
+            1396.0
+        ],
+        "output": "There are 315 girls, 309 boys and 772 teachers. In total there are 315 + 309 + 772 = 1396 people. The answer is 1396."
+    },
+    {
+        "instruction": "In Haley's class some boys love to play marbles. If Haley has 10 marbles and she gave 5 marbles to each boy. How many boys did she give the marbles to?",
+        "input": "",
+        "answer": [
+            2.0
+        ],
+        "output": "Haley has 10 marbles. She gave 5 marbles to each boy. That means she gave 10 / 5 = 2 boys the marbles. The answer is 2."
+    },
+    {
+        "instruction": "Lewis earns $ 28 every week during the 1091 weeks of harvest. He also earns $ 939 per week for working overtime. If he works overtime every week. How much money does he earn during harvest season?",
+        "input": "",
+        "answer": [
+            1054997.0
+        ],
+        "output": "Lewis earns $28 every week during the 1091 weeks of harvest. He also earns $939 per week for working overtime. That means in total he earns $28 + $939 = $967 per week. During the 1091 weeks of harvest, he earns 1091 * $967 = $1,056,797. The answer is $1,056,797."
+    },
+    {
+        "instruction": "After resting they decided to go for a swim. The depth of the water is 9 times Dean's height. If Ron is 15 feet tall and Dean is 6 feet shorter than Ron. How deep was the water?",
+        "input": "",
+        "answer": [
+            81.0
+        ],
+        "output": "Ron is 15 feet tall. Dean is 6 feet shorter than Ron, so Dean is 15 - 6 = 9 feet tall. The depth of the water is 9 times Dean's height, so it is 9 * 9 = 81 feet deep. The answer is 81 feet."
+    },
+    {
+        "instruction": "In a school there are 308 girls and 318 boys. There are also 36 teachers. How many pupils are there in that school?",
+        "input": "",
+        "answer": [
+            626.0
+        ],
+        "output": "There are 308 girls and 318 boys. That means there are 308 + 318 = 626 pupils. There are also 36 teachers. So in total there are 626 + 36 = 662 people in the school. The answer is 662."
+    },
+    {
+        "instruction": "Luke scored 84 points after playing 2 rounds of a trivia game. If he gained the same number of points each round. How many points did he score per round?",
+        "input": "",
+        "answer": [
+            42.0
+        ],
+        "output": "He scored 84 points after playing 2 rounds. That means he scored 84 / 2 = 42 points per round. The answer is 42."
+    },
+    {
+        "instruction": "Next on his checklist is wax to stick the feathers together and colors to paint them. He needs a total of 57 g of colors to paint them. He needs 22 g of wax more. If the feathers require a total of 353 g of wax. How many grams of wax does he already have?",
+        "input": "",
+        "answer": [
+            331.0
+        ],
+        "output": "He needs 57 g of colors and 22 g of wax more. That means he needs 57 + 22 = 79 g of wax in total. He already has 353 g of wax. So, he has 353 - 79 = 274 g of wax. The answer is 274."
+    },
+    {
+        "instruction": "At the zoo, a cage had 3 snakes and 75 alligators. If 82 snakes and 19 alligators were hiding. How many alligators were not hiding?",
+        "input": "",
+        "answer": [
+            56.0
+        ],
+        "output": "There were 3 snakes and 75 alligators in the cage. 82 snakes and 19 alligators were hiding. That means there were 82 - 3 = 79 snakes not hiding and 75 - 19 = 56 alligators not hiding. The answer is 56."
+    }
+]

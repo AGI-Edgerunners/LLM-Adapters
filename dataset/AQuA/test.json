@@ -1,0 +1,410 @@
+[
+    {
+        "instruction": "What is 60% of 30% of 1400 grams? Answer Choices: (A) 450 gms (B) 100 gms (C) 252 gms (D) 240 gms (E) None of these",
+        "input": "",
+        "answer": [
+            "C"
+        ],
+        "output": "60% of 30% of 1400 grams = (60/100) * (30/100) * 1400 = 252 gms.The answer is (C)."
+    },
+    {
+        "instruction": "A certain liquid passes through a drain at a rate of w/25 gallons every x seconds. At that rate, how many minutes will it take y gallons to pass through the drain? Answer Choices: (A) y/ (1200xy)  (B) 20xy/w (C) 5xy/ (12w)  (D) w/ (3xy)  (E) 3y/ (wx) ",
+        "input": "",
+        "answer": [
+            "C"
+        ],
+        "output": "The rate of flow is w/25 gallons every x seconds. So it will take (25x/w) seconds for y gallons to pass through the drain. Converting this to minutes, we get (25x/w) / 60 = 5xy/ (12w) minutes.The answer is (C)."
+    },
+    {
+        "instruction": "A coin made of alloy of aluminum and silver measures 2 x 15 mm (it is 2 mm thick and its diameter is 15 mm). If the weight of the coin is 30 grams and the volume of aluminum in the alloy equals that of silver, what will be the weight of a coin measuring 1 x 30 mm made of pure aluminum if silver is twice as heavy as aluminum? Answer Choices: (A) 36 grams (B) 40 grams (C) 42 grams (D) 48 grams (E) 50 grams",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "The volume of the alloy coin is 2 x 15 x 15 = 450 mm3. Since the volume of aluminum is equal to that of silver, the weight of aluminum is half of the total weight, i.e. 15 grams. The volume of the pure aluminum coin is 1 x 30 x 30 = 900 mm3. So the weight of the pure aluminum coin is twice the weight of the alloy coin, i.e. 30 grams. The answer is (B)."
+    },
+    {
+        "instruction": "If 10 is subtracted from 2/3 of a number the result is equal to sum of 40 and 1/3 of the number. Find the number Answer Choices: (A) 100 (B) 160 (C) 150 (D) 210 (E) 220",
+        "input": "",
+        "answer": [
+            "C"
+        ],
+        "output": "Let the number be x. Then 2/3x - 10 = 40 + 1/3x. Solving this equation gives x = 150.The answer is (C)."
+    },
+    {
+        "instruction": "What is the largest integral value of 'k' for which the quadratic equation x2 - 5x + k = 0 will have two real and distinct roots? Answer Choices: (A) 9 (B) 7 (C) 3 (D) 8 (E) 12",
+        "input": "",
+        "answer": [
+            "C"
+        ],
+        "output": "The discriminant of the quadratic equation is b2 - 4ac. In this case, b2 - 4ac = (-5)2 - 4(1)(k) = 25 - 4k. For the equation to have two real and distinct roots, the discriminant must be greater than 0. So 25 - 4k > 0, which simplifies to 4k < 25. The largest integral value of k that satisfies this condition is k = 6.The answer is (B)."
+    },
+    {
+        "instruction": "900 + 5 \u00d7 12 = ? Answer Choices: (A) 820 (B) 202 (C) 420 (D) 209 (E) 960",
+        "input": "",
+        "answer": [
+            "E"
+        ],
+        "output": "900 + 5 \u00d7 12 = 900 + 60 = 960.The answer is (E)."
+    },
+    {
+        "instruction": "Shweta rides at the rate of 10 km per hour but stops for 10 minutes to take rest at the end of every 15 km. How many hours will she take to cover 100 km Answer Choices: (A) 9 hours. (B) 10 hours. (C) 11 hours. (D) 12 hours. (E) 13 hours.",
+        "input": "",
+        "answer": [
+            "C"
+        ],
+        "output": "She will take 10 minutes to rest after every 15 km. So she will take 10 minutes for 6 times in 100 km. So the total time taken will be 6*10/60 + 100/10 = 11 hours.The answer is (C)."
+    },
+    {
+        "instruction": "Mr.Sam takes 17 hours to go by train to a certain city and return by car. He loses 4 hours if he goes both ways by train. How long would he have taken if he had traveled by car in both ways? Answer Choices: (A) 22 hrs (B) 18 hrs (C) 16 hrs (D) 20 hrs (E) 13 hrs",
+        "input": "",
+        "answer": [
+            "E"
+        ],
+        "output": "If Mr. Sam had traveled by car in both ways, he would have saved 4 hours. So the total time taken would be 17 - 4 = 13 hrs.The answer is (E)."
+    },
+    {
+        "instruction": "Jim filled his dog's bowl with dog food. Starting at 8:00 am, Jim's dog ate exactly once an hour, consuming exactly 1/3 of the dog food remaining in the bowl at each feeding session. Approximately, what percent of the original food was in the dog's bowl right before the dog began to eat at noon of the same day? Answer Choices: (A) 20% (B) 25% (C) 30% (D) 35% (E) 40%",
+        "input": "",
+        "answer": [
+            "A"
+        ],
+        "output": "At 8:00 am, the bowl was full of dog food. After the first feeding session, 2/3 of the food remained. After the second feeding session, 1/3 of the original food remained. After the third feeding session, 1/9 of the original food remained. So, 1/9 of the original food is left right before the dog began to eat at noon, which is approximately 11.11%.The answer is (A)."
+    },
+    {
+        "instruction": "John conducted a survey about car color. 60% of the people who took the survey were women. Of the men who were surveyed, 75% preferred red cars over green cars. If 10 men liked green cars more than red, how many people took the survey? Answer Choices: (A) 100 (B) 120 (C) 50 (D) 200 (E) 80",
+        "input": "",
+        "answer": [
+            "A"
+        ],
+        "output": "60% of the people who took the survey were women, so 40% were men. Of the men who were surveyed, 75% preferred red cars over green cars, so 25% preferred green cars. So 25% of 40% = 10%. So 10% of the people who took the survey were men who preferred green cars. So 10 / 0.1 = 100 people took the survey.The answer is (A)."
+    },
+    {
+        "instruction": "How many ways A boy can reach the top of stairs which contain 10 steps, when he can take either one or two steps every time? Answer Choices: (A) 88 (B) 89 (C) 90 (D) 91 (E) 92",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "The boy can take either one or two steps every time. So there are 2 options for each step. Therefore, the total number of ways he can reach the top of the stairs is 2^10 = 1024.The answer is (D)."
+    },
+    {
+        "instruction": "IF one gallon of soft drink is made of 40% orange juice and 60% water, how many additional gallons of orange juice must be mixed in order to make the orange juice 60% of the soft drink? Answer Choices: (A) 0.5 (B) 1 (C) 1.25 (D) 1.5 (E) 2",
+        "input": "",
+        "answer": [
+            "A"
+        ],
+        "output": "The original soft drink is 40% orange juice and 60% water. To make the orange juice 60% of the soft drink, we need to add 20% more orange juice. So we need to add 20% of the original amount of orange juice, which is 0.2 gallons. The total amount of orange juice needed is 0.2 + 0.4 = 0.6 gallons.The answer is (A)."
+    },
+    {
+        "instruction": "What is the units digit of 9^3-7? Answer Choices: (A) 1 (B) 3 (C) 5 (D) 2 (E) 4",
+        "input": "",
+        "answer": [
+            "D"
+        ],
+        "output": "9^3 = 729. 729 - 7 = 722. The units digit of 722 is 2.The answer is (D)."
+    },
+    {
+        "instruction": "5 horses are in a race. Mr.Jain selects two of horses at random and bets on them. The probability that he selected the winning horse is Answer Choices: (A) 1/5 (B) 2/5 (C) 3/5 (D) 4/5 (E) 6/5",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "Since Mr.Jain selected two horses at random, the probability that he selected the winning horse is 2/5.The answer is (B)."
+    },
+    {
+        "instruction": "On dividing 2272 and 875 by a 3-digit number N, we get the same remainder. The sum of the digits of N is: Answer Choices: (A) 10 (B) 11 (C) 12 (D) 13 (E) 14",
+        "input": "",
+        "answer": [
+            "A"
+        ],
+        "output": "Since the remainder is the same for both divisions, the 3-digit number N must be a factor of both 2272 and 875. The only 3-digit number that is a factor of both is 45. The sum of the digits of 45 is 4 + 5 = 9.The answer is (A)."
+    },
+    {
+        "instruction": "On a test the passing students had an average of 83, while the failing students had an average\nof 55. If the overall class average was 76, what percent of the class passed? Answer Choices: (A) 44% (B) 66% (C) 68% (D) 72% (E) 75%",
+        "input": "",
+        "answer": [
+            "E"
+        ],
+        "output": "The total number of students in the class is the sum of the number of passing students and the number of failing students. Let the number of passing students be x and the number of failing students be y. Then x + y = total number of students in the class. The overall class average is the sum of the average of the passing students and the average of the failing students divided by the total number of students in the class. So (83x + 55y) / (x + y) = 76. Solving for x, we get x = (76y - 55y) / (83 - 76) = 21y / 7. So the percent of the class that passed is (21y / 7) / (x + y) * 100 = 21 / 7 * 100 = 300 / 7 = 42.86%. The answer is (A)."
+    },
+    {
+        "instruction": "The average wages of a worker during a fortnight comprising of 15 consecutive working days was $90 per day. During the first 7 days, his average wage was $87 per day and the average wage during the last 7 days was $92 per day. What was his wage on the 8th day? Answer Choices: (A) $83 (B) $92 (C) $90 (D) $97 (E) $104",
+        "input": "",
+        "answer": [
+            "D"
+        ],
+        "output": "The average wage for the entire fortnight was $90 per day. This means that the total wages for the fortnight must have been $90 * 15 = $1350. The total wages for the first 7 days was $87 * 7 = $609. The total wages for the last 7 days was $92 * 7 = $644. So the wage on the 8th day must have been $1350 - $609 - $644 = $97.The answer is (D)."
+    },
+    {
+        "instruction": "Two numbers are in the ratio 3:5. If 9 is subtracted from each, the new numbers are in the ratio 12:23. The smaller number is? Answer Choices: (A) 21 (B) 33 (C) 35 (D) 42 (E) 58",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "Let the two numbers be 3x and 5x. Then 9 is subtracted from each, so the new numbers are 3x - 9 and 5x - 9. The ratio of the new numbers is (3x - 9) : (5x - 9) = 12 : 23. Solving for x, we get x = 21. So the smaller number is 3x - 9 = 3(21) - 9 = 42.The answer is (D)."
+    },
+    {
+        "instruction": "If 6 yrs are subtracted from the present age of Ajay and the remainder is divided by 18, then the present age of Rahul is obtained. If Rahul is 2 yrs younger to Denis whose age is 5 yrs, then what is Ajay's present age? Answer Choices: (A) 40 (B) 60 (C) 70 (D) 80 (E) 90",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "Let Ajay's present age be x. Then x - 6 = 18y, where y is the age of Rahul. Since Rahul is 2 yrs younger than Denis, y = 5 - 2 = 3. So x - 6 = 54. Therefore, x = 60.The answer is (B)."
+    },
+    {
+        "instruction": "Anna has 4 books. If she decide to arrange the 4 books in every possible combination and moved just one book every minute, how long would it taken by her ? Answer Choices: (A) 22 minutes (B) 30 minutes (C) 15 minutes (D) 24 minutes (E) 35 minutes",
+        "input": "",
+        "answer": [
+            "D"
+        ],
+        "output": "There are 4! = 4 x 3 x 2 x 1 = 24 possible combinations. So it would take Anna 24 minutes to arrange the books in every possible combination.The answer is (D)."
+    },
+    {
+        "instruction": "The manufacturer of tyres is offering a 20% discount on the price of its tubeless tyres. Some retailers are offering additional discounts. If a retailer offers an additional 20% discount, then what is the total discount available at that retailer? Answer Choices: (A) 10% (B) 25% (C) 28% (D) 30% (E) 36%",
+        "input": "",
+        "answer": [
+            "E"
+        ],
+        "output": "The manufacturer's discount is 20%. The retailer's additional discount is 20%. So the total discount is 20% + 20% = 40%.The answer is (E)."
+    },
+    {
+        "instruction": "A rectangular parking space is marked out by painting three of its sides. If the length of the unpainted side is 9 feet, and the sum of the lengths of the painted sides is 37 feet, then what is the area of the parking space in square feet? Answer Choices: (A) 46 (B) 81 (C) 126 (D) 252 (E) None",
+        "input": "",
+        "answer": [
+            "C"
+        ],
+        "output": "The area of a rectangle is equal to the product of its length and width. Since the length of the unpainted side is 9 feet, the width of the parking space must be 28 feet (37 - 9 = 28). So the area of the parking space is 9 x 28 = 252 square feet.The answer is (D)."
+    },
+    {
+        "instruction": "Peter wants to find 10 additional people to form a scavenger hunt team with him. If he has 10 friends who would like to participate, how many choices does he have for forming his team? Answer Choices: (A) 0 (B) 1 (C) 2 (D) 3 (E) 4",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "Peter has 10 friends who would like to participate, so he has 10 choices for forming his team.The answer is (B)."
+    },
+    {
+        "instruction": "The average weight of 10 oarsmen in a boat is increased by 1.8 kg when one of the crew, who weighs 53 kg is replaced by a new man. Find the weight of the new man. Answer Choices: (A) 71 (B) 62 (C) 43 (D) 67 (E) 40",
+        "input": "",
+        "answer": [
+            "A"
+        ],
+        "output": "The average weight of the 10 oarsmen is increased by 1.8 kg when the new man is added. So the total weight of the 10 oarsmen before the new man was added is 10 * (average weight + 1.8) = 10 * (53 + 1.8) = 588 kg. The total weight of the 10 oarsmen after the new man is added is 10 * (average weight) = 10 * 53 = 530 kg. So the weight of the new man is 588 - 530 = 58 kg.The answer is (B)."
+    },
+    {
+        "instruction": "A box contains a certain number of balls, marked successively from 1 to n. If there are 45 different ways that two balls can be selected from the box such that the ball with number 3 marked on it is not selected, then what is the value of n? Answer Choices: (A) 11 (B) 10 (C) 9 (D) 8 (E) 7",
+        "input": "",
+        "answer": [
+            "A"
+        ],
+        "output": "Since the ball with number 3 marked on it is not selected, there are only n-1 balls left in the box. So the number of ways to select two balls from the box is (n-1)C2 = 45. This simplifies to n(n-1)/2 = 45. Solving for n, we get n = 11.The answer is (A)."
+    },
+    {
+        "instruction": "If Q, a positive integer, has 5 factors, which of the following must be true about Q?\nI. Q is the square of a prime number.\nII. Q is the fourth power of a prime number.\nIII. Q is the product of two prime numbers. Answer Choices: (A) I only (B) III only (C) II only (D) I and II only (E) I and III only",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "Since Q has 5 factors, it must be the product of two prime numbers (III). It cannot be the square of a prime number (I) or the fourth power of a prime number (II) since these would have more than 5 factors. The answer is (E)."
+    },
+    {
+        "instruction": "If 6x - y = 24 and y = 3x, what is the value of x? Answer Choices: (A) 8 (B) 9 (C) 10 (D) 11 (E) 12",
+        "input": "",
+        "answer": [
+            "A"
+        ],
+        "output": "If y = 3x, then 6x - 3x = 24. This simplifies to 3x = 24. So x = 8.The answer is (A)."
+    },
+    {
+        "instruction": "You can rent DVDs at a local video store for $4.00 per movie without a membership. However, if you purchase a membership for $7.00 per month, you can rent DVDs for $2.00 each. What is the minimum amount of DVDs you would have to rent to make it worth it to purchase the membership? Answer Choices: (A) 1 (B) 2 (C) 3 (D) 4 (E) 5",
+        "input": "",
+        "answer": [
+            "D"
+        ],
+        "output": "Without the membership, it would cost $4.00 per movie. With the membership, it would cost $2.00 per movie. So you would need to rent at least 4 movies to make it worth it to purchase the membership.The answer is (D)."
+    },
+    {
+        "instruction": "A bag of cat food weighs 7 pounds and 4 ounces. How much does the bag weigh in ounces? Answer Choices: (A)  108 (B)  112 (C)  116 (D)  120 (E)  124",
+        "input": "",
+        "answer": [
+            "C"
+        ],
+        "output": "There are 16 ounces in a pound. So 7 pounds and 4 ounces would be equal to 7 x 16 + 4 = 116 ounces.The answer is (C)."
+    },
+    {
+        "instruction": "By himself, Jack can clean a yacht in 12 hours. On a particular day, he happens to finish two-thirds of the work. The remaining portion of the work is done by Jill, whose rate of cleaning is just 5% of what Jack can do. How long does it take Jill to finish the remaining work? Answer Choices: (A) 4 (B) 8 (C) 22 (D) 50 (E) 20",
+        "input": "",
+        "answer": [
+            "E"
+        ],
+        "output": "Jack can clean a yacht in 12 hours, so his rate of cleaning is 1/12. Jill's rate of cleaning is 5% of Jack's rate, so her rate is 1/12 * 5% = 1/240. The remaining portion of the work is two-thirds of the total work, so it would take Jill two-thirds of 1/240 = 1/160 hours to finish the remaining work. This is equivalent to 20 hours.The answer is (E)."
+    },
+    {
+        "instruction": "Professors borrowed Rs. 5000 from the university at simple interest. After 3 years, the university got Rs. 300 on interest. What was the rate of interest per annum? Answer Choices: (A) 2% (B) 8% (C) 5% (D) 10% (E) None of these",
+        "input": "",
+        "answer": [
+            "A"
+        ],
+        "output": "The interest earned by the university is Rs. 300. The principal amount borrowed was Rs. 5000. So the rate of interest per annum would be 300/5000 * 100 = 6%.The answer is (C)."
+    },
+    {
+        "instruction": "In a sale, a discount of 20% was available on all the articles. If Vinit purchased an article for Rs.4578 in the sale. What was the actual selling price of the article? Answer Choices: (A) s.5050 (B) s.5723 (C) s.5040 (D) s.4950 (E) s.4870",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "The actual selling price of the article would be 80% of Rs.4578, which is Rs.3662.The answer is (E)."
+    },
+    {
+        "instruction": "If 27 bottles of soda cost A cents, how much will B bottles cost in dollars? Answer Choices: (A) AB/2700 (B) 27/AB (C) AB/270 (D) 2700/AB (E) 100AB/27",
+        "input": "",
+        "answer": [
+            "A"
+        ],
+        "output": "The cost of B bottles would be B/27 times the cost of 27 bottles. So the cost of B bottles would be B/27 * A cents. This can be converted to dollars by dividing by 100. So the cost of B bottles would be B/2700 * A dollars.The answer is (A)."
+    },
+    {
+        "instruction": "A bag contains 11 candy bars: three cost 50 cents each, four cost $1 each and four cost $2\neach. How many ways can 3 candy bars be selected from the 11 candy bars so that the total cost is more than $4? Answer Choices: (A) 8 (B) 28 (C) 46 (D) 66 (E) 70",
+        "input": "",
+        "answer": [
+            "C"
+        ],
+        "output": "There are 3 ways to select 3 candy bars that cost 50 cents each, 6 ways to select 3 candy bars that cost $1 each, and 4 ways to select 3 candy bars that cost $2 each. So there are 3 + 6 + 4 = 13 ways to select 3 candy bars that cost more than $4.The answer is (A)."
+    },
+    {
+        "instruction": "At a conference, one team is made up of 4 men and 4 women. Four presenters are chosen to present the team's findings in front of the entire conference. How many different groups of presenters can be chosen from the team if a team cannot be composed of men only or women only? (Two groups of presenters are considered different if at least one presenter is different.) Answer Choices: (A) 120 (B) 19 (C) 180 (D) 420 (E) 460",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "There are 8 people in the team, so the total number of possible groups of 4 presenters is 8C4 = 8! / (4! * 4!) = 70. Out of these 70 groups, 10 groups are composed of men only or women only, so the total number of groups of presenters that can be chosen is 70 - 10 = 60.The answer is (C)."
+    },
+    {
+        "instruction": "Exactly 2/5th of the children in a certain class are girls. If there are 100 boys in the class, how many girls are in the class? Answer Choices: (A) 50 (B) 100 (C) 150 (D) 200 (E) 70",
+        "input": "",
+        "answer": [
+            "C"
+        ],
+        "output": "Since 2/5th of the children in the class are girls, then the total number of children in the class is 5/2 times the number of boys, which is 100. So the total number of children in the class is 500/2 = 250. Since there are 100 boys, then there must be 250 - 100 = 150 girls.The answer is (C)."
+    },
+    {
+        "instruction": "Two numbers are said to be relatively prime if they share no common positive factors other than 1. Set S contains the set of integers from 1 to 1,000, inclusive. What is the probability that a number chosen from S is relatively prime to 1,000? Answer Choices: (A) 5/7 (B) 3/5 (C) 4/7 (D) 2/5 (E) 2/7",
+        "input": "",
+        "answer": [
+            "D"
+        ],
+        "output": "The probability that a number chosen from S is relatively prime to 1,000 is equal to the number of relatively prime numbers in S divided by the total number of numbers in S. There are 496 relatively prime numbers in S, so the probability is 496/1000 = 2/5.The answer is (D)."
+    },
+    {
+        "instruction": "At the of his one-year investment, Charles received $54,080, including interest and principal from a certain investment. If the investment paid an annual interest of 8 percent compounded semi-annually, which of the following is the amount of money that Charles originally invested? Answer Choices: (A) $45,000 (B) $50,000 (C) $54,000 (D) $59,000 (E) $62,000",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "The amount of money that Charles originally invested is the principal amount. The total amount of money received at the end of the year is the principal plus the interest. So the principal amount is equal to the total amount minus the interest. The interest is 8% of the principal, so the interest is 8% of the total amount. So the principal amount is equal to the total amount minus 8% of the total amount. So the principal amount is equal to 54,080 - (8% of 54,080) = 54,080 - 4,326.4 = 49,753.6.The answer is (B)."
+    },
+    {
+        "instruction": "Joe's age, Joe's sister's age and Joe\u2019s fathers age sums up to 100. When Joe is as old as his father, Joe's sister will be twice as old as now. When Joe is as old as his father then his father is twice as old as when his sister was as old as her father. Find the age of Joe's father? Answer Choices: (A) 45 (B) 48 (C) 50 (D) 55 (E) 58",
+        "input": "",
+        "answer": [
+            "C"
+        ],
+        "output": "Let Joe's age be x, his sister's age be y and his father's age be z. So x + y + z = 100. When Joe is as old as his father, his sister will be twice as old as now, so y = 2x. When Joe is as old as his father, his father is twice as old as when his sister was as old as her father, so z = 2y. So x + 2x + 2(2x) = 100. This simplifies to 5x = 100. So x = 20. So y = 40 and z = 40. The answer is (B)."
+    },
+    {
+        "instruction": "If one third of 3/4 of a number is 21. Then, find the number? Answer Choices: (A) 84 (B) 66 (C) 28 (D) 19 (E) 11",
+        "input": "",
+        "answer": [
+            "A"
+        ],
+        "output": "Let the number be x. Then, 3/4 of x = (3/4)x = (4/4)x = 4x. So one third of 4x = (1/3)(4x) = 4x/3 = 21. Solving for x, we get x = 21(3/4) = 63.The answer is (B)."
+    },
+    {
+        "instruction": "If m > 0, y > 0, and x is m percent of 4y, then, in terms of y, m is what percentage of x? Answer Choices: (A) y/400 (B) 4y (C) 50y (D) 2500/y (E) 5000/y",
+        "input": "",
+        "answer": [
+            "D"
+        ],
+        "output": "Since x is m percent of 4y, then x = m/100 * 4y. So m = 100 * x / 4y. So m is 100 * x / 4y percent of x. The answer is (D)."
+    },
+    {
+        "instruction": "A man wants to eat fruit for breakfast and vegetable for dinner. He has 6 different types of fruit and 8 different types of vegetables. He can only eat one type at a time. In how many ways can he eat breakfast and dinner. Answer Choices: (A) 54 (B) 24 (C) 48 (D) 20 (E) 36",
+        "input": "",
+        "answer": [
+            "C"
+        ],
+        "output": "The man can choose one type of fruit from 6 options for breakfast and one type of vegetable from 8 options for dinner. So the total number of ways he can eat breakfast and dinner is 6 x 8 = 48.The answer is (C)."
+    },
+    {
+        "instruction": "There is a 90% chance that a registered voter in Burghtown voted in the last election. If five registered voters are chosen at random, what is the approximate likelihood that exactly four of them voted in the last election? Answer Choices: (A) 26.2% (B) 32.8% (C) 43.7% (D) 59.0% (E) 65.6%",
+        "input": "",
+        "answer": [
+            "E"
+        ],
+        "output": "The approximate likelihood that exactly four of them voted in the last election is (0.9)^4 * (0.1)^1 * (5C4) = 0.3280 = 32.8%.The answer is (B)."
+    },
+    {
+        "instruction": "Alice wants to put up fencing around three sides of her rectangular yard and leave one side of 10 meters unfenced. If the yard has an area of 240 square meters, how many meters of fencing does she need? Answer Choices: (A) 58 (B) 62 (C) 66 (D) 70 (E) 74",
+        "input": "",
+        "answer": [
+            "A"
+        ],
+        "output": "The length of the yard is equal to the perimeter divided by 4, so the length of the yard is 60 meters. The perimeter of the yard is 60 + 10 + 60 + 10 = 140 meters. Alice needs 140 meters of fencing.The answer is (B)."
+    },
+    {
+        "instruction": "John would make the 3-letter codes with diffenrent 5 vowels and 20 consonants with the condition that the middle letter must be vowel and the first letter and the third letter must be different from each other and are both consonant. How many different codes can be made? Answer Choices: (A) 1,980 (B) 2,020 (C) 2,100 (D) 2,200 (E) 1,900",
+        "input": "",
+        "answer": [
+            "E"
+        ],
+        "output": "There are 5 vowels and 20 consonants. The middle letter must be a vowel and the first and third letters must be different from each other and both must be consonants. So there are 20 choices for the first letter and 19 choices for the third letter. There are 5 choices for the middle letter. So the total number of codes that can be made is 20 x 19 x 5 = 1,900.The answer is (E)."
+    },
+    {
+        "instruction": "What is the sum of three consecutive integers whose product can be expressed as 727+728+729. Answer Choices: (A) 37 (B) 38 (C) 36 (D) 30 (E) 39",
+        "input": "",
+        "answer": [
+            "E"
+        ],
+        "output": "The product of three consecutive integers can be expressed as (x)(x+1)(x+2). So x(x+1)(x+2) = 727+728+729. This simplifies to x3 + 3x2 + 2x = 2184. Solving this equation, we get x = 39. So the three consecutive integers are 39, 40, and 41. The sum of these three integers is 120.The answer is (E)."
+    },
+    {
+        "instruction": "The capacity of a tank of dimensions (8 m \u00d7 6 m \u00d7 2.5 m) is Answer Choices: (A) 120 litres (B) 1200 litres (C) 12000 litres (D) 120000 litres (E) None of these",
+        "input": "",
+        "answer": [
+            "D"
+        ],
+        "output": "The capacity of a tank can be calculated by multiplying its length, width and height. So the capacity of the tank is 8 \u00d7 6 \u00d7 2.5 = 120 litres.The answer is (A)."
+    },
+    {
+        "instruction": "The population of a city is 5265526. If there are 4169516 adults in the city, how many children are there in the city? Answer Choices: (A) 1095961 (B) 1065961 (C) 1085961 (D) 1097961 (E) 1096061",
+        "input": "",
+        "answer": [
+            "E"
+        ],
+        "output": "The number of children in the city would be the total population minus the number of adults. So 5265526 - 4169516 = 1096061.The answer is (E)."
+    },
+    {
+        "instruction": "It takes a worker 9 minutes to drive from home to work at an average rate of 20 kilometers per hour. How many minutes will it take the worker to cycle from home to work along the same route at an average rate of 6 kilometers per hour? Answer Choices: (A) 30 (B) 32 (C) 35 (D) 36 (E) 40",
+        "input": "",
+        "answer": [
+            "A"
+        ],
+        "output": "The worker would have traveled 20 kilometers in 9 minutes. So 6 kilometers would take 9 minutes * (6/20) = 2.7 minutes. So it would take the worker 2.7 minutes * 2 = 5.4 minutes to cycle from home to work. The answer is (D)."
+    },
+    {
+        "instruction": "Two friends are eating a jar full of candies. Had P eaten alone, it would have taken him 10 minutes to finish the candies in the jar. Had Q eaten alone, it would have taken her 5 minutes to finish half the jar. Since both of them are eating simultaneously, how many minutes would it take them to empty the jar? Answer Choices: (A) 4 (B) 5 (C) 6 (D) 7 (E) 8",
+        "input": "",
+        "answer": [
+            "B"
+        ],
+        "output": "Since P can finish the jar in 10 minutes and Q can finish half the jar in 5 minutes, it would take them 5 minutes to finish the jar.The answer is (B)."
+    },
+    {
+        "instruction": "A grocery sells a bag of ice for $1.25, and makes 20% profit. If it sells 500 bags of ice, how much total profit does it make? Answer Choices: (A) 125 (B) 150 (C) 225 (D) 250 (E) 275",
+        "input": "",
+        "answer": [
+            "A"
+        ],
+        "output": "The grocery makes 20% profit on each bag of ice, so it makes $1.25 * 0.2 = $0.25 profit on each bag. 500 bags of ice would make 500 * 0.25 = $125 profit.The answer is (A)."
+    }
+]
