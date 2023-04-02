@@ -122,7 +122,7 @@ def train(
     )
 
     if model.config.model_type == "llama":
-        # Due to the 
+        # Due to the name of transformers' LlamaTokenizer, we have to do this
         tokenizer = LlamaTokenizer.from_pretrained(base_model)
     else:
         tokenizer = AutoTokenizer.from_pretrained(base_model)
@@ -252,8 +252,8 @@ def train(
             optim="adamw_torch",
             evaluation_strategy="steps" if val_set_size > 0 else "no",
             save_strategy="steps",
-            eval_steps=200 if val_set_size > 0 else None,
-            save_steps=200,
+            eval_steps=10 if val_set_size > 0 else None,
+            save_steps=10,
             output_dir=output_dir,
             save_total_limit=3,
             load_best_model_at_end=True if val_set_size > 0 else False,
