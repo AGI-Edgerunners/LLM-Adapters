@@ -254,7 +254,9 @@ def extract_answer_number(args, sentence: str) -> float:
 
 
 def extract_answer_letter(args, sentence: str) -> str:
-    pass
+    sentence_ = sentence.strip()
+    pred_answer = re.findall(r'A|B|C|D|E', sentence_)[0]
+    return pred_answer
 
 
 if __name__ == "__main__":
