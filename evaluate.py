@@ -40,7 +40,7 @@ def main(
             top_p=0.75,
             top_k=40,
             num_beams=4,
-            max_new_tokens=128,
+            max_new_tokens=256,
             **kwargs,
     ):
         prompt = generate_prompt(instruction, input)
