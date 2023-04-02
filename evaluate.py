@@ -259,6 +259,8 @@ def extract_answer_number(args, sentence: str) -> float:
     if dataset in ["multiarith", "addsub", "singleeq", "gsm8k", "svamp"]:
         sentence = sentence.replace(',', '')
         pred = [s for s in re.findall(r'-?\d+\.?\d*', sentence)]
+        if not pred:
+            return float('inf')
         pred_answer = float(pred[-1])
     else:
         raise NotImplementedError(' not support dataset: {}'.format(dataset))
@@ -274,6 +276,8 @@ def extract_answer_letter(args, sentence: str) -> str:
     sentence_ = sentence.strip()
     pred_answers = re.findall(r'A|B|C|D|E', sentence_)
     if pred_answers:
+        if not pred_answers:
+            return ''
         return pred_answers[0]
     else:
         return ''
