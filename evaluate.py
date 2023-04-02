@@ -87,8 +87,8 @@ def main(
     correct = 0
     miss = 0.001
     for idx, data in enumerate(dataset):
-        instruction = data.get('sQuestion')
-        label = data.get('lSolutions')[-1]
+        instruction = data.get('instruction')
+        label = data.get('answer')[-1]
         if isinstance(label, str):
             label = float(label)
 
