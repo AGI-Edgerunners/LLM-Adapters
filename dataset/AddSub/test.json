@@ -1,634 +1,792 @@
 [
     {
-        "instruction": "Joan found 75 seashells and 14 starfishes on the beach . She gave Tim some of her seashells . She has 62 seashell . How many seashells did she give to Tim ? ",
-        "input": "",
-        "answer": [
-            "13"
-        ],
-        "output": "Joan found 75 seashells and 14 starfishes. She gave Tim some of her seashells, so now she has 62 seashells. The difference must be the number of seashells she gave to Tim. So, she must have given 75 - 62 = 13 seashells. The answer is 13."
-    },
-    {
-        "instruction": "There are 31 short trees and 32 tall trees currently in the park . Park workers will plant short trees today . When the workers are finished there will be 95 short trees in the park . How many short trees did the workers plant today ? ",
-        "input": "",
-        "answer": [
-            "64"
-        ],
-        "output": "There are 31 short trees and 32 tall trees in the park. After the workers are done, there will be 95 short trees. This means the workers must have planted 95 - 31 = 64 short trees. The answer is 64."
-    },
-    {
-        "instruction": "There are 46 rulers in the drawer . Tim took 25 rulers from the drawer . How many rulers are now in the drawer ? ",
-        "input": "",
-        "answer": [
-            "21"
-        ],
-        "output": "There were 46 rulers in the drawer. Tim took 25 rulers, so now there are 46 - 25 = 21 rulers in the drawer. The answer is 21."
-    },
-    {
-        "instruction": "Sam went to 14 football games this year . He went to 29 games last year . How many football games did Sam go to in all ? ",
-        "input": "",
-        "answer": [
-            "43"
-        ],
-        "output": "Sam went to 14 games this year and 29 games last year. In total he went to 14 + 29 = 43 games. The answer is 43."
-    },
-    {
-        "instruction": "Keith grew 29 cantelopes , Fred grew 16 cantelopes , and Jason grew 20 cantelopes . How many cantelopes did they grow in total ? ",
-        "input": "",
-        "answer": [
-            "65"
-        ],
-        "output": "Keith grew 29 cantelopes, Fred grew 16 cantelopes, and Jason grew 20 cantelopes. In total, they grew 29 + 16 + 20 = 65 cantelopes. The answer is 65."
-    },
-    {
-        "instruction": "Tom purchased a Batman game for $ 13.60 , and a Superman game for $ 5.06 . Tom already owns 2 games . How much did Tom spend on video games ? ",
-        "input": "",
-        "answer": [
-            "18.66"
-        ],
-        "output": "Tom purchased a Batman game for $13.60 and a Superman game for $5.06. He already owned 2 games. So in total he spent $13.60 + $5.06 + 2 = $20.66 on video games. The answer is $20.66."
-    },
-    {
-        "instruction": "At Lindsey 's Vacation Wear , 0.375 the garments are bikinis and 0.25 are trunks . What fraction of the garments are either bikinis or trunks ? ",
-        "input": "",
-        "answer": [
-            "0.625"
-        ],
-        "output": "0.375 of the garments are bikinis and 0.25 are trunks. The fraction of garments that are either bikinis or trunks is 0.375 + 0.25 = 0.625. The answer is 0.625."
-    },
-    {
-        "instruction": "During a school play , Jonah staffed the snack bar . He served 0.25 pitcher of lemonade during the first intermission , 0.4166666666666667 pitcher during the second , and 0.25 pitcher during the third . How many pitchers of lemonade did Jonah pour in all ? ",
-        "input": "",
-        "answer": [
-            "0.9166666666666666"
-        ],
-        "output": "Jonah poured 0.25 pitcher of lemonade during the first intermission, 0.4166666666666667 pitcher during the second, and 0.25 pitcher during the third. In total, he poured 0.25 + 0.4166666666666667 + 0.25 = 0.9166666666666667 pitchers of lemonade. The answer is 0.9166666666666667."
-    },
-    {
-        "instruction": "Alyssa went to 11 soccer games this year , but missed 12 . She went to 13 games last year and plans to go to 15 games next year . How many soccer games will Alyssa go to in all ? ",
-        "input": "",
-        "answer": [
-            "39"
-        ],
-        "output": "Alyssa went to 11 games this year and 13 games last year. She plans to go to 15 games next year. So in total she will go to 11 + 13 + 15 = 39 games. The answer is 39."
-    },
-    {
-        "instruction": "A ship full of grain crashes into a coral reef . By the time the ship is fixed , 49952 tons of grain have spilled into the water . Only 918 tons of grain remain onboard . How many tons of grain did the ship originally contain ? ",
-        "input": "",
-        "answer": [
-            "50870.0"
-        ],
-        "output": "The ship originally contained 49952 + 918 = 50870 tons of grain. After the crash, only 918 tons remain onboard. The answer is 50870."
-    },
-    {
-        "instruction": "There are 48 pencils and 40 scissors in the drawer . Joan placed 29 pencils in the drawer . How many pencils are now there in all ? ",
-        "input": "",
-        "answer": [
-            "77"
-        ],
-        "output": "There were 48 pencils and 40 scissors in the drawer. Joan placed 29 pencils in the drawer. So now there are 48 + 29 = 77 pencils in the drawer. The answer is 77."
-    },
-    {
-        "instruction": "In 1 week , Mitch 's family drank 0.5 carton of regular milk and 0.1 carton of soy milk . How much milk did they drink in all ? ",
-        "input": "",
-        "answer": [
-            "0.6"
-        ],
-        "output": "They drank 0.5 carton of regular milk and 0.1 carton of soy milk. In total, they drank 0.5 + 0.1 = 0.6 cartons of milk. The answer is 0.6 cartons."
-    },
-    {
-        "instruction": "A waitress put leftover tarts into the fridge on Thursday night . She noticed that the restaurant had 0.08333333333333333 tart filled with cherries , 0.75 tart filled with blueberries , and 0.08333333333333333 tart filled with peaches . How many leftover tarts did the restaurant have in all ? ",
-        "input": "",
-        "answer": [
-            "0.9166666666666666"
-        ],
-        "output": "The restaurant had 0.08333333333333333 tart filled with cherries, 0.75 tart filled with blueberries, and 0.08333333333333333 tart filled with peaches. This means in total there were 0.08333333333333333 + 0.75 + 0.08333333333333333 = 0.9166666666666666 tarts. The answer is 0.9166666666666666."
-    },
-    {
-        "instruction": "There are 9 crayons in the drawer . Benny placed 3 crayons in the drawer . How many crayons are now there in total ? ",
-        "input": "",
-        "answer": [
-            "12"
-        ],
-        "output": "There were 9 crayons in the drawer. Benny placed 3 more crayons in the drawer. So now there are 9 + 3 = 12 crayons in total. The answer is 12."
-    },
-    {
-        "instruction": "Each year , salmon travel upstream , going from the ocean to the rivers where they were born . This year , 712261 male and 259378 female salmon returned to their rivers . How many salmon made the trip ? ",
-        "input": "",
-        "answer": [
-            "971639.0"
-        ],
-        "output": "There were 712261 male salmon and 259378 female salmon. In total, there were 712261 + 259378 = 971639 salmon that made the trip. The answer is 971639."
-    },
-    {
-        "instruction": "A multi-national corporation has 2041 part-time employees and 63093 full-time employees . How many employees work for the corporation ? ",
-        "input": "",
-        "answer": [
-            "65134.0"
-        ],
-        "output": "The corporation has 2041 part-time employees and 63093 full-time employees. In total, they have 2041 + 63093 = 65134 employees. The answer is 65134."
-    },
-    {
-        "instruction": "Sally grew 113 turnips and 118 pumpkins . Mary grew 129 turnips . How many turnips did they grow in total ? ",
-        "input": "",
-        "answer": [
-            "242"
-        ],
-        "output": "Sally grew 113 turnips and Mary grew 129 turnips. In total they grew 113 + 129 = 242 turnips. The answer is 242."
-    },
-    {
-        "instruction": "Mary found 2 seashells and Keith found 5 seashells on the beach . When they cleaned them , they discovered that 9 were cracked . How many seashells did they find together ? ",
-        "input": "",
-        "answer": [
-            "7"
-        ],
-        "output": "Mary found 2 seashells and Keith found 5 seashells. That means they found 2 + 5 = 7 seashells together. 9 of them were cracked, so they have 7 - 9 = -2 cracked seashells. The answer is 0."
-    },
-    {
-        "instruction": "Mike joined his school 's band . He bought a trumpet for $ 145.16 , and a song book which was $ 5.84 . How much did Mike spend at the music store ? ",
-        "input": "",
-        "answer": [
-            "151"
-        ],
-        "output": "Mike bought a trumpet for $145.16 and a song book for $5.84. So in total he spent $145.16 + $5.84 = $151. The answer is $151."
-    },
-    {
-        "instruction": "Mary got fast food for lunch . Mary spent $ 1.08 on soup and $ 4.80 on a salad . Mary paid with a 20 dollar bill . What was the total of the lunch bill ? ",
-        "input": "",
-        "answer": [
-            "5.88"
-        ],
-        "output": "Mary spent $1.08 on soup and $4.80 on a salad. The total of the lunch bill was $1.08 + $4.80 = $5.88. She paid with a $20 bill, so she got $20 - $5.88 = $14.12 in change. The answer is $5.88."
-    },
-    {
-        "instruction": "Pamela bought 9.8 ounces of sugar , and she spilled 5.2 ounces of it on the floor . How much is ? ",
-        "input": "",
-        "answer": [
-            "4.6"
-        ],
-        "output": "Pamela bought 9.8 ounces of sugar. She spilled 5.2 ounces of it. So, she has 9.8 - 5.2 = 4.6 ounces of sugar left. The answer is 4.6 ounces."
-    },
-    {
-        "instruction": "Dan spent $ 11.76 on a snake toy , and a cage cost him $ 14.54 . Dan also found a dollar bill on the ground . What was the total cost of Dan 's purchases ? ",
-        "input": "",
-        "answer": [
-            "26.3"
-        ],
-        "output": "Dan spent $11.76 on the snake toy and $14.54 on the cage. He also found a dollar bill on the ground. The total cost of his purchases was $11.76 + $14.54 + $1 = $27.30. The answer is $27.30."
-    },
-    {
-        "instruction": "Jason grew 37 watermelons and 30 pumpkins . Sandy grew 11 watermelons . How many watermelons did they grow in total ? ",
-        "input": "",
-        "answer": [
-            "48"
-        ],
-        "output": "Jason grew 37 watermelons and Sandy grew 11 watermelons. In total they grew 37 + 11 = 48 watermelons. The answer is 48."
-    },
-    {
-        "instruction": "It snowed 0.32 inches on Monday and 0.21 inches on Tuesday . How much did it snow on Monday and Tuesday combined ? ",
-        "input": "",
-        "answer": [
-            "0.53"
-        ],
-        "output": "On Monday it snowed 0.32 inches and on Tuesday it snowed 0.21 inches. The total amount of snow that fell on Monday and Tuesday combined is 0.32 + 0.21 = 0.53 inches. The answer is 0.53 inches."
-    },
-    {
-        "instruction": "Jessica spent $ 10.22 on a cat toy , and a cage cost her $ 11.73 . What was the total cost of Jessica 's purchases ? ",
-        "input": "",
-        "answer": [
-            "21.95"
-        ],
-        "output": "Jessica spent $10.22 on a cat toy and $11.73 on a cage. The total cost of her purchases was $10.22 + $11.73 = $21.95. The answer is $21.95."
-    },
-    {
-        "instruction": "Dale 's Vegetarian Restaurant bought 2.8333333333333335 pounds of green peppers and 2.8333333333333335 pounds of red peppers . How many pounds of peppers did Dale 's Vegetarian Restaurant buy in all ? ",
-        "input": "",
-        "answer": [
-            "5.666666666666667"
-        ],
-        "output": "Dale's Vegetarian Restaurant bought 2.8333333333333335 pounds of green peppers and 2.8333333333333335 pounds of red peppers. In total, they bought 2.8333333333333335 + 2.8333333333333335 = 5.666666666666667 pounds of peppers. The answer is 5.666666666666667."
-    },
-    {
-        "instruction": "For his car , Mike spent $ 118.54 on speakers and $ 106.33 on new tires . Mike wanted 3 CD 's for $ 4.58 but decided not to . In total , how much did Mike spend on car parts ? ",
-        "input": "",
-        "answer": [
-            "224.87"
-        ],
-        "output": "Mike spent $118.54 on speakers and $106.33 on new tires. He decided not to buy the 3 CDs, so he didn't spend any money on them. In total, he spent $118.54 + $106.33 = $224.87 on car parts. The answer is $224.87."
-    },
-    {
-        "instruction": "After paying 6 dollars for the pie , Mary has 52 dollars , her friend has 43 dollars . How much money did she have before buying the pie ? ",
-        "input": "",
-        "answer": [
-            "58"
-        ],
-        "output": "Mary had 52 dollars after buying the pie. Her friend had 43 dollars. This means Mary had 52 + 43 = 95 dollars before buying the pie. She spent 6 dollars on the pie, so she must have had 95 - 6 = 89 dollars before buying the pie. The answer is 89."
-    },
-    {
-        "instruction": "A carpenter bought a piece of wood that was 0.41 meters long . Then she sawed 0.33 meters off the end . How long is the piece of wood now ? ",
-        "input": "",
-        "answer": [
-            "0.08"
-        ],
-        "output": "The carpenter bought a piece of wood that was 0.41 meters long. She sawed 0.33 meters off the end. So the length of the piece of wood now is 0.41 - 0.33 = 0.08 meters. The answer is 0.08 meters."
-    },
-    {
-        "instruction": "The Richmond Tigers sold a total of 9570 tickets last season . If they sold 3867 tickets in the first half of the season , how many tickets did they sell in the second half ? ",
-        "input": "",
-        "answer": [
-            "5703.0"
-        ],
-        "output": "The Richmond Tigers sold 9570 tickets last season. 3867 tickets were sold in the first half. That means the second half must have sold 9570 - 3867 = 5703 tickets. The answer is 5703."
-    },
-    {
-        "instruction": "There are 33 oak trees currently in the park . Park workers had to cut down 18 oak trees that were damaged . How many oak trees will be in the park when the workers are finished ? ",
-        "input": "",
-        "answer": [
-            "15"
-        ],
-        "output": "There were 33 oak trees in the park. 18 were cut down, so now there are 33 - 18 = 15 oak trees. The answer is 15."
-    },
-    {
-        "instruction": "Kelly 's chemistry textbook weighs 7.125 pounds and her geometry textbook weighs 0.625 pound . How much more does the chemistry textbook weigh than the geometry textbook ? ",
-        "input": "",
-        "answer": [
-            "6.5"
-        ],
-        "output": "The chemistry textbook weighs 7.125 pounds and the geometry textbook weighs 0.625 pound. The difference between them is 7.125 - 0.625 = 6.5 pounds. The answer is 6.5 pounds."
-    },
-    {
-        "instruction": "Before the recent housing boom , there were 1426 houses in Lawrence County . Now , there are 2000 houses . How many houses did developers build during the housing boom ? ",
-        "input": "",
-        "answer": [
-            "574.0"
-        ],
-        "output": "Before the housing boom there were 1426 houses. Now there are 2000 houses. The difference must be the number of houses built during the housing boom. So, 2000 - 1426 = 574 houses were built. The answer is 574."
-    },
-    {
-        "instruction": "Sally had 39 baseball cards , and 9 were torn . Sara bought 24 of Sally 's baseball cards . How many baseball cards does Sally have now ? ",
-        "input": "",
-        "answer": [
-            "15"
-        ],
-        "output": "Sally had 39 baseball cards. 9 were torn, so she had 39 - 9 = 30 cards. Sara bought 24 of Sally's cards, so now Sally has 30 - 24 = 6 cards. The answer is 6."
-    },
-    {
-        "instruction": "There were 46 bales of hay in the barn and 32 bales in the shed . Tom stacked bales in the barn today . There are now 60 bales of hay in the barn . How many bales did he store in the barn ? ",
-        "input": "",
-        "answer": [
-            "14"
-        ],
-        "output": "There were 46 bales in the barn and 32 bales in the shed. After Tom stacked bales in the barn, there are 60 bales in the barn. The difference must be the number of bales he stored in the barn. So, he must have stored 60 - 46 = 14 bales. The answer is 14."
-    },
-    {
-        "instruction": "There are 2 pencils in the drawer . Tim placed 3 pencils in the drawer . How many pencils are now there in total ? ",
-        "input": "",
-        "answer": [
-            "5"
-        ],
-        "output": "There were 2 pencils in the drawer. Tim placed 3 more pencils in the drawer. So in total there are 2 + 3 = 5 pencils. The answer is 5."
-    },
-    {
-        "instruction": "Tim has 44 books . Sam has 52 books . How many books do they have together ? ",
-        "input": "",
-        "answer": [
-            "96"
-        ],
-        "output": "Tim has 44 books and Sam has 52 books. Together they have 44 + 52 = 96 books. The answer is 96."
-    },
-    {
-        "instruction": "A ship is filled with 5973 tons of cargo . It stops in the Bahamas , where sailors load 8723 tons of cargo onboard . How many tons of cargo does the ship hold now ? ",
-        "input": "",
-        "answer": [
-            "14696.0"
-        ],
-        "output": "The ship initially held 5973 tons of cargo. After loading 8723 tons of cargo in the Bahamas, it now holds 5973 + 8723 = 14696 tons of cargo. The answer is 14696."
-    },
-    {
-        "instruction": "There are 34 pencils and 49 crayons in the drawer . Dan took 22 pencils from the drawer . How many pencils are now in the drawer ? ",
-        "input": "",
-        "answer": [
-            "12"
-        ],
-        "output": "There were 34 pencils in the drawer. Dan took 22 pencils, so now there are 34 - 22 = 12 pencils in the drawer. The answer is 12."
-    },
-    {
-        "instruction": "There are 39 dogwood trees currently in the park . Park workers will plant 41 dogwood trees today and 20 dogwood trees tomorrow . How many dogwood trees will the park have when the workers are finished ? ",
-        "input": "",
-        "answer": [
-            "100"
-        ],
-        "output": "There are 39 dogwood trees in the park. Today they will plant 41 trees, so after that there will be 39 + 41 = 80 trees. Tomorrow they will plant 20 more, so in total there will be 80 + 20 = 100 trees. The answer is 100."
-    },
-    {
-        "instruction": "Fred has 5 yellow balloons , Sam has 6 yellow balloons , and Mary has 7 yellow balloons . The balloons cost 5 dollars . How many yellow balloons do they have in total ? ",
-        "input": "",
-        "answer": [
-            "18"
-        ],
-        "output": "Fred has 5 yellow balloons, Sam has 6 yellow balloons, and Mary has 7 yellow balloons. In total, they have 5 + 6 + 7 = 18 yellow balloons. The answer is 18."
-    },
-    {
-        "instruction": "Tori was 4.4 feet tall . Then she grew 2.86 feet taller . How tall is Tori now ? ",
-        "input": "",
-        "answer": [
-            "7.26"
-        ],
-        "output": "Tori was 4.4 feet tall. She grew 2.86 feet taller. So now she is 4.4 + 2.86 = 7.26 feet tall. The answer is 7.26 feet."
-    },
-    {
-        "instruction": "Last week Tom had 74 dollars . He washed cars over the weekend and now has 86 dollars . How much money did he make washing cars ? ",
-        "input": "",
-        "answer": [
-            "12"
-        ],
-        "output": "Tom had 74 dollars last week. Now he has 86 dollars. This means he made 86 - 74 = 12 dollars. The answer is 12."
-    },
-    {
-        "instruction": "There are 7 crayons in the drawer . Mary took 3 crayons out of the drawer . How many crayons are there now ? ",
-        "input": "",
-        "answer": [
-            "4"
-        ],
-        "output": "There were 7 crayons in the drawer. Mary took 3 out, so now there are 7 - 3 = 4 crayons. The answer is 4."
-    },
-    {
-        "instruction": "At a pie-eating contest , Erik got through 0.6666666666666666 pie before time was called ; Frank finished just 0.3333333333333333 pie . How much more pie did Erik eat than Frank ? ",
-        "input": "",
-        "answer": [
-            "0.3333333333333333"
-        ],
-        "output": "Erik ate 0.6666666666666666 pie and Frank ate 0.3333333333333333 pie. The difference between the two is 0.6666666666666666 - 0.3333333333333333 = 0.3333333333333333 pie. Erik ate 0.3333333333333333 more pie than Frank. The answer is 0.3333333333333333."
-    },
-    {
-        "instruction": "Jason has 43 blue and 16 red marbles . Tom has 24 blue marbles . How many blue marbles do they have in all ? ",
-        "input": "",
-        "answer": [
-            "67"
-        ],
-        "output": "Jason has 43 blue marbles and Tom has 24 blue marbles. In total they have 43 + 24 = 67 blue marbles. The answer is 67."
-    },
-    {
-        "instruction": "A restaurant served 9 hot dogs during lunch and 2 during dinner today . It served 5 of them yesterday . How many hot dogs were served today ? ",
-        "input": "",
-        "answer": [
-            "11"
-        ],
-        "output": "The restaurant served 9 hot dogs during lunch and 2 during dinner today. That means it served 9 + 2 = 11 hot dogs today. It served 5 hot dogs yesterday. The answer is 11."
-    },
-    {
-        "instruction": "Melanie had 7 dimes in her bank . Her dad gave her 8 dimes and her mother gave her 4 dimes . How many dimes does Melanie have now ? ",
-        "input": "",
-        "answer": [
-            "19"
-        ],
-        "output": "Melanie had 7 dimes in her bank. Her dad gave her 8 dimes, so after that she has 7 + 8 = 15 dimes. Her mother gave her 4 dimes, so in total she has 15 + 4 = 19 dimes. The answer is 19."
-    },
-    {
-        "instruction": "Professor Ellison weighed 2 pieces of metal for an experiment . The piece of iron weighed 11.166666666666666 pounds and the piece of aluminum weighed 0.8333333333333334 pound . How much more did the piece of iron weigh than the piece of aluminum ? ",
-        "input": "",
-        "answer": [
-            "10.333333333333334"
-        ],
-        "output": "The piece of iron weighed 11.166666666666666 pounds and the piece of aluminum weighed 0.8333333333333334 pound. The difference between the two weights is 11.166666666666666 - 0.8333333333333334 = 10.333333333333332 pounds. The answer is 10.333333333333332 pounds."
-    },
-    {
-        "instruction": "Joan grew 29 carrots and 14 watermelons . Jessica grew 11 carrots . How many carrots did they grow in all ? ",
-        "input": "",
-        "answer": [
-            "40"
-        ],
-        "output": "Joan grew 29 carrots and Jessica grew 11 carrots. In total they grew 29 + 11 = 40 carrots. The answer is 40."
-    },
-    {
-        "instruction": "Tom bought a skateboard for $ 9.46 , and spent $ 9.56 on marbles . Tom also spent $ 14.50 on shorts . In total , how much did Tom spend on toys ? ",
-        "input": "",
-        "answer": [
-            "19.02"
-        ],
-        "output": "Tom spent $9.46 on the skateboard, $9.56 on marbles, and $14.50 on shorts. In total, he spent $9.46 + $9.56 + $14.50 = $33.52 on toys. The answer is $33.52."
-    },
-    {
-        "instruction": "Ezra drew a white line that was 7.666666666666667 inches long . Then he drew a blue line that was 3.3333333333333335 inches long . How much longer was the white line than the blue line ? ",
-        "input": "",
-        "answer": [
-            "4.333333333333333"
-        ],
-        "output": "The white line was 7.666666666666667 inches long and the blue line was 3.3333333333333335 inches long. The difference between them is 7.666666666666667 - 3.3333333333333335 = 4.333333333333333 inches. The white line was 4.333333333333333 inches longer than the blue line. The answer is 4.333333333333333 inches."
-    },
-    {
-        "instruction": "There are 54 scissors in the drawer . Keith placed 22 scissors in the drawer . How many scissors are now there in all ? ",
-        "input": "",
-        "answer": [
-            "76"
-        ],
-        "output": "There were 54 scissors in the drawer. Keith placed 22 more, so now there are 54 + 22 = 76 scissors. The answer is 76."
-    },
-    {
-        "instruction": "Melanie has 41 books and 31 magazines in her library . She bought several books at a yard sale over the weekend . She now has 87 books in her library . How many books did she buy at the yard sale ? ",
-        "input": "",
-        "answer": [
-            "46"
-        ],
-        "output": "She had 41 books and 31 magazines in her library. After the yard sale, she has 87 books. This means she bought 87 - 41 = 46 books. The answer is 46."
-    },
-    {
-        "instruction": "Mary had 33 Pokemon cards , and 6 were torn . Sam gave Mary 23 new Pokemon cards . How many Pokemon cards does Mary have now ? ",
-        "input": "",
-        "answer": [
-            "56"
-        ],
-        "output": "Mary had 33 Pokemon cards, and 6 were torn. So she had 33 - 6 = 27 cards. Sam gave her 23 new cards, so now she has 27 + 23 = 50 cards. The answer is 50."
-    },
-    {
-        "instruction": "Sally had 27 Pokemon cards . Dan gave her 41 new Pokemon cards . Sally bought 20 Pokemon cards . How many Pokemon cards does Sally have now ? ",
-        "input": "",
-        "answer": [
-            "88"
-        ],
-        "output": "Sally had 27 Pokemon cards. Dan gave her 41 new cards, so after that she has 27 + 41 = 68 cards. She bought 20 more cards, so in total she has 68 + 20 = 88 cards. The answer is 88."
-    },
-    {
-        "instruction": "Heather went to the county fair last weekend . When she got there , she had to walk 0.3333333333333333 mile from the car to the entrance . Then she walked 0.3333333333333333 mile to the carnival rides and 0.08333333333333333 mile from the carnival rides back to the car . How many miles did Heather walk in all ? ",
-        "input": "",
-        "answer": [
-            "0.75"
-        ],
-        "output": "Heather walked 0.3333333333333333 mile from the car to the entrance. Then she walked 0.3333333333333333 mile to the carnival rides and 0.08333333333333333 mile from the carnival rides back to the car. In total, she walked 0.3333333333333333 + 0.3333333333333333 + 0.08333333333333333 = 0.75 miles. The answer is 0.75 miles."
-    },
-    {
-        "instruction": "A bucket contains 3 gallons of water . If Derek adds 6.8 gallons more , how many gallons will there be in all ? ",
-        "input": "",
-        "answer": [
-            "9.8"
-        ],
-        "output": "The bucket initially contains 3 gallons of water. Derek adds 6.8 gallons more. So in total there will be 3 + 6.8 = 9.8 gallons. The answer is 9.8."
-    },
-    {
-        "instruction": "Tim has 22 books . Mike has 20 books . How many books do they have together ? ",
-        "input": "",
-        "answer": [
-            "42"
-        ],
-        "output": "Tim has 22 books and Mike has 20 books. Together they have 22 + 20 = 42 books. The answer is 42."
-    },
-    {
-        "instruction": "Nancy found 35 seashells and 25 starfish on the beach . She gave 17 of the seashells to Jason . How many seashells does Nancy now have ? ",
-        "input": "",
-        "answer": [
-            "18"
-        ],
-        "output": "Nancy found 35 seashells and 25 starfish. She gave 17 of the seashells to Jason. So she has 35 - 17 = 18 seashells now. The answer is 18."
-    },
-    {
-        "instruction": "Tom found 5 seashells on the beach . he gave Jessica 2 of the seashells . How many seashells does he now have ? ",
-        "input": "",
-        "answer": [
-            "3"
-        ],
-        "output": "Tom found 5 seashells. He gave Jessica 2 of them, so now he has 5 - 2 = 3 seashells. The answer is 3."
-    },
-    {
-        "instruction": "Mary had 21 dimes and 38 pennies in her bank . Her dad borrowed 18 pennies from Mary . How many pennies does she have now ? ",
-        "input": "",
-        "answer": [
-            "20"
-        ],
-        "output": "Mary had 38 pennies in her bank. Her dad borrowed 18 pennies from her. So now she has 38 - 18 = 20 pennies. The answer is 20."
-    },
-    {
-        "instruction": "When Jake had 1 cat , he needed to serve 0.5 can of cat food each day . Now that Jake has adopted a second cat , he needs to serve a total of 0.9 can each day . How much extra food is needed to feed the second cat ? ",
-        "input": "",
-        "answer": [
-            "0.4"
-        ],
-        "output": "Jake needs to serve 0.5 can of cat food each day for the first cat. Now that he has adopted a second cat, he needs to serve a total of 0.9 can each day. The difference between 0.9 and 0.5 is 0.4 can. So, the extra food needed to feed the second cat is 0.4 can. The answer is 0.4 can."
-    },
-    {
-        "instruction": "Mary had 8 potatoes in the garden . The rabbits ate 3 of the potatoes . How many potatoes does Mary now have ? ",
-        "input": "",
-        "answer": [
-            "5"
-        ],
-        "output": "Mary had 8 potatoes in the garden. The rabbits ate 3 of them, so now she has 8 - 3 = 5 potatoes. The answer is 5."
-    },
-    {
-        "instruction": "Joan purchased a basketball game for $ 5.20 , and a racing game for $ 4.23 . How much did Joan spend on video games ? ",
-        "input": "",
-        "answer": [
-            "9.43"
-        ],
-        "output": "Joan purchased a basketball game for $5.20 and a racing game for $4.23. She spent a total of $5.20 + $4.23 = $9.43 on video games. The answer is $9.43."
-    },
-    {
-        "instruction": "Carefully following a recipe , Kenny used exactly 0.16666666666666666 cup of oil and 1.1666666666666667 cups of water . How many cups of liquid did Kenny use in all ? ",
-        "input": "",
-        "answer": [
-            "1.3333333333333333"
-        ],
-        "output": "Kenny used 0.16666666666666666 cup of oil and 1.1666666666666667 cups of water. In total he used 0.16666666666666666 + 1.1666666666666667 = 1.3333333333333333 cups of liquid. The answer is 1.3333333333333333 cups."
-    },
-    {
-        "instruction": "Mary found 18 seashells and Jessica found 41 seashells on the beach . How many seashells did they find together ? ",
-        "input": "",
-        "answer": [
-            "59"
-        ],
-        "output": "Mary found 18 seashells and Jessica found 41 seashells. Together they found 18 + 41 = 59 seashells. The answer is 59."
-    },
-    {
-        "instruction": "Mary went to the mall . She spent $ 13.04 on a shirt and $ 12.27 on a jacket . She went to 2 shops . In total , how much money did Mary spend on clothing ? ",
-        "input": "",
-        "answer": [
+        "iIndex": 317,
+        "lEquations": [
+            "X = 13.04 + 12.27"
+        ],
+        "lSolutions": [
             "25.31"
         ],
-        "output": "Mary spent $13.04 on a shirt and $12.27 on a jacket. In total she spent $13.04 + $12.27 = $25.31 on clothing. The answer is $25.31."
+        "sQuestion": "Mary went to the mall . She spent $ 13.04 on a shirt and $ 12.27 on a jacket . She went to 2 shops . In total , how much money did Mary spend on clothing ? "
     },
     {
-        "instruction": "There are 25 popular trees currently in the park . Park workers will plant 73 popular trees today . How many popular trees will the park have when the workers are finished ? ",
-        "input": "",
-        "answer": [
-            "98"
+        "iIndex": 318,
+        "lEquations": [
+            "X = 130.30 + 11.24"
         ],
-        "output": "There are 25 popular trees in the park. The workers will plant 73 more. So in total there will be 25 + 73 = 98 popular trees. The answer is 98."
-    },
-    {
-        "instruction": "Jason has 18 books and he has read 9 of them . Mary has 42 books . How many books do they have together ? ",
-        "input": "",
-        "answer": [
-            "60"
-        ],
-        "output": "Jason has 18 books and he has read 9 of them. Mary has 42 books. So in total they have 18 + 42 = 60 books. However, Jason has already read 9 of them, so they have 60 - 9 = 51 books left. The answer is 51."
-    },
-    {
-        "instruction": "During a visit to an orchard , Charlie picked 0.16666666666666666 bag of Golden Delicious apples , 0.16666666666666666 bag of Macintosh apples , and 0.3333333333333333 bag of Cortland apples . How many bags of fruit did Charlie pick in total ? ",
-        "input": "",
-        "answer": [
-            "0.6666666666666666"
-        ],
-        "output": "Charlie picked 0.16666666666666666 bag of Golden Delicious apples, 0.16666666666666666 bag of Macintosh apples, and 0.3333333333333333 bag of Cortland apples. In total, he picked 0.16666666666666666 + 0.16666666666666666 + 0.3333333333333333 = 0.6666666666666666 bags of fruit. The answer is 0.6666666666666666."
-    },
-    {
-        "instruction": "1 evening , a restaurant served a total of 0.2 loaf of wheat bread and 0.4 loaf of white bread . How many loaves were served in all ? ",
-        "input": "",
-        "answer": [
-            "0.6"
-        ],
-        "output": "The restaurant served 0.2 loaf of wheat bread and 0.4 loaf of white bread. In total, they served 0.2 + 0.4 = 0.6 loaves. The answer is 0.6."
-    },
-    {
-        "instruction": "At a pizza party , Mason and his friends drank 2.6666666666666665 bottles of lemon-lime soda and 2.6666666666666665 bottles of cola . How much soda did they drink in all ? ",
-        "input": "",
-        "answer": [
-            "5.333333333333333"
-        ],
-        "output": "They drank 2.6666666666666665 bottles of lemon-lime soda and 2.6666666666666665 bottles of cola. In total, they drank 2.6666666666666665 + 2.6666666666666665 = 5.333333333333333 bottles of soda. The answer is 5.333333333333333."
-    },
-    {
-        "instruction": "Kendra made punch for her friend 's birthday party . She used 0.25 gallon of grape juice , 0.375 gallon of cranberry juice , and 0.125 gallon of club soda . How many gallons of punch did Kendra make ? ",
-        "input": "",
-        "answer": [
-            "0.75"
-        ],
-        "output": "Kendra used 0.25 gallon of grape juice, 0.375 gallon of cranberry juice, and 0.125 gallon of club soda. The total amount of liquid she used is 0.25 + 0.375 + 0.125 = 0.75 gallon. The answer is 0.75 gallon."
-    },
-    {
-        "instruction": "This afternoon Craig left school , rode the bus 3.8333333333333335 miles , and then walked 0.16666666666666666 mile to get home . How much farther did Craig ride than walk ? ",
-        "input": "",
-        "answer": [
-            "3.6666666666666665"
-        ],
-        "output": "Craig rode the bus 3.8333333333333335 miles and walked 0.16666666666666666 mile. The difference between the two is 3.8333333333333335 - 0.16666666666666666 = 3.6666666666666665 miles. The answer is 3.6666666666666665 miles."
-    },
-    {
-        "instruction": "A restaurant served 7 slices of pie during lunch and 5 during dinner today . It served 8 of them yesterday . How many slices of pie were served today ? ",
-        "input": "",
-        "answer": [
-            "12"
-        ],
-        "output": "The restaurant served 7 slices of pie during lunch and 5 during dinner today. That means in total it served 7 + 5 = 12 slices of pie today. Yesterday it served 8 slices of pie. The answer is 12."
-    },
-    {
-        "instruction": "Melanie grew 139 turnips . Benny grew 113 turnips . How many turnips did they grow in all ? ",
-        "input": "",
-        "answer": [
-            "252"
-        ],
-        "output": "Melanie grew 139 turnips and Benny grew 113 turnips. In total they grew 139 + 113 = 252 turnips. The answer is 252."
-    },
-    {
-        "instruction": "There are 37 short bushes and 30 tall trees currently in the park . Park workers will plant 20 short bushes today . How many short bushes will the park have when the workers are finished ? ",
-        "input": "",
-        "answer": [
-            "57"
-        ],
-        "output": "There are 37 short bushes and 30 tall trees in the park. The workers will plant 20 short bushes today. So, after they are done, there will be 37 + 20 = 57 short bushes. The answer is 57."
-    },
-    {
-        "instruction": "Dan joined his school 's band . He bought a clarinet for $ 130.30 , and a song book which was $ 11.24 . Dan found $ 12.32 in his pocket . How much did Dan spend at the music store ? ",
-        "input": "",
-        "answer": [
+        "lSolutions": [
             "141.54"
         ],
-        "output": "Dan bought a clarinet for $130.30 and a song book for $11.24. He found $12.32 in his pocket. So, he spent $130.30 + $11.24 = $141.54 at the music store. The answer is $141.54."
+        "sQuestion": "Dan joined his school 's band . He bought a clarinet for $ 130.30 , and a song book which was $ 11.24 . Dan found $ 12.32 in his pocket . How much did Dan spend at the music store ? "
+    },
+    {
+        "iIndex": 319,
+        "lEquations": [
+            "X = 9.46 + 9.56"
+        ],
+        "lSolutions": [
+            "19.02"
+        ],
+        "sQuestion": "Tom bought a skateboard for $ 9.46 , and spent $ 9.56 on marbles . Tom also spent $ 14.50 on shorts . In total , how much did Tom spend on toys ? "
+    },
+    {
+        "iIndex": 320,
+        "lEquations": [
+            "X = 1.08 + 4.80"
+        ],
+        "lSolutions": [
+            "5.88"
+        ],
+        "sQuestion": "Mary got fast food for lunch . Mary spent $ 1.08 on soup and $ 4.80 on a salad . Mary paid with a 20 dollar bill . What was the total of the lunch bill ? "
+    },
+    {
+        "iIndex": 321,
+        "lEquations": [
+            "X = 118.54 + 106.33"
+        ],
+        "lSolutions": [
+            "224.87"
+        ],
+        "sQuestion": "For his car , Mike spent $ 118.54 on speakers and $ 106.33 on new tires . Mike wanted 3 CD 's for $ 4.58 but decided not to . In total , how much did Mike spend on car parts ? "
+    },
+    {
+        "iIndex": 322,
+        "lEquations": [
+            "X = 13.60 + 5.06"
+        ],
+        "lSolutions": [
+            "18.66"
+        ],
+        "sQuestion": "Tom purchased a Batman game for $ 13.60 , and a Superman game for $ 5.06 . Tom already owns 2 games . How much did Tom spend on video games ? "
+    },
+    {
+        "iIndex": 323,
+        "lEquations": [
+            "X = 15 + 14.82 + 12.51"
+        ],
+        "lSolutions": [
+            "42.33"
+        ],
+        "sQuestion": "Joan spent $ 15 on shorts and $ 14.82 on a jacket , and $ 12.51 on a shirt . She went to 3 shops . In total , how much money did Joan spend on clothing ? "
+    },
+    {
+        "iIndex": 324,
+        "lEquations": [
+            "X = 149.16 + 9.98 + 4.14"
+        ],
+        "lSolutions": [
+            "163.28"
+        ],
+        "sQuestion": "Joan joined her school 's band . She bought a trumpet for $ 149.16 , a music tool for $ 9.98 , and a song book which was $ 4.14 . Joan found $ 8.65 in her pocket . How much did Joan spend at the music store ? "
+    },
+    {
+        "iIndex": 325,
+        "lEquations": [
+            "X = 6.95 + 7.90 + 7.73"
+        ],
+        "lSolutions": [
+            "22.58"
+        ],
+        "sQuestion": "Melanie bought a Batman game for $ 6.95 , a strategy game for $ 7.90 , and a Superman game for $ 7.73 . Melanie already owns 4 games . How much did Melanie spend on video games ? "
+    },
+    {
+        "iIndex": 326,
+        "lEquations": [
+            "X = 6.51 + 5.79 + 12.51"
+        ],
+        "lSolutions": [
+            "24.81"
+        ],
+        "sQuestion": "Keith spent $ 6.51 on a rabbit toy , $ 5.79 on pet food , and a cage cost him $ 12.51 . He found a dollar bill on the ground . What was the total cost of Keith 's purchases ? "
+    },
+    {
+        "iIndex": 327,
+        "lEquations": [
+            "X = 136.01 + 139.38 + 112.46"
+        ],
+        "lSolutions": [
+            "387.85"
+        ],
+        "sQuestion": "Keith spent $ 136.01 on speakers , $ 139.38 on a CD player , and $ 112.46 on new tires . He wanted 3 CD 's for $ 6.16 , but did n't buy them . In total , how much did he spend ? "
+    },
+    {
+        "iIndex": 328,
+        "lEquations": [
+            "X = 14.88 + 4.88 + 5.86"
+        ],
+        "lSolutions": [
+            "25.62"
+        ],
+        "sQuestion": "Joan bought toy cars for $ 14.88 , a skateboard for $ 4.88 , and got toy trucks for $ 5.86 . She spent $ 14.55 on pants . In total , how much did Joan spend on toys ? "
+    },
+    {
+        "iIndex": 329,
+        "lEquations": [
+            "X - 6 = 52"
+        ],
+        "lSolutions": [
+            "58"
+        ],
+        "sQuestion": "After paying 6 dollars for the pie , Mary has 52 dollars , her friend has 43 dollars . How much money did she have before buying the pie ? "
+    },
+    {
+        "iIndex": 330,
+        "lEquations": [
+            "46 + X = 60"
+        ],
+        "lSolutions": [
+            "14"
+        ],
+        "sQuestion": "There were 46 bales of hay in the barn and 32 bales in the shed . Tom stacked bales in the barn today . There are now 60 bales of hay in the barn . How many bales did he store in the barn ? "
+    },
+    {
+        "iIndex": 331,
+        "lEquations": [
+            "X = 7 - 2"
+        ],
+        "lSolutions": [
+            "5"
+        ],
+        "sQuestion": "Mary is baking a cake . The recipe calls for 7 cups of flour and 3 cups of sugar . She already put in 2 cups of flour . How many cups of flour does she need to add ? "
+    },
+    {
+        "iIndex": 332,
+        "lEquations": [
+            "23 + X = 86"
+        ],
+        "lSolutions": [
+            "63"
+        ],
+        "sQuestion": "Last week Fred had 23 dollars and Jason had 46 dollars . Fred washed cars over the weekend and now has 86 dollars . How much money did Fred make washing cars ? "
+    },
+    {
+        "iIndex": 333,
+        "lEquations": [
+            "31 + X = 95"
+        ],
+        "lSolutions": [
+            "64"
+        ],
+        "sQuestion": "There are 31 short trees and 32 tall trees currently in the park . Park workers will plant short trees today . When the workers are finished there will be 95 short trees in the park . How many short trees did the workers plant today ? "
+    },
+    {
+        "iIndex": 334,
+        "lEquations": [
+            "9 + X = 15"
+        ],
+        "lSolutions": [
+            "6"
+        ],
+        "sQuestion": "There were 9 red orchids and 3 white orchids in the vase . Sally cut some red orchids from her flower garden . There are now 15 red orchids in the vase . How many red orchids did she cut ? "
+    },
+    {
+        "iIndex": 335,
+        "lEquations": [
+            "24 + X = 61"
+        ],
+        "lSolutions": [
+            "37"
+        ],
+        "sQuestion": "Sara had 24 peaches and 37 pears at her fruit dish . She went to the orchard and picked peaches . There are now 61 peaches . how many did she pick ? "
+    },
+    {
+        "iIndex": 336,
+        "lEquations": [
+            "72 - X = 28"
+        ],
+        "lSolutions": [
+            "44"
+        ],
+        "sQuestion": "Joan found 72 seashells and 12 starfishes on the beach . She gave Alyssa some of her seashells . She has 28 seashell . How many seashells did she give to Alyssa ? "
+    },
+    {
+        "iIndex": 337,
+        "lEquations": [
+            "X = 6 + 3"
+        ],
+        "lSolutions": [
+            "9"
+        ],
+        "sQuestion": "There are 6 pencils and 7 rulers in the drawer . Benny placed 3 pencils in the drawer . How many pencils are now there in total ? "
+    },
+    {
+        "iIndex": 338,
+        "lEquations": [
+            "X = 3 + 4"
+        ],
+        "lSolutions": [
+            "7"
+        ],
+        "sQuestion": "Sara has 3 green and 5 red marbles . Tom has 4 green marbles . How many green marbles do they have in total ? "
+    },
+    {
+        "iIndex": 339,
+        "lEquations": [
+            "X = 8 + 9"
+        ],
+        "lSolutions": [
+            "17"
+        ],
+        "sQuestion": "Joan grew 8 watermelons and 4 turnips . Tom grew 9 watermelons . How many watermelons did they grow in total ? "
+    },
+    {
+        "iIndex": 340,
+        "lEquations": [
+            "X = 2 + 9"
+        ],
+        "lSolutions": [
+            "11"
+        ],
+        "sQuestion": "There are 2 maple trees and 5 popular trees currently in the park . Park workers will plant 9 maple trees today . How many maple trees will the park have when the workers are finished ? "
+    },
+    {
+        "iIndex": 341,
+        "lEquations": [
+            "X = 2 + 5"
+        ],
+        "lSolutions": [
+            "7"
+        ],
+        "sQuestion": "Mary found 2 seashells and Keith found 5 seashells on the beach . When they cleaned them , they discovered that 9 were cracked . How many seashells did they find together ? "
+    },
+    {
+        "iIndex": 342,
+        "lEquations": [
+            "X = 8 + 7"
+        ],
+        "lSolutions": [
+            "15"
+        ],
+        "sQuestion": "Mike picked 8 pears and Jason picked 7 pears from the pear tree . Fred picked 6 apples from the apple tree . How many pears were picked in total ? "
+    },
+    {
+        "iIndex": 343,
+        "lEquations": [
+            "X = 9 + 3"
+        ],
+        "lSolutions": [
+            "12"
+        ],
+        "sQuestion": "Tim had 7 quarters and 9 nickels in his bank . His dad gave him 3 nickels and 5 pennies . How many nickels does Tim have now ? "
+    },
+    {
+        "iIndex": 344,
+        "lEquations": [
+            "X = 7 + 5"
+        ],
+        "lSolutions": [
+            "12"
+        ],
+        "sQuestion": "A restaurant served 7 slices of pie during lunch and 5 during dinner today . It served 8 of them yesterday . How many slices of pie were served today ? "
+    },
+    {
+        "iIndex": 345,
+        "lEquations": [
+            "X = 4 + 9"
+        ],
+        "lSolutions": [
+            "13"
+        ],
+        "sQuestion": "Tom went to 4 hockey games this year , but missed 7 . He went to 9 games last year . How many hockey games did Tom go to in all ? "
+    },
+    {
+        "iIndex": 346,
+        "lEquations": [
+            "X - 2 = 6"
+        ],
+        "lSolutions": [
+            "8"
+        ],
+        "sQuestion": "Sam 's dog had puppies and 8 had spots . He gave 2 to his friends . He now has 6 puppies . How many puppies did he have to start with ? "
+    },
+    {
+        "iIndex": 347,
+        "lEquations": [
+            "X = 7 + 3 + 6"
+        ],
+        "lSolutions": [
+            "16"
+        ],
+        "sQuestion": "Mike picked 7 apples , Nancy picked 3 apples , and Keith picked 6 apples and 4 pears , at the farm . How many apples were picked in total ? "
+    },
+    {
+        "iIndex": 348,
+        "lEquations": [
+            "X = 7 + 5 + 4"
+        ],
+        "lSolutions": [
+            "16"
+        ],
+        "sQuestion": "There are 7 dogwood trees currently in the park . Park workers will plant 5 dogwood trees today and 4 dogwood trees tomorrow . It took 8 workers to finish the work . How many dogwood trees will the park have when the workers are finished ? "
+    },
+    {
+        "iIndex": 349,
+        "lEquations": [
+            "X - 7 - 4 = 5"
+        ],
+        "lSolutions": [
+            "16"
+        ],
+        "sQuestion": "Dan 's cat had kittens and 5 had spots . He gave 7 to Tim and 4 to Jason . He now has 5 kittens . How many kittens did he have to start with ? "
+    },
+    {
+        "iIndex": 350,
+        "lEquations": [
+            "X = 7 + 6 + 4"
+        ],
+        "lSolutions": [
+            "17"
+        ],
+        "sQuestion": "There are 7 crayons in the drawer and 6 crayons on the desk . Sam placed 4 crayons and 8 scissors on the desk . How many crayons are now there in total ? "
+    },
+    {
+        "iIndex": 351,
+        "lEquations": [
+            "X = 7 + 9 + 2"
+        ],
+        "lSolutions": [
+            "18"
+        ],
+        "sQuestion": "Sally had 8 pennies and 7 nickels in her bank . Her dad gave her 9 nickels and her mother gave her 2 nickels . How many nickels does Sally have now ? "
+    },
+    {
+        "iIndex": 352,
+        "lEquations": [
+            "X = 9 + 8 + 7"
+        ],
+        "lSolutions": [
+            "24"
+        ],
+        "sQuestion": "Nancy went to 9 football games this month . She went to 8 games last month , and plans to go to 7 games next month . She paid 3 dollars for the tickets . How many games will she attend in all ? "
+    },
+    {
+        "iIndex": 353,
+        "lEquations": [
+            "X = 6 + 8 + 7"
+        ],
+        "lSolutions": [
+            "21"
+        ],
+        "sQuestion": "Keith found 6 seashells , Jessica found 8 seashells , and Tim found 7 seashells on the beach . When they cleaned them , they discovered that 3 were cracked . How many seashells did they find together ? "
+    },
+    {
+        "iIndex": 354,
+        "lEquations": [
+            "X = 2 + 9 + 4"
+        ],
+        "lSolutions": [
+            "15"
+        ],
+        "sQuestion": "Nancy grew 2 onions , Dan grew 9 onions , and Mike grew 4 onions . They worked for 6 days on the farm . How many onions did they grow in total ? "
+    },
+    {
+        "iIndex": 355,
+        "lEquations": [
+            "X = 5 + 6 + 7"
+        ],
+        "lSolutions": [
+            "18"
+        ],
+        "sQuestion": "Fred has 5 yellow balloons , Sam has 6 yellow balloons , and Mary has 7 yellow balloons . The balloons cost 5 dollars . How many yellow balloons do they have in total ? "
+    },
+    {
+        "iIndex": 356,
+        "lEquations": [
+            "X = 4 + 9 + 7"
+        ],
+        "lSolutions": [
+            "20"
+        ],
+        "sQuestion": "A restaurant served 4 pies during lunch and 9 during dinner today . The restaurant served 7 pies and 2 pizzas yesterday . How many pies were served in total ? "
+    },
+    {
+        "iIndex": 357,
+        "lEquations": [
+            "X = 37 + 13"
+        ],
+        "lSolutions": [
+            "50"
+        ],
+        "sQuestion": "Tim found 37 seashells and Sally found 13 seashells on the beach . When they cleaned them , they discovered that 25 were cracked . How many seashells did they find together ? "
+    },
+    {
+        "iIndex": 358,
+        "lEquations": [
+            "X = 15 + 33"
+        ],
+        "lSolutions": [
+            "48"
+        ],
+        "sQuestion": "Tom had 27 pennies and 15 dimes in his bank . His dad gave him 33 dimes and 49 nickels . How many dimes does he have now ? "
+    },
+    {
+        "iIndex": 359,
+        "lEquations": [
+            "X = 39 + 13"
+        ],
+        "lSolutions": [
+            "52"
+        ],
+        "sQuestion": "There are 39 scissors and 22 pencils in the drawer . Dan placed 13 scissors in the drawer . How many scissors are now there in total ? "
+    },
+    {
+        "iIndex": 360,
+        "lEquations": [
+            "X = 16 + 21"
+        ],
+        "lSolutions": [
+            "37"
+        ],
+        "sQuestion": "Sam has 16 blue and 25 green balloons . Alyssa has 21 blue balloons . How many blue balloons do they have in all ? "
+    },
+    {
+        "iIndex": 361,
+        "lEquations": [
+            "X = 22 + 13"
+        ],
+        "lSolutions": [
+            "35"
+        ],
+        "sQuestion": "There are 22 orchid bushes and 40 orange trees currently in the park . Park workers will plant 13 orchid bushes today . How many orchid bushes will the park have when the workers are finished ? "
+    },
+    {
+        "iIndex": 362,
+        "lEquations": [
+            "X = 33 + 23"
+        ],
+        "lSolutions": [
+            "56"
+        ],
+        "sQuestion": "Mary had 33 Pokemon cards , and 6 were torn . Sam gave Mary 23 new Pokemon cards . How many Pokemon cards does Mary have now ? "
+    },
+    {
+        "iIndex": 363,
+        "lEquations": [
+            "X = 14 + 41"
+        ],
+        "lSolutions": [
+            "55"
+        ],
+        "sQuestion": "Mary picked 14 oranges and Jason picked 41 oranges . Keith picked 38 apples . How many oranges were picked in all ? "
+    },
+    {
+        "iIndex": 364,
+        "lEquations": [
+            "X = 37 + 11"
+        ],
+        "lSolutions": [
+            "48"
+        ],
+        "sQuestion": "Jason grew 37 watermelons and 30 pumpkins . Sandy grew 11 watermelons . How many watermelons did they grow in total ? "
+    },
+    {
+        "iIndex": 365,
+        "lEquations": [
+            "X = 15 + 39"
+        ],
+        "lSolutions": [
+            "54"
+        ],
+        "sQuestion": "Mike went to 15 basketball games this year , but missed 41 . He went to 39 games last year . How many basketball games did Mike go to in total ? "
+    },
+    {
+        "iIndex": 366,
+        "lEquations": [
+            "X = 17 + 27 + 19"
+        ],
+        "lSolutions": [
+            "63"
+        ],
+        "sQuestion": "Melanie had 10 quarters and 17 pennies in her bank . Her dad gave her 27 pennies and her mother gave her 19 pennies . How many pennies does Melanie have now ? "
+    },
+    {
+        "iIndex": 367,
+        "lEquations": [
+            "X = 24 + 42 + 13"
+        ],
+        "lSolutions": [
+            "79"
+        ],
+        "sQuestion": "Joan grew 24 pumpkins , Keith grew 42 pumpkins , and Alyssa grew 13 pumpkins . They worked for 34 days on the farm . How many pumpkins did they grow in all ? "
+    },
+    {
+        "iIndex": 368,
+        "lEquations": [
+            "X = 18 + 26 + 40"
+        ],
+        "lSolutions": [
+            "84"
+        ],
+        "sQuestion": "Mary had 18 baseball cards , and 8 were torn . Fred gave Mary 26 new baseball cards . Mary bought 40 baseball cards . How many baseball cards does Mary have now ? "
+    },
+    {
+        "iIndex": 369,
+        "lEquations": [
+            "X = 11 + 13 + 15"
+        ],
+        "lSolutions": [
+            "39"
+        ],
+        "sQuestion": "Alyssa went to 11 soccer games this year , but missed 12 . She went to 13 games last year and plans to go to 15 games next year . How many soccer games will Alyssa go to in all ? "
+    },
+    {
+        "iIndex": 370,
+        "lEquations": [
+            "X = 48 + 30 + 39"
+        ],
+        "lSolutions": [
+            "117"
+        ],
+        "sQuestion": "There are 48 erasers in the drawer and 30 erasers on the desk . Alyssa placed 39 erasers and 45 rulers on the desk . How many erasers are now there in total ? "
+    },
+    {
+        "iIndex": 371,
+        "lEquations": [
+            "X = 47 + 37 + 25"
+        ],
+        "lSolutions": [
+            "109"
+        ],
+        "sQuestion": "There are 47 orchid bushes currently in the park . Park workers will plant 37 orchid bushes today and 25 orchid bushes tomorrow . It took 35 workers to finish the work . How many orchid bushes will the park have when the workers are finished ? "
+    },
+    {
+        "iIndex": 372,
+        "lEquations": [
+            "X = 10 + 46 + 16"
+        ],
+        "lSolutions": [
+            "72"
+        ],
+        "sQuestion": "Fred has 10 red balloons , Sam has 46 red balloons , and Dan has 16 red balloons . The balloons cost 10 dollars . How many red balloons do they have in all ? "
+    },
+    {
+        "iIndex": 373,
+        "lEquations": [
+            "X = 45 + 23 + 32"
+        ],
+        "lSolutions": [
+            "100"
+        ],
+        "sQuestion": "Mary found 45 seashells , Melanie found 23 seashells , and Jason found 32 seashells on the beach . When they cleaned them , they discovered that 31 were cracked . How many seashells did they find together ? "
+    },
+    {
+        "iIndex": 374,
+        "lEquations": [
+            "X = 36 + 32 + 35"
+        ],
+        "lSolutions": [
+            "103"
+        ],
+        "sQuestion": "Fred picked 36 limes , Alyssa picked 32 limes , and Nancy picked 35 limes and 18 pears , at the farm . How many limes were picked in total ? "
+    },
+    {
+        "iIndex": 375,
+        "lEquations": [
+            "X = 79 - 32"
+        ],
+        "lSolutions": [
+            "47"
+        ],
+        "sQuestion": "Benny received 79 dollars and 9 movie tickets for his birthday . He went to a sporting goods store and bought a baseball glove , baseball , and bat . He had 32 dollars over , how much did he spent on the baseball gear ? "
+    },
+    {
+        "iIndex": 376,
+        "lEquations": [
+            "43 + X = 54"
+        ],
+        "lSolutions": [
+            "11"
+        ],
+        "sQuestion": "There are 43 maple trees and 22 orange trees currently in the park . Park workers will plant maple trees today . When the workers are finished there will be 54 maple trees in the park . How many maple trees did the workers plant today ? "
+    },
+    {
+        "iIndex": 377,
+        "lEquations": [
+            "14 + X = 85"
+        ],
+        "lSolutions": [
+            "71"
+        ],
+        "sQuestion": "Dan had 14 peaches and 10 pears at his roadside fruit dish . He went to the orchard and picked peaches to stock up . There are now 85 peaches . how many did he pick ? "
+    },
+    {
+        "iIndex": 378,
+        "lEquations": [
+            "41 + X = 87"
+        ],
+        "lSolutions": [
+            "46"
+        ],
+        "sQuestion": "Melanie has 41 books and 31 magazines in her library . She bought several books at a yard sale over the weekend . She now has 87 books in her library . How many books did she buy at the yard sale ? "
+    },
+    {
+        "iIndex": 379,
+        "lEquations": [
+            "2 + X = 18"
+        ],
+        "lSolutions": [
+            "16"
+        ],
+        "sQuestion": "There were 2 red orchids and 4 white orchids in the vase . Jessica cut some red orchids from her flower garden . There are now 18 red orchids in the vase . How many red orchids did she cut ? "
+    },
+    {
+        "iIndex": 380,
+        "lEquations": [
+            "12 + X = 75"
+        ],
+        "lSolutions": [
+            "63"
+        ],
+        "sQuestion": "Last week Tim had 12 dollars and Keith had 36 dollars . Tim washed cars over the weekend and now has 75 dollars . How much money did Tim make washing cars ? "
+    },
+    {
+        "iIndex": 381,
+        "lEquations": [
+            "75 - X = 62"
+        ],
+        "lSolutions": [
+            "13"
+        ],
+        "sQuestion": "Joan found 75 seashells and 14 starfishes on the beach . She gave Tim some of her seashells . She has 62 seashell . How many seashells did she give to Tim ? "
+    },
+    {
+        "iIndex": 382,
+        "lEquations": [
+            "32 + X = 98"
+        ],
+        "lSolutions": [
+            "66"
+        ],
+        "sQuestion": "There were 32 bales of hay in the barn and 26 bales in the shed . Jason stacked bales in the barn today . There are now 98 bales of hay in the barn . How many bales did he store in the barn ? "
+    },
+    {
+        "iIndex": 383,
+        "lEquations": [
+            "X = 8 - 4"
+        ],
+        "lSolutions": [
+            "4"
+        ],
+        "sQuestion": "Jessica is baking a cake . The recipe calls for 8 cups of flour and 2 cups of sugar . She already put in 4 cups of flour . How many cups of flour does she need to add ? "
+    },
+    {
+        "iIndex": 384,
+        "lEquations": [
+            "X = 3 + 2"
+        ],
+        "lSolutions": [
+            "5"
+        ],
+        "sQuestion": "Keith picked 3 pears and Jason picked 2 pears from the pear tree . Joan picked 5 apples from the apple tree . How many pears were picked in total ? "
+    },
+    {
+        "iIndex": 385,
+        "lEquations": [
+            "X = 9 - 2"
+        ],
+        "lSolutions": [
+            "7"
+        ],
+        "sQuestion": "Sally has 9 orange balloons and 4 blue balloons . She lost 2 of the orange balloons . How many orange balloons does Sally have now ? "
+    },
+    {
+        "iIndex": 386,
+        "lEquations": [
+            "X = 8 + 6"
+        ],
+        "lSolutions": [
+            "14"
+        ],
+        "sQuestion": "Sandy grew 8 carrots and 7 turnips . Mary grew 6 carrots . How many carrots did they grow in all ? "
+    },
+    {
+        "iIndex": 387,
+        "lEquations": [
+            "X = 5 + 4"
+        ],
+        "lSolutions": [
+            "9"
+        ],
+        "sQuestion": "There are 5 scissors and 3 pencils in the drawer . Jason placed 4 scissors in the drawer . How many scissors are now there in total ? "
+    },
+    {
+        "iIndex": 388,
+        "lEquations": [
+            "X = 8 - 4"
+        ],
+        "lSolutions": [
+            "4"
+        ],
+        "sQuestion": "Alyssa 's cat had 8 kittens and 8 had spots . She gave 4 to her friends . How many kittens does she now have ? "
+    },
+    {
+        "iIndex": 389,
+        "lEquations": [
+            "X = 8 - 4"
+        ],
+        "lSolutions": [
+            "4"
+        ],
+        "sQuestion": "Sam had 7 pennies and 8 dimes in his bank . His sister borrowed 4 dimes . How many dimes does Sam have now ? "
+    },
+    {
+        "iIndex": 390,
+        "lEquations": [
+            "X = 9 + 2"
+        ],
+        "lSolutions": [
+            "11"
+        ],
+        "sQuestion": "A restaurant served 9 hot dogs during lunch and 2 during dinner today . It served 5 of them yesterday . How many hot dogs were served today ? "
+    },
+    {
+        "iIndex": 391,
+        "lEquations": [
+            "X = 3 + 9"
+        ],
+        "lSolutions": [
+            "12"
+        ],
+        "sQuestion": "There are 3 short trees and 6 tall trees currently in the park . Park workers will plant 9 short trees today . How many short trees will the park have when the workers are finished ? "
+    },
+    {
+        "iIndex": 392,
+        "lEquations": [
+            "X = 38 - 18"
+        ],
+        "lSolutions": [
+            "20"
+        ],
+        "sQuestion": "Mary had 21 dimes and 38 pennies in her bank . Her dad borrowed 18 pennies from Mary . How many pennies does she have now ? "
+    },
+    {
+        "iIndex": 393,
+        "lEquations": [
+            "X = 17 + 10"
+        ],
+        "lSolutions": [
+            "27"
+        ],
+        "sQuestion": "Alyssa picked 17 plums and Jason picked 10 plums . Melanie picked 35 pears . How many plums were picked in all ? "
+    },
+    {
+        "iIndex": 394,
+        "lEquations": [
+            "X = 48 + 29"
+        ],
+        "lSolutions": [
+            "77"
+        ],
+        "sQuestion": "There are 48 pencils and 40 scissors in the drawer . Joan placed 29 pencils in the drawer . How many pencils are now there in all ? "
+    },
+    {
+        "iIndex": 395,
+        "lEquations": [
+            "X = 37 + 20"
+        ],
+        "lSolutions": [
+            "57"
+        ],
+        "sQuestion": "There are 37 short bushes and 30 tall trees currently in the park . Park workers will plant 20 short bushes today . How many short bushes will the park have when the workers are finished ? "
     }
 ]
