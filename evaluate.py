@@ -239,7 +239,7 @@ def load_instruction(args) -> str:
 
 def extract_answer_number(args, sentence: str) -> float:
     dataset = args.dataset.lower()
-    if dataset in ["multiarith", "addsub", "singleeq"]:
+    if dataset in ["multiarith", "addsub", "singleeq", "gsm8k", "svamp"]:
         sentence = sentence.replace(',', '')
         pred = [s for s in re.findall(r'-?\d+\.?\d*', sentence)]
         pred_answer = float(pred[-1])
@@ -254,7 +254,12 @@ def extract_answer_number(args, sentence: str) -> float:
 
 
 def extract_answer_letter(args, sentence: str) -> str:
-    pass
+    sentence_ = sentence.strip()
+    pred_answers = re.findall(r'A|B|C|D|E', sentence_)
+    if pred_answers:
+        return pred_answers[0]
+    else:
+        return ''
 
 
 if __name__ == "__main__":
