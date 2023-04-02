@@ -247,6 +247,10 @@ def extract_answer_number(args, sentence: str) -> float:
             pred_answer = float('inf')
     return pred_answer
 
+def extract_answer_letter(args, sentence):
+    pass
+
+
 
 if __name__ == "__main__":
     fire.Fire(main)
