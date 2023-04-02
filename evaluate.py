@@ -117,7 +117,7 @@ def main(
         print('label:', label)
         print('---------------')
         print(f'\rtest:{idx + 1}/{total} | accuracy {correct}  {correct / (idx+1)}', end='')
-    with open(f'experiment/{args.model}-{args.adpter}-{args.dataset}') as f:
+    with open(f'experiment/{args.model}-{args.adapter}-{args.dataset}') as f:
         json.dump(output_data, f, indent=4)
     print('\n')
     print('test finished')
