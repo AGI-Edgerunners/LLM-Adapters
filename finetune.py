@@ -6,6 +6,7 @@ import fire
 import torch
 import transformers
 from datasets import load_dataset
+from typing import List, Optional, Union
 
 """
 Unused imports:
@@ -54,6 +55,7 @@ def train(
         adapter_dropout: float = 0.0,
         use_parallel_adapter: bool = False,
         target_modules: List[str] = None,
+        scaling: Union[float, str] = 1.0,
         # llm hyperparams
         train_on_inputs: bool = True,  # if False, masks out inputs in loss
         group_by_length: bool = False,  # faster, but produces an odd training loss curve
@@ -188,6 +190,7 @@ def train(
             adapter_dropout=adapter_dropout,
             use_parallel_adapter=use_parallel_adapter,
             target_modules=target_modules,
+            scaling=scaling,
             bias="none",
             task_type="CAUSAL_LM",
         )
