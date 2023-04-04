@@ -209,9 +209,9 @@ This metrix shows whether different models can use LoRA,AdapterH,AdapterP,Parall
 
 
 
-## Citing <img src="picture.jpg"> LLM-Adapter
+## Citing <img src="picture.jpg" width="7px" height="7px"> LLM-Adapter
 
-If you use <img src="picture.jpg"> LLM-Adapter in your publication, please cite it by using the following BibTeX entry.
+If you use <img src="picture.jpg" width="7px" height="7px"> LLM-Adapter in your publication, please cite it by using the following BibTeX entry.
 
 ```bibtex
 @Misc{peft,
