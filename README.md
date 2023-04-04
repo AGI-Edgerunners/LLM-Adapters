@@ -13,9 +13,12 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-
-<center><img src="picture.jpg" width="73"></center>
-<h1 align="center"> <p> LLM-Adapter</p></h1>
+<!-- <p align="center">
+  <img src="picture.jpg" width="73" alt="image_description">
+</p> -->
+<!-- <center><img src="picture.jpg" width="73"></center> -->
+<!-- <h1 align="center"><img src="picture.jpg" width="30" alt="LLM-Adapters"> LLM-Adapters</h1> -->
+<h1 align="center"><img src="picture.jpg" width="50" alt="LLM-Adapters">  <p>LLM-Adapters</p></h1>
 <h3 align="center">
     <p>LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models</p>
 </h3>
