@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 <p align="center">
-  <img src="image_url" width="73" alt="image_description">
+  <img src="picture.jpg" width="73" alt="image_description">
 </p>
 <!-- <center><img src="picture.jpg" width="73"></center> -->
 <h1 align="center"> <p> LLM-Adapter</p></h1>
