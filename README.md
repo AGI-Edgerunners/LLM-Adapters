@@ -41,6 +41,8 @@ Supported Adapters:
 1. Install dependencies
 ```bash
 pip install -r requirements.txt
+cd peft/
+pip install -e .
 ```
 
 2. Set environment variables, or modify the files referencing `BASE_MODEL`:
@@ -141,32 +143,12 @@ CUDA_VISIBLE_DEVICES=0 python evaluate.py
 
 There is a table of resouce needed for different adapters, which contains Trainable Parameters, GPU RAM Usage, and Fine-tuning Time on the Arithmetic Reasoning dataset `math_data.json`
 
-Hyper-parameter setting: num_epochs=3, lora_r=8, lora_alpha=16, bottleneck_size=256 
+Hyper-parameter setting: num_epochs=3, lora_r=8, lora_alpha=16, bottleneck_size=256 (768 for Parallel Adapter)
 
 Models: LLaMA-7B, BLOOM-6.7B, GPT-j-6B
+Dataset: 3.2K math word problems
 
-Hardware: 8*V100 GPUs
-
-| Model          | Trainable Parameters | GPU RAM Usage | Fine-tuning Time |
-| -------------- | -------------------- | ------------- | ---------------- |
-| LLaMA-LoRA     | xx                   | xx            | xx               |
-| LLaMA-AdapterH | xx                   | xx            | xx               |
-| LLaMA-AdapterP | xx                   | xx            | xx               |
-| LLaMA-Parallel | xx                   | xx            | xx               |
-| BLOOM-LoRA     | xx                   | xx            | xx               |
-| BLOOM-AdapterH | xx                   | xx            | xx               |
-| BLOOM-AdapterP | xx                   | xx            | xx               |
-| BLOOM-Parallel | xx                   | xx            | xx               |
-| GPT-j-LoRA     | xx                   | xx            | xx               |
-| GPT-j-AdapterH | xx                   | xx            | xx               |
-| GPT-j-AdapterP | xx                   | xx            | xx               |
-| GPT-j-Parallel | xx                   | xx            | xx               |
-
-## Performance of different model
-
-There is a matrix of performance of different model, which contains Trainable Parameters, GPU RAM Usage, Fine-tuning Time with different model with Alpaca dataset
-
-Hardware: Eight V100 GPUs
+Hardware: 2*3090 GPUs
 
 | Model                 | Trainable Parameters | GPU RAM Usage | Fine-tuning Time |
 |-----------------------|----------------------|---------------|------------------|
@@ -210,6 +192,13 @@ This metrix shows whether different models can use LoRA,AdapterH,AdapterP,Parall
 | GPT-NeoX-20B | ✅ | 🔧Developing | 🔧Developing |🔧Developing | ✅     | ✅     | ✅     |
 | ChatGLM      | ✅ | 🔧Developing | 🔧Developing |🔧Developing | ✅     | ✅     | ✅     | 
 
+### TODO List
+- [x] Add AdapterH
+- [x] Add AdapterP
+- [x] Add Parallel Adapter
+- [ ] Support More LLMs
+- [ ] Support Multiple Adapter
+- [ ] Support Adapter Fusion
 
 
 ## Citing <img src="picture.jpg" width="14px" height="14px"> LLM-Adapter
@@ -217,7 +206,7 @@ This metrix shows whether different models can use LoRA,AdapterH,AdapterP,Parall
 If you use <img src="picture.jpg" width="14px" height="14px"> LLM-Adapter in your publication, please cite it by using the following BibTeX entry.
 
 ```bibtex
-@Misc{peft,
+@Misc{LLM-Adapters,
   title =        {LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models},
   author =       {Zhiqiang Hu, Yihuai Lan, Lei Wang, Wanyu Xu, Ee-Peng Lim, Roy Ka-Wei Lee, Lidong Bing, Soujanya Poria},
   howpublished = {\url{https://github.com/AGI-Edgerunners/LLM-Adapters}},
