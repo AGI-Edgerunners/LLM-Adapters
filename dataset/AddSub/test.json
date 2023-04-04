@@ -1,0 +1,476 @@
+[
+    {
+        "instruction": "There are 3 short trees and 6 tall trees currently in the park . Park workers will plant 9 short trees today . How many short trees will the park have when the workers are finished ? ",
+        "input": "",
+        "output": "\nA: There are 3 short trees and 6 tall trees currently in the park. The workers will plant 9 short trees today. So, after they are done, there will be 3 + 9 = 12 short trees. The answer is 12.",
+        "answer": "12"
+    },
+    {
+        "instruction": "There were originally 20817 houses in Lincoln County . During a housing boom , developers built 97741 . How many houses are there now in Lincoln County ? ",
+        "input": "",
+        "output": "\nA: There were originally 20817 houses in Lincoln County. During the housing boom, developers built 97741. So in total there are 20817 + 97741 = 118548 houses. The answer is 118548.",
+        "answer": "118558.0"
+    },
+    {
+        "instruction": "Molly owns the Wafting Pie Company . This morning , her employees used 816 eggs to bake pumpkin pies . If her employees used a total of 1339 eggs today , how many eggs did they use in the afternoon ? ",
+        "input": "",
+        "output": "\nA: In the morning, they used 816 eggs. In total, they used 1339 eggs. That means they used 1339 - 816 = 523 eggs in the afternoon. The answer is 523.",
+        "answer": "523.0"
+    },
+    {
+        "instruction": "After paying 6 dollars for the pie , Mary has 52 dollars , her friend has 43 dollars . How much money did she have before buying the pie ? ",
+        "input": "",
+        "output": "\nA: Mary had 52 dollars after buying the pie. Her friend had 43 dollars. This means Mary had 52 + 43 = 95 dollars before buying the pie. She spent 6 dollars on the pie, so she must have had 95 - 6 = 89 dollars before buying the pie. The answer is 89.",
+        "answer": "58"
+    },
+    {
+        "instruction": "Eve ran 0.7 mile and walked 0.6 mile . How much farther did Eve run than walk ? ",
+        "input": "",
+        "output": "\nA: Eve ran 0.7 mile and walked 0.6 mile. The difference between the two is 0.7 - 0.6 = 0.1 mile. Eve ran 0.1 mile farther than she walked. The answer is 0.1 mile.",
+        "answer": "0.1"
+    },
+    {
+        "instruction": "Kevin bought 2 watermelons . The first watermelon was 9.91 pounds , and the second watermelon was 4.11 pounds . How many pounds of watermelon did Kevin buy ? ",
+        "input": "",
+        "output": "\nA: Kevin bought 2 watermelons. The first one was 9.91 pounds and the second one was 4.11 pounds. In total he bought 9.91 + 4.11 = 14.02 pounds of watermelon. The answer is 14.02.",
+        "answer": "14.02"
+    },
+    {
+        "instruction": "Fred grew 38 cantelopes . Tim grew 44 cantelopes . How many cantelopes did they grow in total ? ",
+        "input": "",
+        "output": "\nA: Fred grew 38 cantelopes and Tim grew 44 cantelopes. In total they grew 38 + 44 = 82 cantelopes. The answer is 82.",
+        "answer": "82"
+    },
+    {
+        "instruction": "A multi-national corporation has 2041 part-time employees and 63093 full-time employees . How many employees work for the corporation ? ",
+        "input": "",
+        "output": "\nA: The corporation has 2041 part-time employees and 63093 full-time employees. In total, they have 2041 + 63093 = 65134 employees. The answer is 65134.",
+        "answer": "65134.0"
+    },
+    {
+        "instruction": "Sandy grew 51 pumpkins . Mike grew 23 pumpkins . How many pumpkins did they grow in total ? ",
+        "input": "",
+        "output": "\nA: Sandy grew 51 pumpkins and Mike grew 23 pumpkins. In total they grew 51 + 23 = 74 pumpkins. The answer is 74.",
+        "answer": "74"
+    },
+    {
+        "instruction": "Professor Ellison weighed 2 pieces of metal for an experiment . The piece of iron weighed 11.166666666666666 pounds and the piece of aluminum weighed 0.8333333333333334 pound . How much more did the piece of iron weigh than the piece of aluminum ? ",
+        "input": "",
+        "output": "\nA: The piece of iron weighed 11.166666666666666 pounds and the piece of aluminum weighed 0.8333333333333334 pound. The difference between the two weights is 11.166666666666666 - 0.8333333333333334 = 10.333333333333332 pounds. The answer is 10.333333333333332 pounds.",
+        "answer": "10.333333333333334"
+    },
+    {
+        "instruction": "Each day , the polar bear at Richmond 's zoo eats 0.2 bucket of trout and 0.4 bucket of salmon . How many buckets of fish does the polar bear eat daily ? ",
+        "input": "",
+        "output": "\nA: The polar bear eats 0.2 bucket of trout and 0.4 bucket of salmon each day. This means it eats 0.2 + 0.4 = 0.6 buckets of fish daily. The answer is 0.6.",
+        "answer": "0.6"
+    },
+    {
+        "instruction": "There are 11 rulers and 34 crayons in the drawer . Tim placed 14 rulers in the drawer . How many rulers are now there in all ? ",
+        "input": "",
+        "output": "\nA: There were 11 rulers and 34 crayons in the drawer. Tim placed 14 rulers in the drawer. So now there are 11 + 14 = 25 rulers in the drawer. The answer is 25.",
+        "answer": "25"
+    },
+    {
+        "instruction": "There are 112 short trees and 119 tall trees currently in the park . Park workers will plant 105 short trees today . How many short trees will the park have when the workers are finished ? ",
+        "input": "",
+        "output": "\nA: There are 112 short trees and 119 tall trees in the park. The workers will plant 105 short trees today. After they are done, there will be 112 + 105 = 217 short trees. The answer is 217.",
+        "answer": "217"
+    },
+    {
+        "instruction": "Benny received 67 dollars for his birthday . He went to a sporting goods store and bought a baseball glove , baseball , and bat . He had 33 dollars over , how much did he spent on the baseball gear ? ",
+        "input": "",
+        "output": "\nA: Benny had 67 dollars. He spent 33 dollars on the baseball gear. So he had 67 - 33 = 34 dollars left. The answer is 34 dollars.",
+        "answer": "34"
+    },
+    {
+        "instruction": "There are 5 scissors and 3 pencils in the drawer . Jason placed 4 scissors in the drawer . How many scissors are now there in total ? ",
+        "input": "",
+        "output": "\nA: There were 5 scissors and 3 pencils in the drawer. Jason placed 4 more scissors in the drawer. So now there are 5 + 4 = 9 scissors in the drawer. The answer is 9.",
+        "answer": "9"
+    },
+    {
+        "instruction": "A car company produced 3884 cars in North America and 2871 cars in Europe . How many cars is that in all ? ",
+        "input": "",
+        "output": "\nA: The car company produced 3884 cars in North America and 2871 cars in Europe. In total, they produced 3884 + 2871 = 6755 cars. The answer is 6755.",
+        "answer": "6755.0"
+    },
+    {
+        "instruction": "A ship full of grain crashes into a coral reef . By the time the ship is fixed , 49952 tons of grain have spilled into the water . Only 918 tons of grain remain onboard . How many tons of grain did the ship originally contain ? ",
+        "input": "",
+        "output": "\nA: The ship originally contained 49952 + 918 = 50870 tons of grain. After the crash, only 918 tons remain onboard. The answer is 50870.",
+        "answer": "50870.0"
+    },
+    {
+        "instruction": "There are 9 oak trees currently in the park . Park workers had to cut down 2 oak trees that were damaged . How many oak trees will the park have when the workers are finished ? ",
+        "input": "",
+        "output": "\nA: There were 9 oak trees in the park. 2 of them were cut down, so now there are 9 - 2 = 7 oak trees. The answer is 7.",
+        "answer": "7"
+    },
+    {
+        "instruction": "Joan grew 24 pumpkins , Keith grew 42 pumpkins , and Alyssa grew 13 pumpkins . They worked for 34 days on the farm . How many pumpkins did they grow in all ? ",
+        "input": "",
+        "output": "\nA: Joan grew 24 pumpkins, Keith grew 42 pumpkins, and Alyssa grew 13 pumpkins. In total, they grew 24 + 42 + 13 = 79 pumpkins. The answer is 79.",
+        "answer": "79"
+    },
+    {
+        "instruction": "There are 115 pencils in the drawer . Sara placed 100 pencils in the drawer . How many pencils are now there in all ? ",
+        "input": "",
+        "output": "\nA: There were 115 pencils in the drawer. Sara placed 100 pencils in the drawer. Now there are 115 + 100 = 215 pencils in the drawer. The answer is 215.",
+        "answer": "215"
+    },
+    {
+        "instruction": "Joan joined her school 's band . She bought a trumpet for $ 149.16 , a music tool for $ 9.98 , and a song book which was $ 4.14 . Joan found $ 8.65 in her pocket . How much did Joan spend at the music store ? ",
+        "input": "",
+        "output": "\nA: Joan bought a trumpet for $149.16, a music tool for $9.98, and a song book for $4.14. She had $8.65 in her pocket. So, she spent $149.16 + $9.98 + $4.14 = $163.28 at the music store. The answer is $163.28.",
+        "answer": "163.28"
+    },
+    {
+        "instruction": "Jessica grew 35 watermelons and 30 carrots , but the rabbits ate 27 watermelons . How many watermelons does Jessica have ? ",
+        "input": "",
+        "output": "\nA: Jessica grew 35 watermelons. But the rabbits ate 27 of them. So Jessica has 35 - 27 = 8 watermelons left. The answer is 8.",
+        "answer": "8"
+    },
+    {
+        "instruction": "Sally grew 6 carrots . Fred grew 4 carrots . How many carrots did they grow in all ? ",
+        "input": "",
+        "output": "\nA: Sally grew 6 carrots and Fred grew 4 carrots. In total they grew 6 + 4 = 10 carrots. The answer is 10.",
+        "answer": "10"
+    },
+    {
+        "instruction": "Mary is baking a cake . The recipe calls for 7 cups of flour and 3 cups of sugar . She already put in 2 cups of flour . How many cups of flour does she need to add ? ",
+        "input": "",
+        "output": "\nA: The recipe calls for 7 cups of flour and 3 cups of sugar. She already put in 2 cups of flour. So she needs to add 7 - 2 = 5 cups of flour. The answer is 5.",
+        "answer": "5"
+    },
+    {
+        "instruction": "Mary picked 14 oranges and Jason picked 41 oranges . Keith picked 38 apples . How many oranges were picked in all ? ",
+        "input": "",
+        "output": "\nA: Mary picked 14 oranges and Jason picked 41 oranges. That means in total 14 + 41 = 55 oranges were picked. Keith picked 38 apples. This has nothing to do with oranges, so we can ignore it. The answer is 55.",
+        "answer": "55"
+    },
+    {
+        "instruction": "Elizabeth went to the salon and had 0.375 inch of hair cut off . The next day she went back and asked for another 0.5 inch to be cut off . How much hair did she have cut off in all ? ",
+        "input": "",
+        "output": "\nA: She had 0.375 inch cut off the first day. The next day she had 0.5 inch cut off. In total she had 0.375 + 0.5 = 0.875 inch cut off. The answer is 0.875 inch.",
+        "answer": "0.875"
+    },
+    {
+        "instruction": "Fred had 7 dimes in his bank . His sister borrowed 3 of his dimes . How many dimes does Fred have now ? ",
+        "input": "",
+        "output": "\nA: Fred had 7 dimes in his bank. His sister borrowed 3 of them, so now he has 7 - 3 = 4 dimes. The answer is 4.",
+        "answer": "4"
+    },
+    {
+        "instruction": "There are 48 erasers in the drawer and 30 erasers on the desk . Alyssa placed 39 erasers and 45 rulers on the desk . How many erasers are now there in total ? ",
+        "input": "",
+        "output": "\nA: There were 48 erasers in the drawer and 30 erasers on the desk. Alyssa placed 39 erasers and 45 rulers on the desk. So, in total there are 48 + 30 + 39 = 117 erasers. The answer is 117.",
+        "answer": "117"
+    },
+    {
+        "instruction": "Sam had 49 pennies and 24 nickels in his bank . His dad gave him 39 nickels and 31 quarters . How many nickels does he have now ? ",
+        "input": "",
+        "output": "\nA: Sam had 24 nickels in his bank. His dad gave him 39 more, so now he has 24 + 39 = 63 nickels. The answer is 63.",
+        "answer": "63"
+    },
+    {
+        "instruction": "Melanie picked 7 plums and 4 oranges from the orchard . She gave 3 plums to Sam . How many plums does she have now ? ",
+        "input": "",
+        "output": "\nA: Melanie picked 7 plums and 4 oranges. She gave 3 plums to Sam. So she has 7 - 3 = 4 plums now. The answer is 4.",
+        "answer": "4"
+    },
+    {
+        "instruction": "Jason went to 11 football games this month . He went to 17 games last month , and plans to go to 16 games next month . How many games will he attend in all ? ",
+        "input": "",
+        "output": "\nA: He went to 11 games this month, 17 games last month, and plans to go to 16 games next month. In total, he will attend 11 + 17 + 16 = 44 games. The answer is 44.",
+        "answer": "44"
+    },
+    {
+        "instruction": "Fred picked 36 limes , Alyssa picked 32 limes , and Nancy picked 35 limes and 18 pears , at the farm . How many limes were picked in total ? ",
+        "input": "",
+        "output": "\nA: Fred picked 36 limes, Alyssa picked 32 limes, and Nancy picked 35 limes. That means in total 36 + 32 + 35 = 103 limes were picked. The answer is 103.",
+        "answer": "103"
+    },
+    {
+        "instruction": "Dan spent $ 11.76 on a snake toy , and a cage cost him $ 14.54 . Dan also found a dollar bill on the ground . What was the total cost of Dan 's purchases ? ",
+        "input": "",
+        "output": "\nA: Dan spent $11.76 on the snake toy and $14.54 on the cage. He also found a dollar bill on the ground. The total cost of his purchases was $11.76 + $14.54 + $1 = $27.30. The answer is $27.30.",
+        "answer": "26.3"
+    },
+    {
+        "instruction": "There are 33 oak trees currently in the park . Park workers had to cut down 18 oak trees that were damaged . How many oak trees will be in the park when the workers are finished ? ",
+        "input": "",
+        "output": "\nA: There were 33 oak trees in the park. 18 were cut down, so now there are 33 - 18 = 15 oak trees. The answer is 15.",
+        "answer": "15"
+    },
+    {
+        "instruction": "Joan 's high school played 864 baseball games this year , 128 of the games were played at night . She attended 395 games . How many baseball games did Joan miss ? ",
+        "input": "",
+        "output": "\nA: Joan attended 395 games. There were 864 games in total. So she missed 864 - 395 = 469 games. The answer is 469.",
+        "answer": "469"
+    },
+    {
+        "instruction": "Last week Tom had 74 dollars . He washed cars over the weekend and now has 86 dollars . How much money did he make washing cars ? ",
+        "input": "",
+        "output": "\nA: Tom had 74 dollars last week. Now he has 86 dollars. This means he made 86 - 74 = 12 dollars. The answer is 12.",
+        "answer": "12"
+    },
+    {
+        "instruction": "Sandy grew 6 carrots . Sam grew 3 carrots . How many carrots did they grow in total ? ",
+        "input": "",
+        "output": "\nA: Sandy grew 6 carrots and Sam grew 3 carrots. In total they grew 6 + 3 = 9 carrots. The answer is 9.",
+        "answer": "9"
+    },
+    {
+        "instruction": "Terrell hiked 8.2 miles on Saturday . Then , on Sunday , he hiked another 1.6 miles . How far did Terrell hike all together ? ",
+        "input": "",
+        "output": "\nA: Terrell hiked 8.2 miles on Saturday and 1.6 miles on Sunday. In total he hiked 8.2 + 1.6 = 9.8 miles. The answer is 9.8 miles.",
+        "answer": "9.8"
+    },
+    {
+        "instruction": "This afternoon Craig left school , rode the bus 3.8333333333333335 miles , and then walked 0.16666666666666666 mile to get home . How much farther did Craig ride than walk ? ",
+        "input": "",
+        "output": "\nA: Craig rode the bus 3.8333333333333335 miles and walked 0.16666666666666666 mile. The difference between the two is 3.8333333333333335 - 0.16666666666666666 = 3.6666666666666665 miles. The answer is 3.6666666666666665 miles.",
+        "answer": "3.6666666666666665"
+    },
+    {
+        "instruction": "Joan grew 29 carrots and 14 watermelons . Jessica grew 11 carrots . How many carrots did they grow in all ? ",
+        "input": "",
+        "output": "\nA: Joan grew 29 carrots and Jessica grew 11 carrots. In total they grew 29 + 11 = 40 carrots. The answer is 40.",
+        "answer": "40"
+    },
+    {
+        "instruction": "Dan grew 42 turnips and 38 cantelopes . Jessica grew 47 turnips . How many turnips did they grow in total ? ",
+        "input": "",
+        "output": "\nA: Dan grew 42 turnips and Jessica grew 47 turnips. In total they grew 42 + 47 = 89 turnips. The answer is 89.",
+        "answer": "89"
+    },
+    {
+        "instruction": "Sara has 31 red and 15 green balloons . Sandy has 24 red balloons . How many red balloons do they have in total ? ",
+        "input": "",
+        "output": "\nA: Sara has 31 red balloons and Sandy has 24 red balloons. In total they have 31 + 24 = 55 red balloons. The answer is 55.",
+        "answer": "55"
+    },
+    {
+        "instruction": "Kelly bought 0.1 pounds of peanuts and 0.4 pounds of raisins . How many pounds of snacks did she buy in all ? ",
+        "input": "",
+        "output": "\nA: Kelly bought 0.1 pounds of peanuts and 0.4 pounds of raisins. In total she bought 0.1 + 0.4 = 0.5 pounds of snacks. The answer is 0.5.",
+        "answer": "0.5"
+    },
+    {
+        "instruction": "Karen added 0.25 cup of walnuts to a batch of trail mix . Later , she added 0.25 cup of almonds . How many cups of nuts did Karen put in the trail mix in all ? ",
+        "input": "",
+        "output": "\nA: Karen added 0.25 cup of walnuts and 0.25 cup of almonds. In total, she added 0.25 + 0.25 = 0.5 cups of nuts. The answer is 0.5 cups.",
+        "answer": "0.5"
+    },
+    {
+        "instruction": "Joan found 75 seashells and 14 starfishes on the beach . She gave Tim some of her seashells . She has 62 seashell . How many seashells did she give to Tim ? ",
+        "input": "",
+        "output": "\nA: Joan found 75 seashells and 14 starfishes. She gave Tim some of her seashells, so now she has 62 seashells. The difference must be the number of seashells she gave to Tim. So, she must have given 75 - 62 = 13 seashells. The answer is 13.",
+        "answer": "13"
+    },
+    {
+        "instruction": "Alyssa picked 17 plums and Jason picked 10 plums . Melanie picked 35 pears . How many plums were picked in all ? ",
+        "input": "",
+        "output": "\nA: Alyssa picked 17 plums and Jason picked 10 plums. That means in total 17 + 10 = 27 plums were picked. Melanie picked 35 pears, but we are not asked about pears. The answer is 27.",
+        "answer": "27"
+    },
+    {
+        "instruction": "Hoping to be named Salesperson of the Month , Rosa called the names from 10.2 pages of the phone book last week . This week , she called the people listed on another 8.6 pages of the same phone book . How many pages worth of people did Rosa call in all ? ",
+        "input": "",
+        "output": "\nA: Rosa called 10.2 pages of the phone book last week and 8.6 pages this week. In total, she called 10.2 + 8.6 = 18.8 pages. The answer is 18.8.",
+        "answer": "18.8"
+    },
+    {
+        "instruction": "Tim has 44 books . Sam has 52 books . How many books do they have together ? ",
+        "input": "",
+        "output": "\nA: Tim has 44 books and Sam has 52 books. Together they have 44 + 52 = 96 books. The answer is 96.",
+        "answer": "96"
+    },
+    {
+        "instruction": "Keith grew 6 turnips . Alyssa grew 9 turnips . How many turnips did they grow in all ? ",
+        "input": "",
+        "output": "\nA: Keith grew 6 turnips and Alyssa grew 9 turnips. In total they grew 6 + 9 = 15 turnips. The answer is 15.",
+        "answer": "15"
+    },
+    {
+        "instruction": "Joan has 9 blue balloons , Sally has 5 blue balloons , and Jessica has 2 blue balloons . How many blue balloons do they have in total ? ",
+        "input": "",
+        "output": "\nA: Joan has 9 blue balloons, Sally has 5 blue balloons, and Jessica has 2 blue balloons. In total they have 9 + 5 + 2 = 16 blue balloons. The answer is 16.",
+        "answer": "16"
+    },
+    {
+        "instruction": "There are 22 orchid bushes and 40 orange trees currently in the park . Park workers will plant 13 orchid bushes today . How many orchid bushes will the park have when the workers are finished ? ",
+        "input": "",
+        "output": "\nA: There are 22 orchid bushes and 40 orange trees in the park. The workers will plant 13 orchid bushes today. So, after they are done, the park will have 22 + 13 = 35 orchid bushes. The answer is 35.",
+        "answer": "35"
+    },
+    {
+        "instruction": "Nancy grew 6 potatoes . Sandy grew 7 potatoes . How many potatoes did they grow in total ? ",
+        "input": "",
+        "output": "\nA: Nancy grew 6 potatoes and Sandy grew 7 potatoes. In total they grew 6 + 7 = 13 potatoes. The answer is 13.",
+        "answer": "13"
+    },
+    {
+        "instruction": "Mary got fast food for lunch . Mary spent $ 1.08 on soup and $ 4.80 on a salad . Mary paid with a 20 dollar bill . What was the total of the lunch bill ? ",
+        "input": "",
+        "output": "\nA: Mary spent $1.08 on soup and $4.80 on a salad. The total of the lunch bill was $1.08 + $4.80 = $5.88. She paid with a $20 bill, so she got $20 - $5.88 = $14.12 in change. The answer is $5.88.",
+        "answer": "5.88"
+    },
+    {
+        "instruction": "Fred went to 36 basketball games this year , but missed 35 . He went to 11 games last year . How many basketball games did Fred go to in total ? ",
+        "input": "",
+        "output": "\nA: Fred went to 36 games this year, but missed 35. So in total he went to 36 - 35 = 1 game this year. He went to 11 games last year. So in total he went to 1 + 11 = 12 games. The answer is 12.",
+        "answer": "47"
+    },
+    {
+        "instruction": "The Montoya family spends 0.6 their budget on groceries and another 0.2 going out to eat . Altogether , what fraction of their budget does the Montoya family spend on food ? ",
+        "input": "",
+        "output": "\nA: The Montoya family spends 0.6 of their budget on groceries and 0.2 on going out to eat. Altogether, they spend 0.6 + 0.2 = 0.8 of their budget on food. The answer is 0.8.",
+        "answer": "0.8"
+    },
+    {
+        "instruction": "Mary had 8 potatoes in the garden . The rabbits ate 3 of the potatoes . How many potatoes does Mary now have ? ",
+        "input": "",
+        "output": "\nA: Mary had 8 potatoes in the garden. The rabbits ate 3 of them, so now she has 8 - 3 = 5 potatoes. The answer is 5.",
+        "answer": "5"
+    },
+    {
+        "instruction": "Tom has 9 yellow balloons Sara has 8 yellow balloons . How many yellow balloons do they have in total ? ",
+        "input": "",
+        "output": "\nA: Tom has 9 yellow balloons and Sara has 8 yellow balloons. In total they have 9 + 8 = 17 yellow balloons. The answer is 17.",
+        "answer": "17"
+    },
+    {
+        "instruction": "Keith spent $ 136.01 on speakers , $ 139.38 on a CD player , and $ 112.46 on new tires . He wanted 3 CD 's for $ 6.16 , but did n't buy them . In total , how much did he spend ? ",
+        "input": "",
+        "output": "\nA: Keith spent $136.01 on speakers, $139.38 on a CD player, and $112.46 on new tires. He did not buy the 3 CDs for $6.16. So in total he spent $136.01 + $139.38 + $112.46 = $387.85. The answer is $387.85.",
+        "answer": "387.85"
+    },
+    {
+        "instruction": "Jason has 676 Pokemon cards . Alyssa bought 224 of Jason 's Pokemon cards . How many Pokemon cards does Jason have now ? ",
+        "input": "",
+        "output": "\nA: Jason had 676 Pokemon cards. Alyssa bought 224 of them, so now Jason has 676 - 224 = 452 Pokemon cards. The answer is 452.",
+        "answer": "452"
+    },
+    {
+        "instruction": "Joan decided to sell all of her old books . She gathered up 33 books to sell . She sold 26 books in a yard sale . How many books does Joan now have ? ",
+        "input": "",
+        "output": "\nA: Joan had 33 books. She sold 26 books, so now she has 33 - 26 = 7 books. The answer is 7.",
+        "answer": "7"
+    },
+    {
+        "instruction": "There are 107 walnut trees currently in the park . Park workers will plant 104 walnut trees today . How many walnut trees will the park have when the workers are finished ? ",
+        "input": "",
+        "output": "\nA: There are 107 walnut trees in the park. The workers will plant 104 more. So in total there will be 107 + 104 = 211 walnut trees. The answer is 211.",
+        "answer": "211"
+    },
+    {
+        "instruction": "A worker at a medical lab is studying blood samples . 2 samples contained a total of 7341 blood cells . The first sample contained 4221 blood cells . How many blood cells were in the second sample ? ",
+        "input": "",
+        "output": "\nA: The first sample contained 4221 blood cells. The total number of blood cells in both samples was 7341. So the second sample must have contained 7341 - 4221 = 3120 blood cells. The answer is 3120.",
+        "answer": "3120.0"
+    },
+    {
+        "instruction": "Marta picked 2 pumpkins . The first pumpkin weighed 4 pounds , and the second pumpkin weighed 8.7 pounds . How much did the 2 pumpkins weigh all together ? ",
+        "input": "",
+        "output": "\nA: The first pumpkin weighed 4 pounds and the second pumpkin weighed 8.7 pounds. So the total weight of the two pumpkins is 4 + 8.7 = 12.7 pounds. The answer is 12.7 pounds.",
+        "answer": "12.7"
+    },
+    {
+        "instruction": "Mary had 18 baseball cards , and 8 were torn . Fred gave Mary 26 new baseball cards . Mary bought 40 baseball cards . How many baseball cards does Mary have now ? ",
+        "input": "",
+        "output": "\nA: Mary had 18 baseball cards, 8 of which were torn. Fred gave her 26 new baseball cards, so she has 18 + 26 = 44 baseball cards. She bought 40 more, so now she has 44 + 40 = 84 baseball cards. The answer is 84.",
+        "answer": "84"
+    },
+    {
+        "instruction": "Tori was 4.4 feet tall . Then she grew 2.86 feet taller . How tall is Tori now ? ",
+        "input": "",
+        "output": "\nA: Tori was 4.4 feet tall. She grew 2.86 feet taller. So now she is 4.4 + 2.86 = 7.26 feet tall. The answer is 7.26 feet.",
+        "answer": "7.26"
+    },
+    {
+        "instruction": "Tim found 37 seashells and Sally found 13 seashells on the beach . When they cleaned them , they discovered that 25 were cracked . How many seashells did they find together ? ",
+        "input": "",
+        "output": "\nA: Tim found 37 seashells and Sally found 13 seashells. That means they found 37 + 13 = 50 seashells together. 25 of them were cracked, so they have 50 - 25 = 25 seashells left. The answer is 25.",
+        "answer": "50"
+    },
+    {
+        "instruction": "So far , an orchard has sold a combined total of 9792 pounds of fresh and frozen fruit this season . If they have sold 3513 pounds of frozen fruit , how many pounds of fresh fruit have been sold so far ? ",
+        "input": "",
+        "output": "\nA: The orchard has sold a combined total of 9792 pounds of fresh and frozen fruit. They have sold 3513 pounds of frozen fruit. That means the remaining 9792 - 3513 = 6279 pounds must have been fresh fruit. The answer is 6279.",
+        "answer": "6279.0"
+    },
+    {
+        "instruction": "There were 9 red orchids and 3 white orchids in the vase . Sally cut some red orchids from her flower garden . There are now 15 red orchids in the vase . How many red orchids did she cut ? ",
+        "input": "",
+        "output": "\nA: There were 9 red orchids and 3 white orchids in the vase. After Sally cut some red orchids, there are 15 red orchids in the vase. This means she must have cut 15 - 9 = 6 red orchids. The answer is 6.",
+        "answer": "6"
+    },
+    {
+        "instruction": "There were 73 bales of hay in the barn . Jason stacked bales in the barn today . There are now 96 bales of hay in the barn . How many bales did he store in the barn ? ",
+        "input": "",
+        "output": "\nA: There were 73 bales of hay in the barn. After Jason stacked bales, there are 96 bales. The difference must be the number of bales he stored. So, he must have stored 96 - 73 = 23 bales. The answer is 23.",
+        "answer": "23"
+    },
+    {
+        "instruction": "Melanie had 19 dimes in her bank . Her dad gave her 39 dimes and her mother gave her 25 dimes . How many dimes does Melanie have now ? ",
+        "input": "",
+        "output": "\nA: Melanie had 19 dimes in her bank. Her dad gave her 39 dimes, so after that she has 19 + 39 = 58 dimes. Her mother gave her 25 dimes, so in total she has 58 + 25 = 83 dimes. The answer is 83.",
+        "answer": "83"
+    },
+    {
+        "instruction": "Melanie bought a Batman game for $ 6.95 , a strategy game for $ 7.90 , and a Superman game for $ 7.73 . Melanie already owns 4 games . How much did Melanie spend on video games ? ",
+        "input": "",
+        "output": "\nA: Melanie bought 3 games for $6.95 + $7.90 + $7.73 = $22.58. She already owned 4 games. So in total she spent $22.58 + 4 = $26.58 on video games. The answer is $26.58.",
+        "answer": "22.58"
+    },
+    {
+        "instruction": "Milford Lake was originally blue because it only had 809 algae plants . Now there are 3263 algae plants , and the lake has turned green . How many more algae plants are in Milford Lake now ? ",
+        "input": "",
+        "output": "\nA: Milford Lake originally had 809 algae plants. Now there are 3263 algae plants. The difference must be the number of algae plants added. So, 3263 - 809 = 2454 more algae plants have been added. The answer is 2454.",
+        "answer": "2454.0"
+    },
+    {
+        "instruction": "Sara has 792 black and 122 red marbles . Fred took 233 of Sara 's black marbles . How many black marbles does Sara now have ? ",
+        "input": "",
+        "output": "\nA: Sara had 792 black marbles. Fred took 233 of them, so now she has 792 - 233 = 559 black marbles. The answer is 559.",
+        "answer": "559"
+    },
+    {
+        "instruction": "Sandy had 36 pennies and 31 nickels in her bank . Her dad borrowed 20 nickels from Sandy . How many nickels does she have now ? ",
+        "input": "",
+        "output": "\nA: Sandy had 31 nickels in her bank. Her dad borrowed 20 nickels from her. So now she has 31 - 20 = 11 nickels. The answer is 11.",
+        "answer": "11"
+    },
+    {
+        "instruction": "A company painted some houses in Hancock County white and blue using a total of 6689 gallons of paint . If they used 660 gallons of white paint , how many gallons of blue paint did the company use ? ",
+        "input": "",
+        "output": "\nA: The company used 6689 gallons of paint in total. 660 gallons of this was white paint. So the remaining paint must have been blue. The amount of blue paint used must have been 6689 - 660 = 6029 gallons. The answer is 6029.",
+        "answer": "6029.0"
+    },
+    {
+        "instruction": "In Shannon 's apartment complex , 0.16666666666666666 the apartments are one-bedroom apartments and 0.3333333333333333 are two-bedroom apartments . What fraction of the apartments are either 1 - or two-bedroom apartments ? ",
+        "input": "",
+        "output": "\nA: The fraction of one-bedroom apartments is 0.16666666666666666 and the fraction of two-bedroom apartments is 0.3333333333333333. The total fraction of either one-bedroom or two-bedroom apartments is 0.16666666666666666 + 0.3333333333333333 = 0.5. The answer is 0.5.",
+        "answer": "0.5"
+    },
+    {
+        "instruction": "Logan recorded the snowfall every day during a snowstorm . He recorded 0.3333333333333333 centimeter on Wednesday , 0.3333333333333333 centimeter on Thursday , and 0.2222222222222222 centimeter on Friday . How many total centimeters of snow did Logan record ? ",
+        "input": "",
+        "output": "\nA: Logan recorded 0.3333333333333333 cm on Wednesday, 0.3333333333333333 cm on Thursday, and 0.2222222222222222 cm on Friday. In total, he recorded 0.3333333333333333 + 0.3333333333333333 + 0.2222222222222222 = 0.8888888888888888 cm of snow. The answer is 0.8888888888888888 cm.",
+        "answer": "0.8888888888888888"
+    },
+    {
+        "instruction": "Sam has 16 blue and 25 green balloons . Alyssa has 21 blue balloons . How many blue balloons do they have in all ? ",
+        "input": "",
+        "output": "\nA: Sam has 16 blue and 25 green balloons. Alyssa has 21 blue balloons. In total they have 16 + 21 = 37 blue balloons. The answer is 37.",
+        "answer": "37"
+    },
+    {
+        "instruction": "Vince 's bus ride to school is 0.625 mile and Zachary 's bus ride is 0.5 mile . How much longer is Vince 's bus ride than Zachary 's ? ",
+        "input": "",
+        "output": "\nA: Vince's bus ride is 0.625 mile and Zachary's bus ride is 0.5 mile. The difference between the two is 0.625 - 0.5 = 0.125 mile. Vince's bus ride is 0.125 mile longer than Zachary's. The answer is 0.125 mile.",
+        "answer": "0.125"
+    }
+]

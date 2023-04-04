@@ -1,3 +1,4 @@
+import copy
 import json
 import os
 import re
@@ -39,7 +40,7 @@ def main(
             top_p=0.75,
             top_k=40,
             num_beams=4,
-            max_new_tokens=128,
+            max_new_tokens=256,
             **kwargs,
     ):
         prompt = generate_prompt(instruction, input)
@@ -86,22 +87,38 @@ def main(
     total = len(dataset)
     correct = 0
     miss = 0.001
+    output_data = []
     for idx, data in enumerate(dataset):
         instruction = data.get('instruction')
 
         outputs = evaluate(instruction)
-        label = data.get('answer')[-1]
+        label = data.get('answer')
+        flag = False
         if args.dataset.lower() in ['aqua']:
             predict = extract_answer_letter(args, outputs)
             if label == predict:
                 correct += 1
+                flag = True
         else:
             if isinstance(label, str):
                 label = float(label)
             predict = extract_answer_number(args, outputs)
             if abs(label - predict) <= miss:
                 correct += 1
-        print(f'\rtest:{idx + 1}/{total} | accuracy {correct}  {correct / total}', end='')
+                flag = True
+        new_data = copy.deepcopy(data)
+        new_data['output_pred'] = outputs
+        new_data['pred'] = predict
+        new_data['flag'] = flag
+        output_data.append(new_data)
+        print('---------------')
+        print(outputs)
+        print('prediction:', predict)
+        print('label:', label)
+        print('---------------')
+        print(f'\rtest:{idx + 1}/{total} | accuracy {correct}  {correct / (idx + 1)}', end='')
+    with open(f'experiment/{args.model}-{args.adapter}-{args.dataset}.json', 'w+') as f:
+        json.dump(output_data, f, indent=4)
     print('\n')
     print('test finished')
 
@@ -140,13 +157,14 @@ def load_data(args) -> list:
     file_path = f'dataset/{args.dataset}/test.json'
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"can not find dataset file : {file_path}")
-    json_data = json.load(open(file_path, 'r', encoding='utf-8'))
+    json_data = json.load(open(file_path, 'r'))
     return json_data
 
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset', choices=['AddSub', 'MultiArith', 'SingleEq'], required=True)
+    parser.add_argument('--dataset', choices=['AddSub', 'MultiArith', 'SingleEq', 'gsm8k', 'AQuA', 'SVAMP'],
+                        required=True)
     parser.add_argument('--model', choices=['LLaMA-7B', 'BLOOM-7B', 'GPT-j-6B'], required=True)
     parser.add_argument('--adapter', choices=['LoRA', 'AdapterP', 'AdapterH', 'Parallel', 'Scaled_Parallel'],
                         required=True)
@@ -239,9 +257,11 @@ def load_instruction(args) -> str:
 
 def extract_answer_number(args, sentence: str) -> float:
     dataset = args.dataset.lower()
-    if dataset in ["multiarith", "addsub", "singleeq"]:
+    if dataset in ["multiarith", "addsub", "singleeq", "gsm8k", "svamp"]:
         sentence = sentence.replace(',', '')
         pred = [s for s in re.findall(r'-?\d+\.?\d*', sentence)]
+        if not pred:
+            return float('inf')
         pred_answer = float(pred[-1])
     else:
         raise NotImplementedError(' not support dataset: {}'.format(dataset))
@@ -255,8 +275,13 @@ def extract_answer_number(args, sentence: str) -> float:
 
 def extract_answer_letter(args, sentence: str) -> str:
     sentence_ = sentence.strip()
-    pred_answer = re.findall(r'A|B|C|D|E', sentence_)[0]
-    return pred_answer
+    pred_answers = re.findall(r'A|B|C|D|E', sentence_)
+    if pred_answers:
+        if not pred_answers:
+            return ''
+        return pred_answers[0]
+    else:
+        return ''
 
 
 if __name__ == "__main__":

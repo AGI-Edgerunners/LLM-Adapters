@@ -6,6 +6,7 @@ import fire
 import torch
 import transformers
 from datasets import load_dataset
+from typing import List, Optional, Union
 
 """
 Unused imports:
@@ -38,6 +39,8 @@ def train(
         cutoff_len: int = 256,
         val_set_size: int = 2000,
         use_gradient_checkpointing: bool = False,
+        eval_step: int = 200,
+        save_step: int = 200,
         # lora hyperparams
         lora_r: int = 8,
         lora_alpha: int = 16,
@@ -52,6 +55,7 @@ def train(
         adapter_dropout: float = 0.0,
         use_parallel_adapter: bool = False,
         target_modules: List[str] = None,
+        scaling: Union[float, str] = 1.0,
         # llm hyperparams
         train_on_inputs: bool = True,  # if False, masks out inputs in loss
         group_by_length: bool = False,  # faster, but produces an odd training loss curve
@@ -186,6 +190,7 @@ def train(
             adapter_dropout=adapter_dropout,
             use_parallel_adapter=use_parallel_adapter,
             target_modules=target_modules,
+            scaling=scaling,
             bias="none",
             task_type="CAUSAL_LM",
         )
@@ -252,8 +257,8 @@ def train(
             optim="adamw_torch",
             evaluation_strategy="steps" if val_set_size > 0 else "no",
             save_strategy="steps",
-            eval_steps=10 if val_set_size > 0 else None,
-            save_steps=10,
+            eval_steps=eval_step if val_set_size > 0 else None,
+            save_steps=save_step,
             output_dir=output_dir,
             save_total_limit=3,
             load_best_model_at_end=True if val_set_size > 0 else False,
