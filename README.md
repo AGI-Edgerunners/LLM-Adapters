@@ -216,4 +216,4 @@ If you use <img src="picture.jpg" width="14px" height="14px"> LLM-Adapter in you
 
 ## Acknowledgement
 
-This repo benefits from PEFT,Adapter-Transformer, LLaMa-Adapter. Thanks for their wonderful works.
+This repo benefits from PEFT,Adapter-Transformer, Alpaca-lora. Thanks for their wonderful works.
