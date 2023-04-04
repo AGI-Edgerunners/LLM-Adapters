@@ -14,8 +14,11 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-<h1 align="center"> <p> LLM-Adapter</p></h1>
-<center><img src="picture.jpg" width="73" height="114"></center>
+<h1 align="center"> 
+<p> LLM-Adapter</p> <br>
+<img src="picture.jpg" width="73" height="114">
+</h1>
+
 <h3 align="center">
     <p>LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models</p>
 </h3>
