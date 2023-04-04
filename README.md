@@ -15,7 +15,7 @@ limitations under the License.
 -->
 
 <h1 align="center"> <p> LLM-Adapter</p></h1>
-<center><img src="picture.jpg" width="73"></center>
+<center><img src="picture.jpg" width="73" height="114"></center>
 <h3 align="center">
     <p>LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models</p>
 </h3>
@@ -209,9 +209,9 @@ This metrix shows whether different models can use LoRA,AdapterH,AdapterP,Parall
 
 
 
-## Citing <img src="picture.jpg" width="7px" height="7px"> LLM-Adapter
+## Citing <img src="picture.jpg" width="14px" height="14px"> LLM-Adapter
 
-If you use <img src="picture.jpg" width="7px" height="7px"> LLM-Adapter in your publication, please cite it by using the following BibTeX entry.
+If you use <img src="picture.jpg" width="14px" height="14px"> LLM-Adapter in your publication, please cite it by using the following BibTeX entry.
 
 ```bibtex
 @Misc{peft,
