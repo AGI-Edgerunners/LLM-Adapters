@@ -192,6 +192,7 @@ This metrix shows whether different models can use LoRA,AdapterH,AdapterP,Parall
 | GPT-NeoX-20B | ✅ | 🔧Developing | 🔧Developing |🔧Developing | ✅     | ✅     | ✅     |
 | ChatGLM      | ✅ | 🔧Developing | 🔧Developing |🔧Developing | ✅     | ✅     | ✅     | 
 
+
 ### TODO List
 - [x] Add AdapterH
 - [x] Add AdapterP
