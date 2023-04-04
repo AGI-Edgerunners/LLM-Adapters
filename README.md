@@ -16,7 +16,7 @@ limitations under the License.
 
 <h1 align="center"> 
 <p> LLM-Adapter</p> <br>
-<img src="picture.jpg" width="73" height="100">
+<img src="picture.jpg" width="73" height="114">
 </h1>
 
 <h3 align="center">
