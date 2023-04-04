@@ -198,6 +198,7 @@ This metrix shows whether different models can use LoRA,AdapterH,AdapterP,Parall
 - [x] Add Parallel Adapter
 - [ ] Support More LLMs
 - [ ] Support Multiple Adapter
+- [ ] Support Adapter Composition
 - [ ] Support Adapter Fusion
 
 
