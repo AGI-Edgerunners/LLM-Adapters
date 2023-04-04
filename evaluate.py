@@ -184,6 +184,7 @@ def load_model(args) -> tuple:
     base_model_mapping = {
         'LLaMA-7B': 'decapoda-research/llama-7b-hf',
         "GPT-j-6B": "EleutherAI/gpt-j-6B",
+        "BLOOM-7B": "bigscience/bloom-7b1",
     }
     base_model = base_model_mapping.get(args.model)
     if not base_model:
