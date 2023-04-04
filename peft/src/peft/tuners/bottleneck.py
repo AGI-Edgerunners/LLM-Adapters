@@ -462,7 +462,7 @@ if is_bnb_available():
                         
                         residual = x
                         output = self.adapter_up(self.act_fn(self.adapter_down(self.adapter_dropout(x)))).to(expected_dtype) * self.adapter_scaling
-                        output = output + residual
+                        output = (output + residual).to(expected_dtype)
 
                         result = super().forward(output)
                     else:
@@ -480,7 +480,7 @@ if is_bnb_available():
 
                         residual = result_pre_forward
                         output = self.adapter_up(self.act_fn(self.adapter_down(self.adapter_dropout(result_pre_forward)))).to(expected_dtype) * self.adapter_scaling
-                        result = output + residual
+                        result = (output + residual).to(expected_dtype)
                     else:
                         residual = result_pre_forward
                         output = self.adapter_up(self.act_fn(self.adapter_down(self.adapter_dropout(result_pre_forward)))) * self.adapter_scaling

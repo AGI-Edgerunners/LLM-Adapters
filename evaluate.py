@@ -9,9 +9,8 @@ import fire
 
 import torch
 
-sys.path.append(os.path.join(os.getcwd(), "peft/src"))
 from peft import PeftModel
-from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer
+from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer, AutoModelForCausalLM, AutoTokenizer
 
 if torch.cuda.is_available():
     device = "cuda"
@@ -168,6 +167,8 @@ def parse_args():
     parser.add_argument('--model', choices=['LLaMA-7B', 'BLOOM-7B', 'GPT-j-6B'], required=True)
     parser.add_argument('--adapter', choices=['LoRA', 'AdapterP', 'AdapterH', 'Parallel', 'Scaled_Parallel'],
                         required=True)
+    parser.add_argument('--base_model', required=True)
+    parser.add_argument('--lora_weights', required=True)
 
     return parser.parse_args()
 
@@ -181,55 +182,51 @@ def load_model(args) -> tuple:
     Returns:
         tuple(tokenizer, model)
     """
-    base_model_mapping = {
-        'LLaMA-7B': 'decapoda-research/llama-7b-hf'
-    }
-    base_model = base_model_mapping.get(args.model)
+    base_model = args.base_model
     if not base_model:
         raise ValueError(f'can not find base model name by the value: {args.model}')
-    if args.model == 'LLaMA-7B':
-        lora_weights = f'trained_models/llama-{args.adapter}'
-    else:
-        raise NotImplementedError(f'not support load model: {args.model}')
+    lora_weights = args.lora_weights
     if not lora_weights:
         raise ValueError(f'can not find lora weight, the value is: {lora_weights}')
 
-    load_8bit = False
+    load_8bit = True
     if args.model == 'LLaMA-7B':
         tokenizer = LlamaTokenizer.from_pretrained(base_model)
-        if device == "cuda":
-            model = LlamaForCausalLM.from_pretrained(
-                base_model,
-                load_in_8bit=load_8bit,
-                torch_dtype=torch.float16,
-                device_map="auto",
-            )
-            model = PeftModel.from_pretrained(
-                model,
-                lora_weights,
-                torch_dtype=torch.float16,
-            )
-        elif device == "mps":
-            model = LlamaForCausalLM.from_pretrained(
-                base_model,
-                device_map={"": device},
-                torch_dtype=torch.float16,
-            )
-            model = PeftModel.from_pretrained(
-                model,
-                lora_weights,
-                device_map={"": device},
-                torch_dtype=torch.float16,
-            )
-        else:
-            model = LlamaForCausalLM.from_pretrained(
-                base_model, device_map={"": device}, low_cpu_mem_usage=True
-            )
-            model = PeftModel.from_pretrained(
-                model,
-                lora_weights,
-                device_map={"": device},
-            )
+    else: 
+        tokenizer = AutoTokenizer.from_pretrained(base_model)
+    if device == "cuda":
+        model = AutoModelForCausalLM.from_pretrained(
+            base_model,
+            load_in_8bit=load_8bit,
+            torch_dtype=torch.float16,
+            device_map="auto",
+        )
+        model = PeftModel.from_pretrained(
+            model,
+            lora_weights,
+            torch_dtype=torch.float16,
+        )
+    elif device == "mps":
+        model = AutoModelForCausalLM.from_pretrained(
+            base_model,
+            device_map={"": device},
+            torch_dtype=torch.float16,
+        )
+        model = PeftModel.from_pretrained(
+            model,
+            lora_weights,
+            device_map={"": device},
+            torch_dtype=torch.float16,
+        )
+    else:
+        model = AutoModelForCausalLM.from_pretrained(
+            base_model, device_map={"": device}, low_cpu_mem_usage=True
+        )
+        model = PeftModel.from_pretrained(
+            model,
+            lora_weights,
+            device_map={"": device},
+        )
 
         # unwind broken decapoda-research config
         model.config.pad_token_id = tokenizer.pad_token_id = 0  # unk
@@ -242,8 +239,6 @@ def load_model(args) -> tuple:
         model.eval()
         if torch.__version__ >= "2" and sys.platform != "win32":
             model = torch.compile(model)
-    else:
-        raise NotImplementedError(f'not support load model: {args.model}')
 
     return tokenizer, model
 
