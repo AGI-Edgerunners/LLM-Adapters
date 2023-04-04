@@ -15,8 +15,8 @@ limitations under the License.
 -->
 
 <h1 align="center"> 
-<p> LLM-Adapters</p> <br>
 <img src="picture.jpg" width="73" height="114">
+<p> LLM-Adapters</p> <br>
 </h1>
 
 <h3 align="center">
@@ -204,7 +204,7 @@ This metrix shows whether different models can use LoRA,AdapterH,AdapterP,Parall
 
 ## Citing <img src="picture.jpg" width="14px" height="14px"> LLM-Adapter
 
-If you use <img src="picture.jpg" width="14px" height="14px"> LLM-Adapter in your publication, please cite it by using the following BibTeX entry.
+If you use <img src="picture.jpg" width="14px" height="14px"> LLM-Adapters in your publication, please cite it by using the following BibTeX entry.
 
 ```bibtex
 @Misc{LLM-Adapters,
@@ -217,4 +217,4 @@ If you use <img src="picture.jpg" width="14px" height="14px"> LLM-Adapter in you
 
 ## Acknowledgement
 
-This repo benefits from PEFT,Adapter-Transformer, Alpaca-lora. Thanks for their wonderful works.
+This repo benefits from [PEFT](https://github.com/huggingface/peft), [Adapter-Transformer](https://github.com/adapter-hub/adapter-transformers), [Alpaca-lora](https://github.com/tloen/alpaca-lora). Thanks for their wonderful works.
