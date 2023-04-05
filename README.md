@@ -217,7 +217,7 @@ If you use <img src="picture.jpg" width="14px" height="14px"> LLM-Adapters in yo
       primaryClass={cs.CL}
 }
 ```
--
+
 ## Acknowledgement
 
 This repo benefits from [PEFT](https://github.com/huggingface/peft), [Adapter-Transformer](https://github.com/adapter-hub/adapter-transformers), [Alpaca-lora](https://github.com/tloen/alpaca-lora). Thanks for their wonderful works. Additionally, we thank DONG Shan and [dream.ai](https://dream.ai/create) for the exceptional logo design, which has added immense value to our project.
