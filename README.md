@@ -20,7 +20,7 @@ limitations under the License.
 </h1>
 
 <h3 align="center">
-    <p>LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models</p>
+    <p>LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models [Paper](https://arxiv.org/abs/2304.01933)</p>
 </h3>
 LLM-Adapters is an easy-to-use framework that integrates various adapters into LLMs and can execute adapter-based PEFT methods of LLMs for different tasks. LLM-Adapter is an extension of HuggingFace's PEFT library, many thanks for their amazing work!
 
