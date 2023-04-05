@@ -109,7 +109,7 @@ To use the AdapterP, just add the following arguments:
 
 ```bash
 --adapter_name bottleneck 
---use_adapterp  # use the AdapterP, refers to AdapterH in the result table
+--use_adapterp  # use the AdapterP, refers to AdapterP in the result table
 ```
 
 To use parallel adapter, just add the following arguments:
