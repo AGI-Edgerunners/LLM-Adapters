@@ -186,11 +186,11 @@ This metrix shows whether different models can use LoRA,AdapterH,AdapterP,Parall
 | LLaMA        | ✅     | ✅     | ✅        |✅     | ✅     | ✅     | ✅     |
 | BLOOM        | ✅     | ✅     | ✅        |✅     | ✅     | ✅     | ✅     | 
 | GPT-J        | ✅     | ✅     | ✅        |✅     | ✅     | ✅     | ✅     |
-| OPT          | ✅ | ✅     | ✅  |✅ | ✅     | ✅     | ✅     |
-| GPT-2        | ✅ | 🔧Developing | 🔧Developing |🔧Developing | ✅     | ✅     | ✅     | 
-| GPT-Neo      | ✅ | 🔧Developing | 🔧Developing |🔧Developing | ✅     | ✅     | ✅     | 
-| GPT-NeoX-20B | ✅ | 🔧Developing | 🔧Developing |🔧Developing | ✅     | ✅     | ✅     |
-| ChatGLM      | ✅ | 🔧Developing | 🔧Developing |🔧Developing | ✅     | ✅     | ✅     | 
+| OPT          | ✅     | ✅     | ✅        |✅     | ✅     | ✅     | ✅     |
+| GPT-2        | ✅     | 🔧Developing | 🔧Developing|🔧Developing | ✅     | ✅     | ✅     | 
+| GPT-Neo      | ✅     | ✅     | ✅        | ✅    | ✅     | ✅     | ✅     | 
+| GPT-NeoX-20B | ✅     | 🔧Developing | 🔧Developing|🔧Developing | ✅     | ✅     | ✅     |
+| ChatGLM      | ✅     | 🔧Developing | 🔧Developing|🔧Developing | ✅     | ✅     | ✅     | 
 
 
 ### TODO List

@@ -63,6 +63,7 @@ TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING = {
 TRANSFORMERS_MODELS_TO_BOTTLENECK_TARGET_MODULES_MAPPING = {
     "bloom": ["dense_h_to_4h", "dense_4h_to_h"],
     "gptj": ["fc_in", "fc_out"],
+    "gpt_neo": ["c_fc", "c_proj"],
     "llama": ["gate_proj", "up_proj", "down_proj"],
     "opt": ["fc1", "fc2"],
 }
@@ -70,8 +71,10 @@ TRANSFORMERS_MODELS_TO_BOTTLENECK_TARGET_MODULES_MAPPING = {
 TRANSFORMERS_MODELS_TO_PARALLEL_TARGET_MODULES_MAPPING = {
     "bloom": ["query_key_value"],
     "gptj": ["q_proj", "v_proj", "k_proj"],
+    "gpt_neo": ["q_proj", "v_proj", "k_proj"],
     "llama": ["q_proj", "v_proj", "k_proj"],
     "opt": ["q_proj", "v_proj", "k_proj"],
+
 }
 
 
