@@ -214,6 +214,15 @@ If you use <img src="picture.jpg" width="14px" height="14px"> LLM-Adapters in yo
   howpublished = {\url{https://github.com/AGI-Edgerunners/LLM-Adapters}},
   year =         {2023}
 }
+
+@misc{hu2023llmadapters,
+      title={LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models}, 
+      author={Zhiqiang Hu and Yihuai Lan and Lei Wang and Wanyu Xu and Ee-Peng Lim and Roy Ka-Wei Lee and Lidong Bing and Soujanya Poria},
+      year={2023},
+      eprint={2304.01933},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```
 -
 ## Acknowledgement
