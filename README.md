@@ -208,13 +208,6 @@ This metrix shows whether different models can use LoRA,AdapterH,AdapterP,Parall
 If you use <img src="picture.jpg" width="14px" height="14px"> LLM-Adapters in your publication, please cite it by using the following BibTeX entry.
 
 ```bibtex
-@Misc{LLM-Adapters,
-  title =        {LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models},
-  author =       {Zhiqiang Hu, Yihuai Lan, Lei Wang, Wanyu Xu, Ee-Peng Lim, Roy Ka-Wei Lee, Lidong Bing, Soujanya Poria},
-  howpublished = {\url{https://github.com/AGI-Edgerunners/LLM-Adapters}},
-  year =         {2023}
-}
-
 @misc{hu2023llmadapters,
       title={LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models}, 
       author={Zhiqiang Hu and Yihuai Lan and Lei Wang and Wanyu Xu and Ee-Peng Lim and Roy Ka-Wei Lee and Lidong Bing and Soujanya Poria},
