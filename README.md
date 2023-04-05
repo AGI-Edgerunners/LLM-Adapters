@@ -99,11 +99,17 @@ CUDA_VISIBLE_DEVICES=0 python finetune.py \
 
 Moreover, you can use `--use_gradient_checkpointing` to save more GPU memory, but it will increase the training time.
 
-To use the bottleneck adapters (AdapterH and AdapterP), just add the following arguments:
+To use the AdapterH, just add the following arguments:
 
 ```bash
 --adapter_name bottleneck # use the bottleneck adapter, refers to AdapterH in the result table
---target_modules '[down_proj]' # add the last mlp layer name first to place the adapter only after MLP modoule, refers to AdapterP in the result table
+```
+
+To use the AdapterP, just add the following arguments:
+
+```bash
+--adapter_name bottleneck 
+--use_adapterp  # use the AdapterP, refers to AdapterH in the result table
 ```
 
 To use parallel adapter, just add the following arguments:

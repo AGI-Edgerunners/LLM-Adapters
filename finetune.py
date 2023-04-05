@@ -50,6 +50,7 @@ def train(
         non_linearity: str = "tanh",
         adapter_dropout: float = 0.0,
         use_parallel_adapter: bool = False,
+        use_adapterp: bool = False,
         target_modules: List[str] = None,
         scaling: Union[float, str] = 1.0,
         # llm hyperparams
@@ -82,7 +83,11 @@ def train(
         f"non_linearity: {non_linearity}\n"
         f"adapter_dropout: {adapter_dropout}\n"
         f"use_parallel_adapter: {use_parallel_adapter}\n"
+        f"use_adapterp: {use_adapterp}\n"
         f"train_on_inputs: {train_on_inputs}\n"
+        f"scaling: {scaling}\n"
+        f"adapter_name: {adapter_name}\n"
+        f"target_modules: {target_modules}\n"
         f"group_by_length: {group_by_length}\n"
         f"wandb_project: {wandb_project}\n"
         f"wandb_run_name: {wandb_run_name}\n"
@@ -185,6 +190,7 @@ def train(
             non_linearity=non_linearity,
             adapter_dropout=adapter_dropout,
             use_parallel_adapter=use_parallel_adapter,
+            use_adapterp=use_adapterp,
             target_modules=target_modules,
             scaling=scaling,
             bias="none",

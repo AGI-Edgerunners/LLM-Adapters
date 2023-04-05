@@ -61,6 +61,7 @@ class BottleneckConfig(PeftConfig):
         },
     )
     use_parallel_adapter: bool = field(default=False, metadata={"help": "Whether to use parallel adapter"})
+    use_adapterp: bool = field(default=False, metadata={"help": "Whether to use adapterp"})
     scaling: Union[float, str] = 1.0
     bias: str = field(default="none", metadata={"help": "Bias type for Bottleneck. Can be 'none', 'all' or 'adapter_only'"})
     init_weights: str = field(default="bert", metadata={"help": "Initialization method for the weights of the adapter modules."})

@@ -68,6 +68,14 @@ TRANSFORMERS_MODELS_TO_BOTTLENECK_TARGET_MODULES_MAPPING = {
     "opt": ["fc1", "fc2"],
 }
 
+TRANSFORMERS_MODELS_TO_ADAPTERP_TARGET_MODULES_MAPPING = {
+    "bloom": ["dense_4h_to_h"],
+    "gptj": ["fc_out"],
+    "gpt_neo": ["c_proj"],
+    "llama": ["down_proj"],
+    "opt": ["fc2"],
+}
+
 TRANSFORMERS_MODELS_TO_PARALLEL_TARGET_MODULES_MAPPING = {
     "bloom": ["query_key_value"],
     "gptj": ["q_proj", "v_proj", "k_proj"],
@@ -151,6 +159,10 @@ def _prepare_bottleneck_config(peft_config, model_config):
             if model_config["model_type"] not in TRANSFORMERS_MODELS_TO_PARALLEL_TARGET_MODULES_MAPPING:
                 raise ValueError("Please specify `target_modules` in `peft_config`")
             peft_config.target_modules = TRANSFORMERS_MODELS_TO_PARALLEL_TARGET_MODULES_MAPPING[model_config["model_type"]]
+        elif peft_config.use_adapterp:
+            if model_config["model_type"] not in TRANSFORMERS_MODELS_TO_ADAPTERP_TARGET_MODULES_MAPPING:
+                raise ValueError("Please specify `target_modules` in `peft_config`")
+            peft_config.target_modules = TRANSFORMERS_MODELS_TO_ADAPTERP_TARGET_MODULES_MAPPING[model_config["model_type"]]
         else:
             if model_config["model_type"] not in TRANSFORMERS_MODELS_TO_BOTTLENECK_TARGET_MODULES_MAPPING:
                 raise ValueError("Please specify `target_modules` in `peft_config`")
