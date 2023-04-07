@@ -31,6 +31,7 @@ def train(
         data_path: str = "yahma/alpaca-cleaned",
         output_dir: str = "./lora-alpaca",
         adapter_name: str = "lora",
+        load_8bit : bool = False,
         # training hyperparams
         batch_size: int = 128,
         micro_batch_size: int = 4,
@@ -120,12 +121,20 @@ def train(
     if len(wandb_log_model) > 0:
         os.environ["WANDB_LOG_MODEL"] = wandb_log_model
 
-    model = AutoModelForCausalLM.from_pretrained(
-        base_model,
-        load_in_8bit=False,
-        torch_dtype=torch.float16,
-        device_map={"": int(os.environ.get("LOCAL_RANK") or 0)},
-    )
+    if load_8bit:
+        model = AutoModelForCausalLM.from_pretrained(
+            base_model,
+            load_in_8bit=load_8bit,
+            torch_dtype=torch.float16,
+            device_map=device_map,
+        )
+    else:
+        model = AutoModelForCausalLM.from_pretrained(
+            base_model,
+            load_in_8bit=False,
+            torch_dtype=torch.float16,
+            device_map={"": int(os.environ.get("LOCAL_RANK") or 0)},
+        )
 
     if model.config.model_type == "llama":
         # Due to the name of transformers' LlamaTokenizer, we have to do this
