@@ -297,7 +297,7 @@ def train(
 def generate_prompt(data_point):
     # sorry about the formatting disaster gotta move fast
     if data_point["input"]:
-        return f"""Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.  # noqa: E501
+        return f"""Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request. 
 
                 ### Instruction:
                 {data_point["instruction"]}
@@ -306,15 +306,15 @@ def generate_prompt(data_point):
                 {data_point["input"]}
                 
                 ### Response:
-                {data_point["output"]}"""
+                {data_point["output"]}""" # noqa: E501
     else:
-        return f"""Below is an instruction that describes a task. Write a response that appropriately completes the request.  # noqa: E501
+        return f"""Below is an instruction that describes a task. Write a response that appropriately completes the request.  
 
                 ### Instruction:
                 {data_point["instruction"]}
                 
                 ### Response:
-                {data_point["output"]}"""
+                {data_point["output"]}""" # noqa: E501
 
 
 if __name__ == "__main__":

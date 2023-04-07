@@ -124,7 +124,7 @@ def main(
 
 def generate_prompt(instruction, input=None):
     if input:
-        return f"""Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.  # noqa: E501
+        return f"""Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
 
                 ### Instruction:
                 {instruction}
@@ -133,15 +133,15 @@ def generate_prompt(instruction, input=None):
                 {input}
                 
                 ### Response:
-                """
+                """ # noqa: E501
     else:
-        return f"""Below is an instruction that describes a task. Write a response that appropriately completes the request.  # noqa: E501
+        return f"""Below is an instruction that describes a task. Write a response that appropriately completes the request. 
 
                 ### Instruction:
                 {instruction}
                 
                 ### Response:
-                """
+                """ # noqa: E501
 
 
 def load_data(args) -> list:
