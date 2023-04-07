@@ -345,7 +345,7 @@ class Linear(nn.Linear, LoraLayer):
 
     def forward(self, x: torch.Tensor):
         previous_dtype = self.weight.dtype
-        
+
         if self.disable_adapters:
             if self.r > 0 and self.merged:
                 matmul_output = self.lora_B.weight @ self.lora_A.weight
@@ -458,6 +458,7 @@ class MergedLinear(nn.Linear, LoraLayer):
         self.lora_B.eval()
 
     def forward(self, x: torch.Tensor):
+        previous_dtype = x.dtype
         if self.disable_adapters:
             if self.r > 0 and self.merged and any(self.enable_lora):
                 delta_w = (
@@ -469,18 +470,21 @@ class MergedLinear(nn.Linear, LoraLayer):
                     .squeeze(0)
                     .transpose(-2, -1)
                 )
+                delta_w = delta_w.to(self.weight.dtype)
                 self.weight.data -= transpose(self.zero_pad(delta_w * self.scaling), not self.fan_in_fan_out)
                 self.merged = False
-            return F.linear(x, transpose(self.weight, self.fan_in_fan_out), bias=self.bias)
+            result = F.linear(x, transpose(self.weight, self.fan_in_fan_out), bias=self.bias)
         elif self.merged:
-            return F.linear(x, transpose(self.weight, self.fan_in_fan_out), bias=self.bias)
+            result = F.linear(x, transpose(self.weight, self.fan_in_fan_out), bias=self.bias)
         else:
             result = F.linear(x, transpose(self.weight, self.fan_in_fan_out), bias=self.bias)
             if self.r > 0:
-                after_A = self.lora_A(self.lora_dropout(x))
+                after_A = self.lora_A(self.lora_dropout(x.to(self.lora_A.weight.dtype)))
                 after_B = self.lora_B(after_A.transpose(-2, -1)).transpose(-2, -1)
                 result += self.zero_pad(after_B) * self.scaling
-            return result
+        result = result.to(previous_dtype)
+
+        return result
 
 
 if is_bnb_available():
