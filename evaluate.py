@@ -154,7 +154,6 @@ def load_data(args) -> list:
     Returns:
 
     """
-    file_path = f'dataset/{args.dataset}/test.json'
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"can not find dataset file : {file_path}")
     json_data = json.load(open(file_path, 'r'))
