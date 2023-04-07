@@ -344,22 +344,26 @@ class Linear(nn.Linear, LoraLayer):
         self.lora_B.eval()
 
     def forward(self, x: torch.Tensor):
+        previous_dtype = self.weight.dtype
+        
         if self.disable_adapters:
             if self.r > 0 and self.merged:
-                self.weight.data -= (
-                    transpose(self.lora_B.weight @ self.lora_A.weight, self.fan_in_fan_out) * self.scaling
-                )
+                matmul_output = self.lora_B.weight @ self.lora_A.weight
+                self.weight.data -= transpose(matmul_output.to(previous_dtype), self.fan_in_fan_out) * self.scaling
                 self.merged = False
 
-            return F.linear(x, transpose(self.weight, self.fan_in_fan_out), bias=self.bias)
+            result = F.linear(x, transpose(self.weight, self.fan_in_fan_out), bias=self.bias)
         elif self.r > 0 and not self.merged:
             result = F.linear(x, transpose(self.weight, self.fan_in_fan_out), bias=self.bias)
             if self.r > 0:
-                result += self.lora_B(self.lora_A(self.lora_dropout(x))) * self.scaling
-            return result
+                result += self.lora_B(self.lora_A(self.lora_dropout(x.to(self.lora_A.weight.dtype)))) * self.scaling
         else:
-            return F.linear(x, transpose(self.weight, self.fan_in_fan_out), bias=self.bias)
+             result = F.linear(x, transpose(self.weight, self.fan_in_fan_out), bias=self.bias)
 
+        if result.dtype != previous_dtype:
+            result = result.to(previous_dtype)
+
+        return result
 
 class MergedLinear(nn.Linear, LoraLayer):
     # Lora implemented in a dense layer

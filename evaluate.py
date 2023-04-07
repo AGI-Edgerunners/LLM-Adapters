@@ -9,6 +9,7 @@ import fire
 
 import torch
 
+sys.path.append(os.path.join(os.getcwd(), "peft/src/"))
 from peft import PeftModel
 from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer, AutoModelForCausalLM, AutoTokenizer
 
@@ -169,6 +170,7 @@ def parse_args():
                         required=True)
     parser.add_argument('--base_model', required=True)
     parser.add_argument('--lora_weights', required=True)
+    parser.add_argument('--load_8bit', action='store_true', default=False)
 
     return parser.parse_args()
 
@@ -189,7 +191,7 @@ def load_model(args) -> tuple:
     if not lora_weights:
         raise ValueError(f'can not find lora weight, the value is: {lora_weights}')
 
-    load_8bit = True
+    load_8bit = args.load_8bit
     if args.model == 'LLaMA-7B':
         tokenizer = LlamaTokenizer.from_pretrained(base_model)
     else: 
