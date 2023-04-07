@@ -353,8 +353,12 @@ class Linear(nn.Linear, AdapterLayer):
         else:
             if self.adapter_type == "mh_adapter":
                 # for mh_adapter, x will pass the adapter first and then the linear layer
+                expected_dtype = x.dtype
                 residual = x
-                output = self.adapter_up(self.act_fn(self.adapter_down(self.adapter_dropout(x)))) * self.adapter_scaling
+
+                if x.dtype != torch.float32:
+                    x = x.float()
+                output = self.adapter_up(self.act_fn(self.adapter_down(self.adapter_dropout(x)))).to(expected_dtype) * self.adapter_scaling
 
                 output = output + residual
                 
@@ -362,15 +366,24 @@ class Linear(nn.Linear, AdapterLayer):
             elif self.adapter_type == "output_adapter":
                 # for output_adapter, x will pass the linear layer first and then the adapter
                 x = F.linear(x, self.weight, bias=self.bias)
+                expected_dtype = x.dtype
                 residual = x
-                output = self.adapter_up(self.act_fn(self.adapter_down(self.adapter_dropout(x)))) * self.adapter_scaling
+
+                if x.dtype != torch.float32:
+                    x = x.float()
+
+                output = self.adapter_up(self.act_fn(self.adapter_down(self.adapter_dropout(x)))).to(expected_dtype) * self.adapter_scaling
 
                 result = output + residual
             elif self.adapter_type == "parallel_adapter":
                 # for parallel_adapter, x will pass the linear layer first and the adapter layer parallelly. 
                 # The output of the adapter layer will be added to the output of the linear layer
                 result = F.linear(x, self.weight, bias=self.bias)
-                output = self.adapter_up(self.act_fn(self.adapter_down(self.adapter_dropout(x)))) * self.adapter_scaling
+                expected_dtype = result.dtype
+
+                if x.dtype != torch.float32:
+                    x = x.float()
+                output = self.adapter_up(self.act_fn(self.adapter_down(self.adapter_dropout(x)))).to(expected_dtype) * self.adapter_scaling
 
                 result = result + output
             return result
