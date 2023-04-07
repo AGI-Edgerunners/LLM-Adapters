@@ -533,7 +533,6 @@ if is_bnb_available():
                 return result
             elif self.r > 0:
                 if not torch.is_autocast_enabled():
-                    print(">>>>>with no autocast")
                     expected_dtype = result.dtype
 
                     if x.dtype != torch.float32:
@@ -541,7 +540,6 @@ if is_bnb_available():
                     output = self.lora_B(self.lora_A(self.lora_dropout(x))).to(expected_dtype) * self.scaling
                     result += output
                 else:
-                    print(">>>>>with autocast")
                     output = self.lora_B(self.lora_A(self.lora_dropout(x))) * self.scaling
                     result += output
             return result

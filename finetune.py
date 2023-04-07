@@ -122,9 +122,9 @@ def train(
 
     model = AutoModelForCausalLM.from_pretrained(
         base_model,
-        load_in_8bit=True,
-        torch_dtype=torch.float16,
-        device_map=device_map,
+        # load_in_8bit=False,
+        # torch_dtype=torch.float16,
+        # device_map=device_map,
     )
 
     if model.config.model_type == "llama":
