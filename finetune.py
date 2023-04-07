@@ -124,7 +124,7 @@ def train(
         base_model,
         load_in_8bit=False,
         torch_dtype=torch.float16,
-        # device_map=device_map,
+        device_map={"": int(os.environ.get("LOCAL_RANK") or 0)},
     )
 
     if model.config.model_type == "llama":
