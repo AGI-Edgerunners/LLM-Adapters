@@ -9,7 +9,6 @@ import fire
 
 import torch
 
-sys.path.append(os.path.join(os.getcwd(), "peft/src/"))
 from peft import PeftModel
 from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer, AutoModelForCausalLM, AutoTokenizer
 
@@ -154,6 +153,7 @@ def load_data(args) -> list:
     Returns:
 
     """
+    file_path = f'dataset/{args.dataset}/test.json'
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"can not find dataset file : {file_path}")
     json_data = json.load(open(file_path, 'r'))
