@@ -9,6 +9,7 @@ import fire
 
 import torch
 
+sys.path.append(os.path.join(os.getcwd(), "peft/src/"))
 from peft import PeftModel
 from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer, AutoModelForCausalLM, AutoTokenizer
 
