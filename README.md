@@ -36,6 +36,11 @@ Supported Adapters:
 6. P-Tuning: [GPT Understands, Too](https://arxiv.org/pdf/2103.10385.pdf)
 7. Prompt Tuning: [The Power of Scale for Parameter-Efficient Prompt Tuning](https://arxiv.org/pdf/2104.08691.pdf) 
 
+## Latest News 🔥🔥
+
+* [2023-04-10] We can support GPT-Neo and ChatGLM now!
+* [2023-04-04] [Release code and dataset](https://github.com/AGI-Edgerunners/LLM-Adapters)
+
 ## Setup
 
 1. Install dependencies
@@ -196,7 +201,7 @@ This metrix shows whether different models can use LoRA,AdapterH,AdapterP,Parall
 | GPT-2        | ✅     | 🔧Developing | 🔧Developing|🔧Developing | ✅     | ✅     | ✅     | 
 | GPT-Neo      | ✅     | ✅     | ✅        | ✅    | ✅     | ✅     | ✅     | 
 | GPT-NeoX-20B | ✅     | 🔧Developing | 🔧Developing|🔧Developing | ✅     | ✅     | ✅     |
-| ChatGLM      | ✅     | 🔧Developing | 🔧Developing|🔧Developing | ✅     | ✅     | ✅     | 
+| ChatGLM      | ✅     | ✅     | ✅        |✅     | ✅     | ✅     | ✅     | 
 
 
 ### TODO List
