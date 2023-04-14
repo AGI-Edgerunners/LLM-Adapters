@@ -1,8 +1,6 @@
-import os
+from concurrent.futures import ProcessPoolExecutor
+import queue
 import subprocess
-import multiprocessing
-
-
 def evaluate(dataset, gpu):
     print('*******dataset:', dataset)
 
@@ -15,14 +13,31 @@ def evaluate(dataset, gpu):
 
     result = subprocess.run(command, shell=True, text=True, capture_output=False)
     print(f"Evaluation results for dataset {dataset} on GPU {gpu}:\n{result.stdout}")
+    return gpu
 
 
-datasets = ['AddSub', 'MultiArith', 'SingleEq', 'gsm8k', 'AQuA', 'SVAMP']
+datasets = ['AQuA', 'AddSub', 'MultiArith', 'SingleEq', 'gsm8k', 'SVAMP']
 gpus = [1, 2, 3]
+tasks_queue = queue.Queue()
+gpu_queue = queue.Queue()
+
+for gpu in gpus:
+    gpu_queue.put(gpu)
+for task in datasets:
+    tasks_queue.put(task)
 
 num_processes = min(len(datasets), len(gpus))  # number of processes to run in parallel
-pool = multiprocessing.Pool(processes=num_processes)
-for i in range(num_processes):
-    pool.apply_async(evaluate, args=(datasets[i], gpus[i]))
-pool.close()
-pool.join()
+
+with ProcessPoolExecutor(max_workers=num_processes) as executor:
+    futures = [executor.submit(evaluate, tasks_queue.get(), gpu_queue.get()) for i in range(num_processes)]
+    for future in futures:
+        gpu_id = future.result()
+        gpu_queue.put(gpu_id)
+        if tasks_queue.qsize() > 0:
+            futures.append(executor.submit(evaluate, tasks_queue.get(), gpu_queue.get()))
+
+
+
+
+
+
