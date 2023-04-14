@@ -116,7 +116,12 @@ def main(
         print('label:', label)
         print('---------------')
         print(f'\rtest:{idx + 1}/{total} | accuracy {correct}  {correct / (idx + 1)}', end='')
-    with open(f'experiment/{args.model}-{args.adapter}-{args.dataset}.json', 'w+') as f:
+
+    dir_path = 'experiment'
+    if not os.path.exists(dir_path):
+        os.makedirs(dir_path)
+
+    with open(f'{dir_path}/{args.model}-{args.adapter}-{args.dataset}.json', 'w+') as f:
         json.dump(output_data, f, indent=4)
     print('\n')
     print('test finished')
@@ -202,7 +207,7 @@ def load_model(args) -> tuple:
             torch_dtype=torch.float16,
             device_map="auto",
             trust_remote_code=True,
-        )
+        ) # fix zwq
         model = PeftModel.from_pretrained(
             model,
             lora_weights,
