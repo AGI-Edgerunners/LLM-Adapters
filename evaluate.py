@@ -216,7 +216,8 @@ def load_model(args) -> tuple:
             load_in_8bit=load_8bit,
             torch_dtype=torch.float16,
             device_map="auto",
-        )
+            trust_remote_code=True,
+        ) # fix zwq
         model = PeftModel.from_pretrained(
             model,
             lora_weights,

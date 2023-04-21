@@ -36,6 +36,11 @@ Supported Adapters:
 6. P-Tuning: [GPT Understands, Too](https://arxiv.org/pdf/2103.10385.pdf)
 7. Prompt Tuning: [The Power of Scale for Parameter-Efficient Prompt Tuning](https://arxiv.org/pdf/2104.08691.pdf) 
 
+## Latest News 🔥🔥
+
+* [2023-04-10] We can support GPT-Neo and ChatGLM now!
+* [2023-04-04] [Release code and dataset](https://github.com/AGI-Edgerunners/LLM-Adapters)
+
 ## Setup
 
 1. Install dependencies
@@ -200,7 +205,7 @@ This metrix shows whether different models can use LoRA,AdapterH,AdapterP,Parall
 | GPT-2        | ✅     | 🔧Developing | 🔧Developing|🔧Developing | ✅     | ✅     | ✅     | 
 | GPT-Neo      | ✅     | ✅     | ✅        | ✅    | ✅     | ✅     | ✅     | 
 | GPT-NeoX-20B | ✅     | 🔧Developing | 🔧Developing|🔧Developing | ✅     | ✅     | ✅     |
-| ChatGLM      | ✅     | 🔧Developing | 🔧Developing|🔧Developing | ✅     | ✅     | ✅     | 
+| ChatGLM      | ✅     | ✅     | ✅        |✅     | ✅     | ✅     | ✅     | 
 
 
 ### TODO List
@@ -218,13 +223,11 @@ This metrix shows whether different models can use LoRA,AdapterH,AdapterP,Parall
 If you use <img src="picture.jpg" width="14px" height="14px"> LLM-Adapters in your publication, please cite it by using the following BibTeX entry.
 
 ```bibtex
-@misc{hu2023llmadapters,
-      title={LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models}, 
-      author={Zhiqiang Hu and Yihuai Lan and Lei Wang and Wanyu Xu and Ee-Peng Lim and Roy Ka-Wei Lee and Lidong Bing and Soujanya Poria},
-      year={2023},
-      eprint={2304.01933},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@article{hu2023llm,
+  title={LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models},
+  author={Hu, Zhiqiang and Lan, Yihuai and Wang, Lei and Xu, Wanyu and Lim, Ee-Peng and Lee, Roy Ka-Wei and Bing, Lidong and Poria, Soujanya},
+  journal={arXiv preprint arXiv:2304.01933},
+  year={2023}
 }
 ```
 
