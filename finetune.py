@@ -22,7 +22,7 @@ from peft import (  # noqa: E402
     prepare_model_for_int8_training,
     set_peft_model_state_dict,
 )
-from transformers import AutoModelForCausalLM, AutoTokenizer, LlamaTokenizer  # noqa: F402
+from transformers import AutoModelForCausalLM, AutoTokenizer, LlamaTokenizer, AutoModel  # noqa: F402
 
 
 def train(
@@ -127,6 +127,7 @@ def train(
             load_in_8bit=load_8bit,
             torch_dtype=torch.float16,
             device_map=device_map,
+            trust_remote_code=True,
         )
     else:
         model = AutoModelForCausalLM.from_pretrained(
@@ -134,13 +135,14 @@ def train(
             load_in_8bit=False,
             torch_dtype=torch.float16,
             device_map={"": int(os.environ.get("LOCAL_RANK") or 0)},
+            trust_remote_code=True,
         )
 
     if model.config.model_type == "llama":
         # Due to the name of transformers' LlamaTokenizer, we have to do this
         tokenizer = LlamaTokenizer.from_pretrained(base_model)
     else:
-        tokenizer = AutoTokenizer.from_pretrained(base_model)
+        tokenizer = AutoTokenizer.from_pretrained(base_model, trust_remote_code=True)
 
     tokenizer.pad_token_id = (
         0  # unk. we want this to be different from the eos token
@@ -163,11 +165,15 @@ def train(
                 and add_eos_token
         ):
             result["input_ids"].append(tokenizer.eos_token_id)
-            result["attention_mask"].append(1)
+            if "chatglm" not in base_model:
+                result["attention_mask"].append(1)
 
         result["labels"] = result["input_ids"].copy()
 
-        return result
+        if "chatglm" in base_model:
+            return {"input_ids": result["input_ids"], "labels": result["labels"]}
+        else:
+            return result
 
     def generate_and_tokenize_prompt(data_point):
         full_prompt = generate_prompt(data_point)
