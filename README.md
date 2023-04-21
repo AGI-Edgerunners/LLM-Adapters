@@ -38,6 +38,7 @@ Supported Adapters:
 
 ## Latest News 🔥🔥
 
+* [2023-04-21] We released math10k dataset and the [LLaMA-13B adapter checkpoints](https://drive.google.com/file/d/1NqUv-Hn_mAkGXsUOqpJKmPKW5Gp8mRlO/view?usp=sharing). The LLaMA-13B-Parallel model achieves **91%** of GPT-3.5 performance!
 * [2023-04-10] We can support GPT-Neo and ChatGLM now!
 * [2023-04-04] [Release code and dataset](https://github.com/AGI-Edgerunners/LLM-Adapters)
 
@@ -57,7 +58,7 @@ pip install -e .
 # export_hf_checkpoint.py
 # export_state_dict_checkpoint.py
 
-export BASE_MODEL=decapoda-research/llama-7b-hf
+export BASE_MODEL=yahma/llama-7b-hf
 ```
 
 Both `finetune.py` and `generate.py` use `--base_model` flag as shown further below.
@@ -72,7 +73,7 @@ Example usage for multiple GPUs:
 
 ```bash
 WORLD_SIZE=2 CUDA_VISIBLE_DEVICES=0,1 torchrun --nproc_per_node=2 --master_port=3192 finetune.py \
-  --base_model 'decapoda-research/llama-7b-hf' \
+  --base_model 'yahma/llama-7b-hf' \
   --data_path 'math_data.json' \
   --output_dir './trained_models/llama-lora' \
   --batch_size 16 \
@@ -84,13 +85,13 @@ WORLD_SIZE=2 CUDA_VISIBLE_DEVICES=0,1 torchrun --nproc_per_node=2 --master_port=
   --adapter_name lora
 ```
 
-The `math_data.json` file contains preprocessed instruction data from the addsub, SingleEQ, MultiArith, AQuA, SVAMP and GSM8K dataset. `decapoda-research/llama-7b-hf` is a base model, LLaMa-7B. Add `lora` adapter to this model.
+The `math_data.json` file contains preprocessed instruction data from the addsub, SingleEQ, MultiArith, AQuA, SVAMP and GSM8K dataset. `yahma/llama-7b-hf` is a base model, LLaMa-7B. Add `lora` adapter to this model.
 
 Example usage for Single GPUs:
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 python finetune.py \
-  --base_model 'decapoda-research/llama-7b-hf' \
+  --base_model 'yahma/llama-7b-hf' \
   --data_path 'math_data.json' \
   --output_dir './trained_models/llama-lora' \
   --batch_size 16 \
@@ -133,7 +134,7 @@ Example usage:
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 torchrun generate.py \
-    --base_model 'decapoda-research/llama-7b-hf' \
+    --base_model 'yahma/llama-7b-hf' \
     --lora_weights './trained_models/llama-lora'
 ```
 
@@ -146,7 +147,7 @@ CUDA_VISIBLE_DEVICES=0 python evaluate.py
     --model LLaMA-7B \ #specify the base model
     --adapter LoRA \   #specify the adapter name ["LoRA", "AdapterH", "AdapterP", "Parallel"， "Scaled_Parallel""]
     --dataset SVAMP \  #specify the test dataset
-    --base_model 'decapoda-research/llama-7b-hf' \
+    --base_model 'yahma/llama-7b-hf' \
     --lora_weights './trained_models/llama-lora'
 ```
 
@@ -154,39 +155,43 @@ CUDA_VISIBLE_DEVICES=0 python evaluate.py
 
 There is a table of resouce needed for different adapters, which contains Trainable Parameters, GPU RAM Usage, and Fine-tuning Time on the Arithmetic Reasoning dataset `math_data.json`
 
-Hyper-parameter setting: num_epochs=3, lora_r=8, lora_alpha=16, bottleneck_size=256 (768 for Parallel Adapter)
+Hyper-parameter setting: num_epochs=3, lora_r=8, lora_alpha=16, bottleneck_size=256
 
-Models: LLaMA-7B, BLOOM-6.7B, GPT-j-6B
+Models: LLaMA-13B, LLaMA-7B, BLOOM-6.7B, GPT-j-6B
 Dataset: 3.2K math word problems
 
 Hardware: 2*3090 GPUs
 
 | Model                 | Trainable Parameters | GPU RAM Usage | Fine-tuning Time |
 |-----------------------|----------------------|---------------|------------------|
-| LLaMA-LoRA            | 4.2M                 | 18GB          | 15mins           | 
-| LLaMA-AdapterH        | 200M                 | 22GB          | 15mins           | 
-| LLaMA-AdapterP        | 200M                 | 22GB            | 14mins           | 
-| LLaMA-Parallel        | 200M                 | 22GB            | 14mins           | 
+| LLaMA-7B-LoRA         | 4.2M                 | 18GB          |     1h           | 
+| LLaMA-7B-AdapterH     | 200M                 | 22GB          |     1h           | 
+| LLaMA-7B-AdapterP     | 200M                 | 22GB          |     1h           | 
+| LLaMA-7B-Parallel     | 200M                 | 22GB          |     1h           | 
 
 
 ## Finetune Result
 There is a finetune result in different model with six dataset, which contains MultiArith, GSM8K, AddSub, AQuA, SingleEq, SVAMP
 
-| Model                 | Params | MultiArith | GSM8K | AddSub | AQuA | SingleEq | SVAMP | Average |
-|-----------------------|--------|------------|-------|--------|------|----------|-------|---------|
-| GPT-3.5               | -      | 83.8       | 56.4  | 85.3   | 38.9 | 88.1     | 69.9  | 70.4    |
-| LLaMA-LoRA            | 4.2M   | 88.3       | 21.9  | 78.5   | 27.5 | 83.3     | 54.5  | 59.0    |
-| LLaMA-AdapterH        | 200M   | 88.3       | 18.5  | 69.6   | 27.4 | 85.2     | 52.5  | 56.9    |
-| LLaMA-AdapterP        | 200M   | 88.3       | 18.5  | 69.6   | 15.6 | 79.4     | 52.0  | 53.9    |
-| LLaMA-Parallel        | 200M   | 83.3       | 22.7  | 77.2   | 9.8  | 81.3     | 57.0  | 55.2    |
-| BLOOM-LoRA            | 4M     | 46.7       | 4.2   | 32.9   | 11.7 | 41.2     | 22.5  | 26.5    |
-| BLOOM-AdapterH        | 125M   | 60.8       | 6.4   | 43     | 23.5 | 52       | 37.5  | 37.2    |
-| BLOOM-AdapterP        | 188M   | 70.6       | 8.3   | 50.6   | 13.7 | 50       | 35.5  | 38.1    |
-| BLOOM-Parallel        | 125M   | 55         | 5.7   | 35.4   | 27.5 | 49       | 28    | 33.4    |
-| GPT-j-LoRA            | 3.7M   | 79.2       | 10.6  | 69.6   | 2.0  | 71.6     | 45.0  | 46.3    |
-| GPT-j-AdapterH        | 117M   | 82.5       | 4.5   | 55.7   | 3.9  | 67.6     | 39.5  | 42.3    |
-| GPT-j-AdapterP        | 176M   | 79.2       | 9.8   | 54.4   | 19.6 | 63.7     | 37.5  | 44.0    |
-| GPT-j-Parallel        | 176M   | 79.2         | 11.0  | 65.8   | 11.8 | 69.6     | 44.5  | 47.0    |
+| Model                 | Params | MultiArith | GSM8K  | AddSub | AQuA   | SingleEq |  SVAMP | Average |
+|-----------------------|--------|------------|--------|--------|--------|----------|--------|---------|
+| GPT-3.5               | -      |    83.8    | 56.4   |  85.3  |  38.9  |   88.1   |  69.9  |  70.4   |
+| LLaMA-13B-LoRA        | 6.5M   |    93.3    |**43.3**|  80.0  |  20.5  |   84.6   |  52.9  |  62.4   |
+| LLaMA-13B-AdapterH    | 314M   |    94.0    | 36.1   |  82.3  |  19.7  |   84.8   |  52.9  |  61.6   |
+| LLaMA-13B-AdapterP    | 104M   |    94.8    | 41.0   |  81.3  |  19.3  |   87.0   |  51.1  |  62.4   |
+| LLaMA-13B-Parallel    | 314M   |  **95.0**  | 43.8   |**84.6**|**20.9**| **88.0** |**53.5**|**64.3** |
+| LLaMA-7B-LoRA         | 4.2M   |    88.3    | 30.9   |  78.5  |  14.2  |   74.8   |  47.2  |  55.7   |
+| LLaMA-7B-AdapterH     | 200M   |    93.8    | 29.8   |  70.6  |  16.1  |   71.1   |  37.7  |  53.2   |
+| LLaMA-7B-AdapterP     | 66M    |    91.0    | 30.2   |  75.7  |  14.9  |   75.4   |  43.3  |  55.1   |
+| LLaMA-7B-Parallel     | 200M   |    93.7    | 33.3   |  80.5  |  16.5  |   81.7   |  46.5  |  58.7   |
+| BLOOM-7B-LoRA         | 4M     |    73.0    | 9.9    |  41.8  |  16.9  |   40.7   |  25.1  |  34.6   |
+| BLOOM-7B-AdapterH     | 125M   |    81.8    | 16.5   |  76.5  |  18.9  |   71.3   |  37.8  |  50.5   |
+| BLOOM-7B-AdapterP     | 62M    |    87.7    | 18.0   |  69.6  |**20.9**|   68.3   |  32.1  |  49.4   |
+| BLOOM-7B-Parallel     | 125M   |    78.2    | 15.7   |  65.4  |  20.5  |   64.2   |  35.1  |  46.5   |
+| GPT-j-6B-LoRA         | 3.7M   |    80.5    | 17.4   |  74.9  |  18.1  |   72.2   |  43.8  |  51.2   |
+| GPT-j-6B-AdapterH     | 117M   |    82.5    | 17.9   |  83.8  |  21.3  |   76.8   |  40.0  |  53.7   |
+| GPT-j-6B-AdapterP     | 58M    |    90.3    | 19.1   |  80.7  |  18.5  |   81.3   |  41.3  |  55.2   |
+| GPT-j-6B-Parallel     | 176M   |    77.8    | 17.5   |  77.2  |  20.5  |   74.8   |  39.8  |  51.3   | 
 
 
 ### Adapter support matrix

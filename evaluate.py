@@ -10,6 +10,7 @@ import fire
 import torch
 
 from peft import PeftModel
+from tqdm import tqdm
 from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer, AutoModelForCausalLM, AutoTokenizer
 
 if torch.cuda.is_available():
@@ -81,12 +82,16 @@ def main(
         print("Response:", evaluate(instruction))
         print()
     """
+    save_file = f'experiment/{args.model}-{args.adapter}-{args.dataset}.json'
+    create_dir('experiment/')
+
     dataset = load_data(args)
     tokenizer, model = load_model(args)
     total = len(dataset)
     correct = 0
     miss = 0.001
     output_data = []
+    pbar = tqdm(total=total)
     for idx, data in enumerate(dataset):
         instruction = data.get('instruction')
 
@@ -110,21 +115,25 @@ def main(
         new_data['pred'] = predict
         new_data['flag'] = flag
         output_data.append(new_data)
+        print(' ')
         print('---------------')
         print(outputs)
         print('prediction:', predict)
         print('label:', label)
         print('---------------')
-        print(f'\rtest:{idx + 1}/{total} | accuracy {correct}  {correct / (idx + 1)}', end='')
-
-    dir_path = 'experiment'
-    if not os.path.exists(dir_path):
-        os.makedirs(dir_path)
-
-    with open(f'{dir_path}/{args.model}-{args.adapter}-{args.dataset}.json', 'w+') as f:
-        json.dump(output_data, f, indent=4)
+        print(f'\rtest:{idx + 1}/{total} | accuracy {correct}  {correct / (idx + 1)}')
+        with open(save_file, 'w+') as f:
+            json.dump(output_data, f, indent=4)
+        pbar.update(1)
+    pbar.close()
     print('\n')
     print('test finished')
+
+
+def create_dir(dir_path):
+    if not os.path.exists(dir_path):
+        os.mkdir(dir_path)
+    return
 
 
 def generate_prompt(instruction, input=None):
@@ -133,20 +142,20 @@ def generate_prompt(instruction, input=None):
 
                 ### Instruction:
                 {instruction}
-                
+
                 ### Input:
                 {input}
-                
+
                 ### Response:
-                """ # noqa: E501
+                """  # noqa: E501
     else:
         return f"""Below is an instruction that describes a task. Write a response that appropriately completes the request. 
 
                 ### Instruction:
                 {instruction}
-                
+
                 ### Response:
-                """ # noqa: E501
+                """  # noqa: E501
 
 
 def load_data(args) -> list:
@@ -198,7 +207,7 @@ def load_model(args) -> tuple:
     load_8bit = args.load_8bit
     if args.model == 'LLaMA-7B':
         tokenizer = LlamaTokenizer.from_pretrained(base_model)
-    else: 
+    else:
         tokenizer = AutoTokenizer.from_pretrained(base_model)
     if device == "cuda":
         model = AutoModelForCausalLM.from_pretrained(
@@ -212,6 +221,7 @@ def load_model(args) -> tuple:
             model,
             lora_weights,
             torch_dtype=torch.float16,
+            device_map={"":0}
         )
     elif device == "mps":
         model = AutoModelForCausalLM.from_pretrained(
