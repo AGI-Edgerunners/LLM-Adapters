@@ -11,6 +11,7 @@ import torch
 
 sys.path.append(os.path.join(os.getcwd(), "peft/src/"))
 from peft import PeftModel
+from tqdm import tqdm
 from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer, AutoModelForCausalLM, AutoTokenizer
 
 if torch.cuda.is_available():
@@ -91,6 +92,7 @@ def main(
     correct = 0
     miss = 0.001
     output_data = []
+    pbar = tqdm(total=total)
     for idx, data in enumerate(dataset):
         instruction = data.get('instruction')
 
@@ -120,9 +122,11 @@ def main(
         print('prediction:', predict)
         print('label:', label)
         print('---------------')
-        print(f'\rtest:{idx + 1}/{total} | accuracy {correct}  {correct / (idx + 1)}', end='')
-    with open(save_file, 'w+') as f:
-        json.dump(output_data, f, indent=4)
+        print(f'test:{idx + 1}/{total} | accuracy {correct}  {correct / (idx + 1)}')
+        with open(save_file, 'w+') as f:
+            json.dump(output_data, f, indent=4)
+        pbar.update(1)
+    pbar.close()
     print('\n')
     print('test finished')
 
@@ -217,6 +221,7 @@ def load_model(args) -> tuple:
             model,
             lora_weights,
             torch_dtype=torch.float16,
+            device_map={"":0}
         )
     elif device == "mps":
         model = AutoModelForCausalLM.from_pretrained(
