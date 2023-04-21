@@ -122,7 +122,7 @@ def main(
         print('prediction:', predict)
         print('label:', label)
         print('---------------')
-        print(f'test:{idx + 1}/{total} | accuracy {correct}  {correct / (idx + 1)}')
+        print(f'\rtest:{idx + 1}/{total} | accuracy {correct}  {correct / (idx + 1)}', end='')
         with open(save_file, 'w+') as f:
             json.dump(output_data, f, indent=4)
         pbar.update(1)
