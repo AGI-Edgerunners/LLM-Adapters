@@ -38,6 +38,7 @@ Supported Adapters:
 
 ## Latest News 🔥🔥
 
+* [2023-04-21] We released math10k dataset and the [LLaMA-13B adapter checkpoints](https://drive.google.com/file/d/1NqUv-Hn_mAkGXsUOqpJKmPKW5Gp8mRlO/view?usp=sharing). The LLaMA-13B-Parallel model achieves **91%** GPT-3.5 performance!
 * [2023-04-10] We can support GPT-Neo and ChatGLM now!
 * [2023-04-04] [Release code and dataset](https://github.com/AGI-Edgerunners/LLM-Adapters)
 
@@ -172,25 +173,25 @@ Hardware: 2*3090 GPUs
 ## Finetune Result
 There is a finetune result in different model with six dataset, which contains MultiArith, GSM8K, AddSub, AQuA, SingleEq, SVAMP
 
-| Model                 | Params | MultiArith | GSM8K | AddSub | AQuA | SingleEq | SVAMP | Average |
-|-----------------------|--------|------------|-------|--------|------|----------|-------|---------|
-| GPT-3.5               | -      |    83.8    | 56.4  |  85.3  | 38.9 |   88.1   | 69.9  |  70.4   |
-| LLaMA-13B-LoRA        | 6.5M   |    93.3    | 43.3  |  80.0  | 20.5 |   84.6   | 52.9  |  62.4   |
-| LLaMA-13B-AdapterH    | 314M   |    94.0    | 36.1  |  82.3  | 19.7 |   84.8   | 52.9  |  61.6   |
-| LLaMA-13B-AdapterP    | 104M   |    94.8    | 41.0  |  81.3  | 19.3 |   87.0   | 51.1  |  62.4   |
-| LLaMA-13B-Parallel    | 314M   |    95.0    | 43.8  |  84.6  | 20.9 |   88.0   | 53.5  |  64.3   |
-| LLaMA-7B-LoRA         | 4.2M   |    88.3    | 30.9  |  78.5  | 14.2 |   74.8   | 47.2  |  55.7   |
-| LLaMA-7B-AdapterH     | 200M   |    93.8    | 29.8  |  70.6  | 16.1 |   71.1   | 37.7  |  53.2   |
-| LLaMA-7B-AdapterP     | 66M    |    91.0    | 30.2  |  75.7  | 14.9 |   75.4   | 43.3  |  55.1   |
-| LLaMA-7B-Parallel     | 200M   |    93.7    | 33.3  |  80.5  | 16.5 |   81.7   | 46.5  |  58.7   |
-| BLOOM-7B-LoRA         | 4M     |    73.0    | 9.9   |  41.8  | 16.9 |   40.7   | 25.1  |  34.6   |
-| BLOOM-7B-AdapterH     | 125M   |    81.8    | 16.5  |  76.5  | 18.9 |   71.3   | 37.8  |  50.5   |
-| BLOOM-7B-AdapterP     | 62M    |    87.7    | 18.0  |  69.6  | 20.9 |   68.3   | 32.1  |  49.4   |
-| BLOOM-7B-Parallel     | 125M   |    78.2    | 15.7  |  65.4  | 20.5 |   64.2   | 35.1  |  46.5   |
-| GPT-j-6B-LoRA         | 3.7M   |    80.5    | 17.4  |  74.9  | 18.1 |   72.2   | 43.8  |  51.2   |
-| GPT-j-6B-AdapterH     | 117M   |    82.5    | 17.9  |  83.8  | 21.3 |   76.8   | 40.0  |  53.7   |
-| GPT-j-6B-AdapterP     | 58M    |    90.3    | 19.1  |  80.7  | 18.5 |   81.3   | 41.3  |  55.2   |
-| GPT-j-6B-Parallel     | 176M   |    77.8    | 17.5  |  77.2  | 20.5 |   74.8   | 39.8  |  51.3   |
+| Model                 | Params | MultiArith | GSM8K  | AddSub | AQuA   | SingleEq |  SVAMP | Average |
+|-----------------------|--------|------------|--------|--------|--------|----------|--------|---------|
+| GPT-3.5               | -      |    83.8    | 56.4   |  85.3  |  38.9  |   88.1   |  69.9  |  70.4   |
+| LLaMA-13B-LoRA        | 6.5M   |    93.3    |**43.3**|  80.0  |  20.5  |   84.6   |  52.9  |  62.4   |
+| LLaMA-13B-AdapterH    | 314M   |    94.0    | 36.1   |  82.3  |  19.7  |   84.8   |  52.9  |  61.6   |
+| LLaMA-13B-AdapterP    | 104M   |    94.8    | 41.0   |  81.3  |  19.3  |   87.0   |  51.1  |  62.4   |
+| LLaMA-13B-Parallel    | 314M   |  **95.0**  | 43.8   |**84.6**|**20.9**| **88.0** |**53.5**|**64.3** |
+| LLaMA-7B-LoRA         | 4.2M   |    88.3    | 30.9   |  78.5  |  14.2  |   74.8   |  47.2  |  55.7   |
+| LLaMA-7B-AdapterH     | 200M   |    93.8    | 29.8   |  70.6  |  16.1  |   71.1   |  37.7  |  53.2   |
+| LLaMA-7B-AdapterP     | 66M    |    91.0    | 30.2   |  75.7  |  14.9  |   75.4   |  43.3  |  55.1   |
+| LLaMA-7B-Parallel     | 200M   |    93.7    | 33.3   |  80.5  |  16.5  |   81.7   |  46.5  |  58.7   |
+| BLOOM-7B-LoRA         | 4M     |    73.0    | 9.9    |  41.8  |  16.9  |   40.7   |  25.1  |  34.6   |
+| BLOOM-7B-AdapterH     | 125M   |    81.8    | 16.5   |  76.5  |  18.9  |   71.3   |  37.8  |  50.5   |
+| BLOOM-7B-AdapterP     | 62M    |    87.7    | 18.0   |  69.6  |**20.9**|   68.3   |  32.1  |  49.4   |
+| BLOOM-7B-Parallel     | 125M   |    78.2    | 15.7   |  65.4  |  20.5  |   64.2   |  35.1  |  46.5   |
+| GPT-j-6B-LoRA         | 3.7M   |    80.5    | 17.4   |  74.9  |  18.1  |   72.2   |  43.8  |  51.2   |
+| GPT-j-6B-AdapterH     | 117M   |    82.5    | 17.9   |  83.8  |  21.3  |   76.8   |  40.0  |  53.7   |
+| GPT-j-6B-AdapterP     | 58M    |    90.3    | 19.1   |  80.7  |  18.5  |   81.3   |  41.3  |  55.2   |
+| GPT-j-6B-Parallel     | 176M   |    77.8    | 17.5   |  77.2  |  20.5  |   74.8   |  39.8  |  51.3   | 
 
 
 ### Adapter support matrix
