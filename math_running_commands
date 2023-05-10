@@ -1,0 +1,201 @@
+# LLaMA-7B-LORA
+CUDA_VISIBLE_DEVICES=0 python finetune.py \
+  --base_model 'yahma/llama-7b-hf' \
+  --data_path 'math_10k.json' \
+  --output_dir './trained_models/llama-7b-lora/' \
+  --batch_size 16 \
+  --micro_batch_size 4 \
+  --num_epochs 3 \
+  --learning_rate 3e-4 \
+  --cutoff_len 256 \
+  --val_set_size 120 \
+  --adapter_name lora \
+  --load_8bit \
+  --eval_step 10 \
+  --save_step 10 
+
+
+# LLaMA-7B-AdapterH
+CUDA_VISIBLE_DEVICES=0 python finetune.py \
+  --base_model 'yahma/llama-7b-hf' \
+  --data_path 'math_10k.json' \
+  --output_dir './trained_models/llama-7b-adapterh/' \
+  --batch_size 128 \
+  --micro_batch_size 4 \
+  --num_epochs 3 \
+  --learning_rate 3e-4 \
+  --cutoff_len 256 \
+  --val_set_size 120 \
+  --adapter_name bottleneck \
+  --load_8bit \
+  --eval_step 10 \
+  --save_step 10 
+
+# LLaMA-7B-AdapterP
+CUDA_VISIBLE_DEVICES=0 python finetune.py \
+  --base_model 'yahma/llama-7b-hf' \
+  --data_path 'math_10k.json' \
+  --output_dir './trained_models/llama-7b-adapterp/' \
+  --batch_size 128 \
+  --micro_batch_size 4 \
+  --num_epochs 3 \
+  --learning_rate 3e-4 \
+  --cutoff_len 256 \
+  --val_set_size 120 \
+  --adapter_name bottleneck \
+  --use_adapterp \
+  --load_8bit \
+  --eval_step 10 \
+  --save_step 10 
+
+# LLaMA-7B-Parallel
+CUDA_VISIBLE_DEVICES=0 python finetune.py \
+  --base_model 'yahma/llama-7b-hf' \
+  --data_path 'math_10k.json' \
+  --output_dir './trained_models/llama-7b-parallel/' \
+  --batch_size 128 \
+  --micro_batch_size 4 \
+  --num_epochs 3 \
+  --learning_rate 3e-4 \
+  --cutoff_len 256 \
+  --val_set_size 120 \
+  --adapter_name bottleneck \
+  --use_parallel_adapter \
+  --load_8bit \
+  --eval_step 10 \
+  --save_step 10 
+
+#For LLaMA-13B models, we use `--use_gradient_checkpointing` to save memory
+
+# BLOOMZ-7B-LORA
+CUDA_VISIBLE_DEVICES=0 python finetune.py \
+  --base_model 'bigscience/bloomz-7b1' \
+  --data_path 'math_10k.json' \
+  --output_dir './trained_models/bloomz-7b-lora/' \
+  --batch_size 16 \
+  --micro_batch_size 4 \
+  --num_epochs 3 \
+  --learning_rate 3e-4 \
+  --cutoff_len 256 \
+  --val_set_size 120 \
+  --adapter_name lora \
+  --load_8bit \
+  --eval_step 10 \
+  --save_step 10 
+
+# BLOOMZ-7B-AdapterH
+CUDA_VISIBLE_DEVICES=0 python finetune.py \
+  --base_model 'bigscience/bloomz-7b1' \
+  --data_path 'math_10k.json' \
+  --output_dir './trained_models/bloomz-7b-adapterh/' \
+  --batch_size 16 \
+  --micro_batch_size 4 \
+  --num_epochs 3 \
+  --learning_rate 3e-4 \
+  --cutoff_len 256 \
+  --val_set_size 120 \
+  --adapter_name bottleneck \
+  --load_8bit \
+  --eval_step 10 \
+  --save_step 10 
+
+# BLOOMZ-7B-AdapterP
+CUDA_VISIBLE_DEVICES=0 python finetune.py \
+  --base_model 'bigscience/bloomz-7b1' \
+  --data_path 'math_10k.json' \
+  --output_dir './trained_models/bloomz-7b-adapterp/' \
+  --batch_size 16 \
+  --micro_batch_size 4 \
+  --num_epochs 3 \
+  --learning_rate 3e-4 \
+  --cutoff_len 256 \
+  --val_set_size 120 \
+  --adapter_name bottleneck \
+  --use_adapterp \
+  --load_8bit \
+  --eval_step 10 \
+  --save_step 10 
+
+# BLOOMZ-7B-Parallel
+CUDA_VISIBLE_DEVICES=0 python finetune.py \
+  --base_model 'bigscience/bloomz-7b1' \
+  --data_path 'math_10k.json' \
+  --output_dir './trained_models/bloomz-7b-parallel/' \
+  --batch_size 16 \
+  --micro_batch_size 4 \
+  --num_epochs 3 \
+  --learning_rate 3e-4 \
+  --cutoff_len 256 \
+  --val_set_size 120 \
+  --adapter_name bottleneck \
+  --use_parallel_adapter \
+  --load_8bit \
+  --eval_step 10 \
+  --save_step 10 
+
+# GPT-6B-LORA
+CUDA_VISIBLE_DEVICES=0 python finetune.py \
+  --base_model 'EleutherAI/gpt-j-6b' \
+  --data_path 'math_10k.json' \
+  --output_dir './trained_models/gpt-j-6b-lora/' \
+  --batch_size 16 \
+  --micro_batch_size 4 \
+  --num_epochs 3 \
+  --learning_rate 3e-4 \
+  --cutoff_len 256 \
+  --val_set_size 120 \
+  --adapter_name lora \
+  --load_8bit \
+  --eval_step 10 \
+  --save_step 10 
+
+
+# GPT-6B-AdapterH
+CUDA_VISIBLE_DEVICES=0 python finetune.py \
+  --base_model 'EleutherAI/gpt-j-6b' \
+  --data_path 'math_10k.json' \
+  --output_dir './trained_models/gpt-j-6b-adapterh/' \
+  --batch_size 128 \
+  --micro_batch_size 4 \
+  --num_epochs 3 \
+  --learning_rate 3e-4 \
+  --cutoff_len 256 \
+  --val_set_size 120 \
+  --adapter_name bottleneck \
+  --load_8bit \
+  --eval_step 10 \
+  --save_step 10 
+
+# GPT-6B-AdapterP
+CUDA_VISIBLE_DEVICES=0 python finetune.py \
+  --base_model 'EleutherAI/gpt-j-6b' \
+  --data_path 'math_10k.json' \
+  --output_dir './trained_models/gpt-j-6b-adapterp/' \
+  --batch_size 128 \
+  --micro_batch_size 4 \
+  --num_epochs 3 \
+  --learning_rate 3e-4 \
+  --cutoff_len 256 \
+  --val_set_size 120 \
+  --adapter_name bottleneck \
+  --use_adapterp \
+  --load_8bit \
+  --eval_step 10 \
+  --save_step 10 
+
+# GPT-6B-Parallel
+CUDA_VISIBLE_DEVICES=0 python finetune.py \
+  --base_model 'EleutherAI/gpt-j-6b' \
+  --data_path 'math_10k.json' \
+  --output_dir './trained_models/gpt-j-6b-parallel/' \
+  --batch_size 128 \
+  --micro_batch_size 4 \
+  --num_epochs 3 \
+  --learning_rate 3e-4 \
+  --cutoff_len 256 \
+  --val_set_size 120 \
+  --adapter_name bottleneck \
+  --use_parallel_adapter \
+  --load_8bit \
+  --eval_step 10 \
+  --save_step 10 
