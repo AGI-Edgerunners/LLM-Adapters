@@ -219,6 +219,10 @@ This metrix shows whether different models can use LoRA,AdapterH,AdapterP,Parall
 - [ ] Support Adapter Fusion
 
 
+## :star: Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=AGI-Edgerunners/LLM-Adapters&type=Date)](https://star-history.com/#AGI-Edgerunners/LLM-Adapters&Date)
+
 ## Citing <img src="picture.jpg" width="14px" height="14px"> LLM-Adapter
 
 If you use <img src="picture.jpg" width="14px" height="14px"> LLM-Adapters in your publication, please cite it by using the following BibTeX entry.
