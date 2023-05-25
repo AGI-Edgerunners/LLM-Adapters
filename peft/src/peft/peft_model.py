@@ -615,7 +615,16 @@ class PeftModelForCausalLM(PeftModel):
     def prepare_inputs_for_generation(self, *args, **kwargs):
         model_kwargs = self.base_model_prepare_inputs_for_generation(*args, **kwargs)
         if isinstance(self.peft_config, PromptLearningConfig):
+            if self.peft_config.peft_type == PeftType.PREFIX_TUNING:
+                prefix_attention_mask = torch.ones(
+                    model_kwargs["input_ids"].shape[0], self.peft_config.num_virtual_tokens
+                ).to(model_kwargs["input_ids"].device)
+                model_kwargs["attention_mask"] = torch.cat(
+                    (prefix_attention_mask, model_kwargs["attention_mask"]), dim=1
+                )
+
             if model_kwargs["past_key_values"] is None and self.peft_config.peft_type == PeftType.PREFIX_TUNING:
+                past_key_values = self.get_prompt(batch_size=model_kwargs["input_ids"].shape[0])
                 if self.base_model_torch_dtype is not None:
                     # handle the case for Bloom where it outputs tuple of tuples
                     if isinstance(past_key_values[0], tuple):
@@ -631,7 +640,6 @@ class PeftModelForCausalLM(PeftModel):
                             past_key_value.to(self.base_model_torch_dtype) for past_key_value in past_key_values
                         )
                         
-                past_key_values = self.get_prompt(batch_size=model_kwargs["input_ids"].shape[0])
                 model_kwargs["past_key_values"] = past_key_values
             else:
                 if model_kwargs["past_key_values"] is None:
