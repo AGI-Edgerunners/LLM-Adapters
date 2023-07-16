@@ -13,9 +13,11 @@ Unused imports:
 import torch.nn as nn
 import bitsandbytes as bnb
 """
+sys.path.append(os.path.join(os.getcwd(), "peft/src/"))
 from peft import (  # noqa: E402
     LoraConfig,
     BottleneckConfig,
+    PrefixTuningConfig,
     get_peft_model,
     get_peft_model_state_dict,
     prepare_model_for_int8_training,
@@ -54,6 +56,8 @@ def train(
         use_adapterp: bool = False,
         target_modules: List[str] = None,
         scaling: Union[float, str] = 1.0,
+        # prefix tuning hyperparams
+        num_virtual_tokens: int = 30,
         # llm hyperparams
         train_on_inputs: bool = True,  # if False, masks out inputs in loss
         group_by_length: bool = False,  # faster, but produces an odd training loss curve
@@ -194,7 +198,7 @@ def train(
         config = LoraConfig(
             r=lora_r,
             lora_alpha=lora_alpha,
-            target_modules=lora_target_modules,
+            target_modules=target_modules,
             lora_dropout=lora_dropout,
             bias="none",
             task_type="CAUSAL_LM",
@@ -211,7 +215,14 @@ def train(
             bias="none",
             task_type="CAUSAL_LM",
         )
+    elif adapter_name == "prefix-tuning":
+        config = PrefixTuningConfig(
+            num_virtual_tokens=num_virtual_tokens,
+            task_type="CAUSAL_LM",
+        )
     model = get_peft_model(model, config)
+    if adapter_name == "prefix-tuning":
+        model.to('cuda')
 
     if data_path.endswith(".json"):  # todo: support jsonl
         data = load_dataset("json", data_files=data_path)
