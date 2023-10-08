@@ -38,6 +38,7 @@ Supported Adapters:
 
 ## Latest News 🔥🔥
 
+* [2023-08-10] LLM-Adapters has been accepted by EMNLP 2023.
 * [2023-07-16] we released commonsense170k dataset and the  The LLaMA-13B-Parallel model outformances ChatGPT on 8 commonsense benchmarks.
 * [2023-04-21] We released math10k dataset and the [LLaMA-13B adapter checkpoints](https://drive.google.com/file/d/1NqUv-Hn_mAkGXsUOqpJKmPKW5Gp8mRlO/view?usp=sharing). The LLaMA-13B-Parallel model achieves **91%** of GPT-3.5 performance!
 * [2023-04-10] We can support GPT-Neo and ChatGLM now!
