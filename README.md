@@ -48,8 +48,6 @@ Supported Adapters:
 1. Install dependencies
 ```bash
 pip install -r requirements.txt
-cd peft/
-pip install -e .
 ```
 
 2. Set environment variables, or modify the files referencing `BASE_MODEL`:
