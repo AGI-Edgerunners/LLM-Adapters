@@ -43,6 +43,9 @@ Supported Adapters:
 * [2023-04-10] We can support GPT-Neo and ChatGLM now!
 * [2023-04-04] [Release code and dataset](https://github.com/AGI-Edgerunners/LLM-Adapters)
 
+## Special Announcement
+The `math_10k.json` data is collected with the training sets of GSM8K, MAWPS, and AQuA(1000 examples). However, MAWPS consists of AddSub, MultiArith, SingleOp, SingleEq, SimulEq-S, SimulEq-L. Thus, we can't utilize MultiArith, AddSub, and SingleEq as evaluation benchmarks with models trained with `math_10k.json`. We evaluate the PEFT methods on the MAWPS test set instead, and the result table has been updated (The findings in the paper are consistent). Furthermore, two variations of `math_10k.json` have been uploaded, `math_7K.json` where the MAWPS samples have been deleted, and `math_14k.json` where the MAWPS samples have been deleted as well and we combine ChatGPT and GPT-4 rationales. Sincerely apologize for any inconvenience!
+
 ## Setup
 
 1. Install dependencies
@@ -170,30 +173,30 @@ Hardware: 2*3090 GPUs
 
 
 ## Finetune Result
-There is the finetune results in different model with six math reasoning datasets, which contains MultiArith, GSM8K, AddSub, AQuA, SingleEq, SVAMP. In this tabel, as AdapterH and AdapterP are Series adapters, and AdapterP outperformances AdapterH, we use AdapterP with bottleneck size 256 as Series Adapter.
+There are the finetune results in different models with 4 math reasoning datasets, which contains GSM8K, AQuA, SVAMP, and MAWPS. In this table, as AdapterH and AdapterP are Series adapters, and AdapterP outperforms AdapterH, we use AdapterP with bottleneck size 256 as the Series Adapter.
 
-| Model                 | MultiArith | GSM8K  | AddSub | AQuA   | SingleEq |  SVAMP | Average |
-|-----------------------|------------|--------|--------|--------|----------|--------|---------|
-| GPT-3.5               |    83.8    |**56.4**|  85.3  |**38.9**|   88.1   |**69.9**|**70.4** |
-| BLOOMz-7B-Prefix	    |    68.8    | 13.8   |  47.1  |  12.5  |   49.4   |  24.1  |  36.0   |
-| BLOOMz-7B-Series	    |    80.7    | 14.3   |  72.6  |  20.5  |   69.3   |  38.1  |  49.3   |
-| BLOOMz-7B-Parallel	  |    85.8    | 18.5   |  77.7  |  18.9  |   74.8   |  36.4  |  52.0   |
-| BLOOMz-7B-LoRA	      |    82.8	   | 17.4	  |  72.4	 |  21.3	|   69.9	 |  41.0	|  50.8   |
-| GPT-j-6B-Prefix	      |    74.5	   | 16.0	  |  65.6	 |  14.7	|   61.4	 |  31.0	|  43.9   |
-| GPT-j-6B-Series	      |    91.7	   | 19.5	  |  85.8	 |  15.0	|   81.7	 |  43.6	|  56.2   |
-| GPT-j-6B-Parallel	    |    92.2	   | 18.9	  |  83.8	 |  17.9	|   80.7	 |  41.1	|  55.8   |
-| GPT-j-6B-LoRA	        |    90.7	   | 23.0	  |  84.1	 |  16.1	|   84.1	 |  46.0	|  57.3   |
-| LLaMA-7B-Prefix	      |    63.2	   | 24.4	  |  57.0	 |  14.2	|   55.3	 |  38.1	|  42.0   |
-| LLaMA-7B-Series	      |    92.8	   | 33.3	  |  80.0	 |  15.0	|   83.5	 |  52.3	|  59.5   |
-| LLaMA-7B-Parallel	    |    94.5	   | 35.3	  |  86.6	 |  18.1	|   86.0	 |  49.6	|  61.7   |
-| LLaMA-7B-LoRA	        |  **95.0**	 | 37.5	  |  83.3	 |  18.9	|   84.4	 |  52.1	|  61.9   |
-| LLaMA-13B-Prefix	    |    72.2	   | 31.1	  |  56.0	 |  15.7	|   62.8	 |  41.4	|  46.5   |
-| LLaMA-13B-Series	    |    93.0	   | 44.0	  |  80.5	 |  22.0	|   87.6	 |  50.8	|  63.0   |
-| LLaMA-13B-Parallel	  |    94.3	   | 43.3	  |  83.0	 |  20.5	|   89.6	 |  55.7	|  64.4   |
-| LLaMA-13B-LoRA	      |    94.8	   | 47.5	  |**87.3**|	18.5	| **89.8** |  54.6	|  65.4   |
+| Model                 | GSM8K  | AQuA   |   MAWPS  |  SVAMP | Average |
+|-----------------------|--------|--------|----------|--------|---------|
+| GPT-3.5               |**56.4**|**38.9**| **87.4** |**69.9**|**55.1** |
+| BLOOMz-7B-Prefix	    | 13.8   |  12.5  |   47.5   |  24.1  |  24.5   |
+| BLOOMz-7B-Series	    | 14.3   |  20.5  |   62.2   |  38.1  |  33.8   |
+| BLOOMz-7B-Parallel	| 18.5   |  18.9  |   70.6   |  36.4  |  36.1   |
+| BLOOMz-7B-LoRA	    | 17.4	 |  21.3  |   70.2   |  41.0  |  37.5   |
+| GPT-j-6B-Prefix	    | 16.0	 |  14.7  |   59.2   |  31.0  |  30.2   |
+| GPT-j-6B-Series	    | 19.5	 |  15.0  |   80.3   |  43.6  |  39.6   |
+| GPT-j-6B-Parallel	    | 18.9	 |  17.9  |   78.2   |  41.1  |  39.0   |
+| GPT-j-6B-LoRA	        | 23.0	 |  16.1  |   79.4   |  46.0  |  41.1   |
+| LLaMA-7B-Prefix	    | 24.4	 |  14.2  |   63.4   |  38.1  |  35.0   |
+| LLaMA-7B-Series	    | 33.3	 |  15.0  |   77.7   |  52.3  |  44.6   |
+| LLaMA-7B-Parallel	    | 35.3	 |  18.1  |   82.4   |  49.6  |  46.4   |
+| LLaMA-7B-LoRA	        | 37.5	 |  18.9  |   79.0   |  52.1  |  46.9   |
+| LLaMA-13B-Prefix	    | 31.1	 |  15.7  |   66.8   |  41.4  |  38.8   |
+| LLaMA-13B-Series	    | 44.0	 |  22.0  |   78.6   |  50.8  |  48.9   |
+| LLaMA-13B-Parallel	| 43.3	 |  20.5  |   81.1   |  55.7  |  50.2   |
+| LLaMA-13B-LoRA	    | 47.5	 |  18.5  |   83.6   |  54.6  |  51.1   |
 
 
-There is the finetune results in different model with eight commonsense reasoning datasets.
+There are the finetune results in different models with eight commonsense reasoning datasets.
 
 | Model                 |  BoolQ  |  PIQA  |  SIQA  |  HellaSwag  |  WinoGrande  |  ARC-e  |  ARC-c  |  OBQA  |  Average  |
 |-----------------------|---------|--------|--------|-------------|--------------|---------|---------|--------|-----------|
