@@ -76,7 +76,7 @@ Example usage for multiple GPUs:
 ```bash
 WORLD_SIZE=2 CUDA_VISIBLE_DEVICES=0,1 torchrun --nproc_per_node=2 --master_port=3192 finetune.py \
   --base_model 'yahma/llama-7b-hf' \
-  --data_path 'math_data.json' \
+  --data_path 'math_10k.json' \
   --output_dir './trained_models/llama-lora' \
   --batch_size 16 \
   --micro_batch_size 4 \
@@ -87,14 +87,14 @@ WORLD_SIZE=2 CUDA_VISIBLE_DEVICES=0,1 torchrun --nproc_per_node=2 --master_port=
   --adapter_name lora
 ```
 
-The `math_data.json` file contains preprocessed instruction data from the addsub, SingleEQ, MultiArith, AQuA, SVAMP and GSM8K dataset. `yahma/llama-7b-hf` is a base model, LLaMa-7B. Add `lora` adapter to this model.
+The `math_10k.json` data is collected with the training sets of GSM8K, MAWPS, and AQuA(1000 examples). `yahma/llama-7b-hf` is a base model, LLaMa-7B. Add `lora` adapter to this model.
 
 Example usage for Single GPUs:
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 python finetune.py \
   --base_model 'yahma/llama-7b-hf' \
-  --data_path 'math_data.json' \
+  --data_path 'math_10k.json' \
   --output_dir './trained_models/llama-lora' \
   --batch_size 16 \
   --micro_batch_size 4 \
@@ -155,7 +155,7 @@ CUDA_VISIBLE_DEVICES=0 python evaluate.py
 
 <!-- ## Resource Consumption
 
-There is a table of resouce needed for different adapters, which contains Trainable Parameters, GPU RAM Usage, and Fine-tuning Time on the Arithmetic Reasoning dataset `math_data.json`
+There is a table of resouce needed for different adapters, which contains Trainable Parameters, GPU RAM Usage, and Fine-tuning Time on the Arithmetic Reasoning dataset `math_10k.json`
 
 Hyper-parameter setting: num_epochs=3, lora_r=8, lora_alpha=16, bottleneck_size=256
 
@@ -166,10 +166,10 @@ Hardware: 2*3090 GPUs
 
 | Model                 | Trainable Parameters | GPU RAM Usage | Fine-tuning Time |
 |-----------------------|----------------------|---------------|------------------|
-| LLaMA-7B-LoRA         | 4.2M                 | 18GB          |     1h           | 
-| LLaMA-7B-AdapterH     | 200M                 | 22GB          |     1h           | 
-| LLaMA-7B-AdapterP     | 200M                 | 22GB          |     1h           | 
-| LLaMA-7B-Parallel     | 200M                 | 22GB          |     1h           |  -->
+| LLaMA-7B-LoRA         | 4.2M                 | 18GB          |     4h           | 
+| LLaMA-7B-AdapterH     | 200M                 | 22GB          |     4h           | 
+| LLaMA-7B-AdapterP     | 200M                 | 22GB          |     4h           | 
+| LLaMA-7B-Parallel     | 200M                 | 22GB          |     4h           |  -->
 
 
 ## Finetune Result
