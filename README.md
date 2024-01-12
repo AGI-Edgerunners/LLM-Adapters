@@ -173,7 +173,7 @@ Hardware: 2*3090 GPUs
 
 
 ## Finetune Result
-There are the finetune results in different models with 4 math reasoning datasets, which contains GSM8K, AQuA, SVAMP, and MAWPS. In this table, as AdapterH and AdapterP are Series adapters, and AdapterP outperforms AdapterH, we use AdapterP with bottleneck size 256 as the Series Adapter.
+There are the finetune results in different models with 4 math reasoning datasets, which contains GSM8K, AQuA, SVAMP, and MAWPS. In this table, we use the optimal configuration and placement of Prefix-Tuning, Series Adapter, LoRA, and Parallel Adapter according to the empirical study in our [paper](https://aclanthology.org/2023.emnlp-main.319/).
 
 | Model                 | GSM8K  | AQuA   |   MAWPS  |  SVAMP | Average |
 |-----------------------|--------|--------|----------|--------|---------|
