@@ -177,7 +177,7 @@ There are the finetune results in different models with 4 math reasoning dataset
 
 | Model                 | GSM8K  | AQuA   |   MAWPS  |  SVAMP | Average |
 |-----------------------|--------|--------|----------|--------|---------|
-| GPT-3.5               |**56.4**|**38.9**| **87.4** |**69.9**|**55.1** |
+| GPT-3.5               |**56.4**|**38.9**| **87.4** |**69.9**|**63.2** |
 | BLOOMz-7B-Prefix	    | 13.8   |  12.5  |   47.5   |  24.1  |  24.5   |
 | BLOOMz-7B-Series	    | 14.3   |  20.5  |   62.2   |  38.1  |  33.8   |
 | BLOOMz-7B-Parallel	| 18.5   |  18.9  |   70.6   |  36.4  |  36.1   |
